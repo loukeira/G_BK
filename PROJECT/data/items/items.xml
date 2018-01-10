@@ -2341,8 +2341,10 @@
 	<item id="2217" article="a" name="book">
 		<attribute key="weight" value="1500" />
 	</item>
-	<item id="2218" article="a" name="[M] paw amulet">
+	<item id="2218" article="a [Magic]" name="paw amulet">
 		<attribute key="weight" value="1000" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="3" />
 		<attribute key="absorbPercentAll" value="3" />	
 	    <attribute key="skillShield" value="3" />
 		<attribute key="skillAxe" value="2" />		
@@ -2350,7 +2352,7 @@
 		<attribute key="skillClub" value="2" />
         <attribute key="skillDist" value="2" />
         <attribute key="skillClub" value="2" />
-        <attribute key="magiclevelpoints" value="2" />
+        <attribute key="magiclevelpoints" value="1" />
 	</item>
 	<item id="2219" article="a" name="banana skin">
 		<attribute key="weight" value="30" />
@@ -3380,7 +3382,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
 	</item>
-	<item id="2453" article="an" name="[M] arcane staff">
+	<item id="2453" article="a [Magic]" name="arcane staff">
 		<attribute key="weight" value="4000" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
@@ -3468,21 +3470,28 @@
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="legs" />
 	</item>
-	<item id="2469" name="dragon scale legs">
-		<attribute key="weight" value="4800" />
+	<item id="2469" article="a [Rare]" name="dragon scale legs">
+		<attribute key="weight" value="3200" />
 		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="legs" />
+		<attribute key="skillDist" value="4" />
+      <attribute key="absorbPercentAll" value="4"/>
 	</item>
 	<item id="2470" name="golden legs">
 		<attribute key="weight" value="5400" />
 		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="legs" />
 	</item>
-	<item id="2471" article="a" name="golden helmet">
+	<item id="2471" article="a [Rare]" name="golden helmet">
 		<attribute key="description" value="It is the famous Helmet of the Stars." />
-		<attribute key="weight" value="3200" />
-		<attribute key="armor" value="12" />
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="14" />
 		<attribute key="slotType" value="head" />
+	    <attribute key="skillSword" value="4" />		
+		<attribute key="skillClub" value="4" />
+		<attribute key="skillAxe" value="4" />
+        <attribute key="absorbPercentAll" value="4"/>
+        <attribute key="showattributes" value="1" />
 	</item>
 	<item id="2472" article="a" name="magic plate armor">
 		<attribute key="description" value="An enchanted gem glows on the plate armor." />
@@ -3602,10 +3611,14 @@
 		<attribute key="armor" value="16" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="2495" name="demon legs">
-		<attribute key="weight" value="5400" />
-		<attribute key="armor" value="9" />
+	<item id="2495" article="a [Rare]" name="demon legs">
+		<attribute key="weight" value="4200" />
+        <attribute key="armor" value="12" />
 		<attribute key="slotType" value="legs" />
+	    <attribute key="skillSword" value="4" />		
+		<attribute key="skillClub" value="4" />
+		<attribute key="skillAxe" value="4" />
+        <attribute key="absorbPercentAll" value="4"/>
 	</item>
 	<item id="2496" article="a" name="horned helmet">
 		<attribute key="weight" value="5100" />
@@ -3639,39 +3652,50 @@
 		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item id="2502" article="a" name="[M] dwarven helmet">
+	<item id="2502" article="a [Magic]" name="dwarven helmet">
 		<attribute key="weight" value="4200" />
-		<attribute key="armor" value="6" />
+		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="head" />
-        <attribute key="absorbPercentAll" value="2"/>
+        <attribute key="absorbPercentPhysical" value="2"/>
+	    <attribute key="skillAxe" value="2" />
+    	<attribute key="skillSword" value="2" />
+		<attribute key="skillClub" value="2" />
 	</item>
-	<item id="2503" article="a" name="[M] dwarven armor">
-		<attribute key="weight" value="13000" />
-		<attribute key="armor" value="10" />
+	<item id="2503" article="a [Magic]" name="dwarven armor">
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="18" />
 		<attribute key="slotType" value="body" />
-        <attribute key="absorbPercentAll" value="5"/>
+      <attribute key="absorbPercentPhysical" value="3"/>
+	    <attribute key="skillAxe" value="3" />
+    	<attribute key="skillSword" value="3" />
+		<attribute key="skillClub" value="3" />
 	</item>
-	<item id="2504" name="[M] dwarven legs">
-		<attribute key="weight" value="4000" />
-		<attribute key="armor" value="7" />
+	<item id="2504" article="a [Magic]" name="dwarven legs">
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="legs" />
-        <attribute key="absorbPercentAll" value="2"/>
+         <attribute key="absorbPercentPhysical" value="2"/>
+	    <attribute key="skillAxe" value="2" />
+    	<attribute key="skillSword" value="2" />
+		<attribute key="skillClub" value="2" />
 	</item>
-	<item id="2505" article="an" name="[M] elven armor">
-		<attribute key="weight" value="11400" />
-		<attribute key="armor" value="9" />
+	<item id="2505" article="a [Magic]" name="elven mail">
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="16" />
 		<attribute key="slotType" value="body" />
-		<attribute key="skillDist" value="5" />
+		<attribute key="skillDist" value="3" />
 	</item>
-	<item id="2506" article="a" name="dragon scale helmet">
+	<item id="2506" article="a [Rare]" name="dragon scale helmet">
 		<attribute key="description" value="It is made of dragon scales." />
-		<attribute key="weight" value="6000" />
-		<attribute key="armor" value="10" />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="head" />
+		<attribute key="skillDist" value="4" />
+      <attribute key="absorbPercentAll" value="4"/>
 	</item>
-	<item id="2507" name="[M] elven legs">
-		<attribute key="weight" value="4800" />
-		<attribute key="armor" value="10" />
+	<item id="2507" article="a [Magic]" name="elven legs">
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="legs" />
 		<attribute key="skillDist" value="2" />
 	</item>
@@ -3732,6 +3756,12 @@
 		<attribute key="defense" value="28" />
 		<attribute key="weaponType" value="shield" />
 	</item>
+		<item id="12710" article="a [Magic]" name="bonelord shield">
+		<attribute key="weight" value="4700" />
+		<attribute key="defense" value="22" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="skillDist" value="3" />
+	</item>
 	<item id="2519" article="a" name="crown shield">
 		<attribute key="weight" value="6200" />
 		<attribute key="defense" value="32" />
@@ -3760,10 +3790,10 @@
 		<attribute key="defense" value="40" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="2524" article="an" name="[M] ornamented shield">
+	<item id="2524" article="a [Magic]" name="ornamented shield">
 		<attribute key="description" value="Many gems sparkle on the shield." />
 		<attribute key="weight" value="6700" />
-		<attribute key="defense" value="22" />
+		<attribute key="defense" value="40" />
 		<attribute key="weaponType" value="shield" />
 		<attribute key="skillShield" value="3" />
 	</item>
@@ -4128,7 +4158,7 @@
 	<item fromid="2638" toid="2639" article="a" name="tic-tac-toe token" plural="tic-tac-toe tokens">
 		<attribute key="weight" value="500" />
 	</item>
-	<item id="2640" article="a" name="[M] pair of soft boots">
+	<item id="2640" article="a [Magic]" name="pair of soft boots">
 		<attribute key="description" value="This item regenerates 150 HP each two seconds and 250 MP each tree second." />
 		<attribute key="weight" value="800" />
 		<attribute key="slotType" value="feet" />
@@ -4141,10 +4171,10 @@
 		<attribute key="manaTicks" value="3000" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="2641" name="[R] traper boots">
+	<item id="2641" article ="a  [Rare]" name="regeneration boots">
 		<attribute key="description" value="This item regenerates 225 HP each two seconds and 375 MP each tree second." />
 		<attribute key="weight" value="900" />
-		<attribute key="armor" value="3" />
+		<attribute key="armor" value="4" />
 		<attribute key="speed" value="60" />
 		<attribute key="slotType" value="feet" />
 		<attribute key="healthGain" value="225" />
@@ -4259,9 +4289,9 @@
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item id="2664" article="a" name="[M] wood cape">
-		<attribute key="weight" value="700" />
-		<attribute key="armor" value="5" />
+	<item id="2664" article="a [Magic]" name="wood cape">
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="head" />
 		<attribute key="skillDist" value="2" />
 
@@ -7001,6 +7031,12 @@
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="head" />
 	</item>
+	<item id="12709" article="a [Magic]" name="baiak mask">
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="8" />
+		<attribute key="slotType" value="head" />
+	   <attribute key="magiclevelpoints" value="2" />
+	</item>
 	<item id="3968" article="a" name="leopard armor">
 		<attribute key="weight" value="9500" />
 		<attribute key="armor" value="9" />
@@ -7053,9 +7089,9 @@
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="3983" article="a" name="[M] bast skirt">
-		<attribute key="weight" value="1500" />
-		<attribute key="armor" value="2" />
+	<item id="3983" article="a [Magic]" name="bast skirt">
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="legs" />
 		<attribute key="magiclevelpoints" value="2" />
 	</item>
@@ -8771,7 +8807,7 @@
 	<item id="5802" article="a" name="bottle with a message">
 		<attribute key="weight" value="2500" />
 	</item>
-	<item id="5803" article="an" name="[M] arbalest">
+	<item id="5803" article="a  [Magic]" name="arbalest">
 		<attribute key="description" value="It is a bit heavy due to the iron mounting, but very precise." />
 		<attribute key="weight" value="9500" />
 	    <attribute key="attack" value="106" />
@@ -10090,7 +10126,7 @@
 		<attribute key="defense" value="26" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="6132" article="a" name="[M] pair of soft boots">
+	<item id="6132" article="a [Magic]" name="pair of soft boots">
 		<attribute key="weight" value="800" />
 		<attribute key="slotType" value="feet" />
 		<attribute key="transformEquipTo" value="2640" />
@@ -10695,11 +10731,13 @@
 	</item>
 	<item id="6389" name="ground" />
 	<item id="6390" article="a" name="fountain" />
-	<item id="6391" article="a" name="nightmare shield">
-		<attribute key="weight" value="3200" />
-		<attribute key="defense" value="37" />
-		<attribute key="description" value="It was crafted by the ancient order of the nightmare knights." />
+	<item id="6391" article="a [Rare]" name="nightmare shield">
+		<attribute key="description" value="Equip this item and it will give you 250 heatlh points." />
+		<attribute key="weight" value="4200" />
+		<attribute key="defense" value="44" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="skillShield" value="4" />
+		<attribute key="maxhealthpoints" value="250"/>
 	</item>
 	<item id="6392" article="a" name="hawser">
 		<attribute key="weight" value="2200" />
@@ -10718,11 +10756,14 @@
 	<item fromid="6416" toid="6422" article="a" name="bone wall" />
 	<item fromid="6423" toid="6430" article="a" name="tree" />
 	<item fromid="6431" toid="6432" article="a" name="branch" />
-	<item id="6433" article="a" name="necromancer shield">
-		<attribute key="description" value="It is enchanted with unholy, necromantic powers." />
+	<item id="6433" article="a [Rare]" name="necromancer shield">
+		<attribute key="description" value="Equip this item and it will give you 125 heatlh and 125 mana points." />
 		<attribute key="weight" value="3200" />
-		<attribute key="defense" value="37" />
+		<attribute key="defense" value="42" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="skillShield" value="4" />
+		<attribute key="maxhealthpoints" value="125"/>
+		<attribute key="maxmanapoints" value="125"/>
 	</item>
 	<item id="6434" article="a" name="blue tapestry" />
 	<item id="6435" article="a" name="demon trophy" />
@@ -10893,7 +10934,7 @@
 	<item id="6527" article="a" name="christmas token" plural="christmas tokens">
 		<attribute key="weight" value="5" />
 	</item>
-	<item id="6528" article="[M]the" name="avenger">
+	<item id="6528" article="the [Magic]" name="avenger">
 		<attribute key="weight" value="6400" />
 		<attribute key="defense" value="76" />
 		<attribute key="attack" value="90" />
@@ -10910,7 +10951,7 @@
 		<attribute key="shootType" value="infernalbolt" />
 		<attribute key="ammoAction" value="removecount" />
 	</item>
-	<item id="6530" article="a" name="[M] pair of old worn soft boots">
+	<item id="6530" article="a  [Magic]" name="pair of old worn soft boots">
 		<attribute key="description" value="Someone specialised in shoes might be able to repair them for you." />
 		<attribute key="weight" value="800" />
 	</item>
@@ -12081,7 +12122,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
 	</item>
-	<item id="7415" article="[M]a" name="cranial basher">
+	<item id="7415" article="a  [Magic]" name="cranial basher">
 		<attribute key="weight" value="7800" />
 		<attribute key="defense" value="70" />
 		<attribute key="attack" value="92" />
@@ -12115,7 +12156,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="-3" />
 	</item>
-	<item id="7420" article="a" name="[M] reaper's axe">
+	<item id="7420" article="a [Magic]" name="reaper's axe">
 		<attribute key="weight" value="5900" />
 		<attribute key="defense" value="58" />
 		<attribute key="attack" value="93" />
@@ -12142,8 +12183,8 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
 	</item>
-	<item id="7424" article="a" name="[R] lunar staff">
-		<attribute key="description" value="This item regenerates 50 HP each one second." />
+	<item id="7424" article="a [Rare]" name="lunar staff">
+		<attribute key="description" value="This item regenerates 50 MP each one second." />
 		<attribute key="weight" value="2850" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
@@ -12216,7 +12257,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
 	</item>
-	<item id="7434" article="a" name="[R] royal axe">
+	<item id="7434" article="a" name="royal axe">
 		<attribute key="weight" value="9200" />
 		<attribute key="defense" value="25" />
 		<attribute key="attack" value="47" />
@@ -13874,6 +13915,13 @@
 		<attribute key="absorbPercentIce" value="-6" />
 		<attribute key="slotType" value="legs" />
 	</item>
+	<item id="12712" article="a [Rare]" name="chaos legs">
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="8" />
+		<attribute key="absorbPercentAll" value="4" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="magiclevelpoints" value="4" />
+	</item>
 	<item id="7895" name="lightning legs">
 		<attribute key="weight" value="1900" />
 		<attribute key="armor" value="8" />
@@ -14187,21 +14235,29 @@
 	<item fromid="8262" toid="8265" article="a" name="piece of broken amulet">
 		<attribute key="weight" value="100" />
 	</item>
-	<item id="8266" name="[R] koshei's ancient amulet">
-	<attribute key="description" value="This item regenerates 265 HP each two seconds and 315 MP each tree second." />		<attribute key="absorbPercentAll" value="4" />	
-	    <attribute key="skillShield" value="4" />
+	<item id="8266" article="a [Rare]" name="koshei's ancient amulet">
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="2" />
 		<attribute key="skillAxe" value="3" />		
 		<attribute key="skillSword" value="3" />		
 		<attribute key="skillClub" value="3" />
         <attribute key="skillDist" value="3" />
         <attribute key="skillClub" value="3" />
-        <attribute key="magiclevelpoints" value="3" />
-		<attribute key="weight" value="900" />
+        <attribute key="magiclevelpoints" value="2" />
+		<attribute key="weight" value="1000" />
+		<attribute key="speed" value="20" />
+		<attribute key="absorbPercentDeath" value="8"/>
+	</item>
+		<item id="10719" article="a [Rare]" name="elemental amulet">
+	    <attribute key="description" value="This item regenerates 115 HP each two seconds and 165 MP each tree second." />		
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="healthGain" value="265" />
+		<attribute key="healthGain" value="115" />
 		<attribute key="healthTicks" value="2000" />
-		<attribute key="manaGain" value="315" />
+		<attribute key="manaGain" value="165" />
 		<attribute key="manaTicks" value="3000" />
+		<attribute key="absorbPercentAll" value="15"/>
 	</item>
 	<item id="8268" article="a" name="sun dial" />
 	<item id="8269" article="a" name="slain lich">
@@ -14760,7 +14816,7 @@
 		<attribute key="range" value="3" />
 		<attribute key="attack" value="8" />
 	</item>
-	<item id="8851" article="a" name="[R] royal crossbow">
+	<item id="8851" article="a [Rare]" name="royal crossbow">
 		<attribute key="attack" value="124" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="infernalbolt" />
@@ -14924,28 +14980,28 @@
 		<attribute key="absorbPercentFire" value="-3" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="8881" article="a" name="fireborn giant armor">
-		<attribute key="weight" value="12000" />
-		<attribute key="armor" value="15" />
-		<attribute key="absorbPercentFire" value="5" />
-		<attribute key="absorbPercentIce" value="-5" />
-		<attribute key="skillSword" value="2" />
+	<item id="8881" article="a [Rare]" name="fireborn giant armor">
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentFire" value="20" />
+		<attribute key="absorbPercentAll" value="4" />
+		<attribute key="skillSword" value="4" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="8882" article="an" name="earthborn titan armor">
-		<attribute key="weight" value="12000" />
-		<attribute key="armor" value="15" />
-		<attribute key="absorbPercentEarth" value="5" />
-		<attribute key="absorbPercentFire" value="-5" />
-		<attribute key="skillAxe" value="2" />
+	<item id="8882" article="a [Rare]" name="earthborn titan armor">
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentEarth" value="20" />
+		<attribute key="absorbPercentAll" value="4" />
+		<attribute key="skillAxe" value="4" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="8883" article="a" name="windborn colossus armor">
-		<attribute key="weight" value="12000" />
-		<attribute key="armor" value="15" />
-		<attribute key="absorbPercentEnergy" value="5" />
-		<attribute key="absorbPercentEarth" value="-5" />
-		<attribute key="skillClub" value="2" />
+	<item id="8883" article="a [Rare]" name="windborn colossus armor">
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentEnergy" value="20" />
+		<attribute key="absorbPercentAll" value="4" />
+		<attribute key="skillClub" value="4" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="8884" article="an" name="oceanborn leviathan armor">
@@ -14977,12 +15033,14 @@
 		<attribute key="absorbPercentIce" value="7" />
 		<attribute key="absorbPercentEnergy" value="-7" />
 	</item>
-	<item id="8888" article="a" name="master archer's armor">
-		<attribute key="armor" value="15" />
+	<item id="8888" article="a [Rare]" name="master archer's armor">
+		<attribute key="armor" value="18" />
 		<attribute key="slotType" value="body" />
-		<attribute key="weight" value="6900" />
-		<attribute key="skillDist" value="3" />
-	</item>
+		<attribute key="weight" value="3200" />
+	    <attribute key="skillDist" value="4" />
+		<attribute key="absorbPercentEarth" value="20"/>
+      <attribute key="absorbPercentAll" value="4"/>
+	</item>	
 	<item id="8889" article="a" name="skullcracker armor">
 		<attribute key="weight" value="11000" />
 		<attribute key="armor" value="14" />
@@ -14990,12 +15048,12 @@
 		<attribute key="absorbPercentHoly" value="-5" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="8890" article="a [Legacy]" name="robe of the underworld">
-		<attribute key="armor" value="12" />
+	<item id="8890" article="a [Rare]" name="robe of the underworld">
+		<attribute key="armor" value="16" />
 		<attribute key="slotType" value="body" />
-		<attribute key="weight" value="1900" />
-		<attribute key="magiclevelpoints" value="5" />
-        <attribute key="absorbPercentAll" value="3"/>
+		<attribute key="weight" value="2200" />
+		<attribute key="magiclevelpoints" value="4" />
+        <attribute key="absorbPercentAll" value="4"/>
 		<attribute key="absorbPercentDeath" value="20"/>
         <attribute key="showattributes" value="1" />
 	</item>
@@ -15005,10 +15063,10 @@
 		<attribute key="weight" value="6500" />
 		<attribute key="skillDist" value="2" />
 	</item>
-	<item id="8892" article="an" name="[M] ethno coat">
-		<attribute key="armor" value="7" />
+	<item id="8892" article="a  [Magic]" name="ethno coat">
+		<attribute key="armor" value="14" />
 		<attribute key="slotType" value="body" />
-		<attribute key="weight" value="2550" />
+		<attribute key="weight" value="2200" />
 		<attribute key="magiclevelpoints" value="3" />
 	</item>
 	<item fromid="8893" toid="8899" />
@@ -15110,12 +15168,20 @@
 		<attribute key="range" value="3" />
 	</item>
 	<item fromid="8913" toid="8917" />
-	<item id="8918" article="a" name="[M] spellbook of dark mysteries">
+	<item id="8918" article="a [Magic]" name="spellbook of dark mysteries">
 		<attribute key="description" value="It shows your spells and can also shield against attack when worn." />
-		<attribute key="weight" value="2850" />
+		<attribute key="weight" value="2200" />
 		<attribute key="magiclevelpoints" value="3" />
-		<attribute key="defense" value="16" />
+		<attribute key="defense" value="22" />
 		<attribute key="weaponType" value="shield" />
+	</item>
+		<item id="11112" article="a [Rare]" name="snakepit's circle">
+		<attribute key="description" value="Equip this item and it will give you 250 mana points." />
+		<attribute key="weight" value="2200" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="defense" value="29" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="maxmanapoints" value="250"/>
 	</item>
 	<item id="8919" article="a" name="spell rune">
 		<attribute key="description" value="It is Yandur's healing rune. You can't remove it from his house, but you may use it." />
@@ -15146,7 +15212,7 @@
 		<attribute key="armor" value="4" />
 		<attribute key="slotType" value="legs" />
 	</item>
-	<item id="8924" article="a" name="[R] hellforged axe">
+	<item id="8924" article="a [Rare]" name="hellforged axe">
 		<attribute key="weight" value="8800" />
 		<attribute key="defense" value="73" />
 		<attribute key="attack" value="112" />
@@ -15175,9 +15241,9 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="-1" />
 	</item>
-	<item id="8928" article="an" name="[R] obsidian truncheon">
+	<item id="8928" article="a [Rare]" name="obsidian truncheon">
 		<attribute key="weight" value="6500" />
-		<attribute key="defense" value="90" />
+		<attribute key="defense" value="84" />
 		<attribute key="attack" value="110" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="2" />
@@ -15190,7 +15256,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
 	</item>
-	<item id="8930" article="an" name="[R] emerald sword">
+	<item id="8930" article="a [Rare]" name="emerald sword">
 		<attribute key="weight" value="4100" />
 		<attribute key="defense" value="87" />
 		<attribute key="attack" value="108" />
@@ -16067,9 +16133,10 @@
 	<item id="9930" article="a" name="rust remover">
 		<attribute key="weight" value="250" />
 	</item>
-	<item id="9931" article="a" name="[M] coconut shoes">
+	<item id="9931" article="a [Magic]" name="coconut shoes">
 		<attribute key="description" value="This item regenerates 100 HP each two seconds and 200 MP each tree second." />
-		<attribute key="weight" value="200" />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="4" />
 		<attribute key="slotType" value="feet" />
 		<attribute key="healthGain" value="100" />
 		<attribute key="healthTicks" value="2000" />
@@ -16334,7 +16401,7 @@
 	<item id="10020" article="a" name="dragon claw">
 		<attribute key="weight" value="1250" />
 	</item>
-	<item id="10021" article="a" name="[M] pair of worn soft boots">
+	<item id="10021" article="a  [Magic]" name="pair of worn soft boots">
 		<attribute key="description" value="Someone specialised in shoes might be able to repair them for you." />
 		<attribute key="weight" value="800" />
 	</item>
@@ -16514,13 +16581,12 @@
 		<attribute key="armor" value="5" />
 		<attribute key="slotType" value="head" />
 	</item>
-		<item id="12397" article="a [Legacy]" name="necromancer's tiara">
-		<attribute key="weight" value="700" />
-		<attribute key="armor" value="5" />
+		<item id="12711" article="a [Rare]" name="necromancer's mask">
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="head" />
 		<attribute key="magiclevelpoints" value="4" />
-        <attribute key="absorbPercentAll" value="3"/>
-		<attribute key="absorbPercentDeath" value="10"/>
+        <attribute key="absorbPercentAll" value="4"/>
         <attribute key="showattributes" value="1" />
 		</item>
 	<item id="10293" article="a" name="stale bread of ancientness">
@@ -17014,10 +17080,6 @@
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="11111" name="tribal crest">
-		<attribute key="description" value="This crest seems important. You shouldn't lose it." />
-		<attribute key="weight" value="500" />
-	</item>
-	<item id="11112" name="serpent crest">
 		<attribute key="description" value="This crest seems important. You shouldn't lose it." />
 		<attribute key="weight" value="500" />
 	</item>
@@ -17609,6 +17671,313 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="body" />
+	</item>
+		<item id="12717" article="a [Rare]" name="promotion's ring">
+		<attribute key="description" value="Equip this item and it will give you 150 heatlh and 150 mana points." />
+		<attribute key="armor" value="2" />
+		<attribute key="weight" value="4100" />
+		<attribute key="maxhealthpoints" value="150"/>
+		<attribute key="maxmanapoints" value="150"/>
+		<attribute key="absorbPercentAll" value="3"/>
+		<attribute key="skillDist" value="" />
+	    <attribute key="skillAxe" value="3" />
+        <attribute key="skillSword" value="3" />
+		<attribute key="skillClub" value="3" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="12636" article="a [Legacy]" name="green archer's helmet">
+		<attribute key="description" value="This item regenerates 75 HP each one second and 75 MP each one second." />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="24" />
+		<attribute key="slotType" value="head" />
+		<attribute key="skillDist" value="5" />
+      <attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="75" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="75" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+	<item id="12637" article="a [Legacy]" name="green archer's armor">
+			<attribute key="description" value="This item regenerates 95 HP each one second and 95 MP each one second." />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="36" />
+		<attribute key="slotType" value="body" />
+		<attribute key="skillDist" value="6" />
+      <attribute key="absorbPercentAll" value="6"/>
+	    <attribute key="healthGain" value="95" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="95" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+	<item id="12638" article="a [Legacy]" name="green archer's legs">
+		<attribute key="description" value="This item regenerates 75 HP each one second and 75 MP each one second." />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="20" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="skillDist" value="5" />
+      <attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="75" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="75" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+		<item id="12639" article="a [Legacy]" name="green archer's boots">
+		<attribute key="description" value="This item regenerates 450 HP each two seconds and 450 MP each tree seconds." />
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="4" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="speed" value="80" />
+	    <attribute key="healthGain" value="450" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="450" />
+		<attribute key="manaTicks" value="3000" />
+	</item>
+	<item id="12640" article="a [Legacy]" name="green archer's shield">
+		<attribute key="description" value="Equip this item and it will give you 200 heatlh and 200 mana points." />
+		<attribute key="weight" value="3200" />
+		<attribute key="defense" value="84" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="skillDist" value="5" />
+		<attribute key="absorbPercentAll" value="5" />
+		<attribute key="absorbPercentEarth" value="10" />
+		<attribute key="maxhealthpoints" value="200"/>
+		<attribute key="maxmanapoints" value="200"/>
+	</item>
+	<item id="12682" article="a [Legacy]" name="green archer's crossbow">
+		<attribute key="attack" value="142" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="smallearth" />
+		<attribute key="range" value="9" />
+        <attribute key="hitChance" value="100"/>
+		<attribute key="skillDist" value="7" />
+	</item>
+	<item id="7967" article="a [Legacy]" name="green archer's ring">
+		<attribute key="description" value="Equip this item and it will give you 200 heatlh and 200 mana points." />
+		<attribute key="armor" value="5" />
+		<attribute key="weight" value="3200" />
+		<attribute key="maxhealthpoints" value="200"/>
+		<attribute key="maxmanapoints" value="200"/>
+		<attribute key="absorbPercentAll" value="5"/>
+		<attribute key="skillDist" value="5" />
+		<attribute key="slotType" value="ring" />
+	</item>
+		<item id="12719" article="a [legacy]" name="green archer's amulet">
+	    <attribute key="description" value="This item regenerates 240 HP each two seconds and 240 MP each tree second." />		
+		<attribute key="weight" value="900" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="4" />
+		<attribute key="healthGain" value="240" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="240" />
+		<attribute key="manaTicks" value="3000" />
+		<attribute key="absorbPercentAll" value="5"/>
+		<attribute key="skillDist" value="5" />
+		<attribute key="speed" value="20" />
+	</item>
+		<item id="12641" article="a [Legacy]" name="blue magician hat">
+		<attribute key="description" value="This item regenerates 50 HP each one second and 100 MP each one second." />
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="20" />
+		<attribute key="slotType" value="head" />
+		<attribute key="magiclevelpoints" value="5" />
+        <attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="50" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="100" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+		<item id="12642" article="a [Legacy]" name="blue magician robe">
+		<attribute key="description" value="This item regenerates 70 HP each one second and 120 MP each one second." />
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="32" />
+		<attribute key="slotType" value="body" />
+		<attribute key="magiclevelpoints" value="6" />
+        <attribute key="absorbPercentAll" value="6"/>
+	    <attribute key="healthGain" value="70" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="120" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+			<item id="12643" article="a [Legacy]" name="blue magician legs">
+		<attribute key="description" value="This item regenerates 50 HP each one second and 100 MP each one second." />
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="16" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="magiclevelpoints" value="5" />
+        <attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="50" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="100" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+			<item id="12644" article="a [Legacy]" name="blue magician shoes">
+		<attribute key="description" value="This item regenerates 350 HP each one second and 550 MP each one second." />
+		<attribute key="weight" value="2200" />
+		<attribute key="armor" value="4" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="speed" value="80" />
+	    <attribute key="healthGain" value="350" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="550" />
+		<attribute key="manaTicks" value="1300" />
+	</item>
+			<item id="12645" article="a [Legacy]" name="blue magician shield">
+		<attribute key="description" value="Equip this item and it will give you 400 mana points." />
+		<attribute key="weight" value="2200" />
+		<attribute key="defense" value="58" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbPercentAll" value="5" />
+		<attribute key="absorbPercentIce" value="10" />
+		<attribute key="maxmanapoints" value="400"/>
+	</item>
+		<item id="12279" article="a [Legacy]" name="magician staff">
+		<attribute key="description" value="This item regenerates 100 MP each one second." />
+		<attribute key="weight" value="2850" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="holy" />
+		<attribute key="range" value="4" />
+		<attribute key="magiclevelpoints" value="6" />
+		<attribute key="manaGain" value="100" />
+		<attribute key="manaTicks" value="1000" />
+		</item>
+		<item id="12658" article="a [Legacy]" name="blue magician ring">
+		<attribute key="description" value="Equip this item and it will give you 150 heatlh and 250 mana points." />
+		<attribute key="armor" value="2" />
+		<attribute key="weight" value="2200" />
+		<attribute key="maxhealthpoints" value="150"/>
+		<attribute key="maxmanapoints" value="250"/>
+		<attribute key="absorbPercentAll" value="5"/>
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="ring" />
+	</item>
+		<item id="12720" article="a [Legacy]" name="blue magician amulet">
+	    <attribute key="description" value="This item regenerates 160 HP each two seconds and 320 MP each tree second." />		
+		<attribute key="weight" value="900" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="4" />
+		<attribute key="healthGain" value="160" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="320" />
+		<attribute key="manaTicks" value="3000" />
+		<attribute key="absorbPercentAll" value="5"/>
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="speed" value="20" />
+	</item>
+		<item id="12683" article="a [Legacy]" name="flame knight helmet">
+		<attribute key="description" value="This item regenerates 100 HP each one second and 50 MP each one second." />
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="24" />
+		<attribute key="slotType" value="head" />
+        <attribute key="skillSword" value="5" />		
+		<attribute key="skillClub" value="5" />
+		<attribute key="skillAxe" value="5" />       
+		<attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="100" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="50" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+		<item id="12713" article="a [Legacy]" name="flame knight mail">
+		<attribute key="description" value="This item regenerates 120 HP each one second and 70 MP each one second." />
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="40" />
+		<attribute key="slotType" value="body" />
+		 <attribute key="skillSword" value="6" />		
+		<attribute key="skillClub" value="6" />
+		<attribute key="skillAxe" value="6" />
+        <attribute key="absorbPercentAll" value="6"/>
+	    <attribute key="healthGain" value="120" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="70" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+			<item id="12714" article="a [Legacy]" name="flame knight legs">
+		<attribute key="description" value="This item regenerates 50 HP each one second and 100 MP each one second." />
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="24" />
+		<attribute key="slotType" value="legs" />
+	    <attribute key="skillSword" value="5" />		
+		<attribute key="skillClub" value="5" />
+		<attribute key="skillAxe" value="5" />       
+		<attribute key="absorbPercentAll" value="5"/>
+	    <attribute key="healthGain" value="100" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="50" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+			<item id="12715" article="a [Legacy]" name="flame knight boots">
+		<attribute key="description" value="This item regenerates 550 HP each one second and 350 MP each one second." />
+		<attribute key="weight" value="4200" />
+		<attribute key="armor" value="4" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="speed" value="80" />
+	    <attribute key="healthGain" value="550" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="350" />
+		<attribute key="manaTicks" value="1300" />
+	</item>
+			<item id="12678" article="a [Legacy]" name="flame knight shield">
+		<attribute key="description" value="Equip this item and it will give you 400 health points." />
+		<attribute key="weight" value="4200" />
+		<attribute key="defense" value="88" />
+		<attribute key="weaponType" value="shield" />
+        <attribute key="skillSword" value="5" />		
+		<attribute key="skillClub" value="5" />
+		<attribute key="skillAxe" value="5" /> 		
+		<attribute key="absorbPercentAll" value="5" />
+		<attribute key="absorbPercentFire" value="10" />
+		<attribute key="maxhealthpoints" value="400"/>
+	</item>
+		<item id="12651" article="a [Legacy]" name="flame knight sword">
+		<attribute key="weight" value="4100" />
+		<attribute key="defense" value="105" />
+		<attribute key="attack" value="126" />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="extradef" value="3" />
+		<attribute key="skillSword" value="6" />
+	</item>
+	<item id="12716" article="a [Legacy]" name="flame knight axe">
+		<attribute key="weight" value="4100" />
+		<attribute key="defense" value="90" />
+		<attribute key="attack" value="130" />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="6" />
+	</item>
+	<item id="12652" article="a [Legacy]" name="flame knight hammer">
+		<attribute key="weight" value="4100" />
+		<attribute key="defense" value="104" />
+		<attribute key="attack" value="128" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="6" />
+	</item>
+	<item id="12718" article="a [Legacy]" name="flame knight claw">
+		<attribute key="description" value="Equip this item and it will give you 250 heatlh and 150 mana points." />
+		<attribute key="armor" value="2" />
+		<attribute key="weight" value="4200" />
+		<attribute key="maxhealthpoints" value="250"/>
+		<attribute key="maxmanapoints" value="150"/>
+		 <attribute key="skillSword" value="5" />		
+		<attribute key="skillClub" value="5" />
+		<attribute key="skillAxe" value="5" />
+		<attribute key="absorbPercentAll" value="5"/>
+		<attribute key="slotType" value="ring" />
+	</item>
+		<item id="12721" article="a [Legacy]" name="flame knight amulet">
+	    <attribute key="description" value="This item regenerates 320 HP each two seconds and 160 MP each tree second." />		
+		<attribute key="weight" value="900" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="4" />
+		<attribute key="healthGain" value="320" />
+		<attribute key="healthTicks" value="2000" />
+		<attribute key="manaGain" value="160" />
+		<attribute key="manaTicks" value="3000" />
+		<attribute key="absorbPercentAll" value="6"/>
+		<attribute key="skillSword" value="4" />		
+		<attribute key="skillClub" value="4" />
+		<attribute key="skillAxe" value="4" />
+		<attribute key="speed" value="20" />
 	</item>
 	<item id="20001" name="water" />
 	<item id="20002" name="blood" />

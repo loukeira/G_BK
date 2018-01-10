@@ -59,7 +59,7 @@
 			<vocation id="5" showInDescription="0"/>
 		</wand>
 		<!-- Wand of Vortex -->
-		<wand id="2190" level="7" mana="2" min="8000" max="8000" type="energy" event="function" value="default">
+		<wand id="2190" level="7" mana="2" min="800" max="800" type="energy" event="function" value="default">
 			<vocation name="Sorcerer"/>
 			<vocation id="5" showInDescription="0"/>
 		</wand>
@@ -83,7 +83,37 @@
 			<vocation name="Sorcerer"/>
 			<vocation id="5" showInDescription="0"/>
 		</wand>
-
+		
+	<!-- Wands e rods editados -->
+		<!-- Queen's Sceptre -->
+         <wand id="7410" level="80" mana="15" type="holy" event="script" value="queen_scept.lua"> <!-- Edited Wand 1 -->
+        <vocation id="2"/>
+        <vocation id="1"/>
+		<vocation id="5"/>
+        <vocation id="6"/>
+    </wand>
+	<!-- Arcane Staff -->
+         <wand id="2453" level="110" mana="18" type="energy" event="script" value="arcane_staff.lua"> <!-- Edited Wand 2 -->
+        <vocation id="2"/>
+        <vocation id="1"/>
+		<vocation id="5"/>
+        <vocation id="6"/>
+    </wand>
+	<!-- Lunar Staff -->
+         <wand id="7424" level="140" mana="23" type="death" event="script" value="lunar_staff.lua"> <!-- Edited Wand 3 -->
+        <vocation id="2"/>
+        <vocation id="1"/>
+		<vocation id="5"/>
+        <vocation id="6"/>
+    </wand>
+		<!-- Magician Staff -->
+         <wand id="12279" level="170" mana="26" type="holy" event="script" value="magician_staff.lua"> <!-- Edited Wand 4 -->
+        <vocation id="2"/>
+        <vocation id="1"/>
+		<vocation id="5"/>
+        <vocation id="6"/>
+    </wand>
+	
 	<!-- Swords -->
 		<!-- Two Handed Sword -->
 		<melee id="2377" level="20" unproperly="1" event="function" value="default">
@@ -459,8 +489,6 @@
 			<vocation name="Knight"/>
 			<vocation id="8" showInDescription="0"/>
 		</melee>
-		<!-- Arcane Staff -->
-		<melee id="2453" level="75" unproperly="1" event="function" value="default"/>
 		<!-- Lich Staff -->
 		<melee id="3961" level="35" unproperly="1" event="function" value="default"/>
 		<!-- Mammoth Whopper -->
@@ -476,8 +504,6 @@
 			<vocation name="Knight"/>
 			<vocation id="8" showInDescription="0"/>
 		</melee>
-		<!-- Queen's Sceptre -->
-		<melee id="7410" level="55" unproperly="1" event="function" value="default"/>
 		<!-- Abyss Hammer -->
 		<melee id="7414" level="60" unproperly="1" event="function" value="default">
 			<vocation name="Knight"/>
@@ -494,8 +520,6 @@
 			<vocation name="Knight"/>
 			<vocation id="8" showInDescription="0"/>
 		</melee>
-		<!-- Lunar Staff -->
-		<melee id="7424" level="30" unproperly="1" event="function" value="default"/>
 		<!-- Taurus Mace -->
 		<melee id="7425" level="20" unproperly="1" event="function" value="default"/>
 		<!-- Amber Staff -->
