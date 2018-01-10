@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+	<event type="login" name="XpSemanal" event="script" value="xpsemanal.lua"/>
 
 	<!-- <event type="look" name="ageLook" event="script" value="age.lua"/>  	 -->
 	<!-- <event type="login" name="ageLogin" event="script" value="age.lua"/> -->

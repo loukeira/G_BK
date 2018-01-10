@@ -3,6 +3,7 @@
 	<monster name="poste" file="Traps/poste.xml"/>
 
 
+
 	<!-- Defend the Towers (ChaitoSoft - Desenvolvedores Open Tibia) -->
 	<monster name="red supreme tower" file="DTT/red supreme tower.xml"/>
 	<monster name="blue supreme tower" file="DTT/blue supreme tower.xml"/>

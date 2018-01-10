@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
+	<globalevent name="xpsemanal" interval="36000" event="script" value="xpsemanal.lua"/>
+
+	<globalevent name="xpsave" interval="16000" event="script" value="xpsave.lua"/>
+
 	<globalevent name="age" interval="60000" event="script" value="age.lua"/>
 
 
@@ -36,7 +40,7 @@
 
     <globalevent name="shop" interval="30000" script="shop.lua"/>
     <globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
-   	<globalevent name="save" interval="60000" event="script" value="save.lua"/>
+   	<globalevent name="save" interval="120000" event="script" value="save.lua"/>
 	<globalevent name="clean" interval="1000000" event="script" value="clean.lua"/>
 	<globalevent name="msgfly" interval="1553420" script="fly.lua"/>
 	<globalevent name="shopguild" interval="30000" event="script" value="shopguild.lua"/>

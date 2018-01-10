@@ -12,9 +12,6 @@ end
 
 
 
-
-
-
 function doSetItemActionId(uid, actionid)
    return doItemSetAttribute(uid, "aid", actionid)
 end

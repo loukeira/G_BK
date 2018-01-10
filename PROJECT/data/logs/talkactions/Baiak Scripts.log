@@ -9,3 +9,281 @@
 [5/11/2017 16:56:51] /i bag
 [5/11/2017 16:56:53] /i 12705
 [5/11/2017 16:57:0] /i 12709
+[8/1/2018 23:21:39] /t
+[8/1/2018 23:23:12] /reload actions
+[8/1/2018 23:23:40] /i dodgestone
+[8/1/2018 23:24:5] /i 12575
+[8/1/2018 23:24:7] /i 12575
+[8/1/2018 23:24:47] /i bag
+[8/1/2018 23:24:51] /i 12575
+[8/1/2018 23:24:51] /i 12575
+[8/1/2018 23:24:52] /i 12575
+[8/1/2018 23:27:9] /reload actions
+[8/1/2018 23:34:24] /reload monsters
+[8/1/2018 23:35:12] /m exp bug
+[8/1/2018 23:35:14] /m exp bug
+[8/1/2018 23:35:19] /m Exp bug
+[8/1/2018 23:35:36] /reload monsters
+[8/1/2018 23:35:45] /m exp bug
+[8/1/2018 23:36:39] /reload monsters
+[8/1/2018 23:36:42] /m exp bug
+[8/1/2018 23:36:45] /m exp bug
+[8/1/2018 23:37:17] /reload monsters
+[8/1/2018 23:37:20] /m exp bug
+[8/1/2018 23:37:24] /m Exp bug
+[8/1/2018 23:38:35] /reload monsters
+[8/1/2018 23:38:52] /m bugxp
+[8/1/2018 23:38:54] /m bugxp
+[8/1/2018 23:38:57] /m demon
+[8/1/2018 23:39:38] /reload monsters
+[8/1/2018 23:39:44] /r
+[8/1/2018 23:39:46] /m demon
+[8/1/2018 23:40:12] /r
+[8/1/2018 23:40:32] /m demon
+[8/1/2018 23:41:21] /reload weapons
+[8/1/2018 23:41:25] /r
+[8/1/2018 23:41:29] /m demon
+[8/1/2018 23:42:59] /m demon
+[8/1/2018 23:43:44] /m demon
+[8/1/2018 23:55:44] /reload actions
+[8/1/2018 23:56:54] /m demon
+[9/1/2018 0:2:46] /m demon
+[9/1/2018 0:3:26] /save
+[9/1/2018 0:3:56] /m demon
+[9/1/2018 0:3:56] /m demon
+[9/1/2018 0:3:57] /m demon
+[9/1/2018 0:3:58] /m demon
+[9/1/2018 0:4:38] /save
+[9/1/2018 0:6:6] /reload monsters
+[9/1/2018 0:6:21] /m demon
+[9/1/2018 0:7:36] /m demon
+[9/1/2018 0:9:33] /reload actions
+[9/1/2018 0:10:27] /reload actions
+[9/1/2018 0:11:27] /reload actions
+[9/1/2018 0:12:5] /reload actions
+[9/1/2018 0:13:46] /m demon
+[9/1/2018 0:14:30] /save
+[9/1/2018 0:16:40] /reload monsters
+[9/1/2018 0:16:49] /m demon
+[9/1/2018 4:49:9] /reload globalevents
+[9/1/2018 20:59:44] /reload globalevents
+[9/1/2018 21:3:34] /reload globalevents
+[9/1/2018 21:22:24] /reload globalevents
+[9/1/2018 22:56:21] /reload creaturescripts
+[9/1/2018 23:4:51] /reload creaturescripts
+[9/1/2018 23:13:43] /reload globalevents
+[9/1/2018 23:14:25] /reload globalevents
+[9/1/2018 23:15:40] /reload globalevents
+[9/1/2018 23:17:22] /reload globalevents
+[9/1/2018 23:17:27] /reload globalevents
+[9/1/2018 23:17:48] /reload globalevents
+[9/1/2018 23:17:54] /reload globalevents
+[9/1/2018 23:20:42] /reload talkactions
+[9/1/2018 23:20:46] /reload globalevents
+[9/1/2018 23:47:16] /reload globalevents
+[9/1/2018 23:51:37] /m dragon
+[9/1/2018 23:51:37] /m dragon
+[9/1/2018 23:52:9] /m dragon
+[9/1/2018 23:52:9] /m dragon
+[9/1/2018 23:52:9] /m dragon
+[9/1/2018 23:52:10] /m dragon
+[10/1/2018 0:1:23] /m dragon
+[10/1/2018 0:1:29] /m dragon
+[10/1/2018 0:1:29] /m dragon
+[10/1/2018 0:1:45] /save
+[10/1/2018 0:2:10] /reload globalevents
+[10/1/2018 0:2:24] /m dragon
+[10/1/2018 0:2:24] /m dragon
+[10/1/2018 0:3:5] /save
+[10/1/2018 0:4:49] /reload globalevents
+[10/1/2018 0:5:12] /save
+[10/1/2018 0:5:33] /m dragon
+[10/1/2018 0:5:34] /m dragon
+[10/1/2018 0:5:39] /save
+[10/1/2018 0:7:25] /reload globalevents
+[10/1/2018 0:7:35] /m dragon
+[10/1/2018 0:7:35] /m dragon
+[10/1/2018 0:8:39] /reload globalevents
+[10/1/2018 0:8:58] /m dragon
+[10/1/2018 0:8:58] /m dragon
+[10/1/2018 0:8:58] /m dragon
+[10/1/2018 0:9:8] /m dragon
+[10/1/2018 0:9:8] /m dragon
+[10/1/2018 0:9:8] /m dragon
+[10/1/2018 0:9:20] /m dragon
+[10/1/2018 0:9:20] /m dragon
+[10/1/2018 0:16:0] /m dragon
+[10/1/2018 0:16:1] /m dragon
+[10/1/2018 0:16:1] /m dragon
+[10/1/2018 0:31:3] /reload globalevents
+[10/1/2018 0:31:23] /m dragon
+[10/1/2018 0:31:24] /m dragon
+[10/1/2018 0:31:24] /m dragon
+[10/1/2018 0:33:53] /reload talkactions
+[10/1/2018 0:38:0] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:1] /m dragon lord
+[10/1/2018 0:38:16] /m dragon lord
+[10/1/2018 0:38:17] /m dragon lord
+[10/1/2018 0:38:17] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:18] /m dragon lord
+[10/1/2018 0:38:32] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:38:33] /m dragon lord
+[10/1/2018 0:39:11] /m dragon lord
+[10/1/2018 0:39:11] /m dragon lord
+[10/1/2018 0:39:11] /m dragon lord
+[10/1/2018 0:39:11] /m dragon lord
+[10/1/2018 0:39:11] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:32] /m dragon lord
+[10/1/2018 0:39:33] /m dragon lord
+[10/1/2018 0:39:33] /m dragon lord
+[10/1/2018 0:39:33] /m dragon lord
+[10/1/2018 0:39:33] /m dragon lord
+[10/1/2018 0:40:43] /reload globalevents
+[10/1/2018 0:40:51] /m dragon lord
+[10/1/2018 0:40:51] /m dragon lord
+[10/1/2018 0:40:51] /m dragon lord
+[10/1/2018 0:40:51] /m dragon lord
+[10/1/2018 0:40:52] /m dragon lord
+[10/1/2018 0:41:8] /m dragon lord
+[10/1/2018 0:41:9] /m dragon lord
+[10/1/2018 0:41:9] /m dragon lord
+[10/1/2018 0:41:30] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:41:31] /m dragon lord
+[10/1/2018 0:46:9] /reload creaturescripts
+[10/1/2018 0:46:9] /reload actions
+[10/1/2018 0:46:33] /reload globalevents
+[10/1/2018 0:46:41] /m dragon lord
+[10/1/2018 0:46:43] /m dragon lord
+[10/1/2018 0:46:44] /m dragon lord
+[10/1/2018 0:46:44] /up
+[10/1/2018 0:46:44] /m dragon lord
+[10/1/2018 0:46:47] /down
+[10/1/2018 0:48:10] /reload mods
+[10/1/2018 0:49:11] /reload mods
+[10/1/2018 0:49:18] /reload mods
+[10/1/2018 0:49:46] /reload mods
+[10/1/2018 0:49:56] /r
+[10/1/2018 0:50:24] /r
+[10/1/2018 0:52:9] /m dragon lord
+[10/1/2018 0:52:9] /m dragon lord
+[10/1/2018 0:52:10] /m dragon lord
+[10/1/2018 0:52:10] /m dragon lord
+[10/1/2018 0:52:10] /m dragon lord
+[10/1/2018 0:52:49] /m dragon lord
+[10/1/2018 0:52:49] /m dragon lord
+[10/1/2018 0:52:49] /m dragon lord
+[10/1/2018 0:52:49] /m dragon lord
+[10/1/2018 0:52:49] /m dragon lord
+[10/1/2018 0:52:50] /m dragon lord
+[10/1/2018 0:53:11] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:12] /m dragon lord
+[10/1/2018 0:53:13] /m dragon lord
+[10/1/2018 0:53:13] /m dragon lord
+[10/1/2018 1:10:49] /reload talkactions
+[10/1/2018 1:17:54] /reload talkactions
+[10/1/2018 1:22:12] /reload talkactions
+[10/1/2018 1:22:49] /m dragon lord
+[10/1/2018 1:22:49] /m dragon lord
+[10/1/2018 1:22:49] /m dragon lord
+[10/1/2018 1:22:49] /m dragon lord
+[10/1/2018 1:22:50] /m dragon lord
+[10/1/2018 1:24:9] /m dragon lord
+[10/1/2018 1:24:9] /m dragon lord
+[10/1/2018 1:24:9] /m dragon lord
+[10/1/2018 1:24:36] /m dragon lord
+[10/1/2018 1:24:36] /m dragon lord
+[10/1/2018 1:24:36] /m dragon lord
+[10/1/2018 1:24:36] /m dragon lord
+[10/1/2018 1:24:36] /m dragon lord
+[10/1/2018 1:28:56] /m dragon lord
+[10/1/2018 1:28:57] /m dragon lord
+[10/1/2018 1:38:47] /reload talkactions
+[10/1/2018 1:38:53] /a 3
+[10/1/2018 1:50:16] /i scroll
+[10/1/2018 1:50:30] /i winning lottery ticket
+[10/1/2018 1:51:2] /i golden newspaper
+[10/1/2018 1:51:29] /i 8981
+[10/1/2018 1:52:23] /reload talkactions
+[10/1/2018 1:53:27] /m dragon lord
+[10/1/2018 1:53:28] /m dragon lord
+[10/1/2018 1:53:28] /m dragon lord
+[10/1/2018 1:53:28] /m dragon lord
+[10/1/2018 1:56:11] /reload talkactions
+[10/1/2018 1:56:31] /up
+[10/1/2018 1:56:34] /down
+[10/1/2018 1:56:48] /m dragon lord
+[10/1/2018 1:56:48] /m dragon lord
+[10/1/2018 1:56:49] /m dragon lord
+[10/1/2018 1:56:49] /m dragon lord
+[10/1/2018 1:58:5] /reload talkactions
+[10/1/2018 1:58:45] /m dragon lord
+[10/1/2018 1:58:45] /m dragon lord
+[10/1/2018 1:58:46] /m dragon lord
+[10/1/2018 2:0:57] /reload talkactions
+[10/1/2018 2:1:5] /m dragon lord
+[10/1/2018 2:1:5] /m dragon lord
+[10/1/2018 2:1:5] /m dragon lord
+[10/1/2018 2:1:5] /m dragon lord
+[10/1/2018 2:1:6] /m dragon lord
+[10/1/2018 2:1:33] /up
+[10/1/2018 2:6:44] /reload talkactions
+[10/1/2018 2:8:1] /reload talkactions
+[10/1/2018 2:9:46] /reload talkactions
+[10/1/2018 2:10:53] /reload talkactions
+[10/1/2018 2:11:51] /reload talkactions
+[10/1/2018 2:12:22] /reload talkactions

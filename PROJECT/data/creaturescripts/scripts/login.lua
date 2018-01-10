@@ -3,6 +3,7 @@ local config = {
 	useFragHandler = getBooleanFromString(getConfigValue('useFragHandler'))
 }
 
+
 function onLogin(cid)
 	if(getBooleanFromString(getConfigValue('accountManager')) == false) then
 		if (getCreatureName(cid) == "Account Manager") then
@@ -63,6 +64,22 @@ function onLogin(cid)
 	doPlayerSendTextMessage(cid,25,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
  	end
 	
+----- EXP XP ---------
+	if getPlayerStorageValue(cid,16856) == -1 then
+		doPlayerSetStorageValue(cid,16856,0)
+		doPlayerSendTextMessage(cid,22,"xp global ok")
+ 	end
+
+	if getPlayerStorageValue(cid,8002) == -1 then
+		doPlayerSetStorageValue(cid,8002,0)
+		doPlayerSendTextMessage(cid,22,"xp COMPARACAO ok")
+ 	end
+	
+	if getPlayerStorageValue(cid,16806) == -1 then
+		doPlayerSetStorageValue(cid,16806,0)
+		doPlayerSendTextMessage(cid,22,"xp individual ok")
+ 	end
+---- EXP XP --------
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
 	     	doPlayerSetStorageValue(cid, 6729, 0)
 			doPlayerSetStorageValue(cid, 6722, 0)
@@ -86,6 +103,7 @@ end
 		registerCreatureEvent(cid, "SkullCheck")
 	end
 	
+	registerCreatureEvent(cid, "XpSemanal")
 	registerCreatureEvent(cid, "DesertDeath")
  	registerCreatureEvent(cid, "DesertCombat")
 	registerCreatureEvent(cid, "BattleDeath")

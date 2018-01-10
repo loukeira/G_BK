@@ -59,7 +59,7 @@
 			<vocation id="5" showInDescription="0"/>
 		</wand>
 		<!-- Wand of Vortex -->
-		<wand id="2190" level="7" mana="2" min="800" max="800" type="energy" event="function" value="default">
+		<wand id="2190" level="7" mana="2" min="8000" max="8000" type="energy" event="function" value="default">
 			<vocation name="Sorcerer"/>
 			<vocation id="5" showInDescription="0"/>
 		</wand>

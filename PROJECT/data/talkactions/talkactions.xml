@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+<!--xpranksemanal -->
+	<talkaction access="0-4" words="!xprank" script="xprank.lua"/>
+
+<!-- xpsemanal -->
+   <talkaction words="!xpsemanal" event="script" value="xpsemanal.lua"/>
+
 
 <!-- esse e o sistema q une dodge com critical --> 
    <talkaction words="!combat" event="script" value="combat.lua"/>
