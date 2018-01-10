@@ -662,8 +662,8 @@
 
 <action uniqueid="55100" event="script" value="demonOakGravestone.lua" />
 <action itemid="1967" script="scroll.lua"/>
-<!-- <action itemid="12575" script="dodgestone.lua"/> -->
-<action itemid="12575" script="dodgestone1.lua"/>
+<action itemid="12575" script="dodgestone.lua"/>
+<!-- <action itemid="12575" script="dodgestone1.lua"/> -->
 
 
 </actions>
