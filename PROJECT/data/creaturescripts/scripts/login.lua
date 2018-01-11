@@ -63,6 +63,15 @@ function onLogin(cid)
 	doPlayerSetStorageValue(cid,31121,0)
 	doPlayerSendTextMessage(cid,25,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
  	end
+-- teste --
+
+
+	if getPlayerStorageValue(cid,8554) == -1 then
+		doPlayerSetStorageValue(cid,8554,100)
+		doPlayerSendTextMessage(cid,18,"STORAGE DE TESTE")
+ 	end
+
+--fim teste--	
 	
 ----- EXP XP ---------
 
@@ -81,7 +90,7 @@ function onLogin(cid)
 		doPlayerSetStorageValue(cid,16806,0)
 		doPlayerSendTextMessage(cid,22,"storage diferenca de xp ok")
  	end
----- EXP XP --------
+---- fim EXP XP --------
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
 	     	doPlayerSetStorageValue(cid, 6729, 0)
 			doPlayerSetStorageValue(cid, 6722, 0)

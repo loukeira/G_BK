@@ -36,7 +36,7 @@ local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
             return true
             end
             setPlayerStorageValue(cid, ARMY_EXPERIENCE, (temporary_exp + ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1]))
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You killed "..getCreatureName(target).." and gained "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." of "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points.")
+            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce matou  "..getCreatureName(target).." e ganhou "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." faltando entao "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points para avancar de nivel!")
             doSendMagicEffect(getCreaturePosition(cid), 13)
         end
     end

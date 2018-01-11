@@ -1,16 +1,10 @@
 
 
 TEMPOSEMANALPATENTERANK = 1*1*3*60
-
-CONTADOR_PATENTE_RANK= 16856
-DIFERENCA_DE_XP = 16806
-
-XP_DE_COMPARACAO = 8002
-
-VARIAVEL_GLOBAL = 57575
+CONTADOR_PATENTE_RANK =  1232222
 
 
-function contador (cid)
+function contadora(cid)
 
 
 if getPlayerStorageValue(cid,CONTADOR_PATENTE_RANK) < os.time() then

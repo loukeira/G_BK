@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
+
+	<!-- <globalevent name="armyreset" interval="20000" event="script" value="armyreset.lua"/> -->
+
+
 	<globalevent name="verificadorxp" interval="20000" event="script" value="xpsemanal.lua"/>
-	<globalevent name="atualizadordurank" interval="20000" event="script" value="xpsemanal.lua"/>
-
-
-
-	<!-- <globalevent name="xpsave" interval="000" event="script" value="xpsave.lua"/> -->
 
 	<globalevent name="age" interval="60000" event="script" value="age.lua"/>
 
