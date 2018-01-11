@@ -1,6 +1,12 @@
 function onLogin(cid)
-if getPlayerStorageValue(cid,999999) > 1 then
-	contador (cid)
-	end
-	return true
+if xp_sto(cid) == 1 then 	-- if (getPlayerStorageValue(cid,STORAGEPLAYER) == 3) then
+		puxar_da_exp_para_xp_base(cid) -- apenas os online	
+		db.executeQuery("UPDATE players SET xpsto = 2 WHERE id = "..getPlayerGUID(cid).." ;")   		-- setPlayerStorageValue(cid, STORAGEPLAYER,5)
+		doPlayerSendTextMessage(cid,18,"XPSTO 2, do onlogin")
+	salvaroplayer(cid)	
+
+end
+		return true
+
+	
 end

@@ -1,4 +1,4 @@
-	ownerName = ""
+ 	ownerName = ""
 	ownerEmail = ""
 	url = "baiaknew.top"
 	location = "Brazil"
@@ -22,7 +22,7 @@
 	encryptionType = "sha1"
 
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "189.63.101.64"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171

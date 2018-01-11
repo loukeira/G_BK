@@ -27,7 +27,7 @@ function onSay(cid, words, param)
         -- id = 5
         -- display = 8
     else 
-        error = 'Highscore Commands:\n\n!rank xprank \n!rank magic\n!rank fist\n!rank club\n!rank sword\n!rank axe\n!rank distance\n!rank shield\n'
+        error = 'Highscore Commands:\n\n!xprank xprank '
 
         doShowTextDialog(cid, 5958, error)
         command = FALSE

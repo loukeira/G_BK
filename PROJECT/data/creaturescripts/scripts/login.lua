@@ -65,19 +65,21 @@ function onLogin(cid)
  	end
 	
 ----- EXP XP ---------
-	if getPlayerStorageValue(cid,16856) == -1 then
-		doPlayerSetStorageValue(cid,16856,0)
-		doPlayerSendTextMessage(cid,22,"xp global ok")
- 	end
 
-	if getPlayerStorageValue(cid,8002) == -1 then
+	if getPlayerStorageValue(cid,8003) == -1 then
 		doPlayerSetStorageValue(cid,8002,0)
-		doPlayerSendTextMessage(cid,22,"xp COMPARACAO ok")
+		doPlayerSendTextMessage(cid,22,"storage de xpbase ok")
  	end
 	
-	if getPlayerStorageValue(cid,16806) == -1 then
+	-- if getPlayerStorageValue(cid,68899) == -1 then
+		-- doPlayerSetStorageValue(cid,68899,0)
+		-- doPlayerSendTextMessage(cid,22,"storage q verifica se e 3 ou 5 ok")
+ 	-- end
+	
+	
+	if getPlayerStorageValue(cid,16807) == -1 then
 		doPlayerSetStorageValue(cid,16806,0)
-		doPlayerSendTextMessage(cid,22,"xp individual ok")
+		doPlayerSendTextMessage(cid,22,"storage diferenca de xp ok")
  	end
 ---- EXP XP --------
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then

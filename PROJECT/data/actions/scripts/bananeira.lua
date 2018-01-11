@@ -1,5 +1,5 @@
 local ITEM_FOOD = 5093
-local daumtempone = 5
+local daumtempone = 10
 local bananastorage = 76512
 
 
