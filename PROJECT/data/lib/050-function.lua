@@ -74,53 +74,61 @@ function isInArray(array, value, caseSensitive)
 end
 
 ARMY = {
-	[1] = {50, 350, "Soldado Raso", 1}, -- [Número] = {Pontos Kill, Points para UP, "Nome",PLATINIUM COINS POR KILL},
-	[2] = {50, 1500, "Soldado de Primeira Classe", 50000000},
-	[3] = {50, 2000, "Cabo", 60000000},
-	[4] = {50, 3000, "Sargento", 70000000},
-	[5] = {50, 3500, "Sargento-Ajudante 1", 90000000},
-	[6] = {50, 5000, "Sargento-Ajudante 2", 11000000},
-	[7] = {50, 5500, "Sargento-Chefe", 15000000},
-	[8] = {50, 6000, "Sargento-Mestre 1", 18000000},
-	[9] = {50, 6500, "Sargento-Mestre 2", 20000000},
-	[10] = {50, 7000, "Sargento-Mestre 3", 22000000},
-	[11] = {50, 7600, "Sargento-Mestre 4", 24000000},
-	[12] = {50, 8200, "Sargento-Mor do Comando", 26000000},
-	[13] = {50, 9000, "Segundo-Tenente 1", 28000000},
-	[14] = {50, 9600, "Segundo-Tenente 2", 30000000},
-	[15] = {50, 10200, "Segundo-Tenente 3", 32000000},
-	[16] = {50, 11000, "Segundo-Tenente 4", 34000000},
-	[17] = {50, 11500, "Primeiro-Tenente 1", 36000000},
-	[18] = {50, 12000, "Primeiro-Tenente 2", 38000000},
-	[19] = {50, 13000, "Primeiro-Tenente 3", 40000000},
-	[20] = {50, 14000, "Primeiro-Tenente 4", 45000000},
-	[21] = {50, 15000, "Primeiro-Tenente 5", 55000000},
-	[22] = {50, 16000, "Capitao 1", 60000000},
-	[23] = {50, 17000, "Capitao 2", 70000000},
-	[24] = {50, 18000, "Capitao 3", 80000000},
-	[25] = {50, 19000, "Capitao 4", 90000000},
-	[26] = {50, 20000, "Capitao 5", 100000000},
-	[27] = {50, 21000, "Major 1", 110000000},
-	[28] = {50, 21500, "Major 2", 120000000},
-	[29] = {50, 22000, "Major 3", 130000000},
-	[30] = {50, 23000, "Major 4", 140000000},
-	[31] = {50, 23500, "Major 5", 150000000},
-	[32] = {50, 24000, "Tenente-Coronel 1", 160000000},
-	[33] = {50, 25000, "Tenente-Coronel 2", 170000000},
-	[34] = {50, 26000, "Tenente-Coronel 3", 180000000},
-	[35] = {50, 27000, "Tenente-Coronel 4", 190000000},
-	[36] = {50, 28000, "Tenente-Coronel 5", 200000000},
-	[37] = {50, 29000, "Coronel 1", 210000000},
-	[38] = {50, 30000, "Coronel 2", 220000000},
-	[39] = {50, 31000, "Coronel 3", 230000000},
-	[40] = {50, 32000, "Coronel 4", 400000000},
-	[41] = {50, 35000, "Coronel 5", 500000000},
-	[42] = {50, 100000, "General", 1000000000},
+	[1] = {50, 1500, "Bronze V", 50000000}, -- [Número] = {Pontos Kill, Points para UP, "Nome",PLATINIUM COINS POR KILL},
+	[2] = {50, 3000, "Bronze IV", 70000000},
+	[3] = {50, 5000, "Bronze III", 11000000},
+	[4] = {50, 6000, "Bronze II", 18000000},
+	[5] = {50, 7000, "Bronze I", 22000000},
+	[6] = {50, 8200, "Silver IV", 26000000},
+	[7] = {50, 9600, "Silver III", 30000000},
+	[8] = {50, 11000, "Silver II", 34000000},
+	[9] = {50, 12000, "Silver I", 38000000},
+	[10] = {50, 14000, "Gold III", 45000000},
+	[11] = {50, 16000, "Gold II", 60000000},
+	[12] = {50, 18000, "Gold I", 80000000},
+	[13] = {50, 20000, "Platinum III", 100000000},
+	[14] = {50, 21500, "Platinum II", 120000000},
+	[15] = {50, 23000, "Platinum I", 140000000},
+	[16] = {50, 24000, "Diamond III", 160000000},
+	[17] = {50, 26000, "Diamond II", 180000000},
+	[18] = {50, 28000, "Diamond I", 200000000},
+	[19] = {50, 30000, "Master II", 220000000},
+	[20] = {50, 32000, "Master I", 400000000},
+	[21] = {50, 100000, "Challenger", 1000000000},
 	
 	
 }                           
 ARMY_LEVEL = 2014159
 ARMY_EXPERIENCE = 2014160
+
+function valor_da_patente(cid) --PEGAR O VALOR DO ARMY REINICIADO
+local res = db.getResult('select `reiniciar_patente` from players where name = \''..getPlayerName(cid)..'\'')
+
+if(res:getID() == -1) then
+return false
+end
+
+local ret = res:getDataString("reiniciar_patente")
+res:free()
+ 
+pau = tonumber(ret) 
+return pau
+end
+
+TEMPO_PATENTI = 1*1*1*60
+PATENTI = 44331
+
+function convertTime(time) --CONVERSOR DE TEMPO STORAGE PARA HORAS NORMAIS
+local t_table = {}
+t_table.days = math.floor(time / 86400)
+time = time - (t_table.days * 86400)
+t_table.hours = math.floor(time / 3600)
+time = time - (t_table.hours * 3600)
+t_table.minutes = math.floor(time / 60)
+t_table.seconds = time - (t_table.minutes * 60)
+return t_table
+end
+
 
 function doAddPoints(cid, points)
 db.executeQuery("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. points .. " WHERE `id` = " .. getPlayerAccountId(cid) .. ";")

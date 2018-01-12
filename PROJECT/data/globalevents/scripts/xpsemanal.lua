@@ -12,7 +12,7 @@ function onThink(cid,think,interval,topos)
 					setPlayerStorageValue(getPlayersOnline()[i],STORAGEPLAYER,1)
 			end
 			
-			contador(getPlayersOnline()[i]) --verifica se zerou o tempo(e joga xpsto zero, e faz as config de base) e se tem player com a xpsto == 0 para reiniciar o sistema
+			-- contador(getPlayersOnline()[i]) --verifica se zerou o tempo(e joga xpsto zero, e faz as config de base) e se tem player com a xpsto == 0 para reiniciar o sistema
 	
 			if tonumber(xpdapessoa(getPlayersOnline()[i])) < tonumber(antigaxp(getPlayersOnline()[i])) then
 				db.executeQuery("UPDATE players SET xpbase = "..xpdapessoa(getPlayersOnline()[i]).." WHERE id = "..getPlayerGUID(getPlayersOnline()[i]).." ;")
@@ -28,10 +28,10 @@ function onThink(cid,think,interval,topos)
 			salvaserv()
 		
 		end
-	elseif getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
-		setGlobalStorageValue(STORAGEGLOBAL, os.time() + (TEMPOSEMANAL))
-		zerar_todos_os_xpsto()
-				salvaserv()
+	-- elseif getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
+		-- setGlobalStorageValue(STORAGEGLOBAL, os.time() + (TEMPOSEMANAL))
+		-- zerar_todos_os_xpsto()
+				-- salvaserv()
    
 end
 

@@ -3,11 +3,21 @@ function onLogin(cid)
     registerCreatureEvent(cid, "armyLook")
     local temporary_level = getPlayerStorageValue(cid, ARMY_LEVEL) 
     local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
+	
+	
+	if valor_da_patente(cid) == 5 then
+	db.executeQuery("UPDATE `players` SET `army_level` = 0  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "O sistema de patente foi reiniciado!")
+	db.executeQuery("UPDATE `players` SET `reiniciar_patente` = 10  WHERE `id` = " .. getPlayerGUID(cid) .. ";")	
+		return true
+	end
 
     if (temporary_level < #ARMY) then
         if (tonumber(temporary_exp) == -1) or (tonumber(temporary_level)  == -1) then
             setPlayerStorageValue(cid, ARMY_LEVEL, 1)
             setPlayerStorageValue(cid, ARMY_EXPERIENCE, 0)
+			db.executeQuery("UPDATE `players` SET `reiniciar_patente` = 10  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+
         end
     end     
     return true
@@ -21,14 +31,18 @@ local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
     if (temporary_level < #ARMY) then
         if (getPlayerLevel(target) > getPlayerLevel(cid)) and not getTileInfo(getCreaturePosition(cid)).hardcore then
             if ((tonumber(temporary_exp) + tonumber(ARMY[temporary_level][1])) >= tonumber(ARMY[temporary_level][2])) then
-                doPlayerAddMoney(cid, ARMY[temporary_level][4]) 
+			
+                doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio
+				
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new patent: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
                 if (getPlayerStorageValue(cid, ARMY_LEVEL) >= #ARMY) then
-                    doPlayerAddMoney(cid, ARMY[temporary_level][4])
+				
+                    doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar que arruma o premio
+					
                     setPlayerStorageValue(cid, ARMY_EXPERIENCE, 0)
                     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You receive the best patent, congratulations "..ARMY[#ARMY][3]..".")
                     doSendMagicEffect(getCreaturePosition(cid), 27)

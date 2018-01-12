@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+
+   <talkaction words="!armytempo" event="script" value="army_tempo.lua"/>
+
 <!--xpranksemanal -->
 	<talkaction access="0-4" words="!xprank" script="xprank.lua"/>
 

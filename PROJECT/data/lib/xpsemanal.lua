@@ -16,16 +16,18 @@ STORAGEPLAYER = 68899
 XP_DE_COMPARACAO = 8003
 
 function contador (cid) 
-	if getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
-		setGlobalStorageValue(STORAGEGLOBAL, os.time() + (TEMPOSEMANAL))
+	-- if getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
+	
+		setGlobalStorageValue(STORAGEGLOBAL, 0)
 		zerar_todos_os_xpsto()
 		doPlayerSendTextMessage(cid,18,"1 TODAS AS XPSTO!!!")
 		puxar_da_exp_para_xp_base(cid) -- apenas os online	
 		doPlayerSendTextMessage(cid,18,"XPSTO 1, e sistema reiniciado")
 		db.executeQuery("UPDATE players SET xpsto = 2 WHERE id = "..getPlayerGUID(cid).." ;")   		-- setPlayerStorageValue(cid, STORAGEPLAYER,5)
 		doPlayerSendTextMessage(cid,27,"XPSTO 2 do globalstorage")
+		setGlobalStorageValue(STORAGEGLOBAL, os.time() + (TEMPOSEMANAL))
 		salvaserv()
-	end
+	-- end
 		   return true
 
 	-- if xp_sto(cid) == 1 then 	-- if (getPlayerStorageValue(cid,STORAGEPLAYER) == 3) then
