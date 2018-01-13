@@ -9,7 +9,7 @@ t_table.seconds = time - (t_table.minutes * 60)
 return t_table
 end
 
-TEMPOSEMANAL = 1*1*1*50
+TEMPOSEMANAL = 1*1*60*60
 DIFERENCA_DE_XP = 16807
 STORAGEGLOBAL = 67899
 STORAGEPLAYER = 68899

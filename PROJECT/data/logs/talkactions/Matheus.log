@@ -5053,3 +5053,54 @@
 [11/1/2018 4:50:19] /reload globalevents
 [11/1/2018 4:52:0] /reload globalevents
 [11/1/2018 4:56:2] /reload globalevents
+[12/1/2018 16:42:39] /reload globalevents
+[12/1/2018 17:28:4] /reload creaturescripts
+[12/1/2018 17:30:13] /goto abc
+[12/1/2018 17:31:47] /reload creaturescripts
+[12/1/2018 17:32:12] /c abc
+[12/1/2018 17:33:56] /reload creaturescripts
+[12/1/2018 17:36:25] /reload creaturescripts
+[12/1/2018 17:37:26] /reload creaturescripts
+[12/1/2018 17:39:25] /reload creaturescripts
+[12/1/2018 17:40:14] /reload creaturecripts
+[12/1/2018 17:40:26] /reload creaturescripts
+[12/1/2018 17:41:30] /reload creaturescripts
+[12/1/2018 17:43:44] /down
+[12/1/2018 17:43:47] /up
+[12/1/2018 17:43:52] /reload creatureevents
+[12/1/2018 17:47:55] /reload creaturescripts
+[12/1/2018 17:49:5] /reload creaturescripts
+[12/1/2018 17:49:39] /m dragon
+[12/1/2018 17:49:39] /m dragon
+[12/1/2018 17:49:40] /m dragon
+[12/1/2018 17:49:40] /m dragon
+[12/1/2018 17:53:34] /reload creaturescripts
+[12/1/2018 17:56:0] /reload creaturescripts
+[12/1/2018 18:9:32] /reload creatureevents
+[12/1/2018 18:13:43] /r
+[12/1/2018 19:45:10] /reload creaturescripts
+[12/1/2018 19:48:24] /reload creaturescripts
+[12/1/2018 19:49:44] /reload creaturescripts
+[12/1/2018 19:54:44] /reload creaturescripts
+[12/1/2018 19:55:49] /reload creaturescripts
+[12/1/2018 19:56:5] /reload creaturescripts
+[12/1/2018 19:57:49] /reload creaturescripts
+[12/1/2018 19:59:14] /reload creaturescripts
+[12/1/2018 20:29:18] /m dragon
+[12/1/2018 20:29:24] /m dragon
+[12/1/2018 20:29:24] /m dragon
+[12/1/2018 20:29:33] /m baylor
+[12/1/2018 20:29:34] /m baylor
+[12/1/2018 20:29:35] /m baylor
+[12/1/2018 20:29:45] /m baylor
+[12/1/2018 20:29:46] /m baylor
+[12/1/2018 20:33:2] /reload creaturescripts
+[12/1/2018 20:33:29] /i lunar staff
+[12/1/2018 20:34:2] /i magician staff
+[12/1/2018 20:34:39] /i arcane staff
+[12/1/2018 20:47:55] /reload creaturevents
+[12/1/2018 20:47:59] /reload creatureevents
+[12/1/2018 20:53:47] /r
+[12/1/2018 20:54:3] /m baylor
+[12/1/2018 20:54:9] /m baylor
+[12/1/2018 20:54:16] /m baylor

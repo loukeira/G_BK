@@ -25,7 +25,6 @@ function onThink(cid,think,interval,topos)
 			
 		   	doPlayerSendTextMessage ( getPlayersOnline()[i] , 27 , " Diferenca:   "..xprankdiferencial(getPlayersOnline()[i]).."!!") --pega a diferença e upa pro xprank database ainda	
 
-			salvaserv()
 		
 		end
 	-- elseif getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
@@ -33,7 +32,9 @@ function onThink(cid,think,interval,topos)
 		-- zerar_todos_os_xpsto()
 				-- salvaserv()
    
-end
+end	
+			salvaserv()
+
 
  return true 
 end

@@ -175,6 +175,7 @@ registerCreatureEvent(cid, "VipReceive")
 registerCreatureEvent(cid, "redSkullAmulet")
 registerCreatureEvent(cid, "FullHpMana")
 registerCreatureEvent(cid, "killitem")
+registerCreatureEvent(cid, "guildsemanal")
 registerCreatureEvent(cid, "killitems")
 
 registerCreatureEvent(cid, "huntdeath")

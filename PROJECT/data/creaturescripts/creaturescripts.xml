@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+		<event type="kill" name="guildsemanal" event="script" value="guildsemanal.lua"/>
 
 	<event type="login" name="XpSemanal" event="script" value="xpsemanal.lua"/>
 
 	<!-- <event type="look" name="ageLook" event="script" value="age.lua"/>  	 -->
 	<!-- <event type="login" name="ageLogin" event="script" value="age.lua"/> -->
+
 
 <!-- MAGNUS SYSTEM -->
 <event type="kill" name="magnussystem" script="magnussystem.lua"/>

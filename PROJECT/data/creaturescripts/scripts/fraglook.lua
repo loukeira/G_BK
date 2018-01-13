@@ -47,12 +47,12 @@ function onLook(cid, thing, position, lookDistance)
         if temporary_level >= 1 then
 		
 		if (getPlayerStorageValue(cid,6724) == 0) or (getPlayerStorageValue(cid,6724) > 1 ) then
-        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." and have "..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).." of "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].." army points. [Idade: Ele tem "..getPlayerStorageValue(cid,6724).." Anos, "..getPlayerStorageValue(cid,6723).." Meses e "..getPlayerStorageValue(cid,6722).." Dias ].")
+        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")
 			else
-		 doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." and have "..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).." of "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].." army points. [Idade: Ele tem "..getPlayerStorageValue(cid,6724).." Ano, "..getPlayerStorageValue(cid,6723).." Meses e "..getPlayerStorageValue(cid,6722).." Dias ].")
+		 doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")
 		end
 		else
-        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."] No have army points.")
+        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."] No have patente points.")
         end
         local temporary_level = nil
         return true
@@ -67,9 +67,9 @@ function onLook(cid, thing, position, lookDistance)
 		
         if temporary_level >= 1 then
 				if (getPlayerStorageValue(cid,6724) == 0) or (getPlayerStorageValue(cid,6724) > 1 ) then
-				doPlayerSetSpecialDescription(cid, "[Frags: "..getPlayerFrags(cid).."]. You are "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3].." and have "..getPlayerStorageValue(cid, ARMY_EXPERIENCE).." of "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2].." army points. [Idade: Voce tem "..getPlayerStorageValue(cid,6724).." Anos, "..getPlayerStorageValue(cid,6723).." Meses e "..getPlayerStorageValue(cid,6722).." Dias ].")
+				doPlayerSetSpecialDescription(cid, "[Frags: "..getPlayerFrags(cid).."]. You are "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(cid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")
 				else
-				doPlayerSetSpecialDescription(cid, "[Frags: "..getPlayerFrags(cid).."]. You are "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3].." and have "..getPlayerStorageValue(cid, ARMY_EXPERIENCE).." of "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2].." army points. [Idade: Voce tem "..getPlayerStorageValue(cid,6724).." Ano, "..getPlayerStorageValue(cid,6723).." Meses e "..getPlayerStorageValue(cid,6722).." Dias ].")			
+				doPlayerSetSpecialDescription(cid, "[Frags: "..getPlayerFrags(cid).."]. You are "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(cid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")			
 				end
 		else
         doPlayerSetSpecialDescription(cid, "[Frags: "..getPlayerFrags(cid).."] You no have army points.")

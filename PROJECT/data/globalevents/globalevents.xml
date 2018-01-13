@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
 
+	<globalevent name="guildsemanal_reiniciar" interval="1000" event="script" value="guildsemanal_reiniciar.lua"/>
 
-	<globalevent name="xpsemanal_reiniciar" interval="100" event="script" value="xpsemanal_reiniciar.lua"/>
+	<globalevent name="xpsemanal_reiniciar" interval="1000" event="script" value="xpsemanal_reiniciar.lua"/>
 
 	<globalevent name="armyreset" interval="1000" event="script" value="army_reset.lua"/>
 
 
-	<globalevent name="verificadorxp" interval="120000" event="script" value="xpsemanal.lua"/>
+	<globalevent name="verificadorxp" interval="1800000" event="script" value="xpsemanal.lua"/>
 
 	<globalevent name="age" interval="60000" event="script" value="age.lua"/>
 
 
 	<globalevent name="start" type="startup" event="script" value="start.lua"/>
-	<globalevent name="MensagensProgramadas" interval="29000" event="script" value="MensagensProgramadas.lua"/>
+	<globalevent name="MensagensProgramadas" interval="30000" event="script" value="MensagensProgramadas.lua"/>
 	
 	<!--Real Team Battle-->
 	<globalevent name="Real Team Battle" time="19:00:00" event="script" value="events/realTeamBattle.lua"/>
