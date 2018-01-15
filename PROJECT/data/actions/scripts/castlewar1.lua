@@ -49,7 +49,9 @@ local teleport = {x=1349, y=1504, z=7}
 
 			   
 			   setGlobalStorageValue(storages[3],getPlayerGuildId(cid))
-				
+			   
+				db.executeQuery("UPDATE `global_storage` SET `value` = "..getPlayerGuildId(cid).."  WHERE `key` = "..storages[3].. ";")
+
 				
 	
                

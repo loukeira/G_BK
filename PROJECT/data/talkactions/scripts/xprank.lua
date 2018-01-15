@@ -7,7 +7,7 @@ function onSay(cid, words, param)
     param = string.lower(param)
     skilllist = ""
     command = TRUE
-    if param == "xprank" then        
+    -- if param == "xprank" then        
         display = 1
     -- elseif param == "magic" then
         -- display = 2
@@ -26,13 +26,13 @@ function onSay(cid, words, param)
     -- elseif param == "shield" then
         -- id = 5
         -- display = 8
-    else 
-        error = 'Highscore Commands:\n\n!xprank xprank '
+    -- else 
+        -- error = 'Highscore Commands:\n\n!xprank '
 
-        doShowTextDialog(cid, 5958, error)
-        command = FALSE
+        -- doShowTextDialog(cid, 5958, error)
+        -- command = FALSE
 
-    end
+    -- end
 
     if command ~= FALSE then
         if display == 1 then

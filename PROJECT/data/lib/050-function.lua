@@ -283,6 +283,32 @@ function doWriteLogFile(file, text)
 	return true
 end
 
+function xpmonstro(Name)
+    return getMonsterInfo(Name).experience
+end
+
+function getMonsterExperience(target)
+
+	if getCreatureTarget(cid) then
+
+		name = getCreatureName(getCreatureTarget(cid))
+
+		exprate = getPlayerExperience(cid)
+
+		monster = getMonsterInfo(name)
+
+		exp = exprate*monster.experience
+
+		return exp
+
+	else
+
+		return false
+
+	end
+
+end
+
 function getExperienceForLevel(lv)
 	lv = lv - 1
 	return ((50 * lv * lv * lv) - (150 * lv * lv) + (400 * lv)) / 3

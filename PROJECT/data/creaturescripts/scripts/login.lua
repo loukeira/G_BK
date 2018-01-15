@@ -75,21 +75,6 @@ function onLogin(cid)
 	
 ----- EXP XP ---------
 
-	if getPlayerStorageValue(cid,8003) == -1 then
-		doPlayerSetStorageValue(cid,8002,0)
-		doPlayerSendTextMessage(cid,22,"storage de xpbase ok")
- 	end
-	
-	-- if getPlayerStorageValue(cid,68899) == -1 then
-		-- doPlayerSetStorageValue(cid,68899,0)
-		-- doPlayerSendTextMessage(cid,22,"storage q verifica se e 3 ou 5 ok")
- 	-- end
-	
-	
-	if getPlayerStorageValue(cid,16807) == -1 then
-		doPlayerSetStorageValue(cid,16806,0)
-		doPlayerSendTextMessage(cid,22,"storage diferenca de xp ok")
- 	end
 ---- fim EXP XP --------
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
 	     	doPlayerSetStorageValue(cid, 6729, 0)
@@ -114,7 +99,7 @@ end
 		registerCreatureEvent(cid, "SkullCheck")
 	end
 	
-	registerCreatureEvent(cid, "XpSemanal")
+	registerCreatureEvent(cid, "outfitverificador")
 	registerCreatureEvent(cid, "DesertDeath")
  	registerCreatureEvent(cid, "DesertCombat")
 	registerCreatureEvent(cid, "BattleDeath")
@@ -155,7 +140,8 @@ end
             setGlobalStorageValue(i+100, 0)
         end
     end
-	
+		registerCreatureEvent(cid, "monsterinfo")
+
 	registerCreatureEvent(cid, "GuildEvents")
 registerCreatureEvent(cid, "critical")
 registerCreatureEvent(cid, "BroadDeath")

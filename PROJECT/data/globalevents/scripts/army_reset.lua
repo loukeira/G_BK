@@ -59,9 +59,9 @@ function onThink(interval)
 						
 							
 							
-						
+															salvaserv()
+	
 					end
-										salvaserv()
 
 				end
 				return true

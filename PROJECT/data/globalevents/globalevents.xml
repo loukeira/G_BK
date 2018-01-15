@@ -3,12 +3,11 @@
 
 	<globalevent name="guildsemanal_reiniciar" interval="1000" event="script" value="guildsemanal_reiniciar.lua"/>
 
-	<globalevent name="xpsemanal_reiniciar" interval="1000" event="script" value="xpsemanal_reiniciar.lua"/>
 
 	<globalevent name="armyreset" interval="1000" event="script" value="army_reset.lua"/>
 
+	<globalevent name="xpsemanal_reinicio" interval="1000" event="script" value="xpsemanal_reinicio.lua"/>
 
-	<globalevent name="verificadorxp" interval="1800000" event="script" value="xpsemanal.lua"/>
 
 	<globalevent name="age" interval="60000" event="script" value="age.lua"/>
 
