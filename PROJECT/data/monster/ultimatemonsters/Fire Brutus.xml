@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Fire Bruttus" nameDescription="a the Fire Bruttus" race="fire" experience="4400000" speed="440" manacost="0">
-<health now="4400000" max="4400000"/>
+<monster name="Fire Bruttus" nameDescription="a the Fire Bruttus" race="blood" experience="4400000" speed="440" manacost="0">
+<health now="3400000" max="3400000"/>
 <look type="12" head="0" body="132" legs="18" feet="94" corpse="6068"/>
 <targetchange interval="5000" chance="8"/>
 <strategy attack="80" defense="20"/>
@@ -21,10 +21,10 @@
 
 <attacks>
     <attack name="melee" interval="1000" skill="120" attack="205"/>
-    <attack name="fire" interval="2000" chance="40" radius="9" target="0" min="-1200" max="-1800">
- <attribute key="areaEffect" value="firearea"/>
+    <attack name="fire" interval="2000" chance="20" radius="9" target="0" min="-1200" max="-1800">
+ <attribute key="areaEffect" value="explosion"/>
     </attack>
-<attack name="fire" interval="1000" chance="25" range="7" target="1" min="-2460" max="-2600">
+<attack name="fire" interval="1000" chance="23" range="7" target="1" min="-2460" max="-2600">
 		<attribute key="shootEffect" value="fire"/>
 		<attribute key="areaEffect" value="firearea"/>
 	</attack>
