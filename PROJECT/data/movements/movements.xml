@@ -425,6 +425,8 @@
 	<movevent type="AddItem" itemid="11095" event="function" value="onAddField"/>
 
 	<!-- Boots -->
+	<movevent type="Equip" itemid="2400" event="script" value="teste.lua"/>
+	
 	<movevent type="Equip" itemid="2195" slot="feet" event="function" value="onEquipItem"/>
 	<movevent type="DeEquip" itemid="2195" slot="feet" event="function" value="onDeEquipItem"/>
 	<movevent type="Equip" itemid="6132" slot="feet" event="function" value="onEquipItem"/>
@@ -1674,6 +1676,9 @@
 
 	<movevent type="Equip" itemid="9956" slot="pickupable" event="function" value="onEquipItem"/>
 	<movevent type="DeEquip" itemid="9956" slot="pickupable" event="function" value="onDeEquipItem"/>
+	
+
+
         <movevent type="StepIn" uniqueid="13700" event="script" value="vipe.lua"/>
         <movevent type="StepIn" uniqueid="13540" event="script" value="vip.lua"/>
 

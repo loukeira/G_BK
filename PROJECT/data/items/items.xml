@@ -2996,6 +2996,8 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="elementIce" value="18" />
 		<attribute key="charges" value="1" />
+				<attribute key="showcharges" value="1" />
+
 	</item>
 	<item id="2397" article="a" name="longsword">
 		<attribute key="weight" value="4200" />
@@ -3045,6 +3047,7 @@
 		<attribute key="attack" value="7" />
 		<attribute key="weaponType" value="sword" />
 	</item>
+
 	<item id="2404" article="a" name="combat knife">
 		<attribute key="weight" value="869" />
 		<attribute key="defense" value="6" />
@@ -13448,7 +13451,7 @@
 		<attribute key="maxHitChance" value="90" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="ammoAction" value="removecount" />
+		<!-- <attribute key="ammoAction" value="removecount" /> -->
 		<attribute key="shootType" value="shiverarrow" />
 	</item>
 	<item id="7840" article="a" name="flaming arrow" plural="flaming arrows">
@@ -17997,4 +18000,6 @@
 	<item id="20027" name="rum" />
 	<item id="20028" name="swamp" />
 	<item id="20035" name="tea" />
+	
+
 </items>

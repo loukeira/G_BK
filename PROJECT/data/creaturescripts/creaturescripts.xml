@@ -2,13 +2,13 @@
 <creaturescripts>
 
 
+
 		<event type="kill" name="monsterinfo" event="script" value="monsterinfo.lua"/>
 
 	<event type="login" name="outfitverificador" event="script" value="outfit_verificador.lua"/>
 
 		<event type="kill" name="guildsemanal" event="script" value="guildsemanal.lua"/>
 
-	<event type="login" name="XpSemanal" event="script" value="xpsemanal.lua"/>
 
 	<!-- <event type="look" name="ageLook" event="script" value="age.lua"/>  	 -->
 	<!-- <event type="login" name="ageLogin" event="script" value="age.lua"/> -->

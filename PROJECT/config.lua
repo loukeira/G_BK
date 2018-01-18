@@ -22,7 +22,7 @@
 	encryptionType = "sha1"
 
 	worldId = 0
-	ip = "189.63.101.64"
+	ip = "127.0.0.1"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171
@@ -78,7 +78,7 @@
 	huntingDuration = 1 * 60 * 1000
 	criticalHitMultiplier = 1
 	displayCriticalHitNotify = false
-	removeWeaponAmmunition = false
+	removeWeaponAmmunition = true
 	removeWeaponCharges = false
 	removeRuneCharges = false
 	whiteSkullTime = 2 * 60 * 1000
