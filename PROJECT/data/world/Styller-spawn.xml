@@ -3713,24 +3713,72 @@
 		<monster name="Dragon" x="1" y="2" z="6" spawntime="2" />
 		<monster name="Dragon" x="1" y="5" z="6" spawntime="2" />
 	</spawn>
+	<spawn centerx="1450" centery="1005" centerz="6" radius="5">
+		<monster name="Strong Demon" x="4" y="0" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="-2" y="1" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="1075" centery="1006" centerz="6" radius="5" />
+	<spawn centerx="1462" centery="1007" centerz="6" radius="5">
+		<monster name="Strong Demon" x="1" y="-1" z="6" spawntime="2" />
+		<monster name="Strong Orshabaal" x="3" y="3" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1438" centery="1011" centerz="6" radius="5">
+		<monster name="Strong Demon" x="2" y="-2" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1472" centery="1012" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-3" y="-2" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="3" y="1" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1430" centery="1019" centerz="6" radius="5">
+		<monster name="Strong Demon" x="2" y="-4" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="-1" y="3" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1480" centery="1019" centerz="6" radius="5">
+		<monster name="Strong Demon" x="1" y="-1" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="1371" centery="1028" centerz="6" radius="3">
 		<monster name="Nightmare" x="0" y="-2" z="6" spawntime="2" />
 		<monster name="Nightmare" x="2" y="-2" z="6" spawntime="2" />
 		<monster name="Nightmare" x="-1" y="1" z="6" spawntime="2" />
 		<monster name="Nightmare" x="0" y="1" z="6" spawntime="2" />
 	</spawn>
+	<spawn centerx="1460" centery="1028" centerz="6" radius="15">
+		<monster name="Strong Lost Soul" x="-3" y="-5" z="6" spawntime="2" />
+		<monster name="Strong Lost Soul" x="2" y="-5" z="6" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="5" y="-4" z="6" spawntime="2" />
+		<monster name="Strong Destroyer" x="0" y="-2" z="6" spawntime="2" />
+		<monster name="Strong Destroyer" x="0" y="1" z="6" spawntime="2" />
+		<monster name="Strong Lost Soul" x="-1" y="6" z="6" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="-1" y="9" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1422" centery="1030" centerz="6" radius="5">
+		<monster name="Strong Demon" x="4" y="-2" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="-1" y="-1" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="4" y="3" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="1361" centery="1031" centerz="6" radius="3">
 		<monster name="Nightmare" x="0" y="0" z="6" spawntime="2" />
 		<monster name="Nightmare" x="-1" y="1" z="6" spawntime="2" />
 		<monster name="Nightmare" x="-1" y="2" z="6" spawntime="2" />
 	</spawn>
+	<spawn centerx="1480" centery="1031" centerz="6" radius="5">
+		<monster name="Strong Demon" x="0" y="-5" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="-1" y="5" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="794" centery="1032" centerz="6" radius="1">
 		<npc name="Captain Bluebear" x="0" y="0" z="6" spawntime="2" direction="2" />
+	</spawn>
+	<spawn centerx="1429" centery="1040" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-2" y="-2" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="1347" centery="1041" centerz="6" radius="3">
 		<monster name="Nightmare" x="-1" y="0" z="6" spawntime="2" />
 		<monster name="Nightmare" x="0" y="0" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1472" centery="1046" centerz="6" radius="5">
+		<monster name="Strong Demon" x="4" y="-3" z="6" spawntime="2" />
+		<monster name="Strong Orshabaal" x="-1" y="-1" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="0" y="4" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="1353" centery="1047" centerz="6" radius="3">
 		<monster name="Nightmare" x="0" y="0" z="6" spawntime="2" />
@@ -3744,17 +3792,37 @@
 	<spawn centerx="1268" centery="1048" centerz="6" radius="3">
 		<npc name="Captain Cookie" x="1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="1430" centery="1052" centerz="6" radius="5">
+		<monster name="Strong Demon" x="2" y="-2" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="865" centery="1054" centerz="6" radius="1">
 		<monster name="Wyvern" x="0" y="0" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="868" centery="1054" centerz="6" radius="1">
 		<monster name="Wyvern" x="0" y="0" z="6" spawntime="2" />
 	</spawn>
+	<spawn centerx="1452" centery="1055" centerz="6" radius="15">
+		<monster name="Strong Lost Soul" x="4" y="-3" z="6" spawntime="2" />
+		<monster name="Strong Lost Soul" x="-6" y="-2" z="6" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="-2" y="-2" z="6" spawntime="2" />
+		<monster name="Strong Destroyer" x="5" y="-1" z="6" spawntime="2" />
+		<monster name="Strong Destroyer" x="-5" y="1" z="6" spawntime="2" />
+		<monster name="Strong Lost Soul" x="7" y="2" z="6" spawntime="2" />
+		<monster name="Strong Lost Soul" x="-4" y="5" z="6" spawntime="2" />
+		<monster name="Strong Destroyer" x="-8" y="6" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="15" y="15" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="865" centery="1056" centerz="6" radius="1">
 		<monster name="Wyvern" x="0" y="0" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="868" centery="1057" centerz="6" radius="1">
 		<monster name="Wyvern" x="0" y="0" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1472" centery="1057" centerz="6" radius="5">
+		<monster name="Strong Demon" x="1" y="0" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1429" centery="1062" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-1" y="-3" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="1385" centery="1064" centerz="6" radius="3">
 		<monster name="Nightmare" x="-1" y="-2" z="6" spawntime="2" />
@@ -3763,8 +3831,21 @@
 		<monster name="Nightmare" x="0" y="0" z="6" spawntime="2" />
 		<monster name="Nightstalker" x="2" y="0" z="6" spawntime="2" />
 	</spawn>
+	<spawn centerx="1468" centery="1068" centerz="6" radius="5">
+		<monster name="Strong Demon" x="2" y="-3" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1434" centery="1073" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-4" y="-3" z="6" spawntime="2" />
+		<monster name="Strong Demon" x="3" y="1" z="6" spawntime="2" />
+	</spawn>
 	<spawn centerx="1023" centery="1075" centerz="6" radius="3">
 		<npc name="Captain Bluebear" x="0" y="-1" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="1450" centery="1075" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-2" y="1" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1460" centery="1076" centerz="6" radius="5">
+		<monster name="Strong Demon" x="-1" y="-1" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="977" centery="1086" centerz="6" radius="5">
 		<monster name="Wyvern" x="1" y="-2" z="6" spawntime="2" />
@@ -4372,8 +4453,34 @@
 		<monster name="dragon hatchling" x="-2" y="0" z="7" spawntime="2" />
 		<monster name="dragon hatchling" x="2" y="4" z="7" spawntime="2" />
 	</spawn>
+	<spawn centerx="1445" centery="1025" centerz="7" radius="15">
+		<monster name="Strong Dark Torturer" x="11" y="-6" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="7" y="-4" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-2" y="-1" z="7" spawntime="2" />
+		<monster name="Strong Lost Soul" x="5" y="-1" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="14" y="1" z="7" spawntime="2" />
+		<monster name="Strong Lost Soul" x="5" y="3" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="11" y="5" z="7" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="8" y="7" z="7" spawntime="2" />
+		<monster name="Strong Lost Soul" x="15" y="8" z="7" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="7" y="9" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="15" y="10" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="10" y="12" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="8" y="15" z="7" spawntime="2" />
+	</spawn>
 	<spawn centerx="902" centery="1029" centerz="7" radius="1">
 		<monster name="Deer" x="0" y="0" z="7" spawntime="2" />
+	</spawn>
+	<spawn centerx="1464" centery="1030" centerz="7" radius="15">
+		<monster name="Strong Hand of Cursed Fate" x="-1" y="-10" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="0" y="-7" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="3" y="-3" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="6" y="-1" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-3" y="0" z="7" spawntime="2" />
+		<monster name="Strong Lost Soul" x="3" y="0" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="9" y="0" z="7" spawntime="2" />
+		<monster name="Strong Lost Soul" x="1" y="2" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-11" y="15" z="7" spawntime="2" />
 	</spawn>
 	<spawn centerx="899" centery="1032" centerz="7" radius="1">
 		<monster name="Wasp" x="0" y="0" z="7" spawntime="2" />
@@ -4550,6 +4657,22 @@
 	<spawn centerx="892" centery="1051" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
+	<spawn centerx="1452" centery="1051" centerz="7" radius="15">
+		<monster name="Strong Dark Torturer" x="2" y="-3" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-1" y="-1" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="6" y="0" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="3" y="1" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-6" y="2" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="5" y="3" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="11" y="4" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-4" y="5" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="7" y="5" z="7" spawntime="2" />
+		<monster name="Strong Undead Dragon" x="11" y="6" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-2" y="7" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-7" y="9" z="7" spawntime="2" />
+		<monster name="Strong Dark Torturer" x="-5" y="9" z="7" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-2" y="13" z="7" spawntime="2" />
+	</spawn>
 	<spawn centerx="901" centery="1052" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
@@ -4583,6 +4706,7 @@
 	<spawn centerx="978" centery="1063" centerz="7" radius="1">
 		<monster name="Wasp" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
+	<spawn centerx="1444" centery="1063" centerz="7" radius="15" />
 	<spawn centerx="900" centery="1064" centerz="7" radius="1">
 		<monster name="Valkyrie" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
@@ -10322,8 +10446,25 @@
 		<monster name="Great Nightmare" x="0" y="28" z="10" spawntime="2" />
 	</spawn>
 	<spawn centerx="829" centery="990" centerz="10" radius="5">
-		<monster name="Orshabaal" x="-2" y="1" z="10" spawntime="2" />
-		<monster name="Orshabaal" x="3" y="1" z="10" spawntime="2" />
+		<monster name="Strong Orshabaal" x="-2" y="1" z="10" spawntime="2" />
+		<monster name="Strong Orshabaal" x="3" y="1" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="851" centery="1014" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="0" y="1" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="830" centery="1016" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="1" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="836" centery="1016" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="1" y="-1" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="-1" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1016" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1021" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="1" y="1" z="10" spawntime="2" />
 	</spawn>
 	<spawn centerx="931" centery="1021" centerz="10" radius="15">
 		<monster name="Black Knight" x="-8" y="-12" z="10" spawntime="20" />
@@ -10346,6 +10487,54 @@
 		<monster name="Black Knight" x="-2" y="10" z="10" spawntime="20" />
 		<monster name="Behemoth" x="-10" y="11" z="10" spawntime="20" />
 		<monster name="Black Knight" x="0" y="11" z="10" spawntime="20" />
+	</spawn>
+	<spawn centerx="842" centery="1026" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="-1" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1032" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="850" centery="1035" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="858" centery="1035" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="-1" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="1" y="0" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="1" y="1" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1037" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="-1" y="1" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1045" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="1" y="-1" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1050" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="827" centery="1052" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="849" centery="1054" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="830" centery="1055" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="837" centery="1055" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="842" centery="1055" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="854" centery="1056" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="854" centery="1063" centerz="10" radius="1">
+		<monster name="Strong Betrayed Wraith" x="0" y="0" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="-1" y="1" z="10" spawntime="2" />
+		<monster name="Strong Betrayed Wraith" x="1" y="1" z="10" spawntime="2" />
 	</spawn>
 	<spawn centerx="1268" centery="1073" centerz="10" radius="30">
 		<monster name="Blightwalker" x="-18" y="-23" z="10" spawntime="2" />
@@ -10495,6 +10684,11 @@
 		<monster name="Demon" x="2" y="-2" z="10" spawntime="2" />
 		<monster name="Demon" x="-3" y="4" z="10" spawntime="2" />
 	</spawn>
+	<spawn centerx="1166" centery="1163" centerz="10" radius="5">
+		<monster name="Strong Spectre" x="1" y="-3" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-1" y="-1" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="0" y="4" z="10" spawntime="2" />
+	</spawn>
 	<spawn centerx="859" centery="1169" centerz="10" radius="10">
 		<monster name="Demon" x="-3" y="1" z="10" spawntime="2" />
 	</spawn>
@@ -10542,6 +10736,68 @@
 	<spawn centerx="859" centery="1194" centerz="10" radius="10">
 		<monster name="Demon" x="-3" y="-1" z="10" spawntime="2" />
 		<monster name="Demon" x="3" y="-1" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="1166" centery="1196" centerz="10" radius="30">
+		<monster name="Strong Plaguesmith" x="-19" y="-29" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="22" y="-29" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-22" y="-27" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="20" y="-27" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-15" y="-26" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-10" y="-26" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="16" y="-26" z="10" spawntime="2" />
+		<monster name="Eternal Guardian" x="22" y="-26" z="10" spawntime="25" />
+		<monster name="Strong Plaguesmith" x="-6" y="-25" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-1" y="-25" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="3" y="-25" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="10" y="-25" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-20" y="-24" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="20" y="-24" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-20" y="-21" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="0" y="-19" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="19" y="-19" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-20" y="-14" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-1" y="-13" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="19" y="-12" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="17" y="-10" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="0" y="-9" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-23" y="-8" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-20" y="-7" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-18" y="-7" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-2" y="-7" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="18" y="-6" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-1" y="-3" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-20" y="-1" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="18" y="0" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-20" y="3" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="20" y="4" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-1" y="5" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="5" y="5" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="8" y="6" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="15" y="6" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-9" y="7" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-23" y="8" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-2" y="8" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="1" y="8" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="19" y="8" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-20" y="9" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-18" y="9" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="18" y="14" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-21" y="16" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="13" y="18" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="17" y="19" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-21" y="22" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-2" y="22" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="12" y="24" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-12" y="25" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-7" y="25" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="4" y="25" z="10" spawntime="2" />
+		<monster name="Strong Juggernaut" x="-22" y="26" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-7" y="26" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-20" y="27" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-18" y="27" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-3" y="28" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="1" y="28" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="-22" y="29" z="10" spawntime="2" />
 	</spawn>
 	<spawn centerx="1409" centery="1196" centerz="10" radius="5">
 		<monster name="Undead Gladiator" x="-1" y="-2" z="10" spawntime="2" />
@@ -10613,6 +10869,14 @@
 	<spawn centerx="1416" centery="1227" centerz="10" radius="5">
 		<monster name="Undead Gladiator" x="-2" y="1" z="10" spawntime="2" />
 		<monster name="Undead Gladiator" x="1" y="3" z="10" spawntime="2" />
+	</spawn>
+	<spawn centerx="1164" centery="1237" centerz="10" radius="5">
+		<monster name="Strong Plaguesmith" x="-1" y="-5" z="10" spawntime="2" />
+		<monster name="Strong Plaguesmith" x="1" y="-5" z="10" spawntime="2" />
+		<monster name="Strong Massacre" x="0" y="0" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="2" y="0" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="-1" y="2" z="10" spawntime="2" />
+		<monster name="Strong Spectre" x="3" y="3" z="10" spawntime="2" />
 	</spawn>
 	<spawn centerx="855" centery="1252" centerz="10" radius="30">
 		<monster name="Fury" x="2" y="-17" z="10" spawntime="2" />
@@ -11727,43 +11991,61 @@
 		<monster name="Great Spectre" x="1" y="0" z="11" spawntime="2" />
 	</spawn>
 	<spawn centerx="835" centery="1011" centerz="11" radius="30">
-		<monster name="Behemoth" x="-6" y="-4" z="11" spawntime="768" />
-		<monster name="Behemoth" x="6" y="-4" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-14" y="-2" z="11" spawntime="2" />
-		<monster name="Behemoth" x="13" y="-1" z="11" spawntime="2" />
-		<monster name="Behemoth" x="21" y="3" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-16" y="5" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-10" y="5" z="11" spawntime="2" />
-		<monster name="Behemoth" x="23" y="7" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-20" y="12" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-13" y="14" z="11" spawntime="2" />
-		<monster name="Behemoth" x="0" y="14" z="11" spawntime="2" />
-		<monster name="Behemoth" x="19" y="16" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-23" y="17" z="11" spawntime="2" />
-		<monster name="Behemoth" x="8" y="17" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-16" y="21" z="11" spawntime="2" />
-		<monster name="Behemoth" x="7" y="22" z="11" spawntime="2" />
-		<monster name="Behemoth" x="14" y="22" z="11" spawntime="2" />
-		<monster name="Behemoth" x="3" y="25" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-20" y="27" z="11" spawntime="2" />
-		<monster name="Behemoth" x="14" y="28" z="11" spawntime="2" />
-		<monster name="Behemoth" x="7" y="30" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-4" y="-10" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="2" y="-7" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-6" y="-4" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="6" y="-4" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-14" y="-2" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="16" y="-2" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="13" y="-1" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-11" y="0" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="21" y="3" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-16" y="5" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-10" y="5" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="23" y="7" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="0" y="10" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-15" y="11" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-20" y="12" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="23" y="12" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-13" y="14" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="0" y="14" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="19" y="16" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-23" y="17" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="8" y="17" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-19" y="18" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="14" y="18" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-16" y="21" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="7" y="22" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="14" y="22" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="3" y="25" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="11" y="25" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-18" y="26" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-20" y="27" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="14" y="28" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="7" y="30" z="11" spawntime="2" />
 	</spawn>
 	<spawn centerx="834" centery="1054" centerz="11" radius="30">
-		<monster name="Behemoth" x="-23" y="-11" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-18" y="-11" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-7" y="-9" z="11" spawntime="2" />
-		<monster name="Behemoth" x="18" y="-9" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-26" y="-6" z="11" spawntime="2" />
-		<monster name="Behemoth" x="23" y="-6" z="11" spawntime="2" />
-		<monster name="Behemoth" x="0" y="-4" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-10" y="-2" z="11" spawntime="2" />
-		<monster name="Behemoth" x="24" y="1" z="11" spawntime="2" />
-		<monster name="Behemoth" x="-4" y="4" z="11" spawntime="2" />
-		<monster name="Behemoth" x="6" y="5" z="11" spawntime="2" />
-		<monster name="Behemoth" x="17" y="5" z="11" spawntime="2" />
-		<monster name="Behemoth" x="9" y="13" z="11" spawntime="2" />
-		<monster name="Behemoth" x="17" y="17" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-23" y="-11" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-18" y="-11" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-8" y="-9" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-7" y="-9" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="18" y="-9" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-1" y="-8" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-24" y="-7" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-26" y="-6" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="23" y="-6" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="0" y="-4" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="25" y="-3" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-10" y="-2" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="-4" y="-1" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="24" y="1" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="-4" y="4" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="6" y="5" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="17" y="5" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="5" y="7" z="11" spawntime="2" />
+		<monster name="Strong Hand of Cursed Fate" x="14" y="9" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="9" y="13" z="11" spawntime="2" />
+		<monster name="strong behemoth" x="17" y="17" z="11" spawntime="2" />
 	</spawn>
 	<spawn centerx="740" centery="1163" centerz="11" radius="30">
 		<monster name="Hellfire Fighter" x="30" y="-26" z="11" spawntime="2" />

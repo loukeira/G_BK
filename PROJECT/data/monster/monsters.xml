@@ -507,6 +507,7 @@
 	
 	<!-- Strongs Monsters -->
 	<monster name="strong betrayed wraith" file="strongsmonsters/strong betrayed wraith.xml"/>
+	<monster name="strong behemoth" file="strongsmonsters/strong behemoth.xml"/>
 	<monster name="strong blightwalker" file="strongsmonsters/strong blightwalker.xml"/>
 	<monster name="strong dark torturer" file="strongsmonsters/strong dark torturer.xml"/>
 	<monster name="strong defiler" file="strongsmonsters/strong defiler.xml"/>
