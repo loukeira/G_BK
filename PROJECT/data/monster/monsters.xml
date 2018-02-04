@@ -540,6 +540,8 @@
 	<monster name="Strong The Imperor" file="strongsmonsters/Strong The Imperor.xml"/>
 	<monster name="Strong Massacre" file="strongsmonsters/Strong Massacre.xml"/>
 	<monster name="strong Orshabaal" file="strongsmonsters/strong Orshabaal.xml"/>
+	<monster name="strong Morgaroth" file="strongsmonsters/strong Morgaroth.xml"/>
+	<monster name="strong ghazbaran" file="strongsmonsters/strong ghazbaran.xml"/>
 
 	
 	<!-- Great Monsters -->
