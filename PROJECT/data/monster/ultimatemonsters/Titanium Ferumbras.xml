@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Titanium Ferumbras" nameDescription="a the Titanium Ferumbras" race="blood" experience="125000" speed="320" manacost="0">
-	<health now="125000" max="125000"/>
+<monster name="Titanium Ferumbras" nameDescription="a the Titanium Ferumbras" race="blood" experience="225000" speed="420" manacost="0">
+	<health now="225000" max="225000"/>
 	<look type="229" corpse="6078"/>
 	<targetchange interval="5000" chance="8"/>
 	<strategy attack="100" defense="0"/>
@@ -46,7 +46,7 @@
 		</attack>
 	</attacks>
 	<defenses armor="100" defense="120">
-		<defense name="healing" interval="2000" chance="20" min="1900" max="2500">
+		<defense name="healing" interval="2000" chance="25" min="2900" max="3500">
 			<attribute key="areaEffect" value="greenshimmer"/>
 		</defense>
 		<defense name="speed" interval="3000" chance="30" speedchange="360" duration="7000">
@@ -67,7 +67,7 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<summons maxSummons="4">
-		<summon name="Ultimate Demon" interval="3000" chance="50" max="4"/>
+		<summon name="Great Demon" interval="3000" chance="50" max="4"/>
 	</summons>
 	<voices interval="5000" chance="20">
 		<voice sentence="NOONE WILL STOP ME THIS TIME!" yell="1"/>

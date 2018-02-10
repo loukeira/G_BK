@@ -11906,6 +11906,7 @@
 		<monster name="Strong Demon" x="7" y="-3" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="-4" y="-2" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="-6" y="-1" z="11" spawntime="2" />
+		<monster name="Strong Orshabaal" x="-1" y="1" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="-4" y="4" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="0" y="4" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="6" y="5" z="11" spawntime="2" />
@@ -11952,6 +11953,7 @@
 		<monster name="Strong Demon" x="0" y="-4" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="2" y="-4" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="-5" y="-1" z="11" spawntime="2" />
+		<monster name="Strong Orshabaal" x="-1" y="-1" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="-6" y="2" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="7" y="3" z="11" spawntime="2" />
 	</spawn>
@@ -11965,6 +11967,7 @@
 		<monster name="Strong Demon" x="3" y="-2" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="9" y="-2" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="-7" y="0" z="11" spawntime="2" />
+		<monster name="Strong Orshabaal" x="-5" y="0" z="11" spawntime="2" />
 		<monster name="Strong Diabolic Imp" x="1" y="0" z="11" spawntime="2" />
 		<monster name="Strong Demon" x="-5" y="3" z="11" spawntime="2" />
 	</spawn>
@@ -13286,11 +13289,21 @@
 		<monster name="Great Demon" x="10" y="3" z="12" spawntime="2" />
 		<monster name="Great Demon" x="18" y="3" z="12" spawntime="2" />
 		<monster name="Great Hellfire Fighter" x="4" y="17" z="12" spawntime="2" />
+		<monster name="Titanium Omruc" x="-30" y="18" z="12" spawntime="2" />
+		<monster name="Titanium Rahemos" x="-22" y="18" z="12" spawntime="2" />
+		<monster name="Titanium Thalas" x="-15" y="18" z="12" spawntime="2" />
+		<monster name="Titanium Vashresamun" x="-8" y="18" z="12" spawntime="2" />
 		<monster name="Great Bazir" x="15" y="19" z="12" spawntime="2" />
 		<monster name="Great Tower" x="29" y="19" z="12" spawntime="2" />
 		<monster name="Great Hellfire Fighter" x="5" y="22" z="12" spawntime="2" />
 	</spawn>
-	<spawn centerx="614" centery="991" centerz="12" radius="50" />
+	<spawn centerx="614" centery="991" centerz="12" radius="50">
+		<monster name="Titanium Mahrdis" x="2" y="-1" z="12" spawntime="2" />
+		<monster name="Titanium Arkhothep" x="-31" y="0" z="12" spawntime="2" />
+		<monster name="Titanium Ashmunrah" x="-14" y="0" z="12" spawntime="2" />
+		<monster name="Titanium Dipthrah" x="-7" y="0" z="12" spawntime="2" />
+		<monster name="Titanium Morguthis" x="7" y="0" z="12" spawntime="2" />
+	</spawn>
 	<spawn centerx="703" centery="991" centerz="12" radius="30">
 		<monster name="Great Demon" x="-1" y="-3" z="12" spawntime="2" />
 		<monster name="Great Blightwalker" x="4" y="0" z="12" spawntime="2" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Titanium Zarabustor" nameDescription="Titanium Zarabustor" race="blood" experience="80000" speed="365" manacost="0">
-  <health now="51000" max="51000"/>
+<monster name="Titanium Zarabustor" nameDescription="Titanium Zarabustor" race="blood" experience="180000" speed="365" manacost="0">
+  <health now="180000" max="180000"/>
   <look type="130" head="0" body="77" legs="92" feet="115" addons="1" corpse="6080"/>
   <targetchange interval="5000" chance="30"/>
   <strategy attack="90" defense="10"/>
@@ -47,7 +47,7 @@
 
   </attacks>
   <defenses armor="25" defense="20">
-    <defense name="healing" interval="1000" chance="25" min="1200" max="1400">
+    <defense name="healing" interval="1000" chance="25" min="2200" max="2400">
       <attribute key="areaEffect" value="blueshimmer"/>
     </defense>
     <defense name="invisible" interval="2000" chance="30" duration="8000">

@@ -606,6 +606,15 @@
 	<monster name="Titanium Ferumbras" file="ultimatemonsters/Titanium Ferumbras.xml"/>
 	<monster name="Titanium Morgaroth" file="ultimatemonsters/Titanium Morgaroth.xml"/>
 	<monster name="Titanium Zarabustor" file="ultimatemonsters/Titanium Zarabustor.xml"/>
+	<monster name="Titanium Ashmunrah" file="ultimatemonsters/Titanium Ashmunrah.xml"/>
+	<monster name="Titanium Arkhothep" file="ultimatemonsters/Titanium Arkhothep.xml"/>
+	<monster name="Titanium Dipthrah" file="ultimatemonsters/Titanium Dipthrah.xml"/>
+	<monster name="Titanium Mahrdis" file="ultimatemonsters/Titanium Mahrdis.xml"/>
+	<monster name="Titanium Morguthis" file="ultimatemonsters/Titanium Morguthis.xml"/>
+	<monster name="Titanium Omruc" file="ultimatemonsters/Titanium Omruc.xml"/>
+	<monster name="Titanium Rahemos" file="ultimatemonsters/Titanium Rahemos.xml"/>
+	<monster name="Titanium Thalas" file="ultimatemonsters/Titanium Thalas.xml"/>
+	<monster name="Titanium Vashresamun" file="ultimatemonsters/Titanium Vashresamun.xml"/>
 	<monster name="Ice Bruttus" file="ultimatemonsters/Ice Brutus.xml"/>
 	<monster name="Fire Bruttus" file="ultimatemonsters/Fire Brutus.xml"/>
 	<monster name="Dark Bruttus" file="ultimatemonsters/Dark Brutus.xml"/>
