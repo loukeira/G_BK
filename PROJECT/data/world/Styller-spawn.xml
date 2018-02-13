@@ -3838,14 +3838,14 @@
 		<monster name="Strong Demon" x="-4" y="-3" z="6" spawntime="2" />
 		<monster name="Strong Demon" x="3" y="1" z="6" spawntime="2" />
 	</spawn>
-	<spawn centerx="1023" centery="1075" centerz="6" radius="3">
-		<npc name="Captain Bluebear" x="0" y="-1" z="6" spawntime="60" direction="2" />
-	</spawn>
 	<spawn centerx="1450" centery="1075" centerz="6" radius="5">
 		<monster name="Strong Demon" x="-2" y="1" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="1460" centery="1076" centerz="6" radius="5">
 		<monster name="Strong Demon" x="-1" y="-1" z="6" spawntime="2" />
+	</spawn>
+	<spawn centerx="1032" centery="1077" centerz="6" radius="3">
+		<npc name="Captain Bluebear" x="0" y="-1" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="977" centery="1086" centerz="6" radius="5">
 		<monster name="Wyvern" x="1" y="-2" z="6" spawntime="2" />
@@ -6675,8 +6675,8 @@
 		<monster name="Demon" x="5" y="18" z="8" spawntime="2" />
 		<monster name="Demon" x="28" y="20" z="8" spawntime="2" />
 		<monster name="Demon" x="9" y="26" z="8" spawntime="2" />
+		<monster name="Demon" x="20" y="29" z="8" spawntime="2" />
 		<monster name="Demon" x="29" y="29" z="8" spawntime="2" />
-		<monster name="Demon" x="20" y="30" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="980" centery="1019" centerz="8" radius="10">
 		<monster name="Demon" x="-1" y="-5" z="8" spawntime="2" />
@@ -6801,6 +6801,10 @@
 		<monster name="Bonebeast" x="17" y="27" z="8" spawntime="2" />
 		<monster name="Bonebeast" x="-29" y="28" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1129" centery="1057" centerz="8" radius="5">
+		<monster name="Giant Spider" x="1" y="0" z="8" spawntime="2" />
+		<monster name="spider" x="-1" y="3" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1429" centery="1057" centerz="8" radius="3">
 		<monster name="Demon" x="1" y="0" z="8" spawntime="2" />
 	</spawn>
@@ -6831,6 +6835,30 @@
 	<spawn centerx="1416" centery="1060" centerz="8" radius="3">
 		<monster name="Demon" x="0" y="2" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1011" centery="1061" centerz="8" radius="10">
+		<monster name="Troll" x="-5" y="-9" z="8" spawntime="60" />
+		<monster name="Troll" x="-4" y="-8" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-1" y="-8" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="-6" y="-7" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-4" y="-6" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="4" y="-6" z="8" spawntime="2" />
+		<monster name="Rotworm" x="4" y="-5" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="7" y="-4" z="8" spawntime="2" />
+		<monster name="Troll" x="7" y="-1" z="8" spawntime="60" />
+		<monster name="Rotworm" x="4" y="2" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="-6" y="4" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="4" y="4" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-5" y="5" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-8" y="6" z="8" spawntime="60" />
+		<monster name="Rotworm" x="-7" y="6" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-4" y="8" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="-1" y="10" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1144" centery="1062" centerz="8" radius="5">
+		<monster name="Giant Spider" x="-1" y="-2" z="8" spawntime="2" />
+		<monster name="spider" x="1" y="-2" z="8" spawntime="2" />
+		<monster name="spider" x="-2" y="0" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1409" centery="1062" centerz="8" radius="3">
 		<monster name="Demon" x="2" y="-1" z="8" spawntime="2" />
 		<monster name="Demon" x="-2" y="3" z="8" spawntime="2" />
@@ -6842,6 +6870,17 @@
 	<spawn centerx="1428" centery="1066" centerz="8" radius="3">
 		<monster name="Demon" x="-2" y="1" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1046" centery="1067" centerz="8" radius="5">
+		<monster name="Swamp Troll" x="-4" y="-2" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="-2" y="-1" z="8" spawntime="2" />
+		<monster name="Troll" x="1" y="-1" z="8" spawntime="60" />
+		<monster name="Troll" x="1" y="0" z="8" spawntime="60" />
+		<monster name="Rotworm" x="2" y="0" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="4" y="0" z="8" spawntime="2" />
+		<monster name="Troll" x="-1" y="1" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="0" y="3" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-1" y="5" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1421" centery="1067" centerz="8" radius="3" />
 	<spawn centerx="1435" centery="1067" centerz="8" radius="3">
 		<monster name="Demon" x="-1" y="0" z="8" spawntime="2" />
@@ -6849,6 +6888,18 @@
 	</spawn>
 	<spawn centerx="1405" centery="1068" centerz="8" radius="3">
 		<monster name="Demon" x="1" y="3" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1130" centery="1069" centerz="8" radius="10">
+		<monster name="Giant Spider" x="-7" y="-6" z="8" spawntime="2" />
+		<monster name="spider" x="0" y="-6" z="8" spawntime="2" />
+		<monster name="spider" x="-5" y="-4" z="8" spawntime="2" />
+		<monster name="spider" x="-8" y="-1" z="8" spawntime="2" />
+		<monster name="spider" x="6" y="1" z="8" spawntime="2" />
+		<monster name="Giant Spider" x="-10" y="5" z="8" spawntime="2" />
+		<monster name="spider" x="7" y="6" z="8" spawntime="2" />
+		<monster name="spider" x="-6" y="7" z="8" spawntime="2" />
+		<monster name="spider" x="1" y="7" z="8" spawntime="2" />
+		<monster name="Giant Spider" x="8" y="7" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="896" centery="1070" centerz="8" radius="1">
 		<monster name="Hunter" x="1" y="0" z="8" spawntime="60" />
@@ -6879,6 +6930,9 @@
 	<spawn centerx="1368" centery="1071" centerz="8" radius="3">
 		<monster name="Demon" x="2" y="1" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1142" centery="1072" centerz="8" radius="5">
+		<monster name="spider" x="-1" y="-3" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1433" centery="1072" centerz="8" radius="3">
 		<monster name="Demon" x="-2" y="1" z="8" spawntime="2" />
 	</spawn>
@@ -6889,11 +6943,32 @@
 	<spawn centerx="1428" centery="1073" centerz="8" radius="3">
 		<monster name="Demon" x="0" y="0" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1114" centery="1074" centerz="8" radius="10">
+		<monster name="spider" x="1" y="-4" z="8" spawntime="2" />
+		<monster name="spider" x="-5" y="3" z="8" spawntime="2" />
+		<monster name="spider" x="-3" y="7" z="8" spawntime="2" />
+		<monster name="Giant Spider" x="-3" y="10" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1373" centery="1074" centerz="8" radius="3">
 		<monster name="Demon" x="1" y="1" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1409" centery="1074" centerz="8" radius="3">
 		<monster name="Demon" x="0" y="1" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1050" centery="1075" centerz="8" radius="5">
+		<monster name="Swamp Troll" x="3" y="-1" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-4" y="0" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-5" y="4" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1061" centery="1075" centerz="8" radius="5">
+		<monster name="Carrion Worm" x="-5" y="0" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="2" y="0" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1072" centery="1075" centerz="8" radius="5">
+		<monster name="Swamp Troll" x="-2" y="-2" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="2" y="0" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="4" y="1" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="1" y="3" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1445" centery="1076" centerz="8" radius="3">
 		<monster name="Demon" x="-1" y="-1" z="8" spawntime="2" />
@@ -6901,6 +6976,19 @@
 	<spawn centerx="1356" centery="1077" centerz="8" radius="3" />
 	<spawn centerx="896" centery="1078" centerz="8" radius="1">
 		<monster name="Hunter" x="1" y="0" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1019" centery="1078" centerz="8" radius="10">
+		<monster name="Rotworm" x="-8" y="-5" z="8" spawntime="60" />
+		<monster name="Troll" x="-6" y="-4" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="0" y="-1" z="8" spawntime="2" />
+		<monster name="Troll" x="1" y="-1" z="8" spawntime="60" />
+		<monster name="Troll" x="1" y="0" z="8" spawntime="60" />
+		<monster name="Rotworm" x="2" y="0" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="9" y="1" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="7" y="3" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="10" y="3" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="7" y="6" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="7" y="9" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1378" centery="1078" centerz="8" radius="3">
 		<monster name="Demon" x="0" y="1" z="8" spawntime="2" />
@@ -6913,6 +7001,9 @@
 	</spawn>
 	<spawn centerx="1420" centery="1080" centerz="8" radius="3">
 		<monster name="Demon" x="2" y="-1" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1080" centery="1081" centerz="8" radius="1">
+		<npc name="Deruno" x="-1" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="1434" centery="1081" centerz="8" radius="3">
 		<monster name="Demon" x="-1" y="1" z="8" spawntime="2" />
@@ -6956,6 +7047,19 @@
 	<spawn centerx="889" centery="1085" centerz="8" radius="1">
 		<monster name="Hunter" x="0" y="0" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1035" centery="1085" centerz="8" radius="10">
+		<monster name="Carrion Worm" x="8" y="-7" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="5" y="-5" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="8" y="-5" z="8" spawntime="2" />
+		<monster name="Rotworm" x="2" y="-4" z="8" spawntime="60" />
+		<monster name="Troll" x="9" y="-4" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-2" y="-2" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="10" y="-1" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-8" y="4" z="8" spawntime="60" />
+		<monster name="Troll" x="-2" y="7" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-6" y="9" z="8" spawntime="2" />
+		<monster name="Troll" x="-4" y="9" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="1405" centery="1085" centerz="8" radius="3">
 		<monster name="Demon" x="-2" y="-3" z="8" spawntime="2" />
 		<monster name="Demon" x="-1" y="1" z="8" spawntime="2" />
@@ -6965,6 +7069,16 @@
 	</spawn>
 	<spawn centerx="884" centery="1087" centerz="8" radius="1">
 		<monster name="Hunter" x="0" y="0" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1046" centery="1088" centerz="8" radius="10">
+		<monster name="Troll" x="0" y="2" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="2" y="2" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="8" y="2" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="3" y="4" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="8" y="4" z="8" spawntime="2" />
+		<monster name="Rotworm" x="6" y="5" z="8" spawntime="60" />
+		<monster name="Rotworm" x="8" y="5" z="8" spawntime="60" />
+		<monster name="Troll" x="7" y="7" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="1367" centery="1088" centerz="8" radius="3" />
 	<spawn centerx="793" centery="1089" centerz="8" radius="30">
@@ -7039,6 +7153,16 @@
 	<spawn centerx="866" centery="1093" centerz="8" radius="1">
 		<monster name="Hunter" x="0" y="0" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1115" centery="1093" centerz="8" radius="10">
+		<monster name="spider" x="-6" y="-7" z="8" spawntime="2" />
+		<monster name="spider" x="6" y="-7" z="8" spawntime="2" />
+		<monster name="spider" x="-2" y="-5" z="8" spawntime="2" />
+		<monster name="Giant Spider" x="4" y="-4" z="8" spawntime="2" />
+		<monster name="spider" x="6" y="-3" z="8" spawntime="2" />
+		<monster name="spider" x="4" y="5" z="8" spawntime="2" />
+		<monster name="spider" x="3" y="7" z="8" spawntime="2" />
+		<monster name="Giant Spider" x="2" y="9" z="8" spawntime="2" />
+	</spawn>
 	<spawn centerx="1334" centery="1093" centerz="8" radius="30">
 		<monster name="Bonebeast" x="0" y="1" z="8" spawntime="2" />
 		<monster name="Bonebeast" x="4" y="1" z="8" spawntime="2" />
@@ -7069,8 +7193,29 @@
 	<spawn centerx="1437" centery="1095" centerz="8" radius="3">
 		<monster name="Demon" x="3" y="0" z="8" spawntime="2" />
 	</spawn>
+	<spawn centerx="1026" centery="1096" centerz="8" radius="10">
+		<monster name="Swamp Troll" x="-3" y="-6" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="3" y="1" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-9" y="3" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-5" y="4" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="-2" y="4" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-6" y="5" z="8" spawntime="60" />
+	</spawn>
 	<spawn centerx="1381" centery="1096" centerz="8" radius="3">
 		<monster name="Demon" x="2" y="2" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1009" centery="1098" centerz="8" radius="10">
+		<monster name="Rotworm" x="-2" y="-2" z="8" spawntime="60" />
+		<monster name="Rotworm" x="-3" y="-1" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="2" y="0" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="3" y="1" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-3" y="6" z="8" spawntime="2" />
+		<monster name="Carrion Worm" x="-1" y="6" z="8" spawntime="2" />
+		<monster name="Rotworm" x="1" y="6" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="-5" y="7" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-2" y="7" z="8" spawntime="60" />
+		<monster name="Rotworm" x="-5" y="9" z="8" spawntime="60" />
+		<monster name="Rotworm" x="4" y="9" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="1476" centery="1098" centerz="8" radius="3">
 		<monster name="Demon" x="2" y="2" z="8" spawntime="2" />
@@ -7155,6 +7300,16 @@
 	</spawn>
 	<spawn centerx="1456" centery="1109" centerz="8" radius="3">
 		<monster name="Demon" x="-1" y="2" z="8" spawntime="2" />
+	</spawn>
+	<spawn centerx="1009" centery="1110" centerz="8" radius="10">
+		<monster name="Carrion Worm" x="-6" y="-1" z="8" spawntime="2" />
+		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" />
+		<monster name="Swamp Troll" x="4" y="0" z="8" spawntime="2" />
+		<monster name="Swamp Troll" x="-5" y="2" z="8" spawntime="2" />
+		<monster name="Rotworm" x="-1" y="2" z="8" spawntime="60" />
+		<monster name="Carrion Worm" x="3" y="2" z="8" spawntime="2" />
+		<monster name="Rotworm Queen" x="-2" y="4" z="8" spawntime="60" />
+		<monster name="Rotworm Queen" x="2" y="4" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="1442" centery="1110" centerz="8" radius="3" />
 	<spawn centerx="1449" centery="1110" centerz="8" radius="3">
@@ -9582,27 +9737,31 @@
 		<monster name="Behemoth" x="-1" y="-2" z="9" spawntime="2" />
 		<monster name="Behemoth" x="1" y="2" z="9" spawntime="2" />
 	</spawn>
-	<spawn centerx="1027" centery="1069" centerz="9" radius="30">
-		<monster name="Serpent Spawn" x="0" y="-16" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="-15" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="30" y="-9" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="-7" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="0" y="-7" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="-5" y="-1" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="2" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="30" y="2" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="-5" y="5" z="9" spawntime="2" />
-		<monster name="Hydra" x="30" y="8" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="10" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="-3" y="14" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="18" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="-3" y="23" z="9" spawntime="2" />
-		<monster name="Hydra" x="-2" y="27" z="9" spawntime="2" />
-	</spawn>
 	<spawn centerx="822" centery="1070" centerz="9" radius="10">
 		<monster name="Behemoth" x="-2" y="-2" z="9" spawntime="2" />
 		<monster name="Behemoth" x="7" y="0" z="9" spawntime="2" />
 		<monster name="Behemoth" x="-2" y="6" z="9" spawntime="1024" />
+	</spawn>
+	<spawn centerx="1027" centery="1073" centerz="9" radius="30">
+		<monster name="Serpent Spawn" x="0" y="-20" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="-19" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="-6" y="-14" z="9" spawntime="2" />
+		<monster name="Hydra" x="0" y="-14" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="30" y="-13" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="4" y="-12" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="-7" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="0" y="-7" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="30" y="-2" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="-5" y="-1" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="2" z="9" spawntime="2" />
+		<monster name="Hydra" x="30" y="4" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="-5" y="5" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="10" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="-3" y="14" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="18" z="9" spawntime="2" />
+		<monster name="Hydra" x="-2" y="23" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="5" y="29" z="9" spawntime="2" />
+		<monster name="Serpent Spawn" x="20" y="29" z="9" spawntime="2" />
 	</spawn>
 	<spawn centerx="1075" centery="1073" centerz="9" radius="30">
 		<monster name="Serpent Spawn" x="14" y="-14" z="9" spawntime="2" />
@@ -9617,7 +9776,6 @@
 		<monster name="Serpent Spawn" x="-14" y="17" z="9" spawntime="2" />
 		<monster name="Hydra" x="3" y="27" z="9" spawntime="2" />
 		<monster name="Serpent Spawn" x="9" y="27" z="9" spawntime="2" />
-		<monster name="Serpent Spawn" x="-28" y="29" z="9" spawntime="2" />
 	</spawn>
 	<spawn centerx="1252" centery="1075" centerz="9" radius="30">
 		<monster name="Baylor" x="-13" y="-19" z="9" spawntime="2" />
@@ -9764,7 +9922,6 @@
 		<monster name="Hydra" x="-7" y="24" z="9" spawntime="2" />
 	</spawn>
 	<spawn centerx="1053" centery="1124" centerz="9" radius="30">
-		<monster name="Serpent Spawn" x="-21" y="-22" z="9" spawntime="2" />
 		<monster name="Hydra" x="-20" y="-20" z="9" spawntime="2" />
 		<monster name="Hydra" x="-8" y="-19" z="9" spawntime="2" />
 		<monster name="Serpent Spawn" x="-4" y="-11" z="9" spawntime="2" />
