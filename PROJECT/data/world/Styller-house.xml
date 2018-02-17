@@ -1,21 +1,28 @@
 <?xml version="1.0"?>
 <houses>
+	<house name="" houseid="8" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="44" />
+	<house name="" houseid="9" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="19" />
+	<house name="" houseid="18" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="690" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="56" />
+	<house name="" houseid="692" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
 	<house name="" houseid="717" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28" />
 	<house name="" houseid="718" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
 	<house name="" houseid="719" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" />
 	<house name="" houseid="720" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="18" />
 	<house name="" houseid="721" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1724" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" />
+	<house name="" houseid="1742" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="48" />
 	<house name="God House" houseid="2095" entryx="144" entryy="155" entryz="6" rent="0" townid="0" size="519" />
 	<house name="Baiak City 1" houseid="2096" entryx="1118" entryy="1077" entryz="7" rent="0" townid="1" size="6" />
 	<house name="Baiak City 2" houseid="2097" entryx="1110" entryy="1077" entryz="7" rent="0" townid="1" size="15" />
 	<house name="Baiak City 3" houseid="2098" entryx="1101" entryy="1077" entryz="7" rent="0" townid="1" size="16" />
-	<house name="Baiak City 4" houseid="2099" entryx="1129" entryy="1075" entryz="7" rent="0" townid="1" size="109" />
+	<house name="Baiak City 4" houseid="2099" entryx="1129" entryy="1075" entryz="7" rent="0" townid="1" size="110" />
 	<house name="Baiak City 5" houseid="2100" entryx="1122" entryy="1084" entryz="7" rent="0" townid="1" size="12" />
-	<house name="Baiak City 6" houseid="2101" entryx="1138" entryy="1064" entryz="7" rent="0" townid="1" size="51" />
-	<house name="Baiak City 7" houseid="2102" entryx="1135" entryy="1057" entryz="7" rent="0" townid="1" size="26" />
-	<house name="Baiak City 8" houseid="2103" entryx="1135" entryy="1052" entryz="7" rent="0" townid="1" size="26" />
+	<house name="Baiak City 6" houseid="2101" entryx="1138" entryy="1064" entryz="7" rent="0" townid="1" size="44" />
+	<house name="Baiak City 7" houseid="2102" entryx="1135" entryy="1057" entryz="7" rent="0" townid="1" size="20" />
+	<house name="Baiak City 8" houseid="2103" entryx="1135" entryy="1052" entryz="7" rent="0" townid="1" size="22" />
 	<house name="Baiak City 9" houseid="2104" entryx="1132" entryy="1047" entryz="7" rent="0" townid="1" size="17" />
-	<house name="Baiak City 10" houseid="2105" entryx="1135" entryy="1047" entryz="7" rent="0" townid="1" size="40" />
+	<house name="Baiak City 10" houseid="2105" entryx="1135" entryy="1047" entryz="7" rent="0" townid="1" size="57" />
 	<house name="Baiak City 11" houseid="2106" entryx="1133" entryy="1046" entryz="7" rent="0" townid="1" size="26" />
 	<house name="Baiak City 12" houseid="2107" entryx="1111" entryy="1043" entryz="7" rent="0" townid="1" size="36" />
 	<house name="Baiak City 13" houseid="2108" entryx="1100" entryy="1043" entryz="7" rent="0" townid="1" size="22" />
