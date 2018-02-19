@@ -3004,12 +3004,16 @@
 		<attribute key="defense" value="14" />
 		<attribute key="attack" value="17" />
 		<attribute key="weaponType" value="sword" />
+								<attribute key="attackspeed" value="100" />
+
 	</item>
 	<item id="2398" article="a" name="mace">
 		<attribute key="weight" value="2800" />
 		<attribute key="defense" value="11" />
 		<attribute key="attack" value="16" />
 		<attribute key="weaponType" value="club" />
+						<attribute key="attackSpeed" value="200" />
+
 	</item>
 	<item id="2399" article="a" name="throwing star" plural="throwing stars">
 		<attribute key="weight" value="200" />
@@ -3018,6 +3022,8 @@
 		<attribute key="shootType" value="throwingstar" />
 		<attribute key="range" value="5" />
 		<attribute key="breakChance" value="10" />
+								<attribute key="attackspeed" value="2000" />
+
 		<attribute key="ammoAction" value="moveback" />
 	</item>
 	<item id="2400" article="a" name="magic sword">
@@ -3025,6 +3031,8 @@
 		<attribute key="weight" value="4200" />
 		<attribute key="defense" value="53" />
 		<attribute key="attack" value="72" />
+				<attribute key="attackSpeed" value="2000" />
+
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="3" />
 	</item>
