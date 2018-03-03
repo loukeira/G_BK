@@ -1,7 +1,7 @@
 SCRIPTS
 - task point trocar por item
--
--
+- fazer uma quest/missão para liberar um X de vender itens por % mais caro q o NPC loot normal
+- sistem de boosted item igual ao do pokemon tibia
 -
 -
 -
