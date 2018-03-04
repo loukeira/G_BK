@@ -5,7 +5,7 @@ function onUse(cid, item, frompos, item2, topos)
 
 local desc = getItemInfo(12505).description
 	local newitem = doPlayerAddItem(cid, 12505, 1)
-	doItemSetAttribute(newitem, "description", desc.." ".."Nova description")
+	doItemSetAttribute(newitem, "description", desc.." ".." Uhum SEi ")
 	doRemoveItem(item.uid, 1)	
 
 
