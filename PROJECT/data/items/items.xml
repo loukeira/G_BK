@@ -17990,6 +17990,18 @@
 		<attribute key="skillAxe" value="4" />
 		<attribute key="speed" value="20" />
 	</item>
+	<item id="8981" article="a" name="cave exclusive" plural="cave exclusives">
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="10026" article="a" name="critical stone" plural="critical stones">
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="10028" article="a" name="dodge stone" plural="dodge stones">
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="12372" article="a" name="event token" plural="event tokens">
+		<attribute key="weight" value="150" />
+	</item>
 	<item id="20001" name="water" />
 	<item id="20002" name="blood" />
 	<item id="20003" name="beer" />
