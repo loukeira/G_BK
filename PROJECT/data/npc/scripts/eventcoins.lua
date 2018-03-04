@@ -13,7 +13,7 @@ end
 local talkState = {}
 local talkUser = NPCHANDLER_CONVbehavior == CONVERSATION_DEFAULT and 0 or cid
 local shopWindow = {}
-local moeda = 6527 -- id da sua moeda vip
+local moeda = 12372 -- id da sua moeda vip
 local t = {
       [12396] = {price = 580},
 	  [12575] = {price = 530},

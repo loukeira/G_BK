@@ -164,8 +164,8 @@
      <action actionid="9987" event="script" value="castledoor2.lua"/>
      <action actionid="9999" event="script" value="castlewar1.lua"/>
 	 <action itemid="8300" script="pedradavida.lua" />
-	 <action itemid="2157" script="goldnuggets.lua" />
-	 <action itemid="12396" script="criticalrock.lua"/>
+	 <action itemid="9971" script="goldingot.lua" />
+	 <action itemid="10026" script="criticalrock.lua"/>
 	 <action itemid="9911" event="script" value="evento.lua"/>
 	 <action uniqueid="4610" event="script" value="quests/champion.lua"/>
 	<action uniqueid="4611" event="script" value="quests/champion.lua"/>
@@ -662,7 +662,7 @@
 
 <action uniqueid="55100" event="script" value="demonOakGravestone.lua" />
 <action itemid="1967" script="scroll.lua"/>
-<action itemid="12575" script="dodgestone.lua"/>
+<action itemid="10028" script="dodgestone.lua"/>
 <!-- <action itemid="12575" script="dodgestone1.lua"/> -->
 
 
