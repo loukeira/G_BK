@@ -151,7 +151,7 @@
 
 	<action uniqueid="6000-6099" event="script" value="chestsys.lua"/>
 	<action uniqueid="19000-19004" event="script" value="leveraid.lua"/>
-	<action itemid="12289" script="stamina.lua"/>
+	<action itemid="12289" script="staminadonate.lua"/>
 	<action itemid="8981" script="Killua Cave Owners.lua"/>
         <action itemid="2346" script="staminarefuel.lua"/>
 
