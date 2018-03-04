@@ -17991,12 +17991,15 @@
 		<attribute key="speed" value="20" />
 	</item>
 	<item id="8981" article="a" name="cave exclusive" plural="cave exclusives">
+		<attribute key="description" value="This item gives access to exclusive caves." />		
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="10026" article="a" name="critical stone" plural="critical stones">
+	    <attribute key="description" value="This item increases your combat skills." />		
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="10028" article="a" name="dodge stone" plural="dodge stones">
+		<attribute key="description" value="This item increases your combat skills." />		
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="12372" article="a" name="event token" plural="event tokens">
@@ -18010,13 +18013,16 @@
 		<attribute key="description" value="This is potion recovers your stamina." />		
 		<attribute key="weight" value="150" />
 	</item>
-<<<<<<< HEAD
 	<item id="12722" article="a [Legacy]" name="skull removedor"
-		<attribute key="description" value="This is item removers your Red." />		
-=======
-	<item id="12722" article="a " name="skull removedor">
-		<attribute key="description" value="This is item removers your PK." />		
->>>>>>> 88b30c8fe22036991b4c089414434342c074c976
+		<attribute key="description" value="This is item removers your Red/Black SKULL." />			
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="7633" article="a" name="bronze exp orb"
+		<attribute key="description" value="This orb increases you Experience Gain in 50%  for 1 hour." />			
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="7632" article="a [Legacy]" name="diamond exp orb"
+		<attribute key="description" value="This orb increases you Experience Gain in 100%  for 1 hour." />			
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="20001" name="water" />

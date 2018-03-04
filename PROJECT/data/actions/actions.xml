@@ -143,7 +143,8 @@
 
 
 <action itemid="11231" event="script" value="livrodemonio.lua" />
-<action itemid="7440" event="script" value="expo.lua"/>
+<action itemid="7440" event="script" value="bronzeorb.lua"/>
+<action itemid="7440" event="script" value="diamondorb.lua"/>
 <action itemid="12722" event="script" value="RemoveFrags.lua"/>
 
 

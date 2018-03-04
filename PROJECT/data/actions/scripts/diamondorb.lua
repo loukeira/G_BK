@@ -1,8 +1,8 @@
 function onUse(cid, item, frompos, item2, topos)
 local pausa = 60*60*1000 -- (1000 = 1 segundos) Tempo que o script durará
-local texto = "This potion increases you Experience Gain in 50%  for 1 hour." -- Texto que irá receber ao usar a potion.
+local texto = "This potion increases you Experience Gain in 100%  for 1 hour." -- Texto que irá receber ao usar a potion.
 textofinal = "Your bonus experience has expired." -- Texto que irá receber quando o efeito da potion acabar.
-local exp = 1.5 -- O quanto que você quer que dobre sua experiencia, por exemplo 2 é 2x as rates do seu server.
+local exp = 2 -- O quanto que você quer que dobre sua experiencia, por exemplo 2 é 2x as rates do seu server.
 expfinal = 1 --Não mude, isso é para a experiencia voltar ao normal.
 local limitedeuso = 49015
 local tempo = 60*60*1000 -- 1000 = 1s então 1000 vezes 60 vezes 30 = 30 minutos
