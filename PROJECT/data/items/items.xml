@@ -18013,15 +18013,19 @@
 		<attribute key="description" value="This is potion recovers your stamina." />		
 		<attribute key="weight" value="150" />
 	</item>
-	<item id="12722" article="a [Legacy]" name="skull removedor"
+	<item id="12289" article="a [Legacy] [NEW]" name="supreme stamina potion">
+		<attribute key="description" value="This is potion recovers your stamina." />		
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="12722" article="a [Legacy]" name="skull removedor" >
 		<attribute key="description" value="This is item removers your Red/Black SKULL." />			
 		<attribute key="weight" value="150" />
 	</item>
-	<item id="7633" article="a" name="bronze exp orb"
+	<item id="7633" article="a" name="bronze exp orb" >
 		<attribute key="description" value="This orb increases you Experience Gain in 50%  for 1 hour." />			
 		<attribute key="weight" value="150" />
 	</item>
-	<item id="7632" article="a [Legacy]" name="diamond exp orb"
+	<item id="7632" article="a [Legacy]" name="diamond exp orb" >
 		<attribute key="description" value="This orb increases you Experience Gain in 100%  for 1 hour." />			
 		<attribute key="weight" value="150" />
 	</item>
