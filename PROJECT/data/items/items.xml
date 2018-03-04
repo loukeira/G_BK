@@ -18010,8 +18010,13 @@
 		<attribute key="description" value="This is potion recovers your stamina." />		
 		<attribute key="weight" value="150" />
 	</item>
+<<<<<<< HEAD
+	<item id="12722" article="a [Legacy]" name="skull removedor"
+		<attribute key="description" value="This is item removers your Red." />		
+=======
 	<item id="12722" article="a " name="skull removedor">
 		<attribute key="description" value="This is item removers your PK." />		
+>>>>>>> 88b30c8fe22036991b4c089414434342c074c976
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="20001" name="water" />
