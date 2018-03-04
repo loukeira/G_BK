@@ -1,15 +1,14 @@
 
-local storage_stamina_donate = 65894
-
-local staminaid = 12289
-
 function onUse(cid, item, frompos, item2, topos)
 
 -- getPlayerGUID(cid)
-doBroadcastMessage("a msg e : "..getItemDescriptionsById(staminaid).." !")
+
+local desc = getItemInfo(12505).description
+	local newitem = doPlayerAddItem(cid, 12505, 1)
+	doItemSetAttribute(newitem, "description", desc.." ".."Nova description")
+	doRemoveItem(item.uid, 1)	
 
 
-	doPlayerSetStamina(cid, 2520)
 	doSendMagicEffect(frompos, 1)	
 	
 return 1

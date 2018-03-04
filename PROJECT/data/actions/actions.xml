@@ -153,7 +153,7 @@
 	<action uniqueid="19000-19004" event="script" value="leveraid.lua"/>
 	<action itemid="12289" script="staminadonate.lua"/>
 	<action itemid="8981" script="Killua Cave Owners.lua"/>
-        <action itemid="12505" script="staminarefuel.lua"/>
+        <action itemid="12505" script="staminateste.lua"/>
 
 
 	<!-- PEGUEI ATE AQUI -->		
