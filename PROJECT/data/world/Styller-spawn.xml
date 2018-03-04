@@ -3712,6 +3712,42 @@
 	<spawn centerx="578" centery="308" centerz="6" radius="1" />
 	<spawn centerx="27" centery="310" centerz="6" radius="5" />
 	<spawn centerx="354" centery="310" centerz="6" radius="5" />
+	<spawn centerx="1161" centery="310" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-2" y="-2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="0" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-4" y="1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="3" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="5" z="6" spawntime="10" />
+	</spawn>
+	<spawn centerx="1179" centery="325" centerz="6" radius="1">
+		<monster name="Mini Serpent Ice" x="1" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="1" z="6" spawntime="10" />
+	</spawn>
+	<spawn centerx="1108" centery="326" centerz="6" radius="1" />
+	<spawn centerx="1174" centery="326" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-4" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="1" z="6" spawntime="60" />
+		<monster name="Mini Serpent Ice" x="0" y="1" z="6" spawntime="60" />
+		<monster name="Mini Serpent Ice" x="2" y="1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="5" y="2" z="6" spawntime="10" />
+	</spawn>
+	<spawn centerx="1167" centery="328" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-3" y="-3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-2" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="0" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="5" z="6" spawntime="4" />
+	</spawn>
+	<spawn centerx="1179" centery="328" centerz="6" radius="1">
+		<monster name="Mini Serpent Ice" x="1" y="0" z="6" spawntime="10" />
+	</spawn>
 	<spawn centerx="888" centery="332" centerz="6" radius="5">
 		<monster name="Sea Serpent Ice" x="0" y="-2" z="6" spawntime="3" />
 		<monster name="Sea Serpent Ice" x="-4" y="1" z="6" spawntime="3" />
@@ -3956,6 +3992,264 @@
 		<monster name="Spider Fiery" x="11" y="29" z="6" spawntime="5" />
 		<monster name="Spider Fiery" x="22" y="29" z="6" spawntime="5" />
 		<monster name="Spider Fiery" x="17" y="30" z="6" spawntime="5" />
+	</spawn>
+	<spawn centerx="1208" centery="340" centerz="6" radius="27">
+		<monster name="Mini Serpent Ice" x="24" y="-27" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="26" y="-27" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-26" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-24" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-22" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-22" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-20" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-20" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-19" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-19" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-17" z="6" spawntime="256" />
+		<monster name="Mini Serpent Ice" x="21" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-22" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-20" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-11" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-8" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-6" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="18" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-10" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-9" y="-14" z="6" spawntime="256" />
+		<monster name="Mini Serpent Ice" x="-7" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-22" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-20" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-6" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-4" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="23" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="6" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="23" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="9" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="14" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="15" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="9" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="11" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="13" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-7" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-11" y="13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-10" y="13" z="6" spawntime="10" />
+	</spawn>
+	<spawn centerx="1137" centery="341" centerz="6" radius="27">
+		<monster name="Mini Serpent Ice" x="24" y="-24" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-23" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-25" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-18" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-17" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-6" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-20" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-11" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-7" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="22" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-8" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="18" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="-13" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-12" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="4" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-11" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-24" y="-10" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="27" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-4" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="-2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="23" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="21" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="10" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="14" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="16" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-2" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-19" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="7" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-16" y="8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-18" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="10" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-13" y="10" z="6" spawntime="4" />
 	</spawn>
 	<spawn centerx="742" centery="342" centerz="6" radius="30">
 		<monster name="Undead Darkshadow" x="15" y="-10" z="6" spawntime="3" />
@@ -5107,6 +5401,16 @@
 		<monster name="Sea Serpent Ice" x="-2" y="3" z="6" spawntime="3" />
 		<monster name="Sea Serpent Ice" x="2" y="3" z="6" spawntime="3" />
 	</spawn>
+	<spawn centerx="1159" centery="376" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-2" y="-2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="0" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-4" y="1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="3" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="5" z="6" spawntime="10" />
+	</spawn>
 	<spawn centerx="977" centery="377" centerz="6" radius="30">
 		<monster name="Sea Serpent Ice" x="7" y="-23" z="6" spawntime="3" />
 		<monster name="Sea Serpent Ice" x="4" y="-21" z="6" spawntime="3" />
@@ -5244,7 +5548,21 @@
 		<monster name="Spider Fiery" x="-1" y="20" z="6" spawntime="5" />
 	</spawn>
 	<spawn centerx="877" centery="390" centerz="6" radius="5" />
+	<spawn centerx="1177" centery="391" centerz="6" radius="1">
+		<monster name="Mini Serpent Ice" x="1" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="1" z="6" spawntime="10" />
+	</spawn>
 	<spawn centerx="919" centery="392" centerz="6" radius="5" />
+	<spawn centerx="1106" centery="392" centerz="6" radius="1" />
+	<spawn centerx="1172" centery="392" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-4" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="1" z="6" spawntime="60" />
+		<monster name="Mini Serpent Ice" x="0" y="1" z="6" spawntime="60" />
+		<monster name="Mini Serpent Ice" x="2" y="1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="5" y="2" z="6" spawntime="10" />
+	</spawn>
 	<spawn centerx="430" centery="393" centerz="6" radius="30">
 		<monster name="Spider Fiery" x="22" y="-5" z="6" spawntime="5" />
 		<monster name="Spider Fiery" x="24" y="-3" z="6" spawntime="5" />
@@ -5292,6 +5610,18 @@
 	</spawn>
 	<spawn centerx="896" centery="393" centerz="6" radius="5" />
 	<spawn centerx="1032" centery="393" centerz="6" radius="5" />
+	<spawn centerx="1165" centery="394" centerz="6" radius="5">
+		<monster name="Mini Serpent Ice" x="-3" y="-3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-2" y="-1" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="0" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="5" z="6" spawntime="4" />
+	</spawn>
+	<spawn centerx="1177" centery="394" centerz="6" radius="1">
+		<monster name="Mini Serpent Ice" x="1" y="0" z="6" spawntime="10" />
+	</spawn>
 	<spawn centerx="1074" centery="395" centerz="6" radius="5" />
 	<spawn centerx="1051" centery="396" centerz="6" radius="5" />
 	<spawn centerx="841" centery="399" centerz="6" radius="5" />
@@ -5368,6 +5698,264 @@
 	<spawn centerx="854" centery="406" centerz="6" radius="5" />
 	<spawn centerx="893" centery="406" centerz="6" radius="5" />
 	<spawn centerx="1058" centery="406" centerz="6" radius="5" />
+	<spawn centerx="1206" centery="406" centerz="6" radius="27">
+		<monster name="Mini Serpent Ice" x="24" y="-27" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="26" y="-27" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-26" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-24" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-22" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-22" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-20" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-20" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-19" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-19" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-17" z="6" spawntime="256" />
+		<monster name="Mini Serpent Ice" x="21" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-17" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-22" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-20" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-11" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-8" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-6" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="18" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-10" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-9" y="-14" z="6" spawntime="256" />
+		<monster name="Mini Serpent Ice" x="-7" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-22" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-20" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-6" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-4" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="23" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="27" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="0" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="4" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="6" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="23" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="9" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="14" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="15" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="19" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="9" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="11" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="13" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="3" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-5" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-7" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-15" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-13" y="11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-12" y="12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-11" y="13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-10" y="13" z="6" spawntime="10" />
+	</spawn>
+	<spawn centerx="1135" centery="407" centerz="6" radius="27">
+		<monster name="Mini Serpent Ice" x="24" y="-24" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="25" y="-23" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-21" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-25" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-18" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-18" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-17" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-6" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-16" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-27" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-24" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-20" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-11" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-7" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="22" y="-15" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-15" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-8" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="18" y="-14" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="20" y="-14" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="-13" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-13" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-26" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-23" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-19" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-12" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="4" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-12" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="-11" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-11" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-24" y="-10" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-10" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="21" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="24" y="-9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="27" y="-7" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="3" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="22" y="-6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="1" y="-5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="24" y="-5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="2" y="-4" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-1" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="5" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="7" y="-2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="23" y="-2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="-1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="8" y="0" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="21" y="0" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="17" y="1" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-1" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="10" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="14" y="2" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="16" y="2" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-2" y="3" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-5" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-2" y="4" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-17" y="5" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-3" y="5" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-19" y="6" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="7" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-21" y="8" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-18" y="8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-16" y="8" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-18" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-16" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-14" y="9" z="6" spawntime="10" />
+		<monster name="Mini Serpent Ice" x="-21" y="10" z="6" spawntime="4" />
+		<monster name="Mini Serpent Ice" x="-13" y="10" z="6" spawntime="4" />
+	</spawn>
 	<spawn centerx="1009" centery="409" centerz="6" radius="5" />
 	<spawn centerx="1048" centery="409" centerz="6" radius="5" />
 	<spawn centerx="592" centery="412" centerz="6" radius="5">
@@ -6015,13 +6603,10 @@
 		<monster name="Earth Kelpie" x="6" y="24" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="11" y="25" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="14" y="25" z="6" spawntime="10" />
-		<monster name="Earth Kelpie" x="9" y="26" z="6" spawntime="10" />
-		<monster name="Earth Kelpie" x="14" y="27" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="29" y="27" z="6" spawntime="10" />
-		<monster name="Earth Kelpie" x="11" y="28" z="6" spawntime="10" />
+		<monster name="Earth Kelpie" x="12" y="28" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="20" y="28" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="27" y="28" z="6" spawntime="10" />
-		<monster name="Earth Kelpie" x="9" y="29" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="17" y="29" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="13" y="30" z="6" spawntime="10" />
 		<monster name="Earth Kelpie" x="15" y="30" z="6" spawntime="10" />
