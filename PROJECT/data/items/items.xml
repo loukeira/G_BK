@@ -18002,6 +18002,18 @@
 	<item id="12372" article="a" name="event token" plural="event tokens">
 		<attribute key="weight" value="150" />
 	</item>
+	<item id="12505" article="a" name="stamina potion"
+		<attribute key="description" value="This is potion recovers your stamina." />		
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="12289" article="a [Legacy]" name="supreme stamina potion"
+		<attribute key="description" value="This is potion recovers your stamina." />		
+		<attribute key="weight" value="150" />
+	</item>
+	<item id="12289" article="a " name="skull removedor"
+		<attribute key="description" value="This is item removers your PK." />		
+		<attribute key="weight" value="150" />
+	</item>
 	<item id="20001" name="water" />
 	<item id="20002" name="blood" />
 	<item id="20003" name="beer" />
