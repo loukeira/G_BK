@@ -113,7 +113,7 @@
 	<movevent type="StepIn" actionid="45000" event="script" value="BattleMovements.lua"/>
 	
 	<movevent type="StepIn" actionid="6666-6667" event="script" value="Killua Orb System.lua"/>
-	<movevent type="StepIn" actionid="3600-3617" event="script" value="Killua Cave Owners.lua"/>
+	<movevent type="StepIn" actionid="3601-3618" event="script" value="Killua Cave Owners.lua"/>
 	
 	<movevent type="StepIn" itemid="293" event="script" value="decay.lua"/>
 	<movevent type="StepIn" itemid="461" event="script" value="decay.lua"/>

@@ -57,9 +57,9 @@ positions = {
 -- ["Demon 15"] = { x = 344, y = 311, z = 7 },
 -- ["Demon 16"] = { x = 344, y = 313, z = 7 },
 -- ["Demon 17"] = { x = 344, y = 315, z = 7 },
--- ["Demon 18"] = { x = 344, y = 317, z = 7 },
-["Comanda"] = { x = 1102, y = 1061, z = 7 },
-["o Castle"] = { x = 1103, y = 1061, z = 7 },
+["Leia Quem"] = { x = 1102, y = 1060, z = 7 },
+["Comanda O"] = { x = 1102, y = 1061, z = 7 },
+["   Castle"] = { x = 1103, y = 1061, z = 7 },
 
 
 
@@ -71,7 +71,7 @@ positions = {
 
 function onThink(cid, interval, lastExecution)
 for text, pos in pairs(config.positions) do
-doSendAnimatedText(pos, text, 200)
+doSendAnimatedText(pos, text, 66)
 end
 
 return TRUE
