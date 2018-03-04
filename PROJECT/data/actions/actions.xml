@@ -144,16 +144,16 @@
 
 <action itemid="11231" event="script" value="livrodemonio.lua" />
 <action itemid="7440" event="script" value="expo.lua"/>
-<action itemid="5468" event="script" value="RemoveFrags.lua"/>
+<action itemid="12722" event="script" value="RemoveFrags.lua"/>
 
 
 
 
 	<action uniqueid="6000-6099" event="script" value="chestsys.lua"/>
 	<action uniqueid="19000-19004" event="script" value="leveraid.lua"/>
-	<action itemid="12289" script="stamina.lua"/>
+	<action itemid="12289" script="staminadonate.lua"/>
 	<action itemid="8981" script="Killua Cave Owners.lua"/>
-        <action itemid="2346" script="staminarefuel.lua"/>
+        <action itemid="12505" script="staminarefuel.lua"/>
 
 
 	<!-- PEGUEI ATE AQUI -->		
