@@ -70,6 +70,8 @@
 	fragsSecondToBanishment = 21
 	fragsThirdToBanishment = 41
 	tibiaClassicSlots = true
+
+	
         
 
 	protectionLevel = 100

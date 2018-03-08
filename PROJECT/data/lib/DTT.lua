@@ -20,58 +20,58 @@ dtt = {
         tp_create = {x=166, y=53, z=7}, -- onde teleport de entrada sera criado
     },
 
-    --Configurações de abertura
+    --Configuraï¿½ï¿½es de abertura
     days_open = {1, 2, 3, 4, 5, 6, 7}, -- dias de semana que vai abrir
     min_players = 1, -- numero minimo de jogadores em cada time
     min_level = 200, -- level minimo permitido para entrar no evento
     wait_time = 3, -- tempo de espera para iniciar o evento, em minutos
     block_mc = true, -- false para permitir mcs no evento
 
-    --Configuraçõe gerais
+    --Configuraï¿½ï¿½e gerais
     delay_time = 10, -- tempo em segundos de delay ao morrer
     townid = {init = 1, blue = 2, red = 3}, -- init = templo da cidade, blue = templo do time azul, red = templo do time vermelho
 
-    --Configurações dos premios
+    --Configuraï¿½ï¿½es dos premios
     reward_items = {6527, 6527},
     bonus_time = 240, -- experiencia bonus em minutos
     bonus_rate = 1, -- porcentagem de experiencia bonus: 1 = 100% | 0.3 = 30%
 
-    --Configuração dos monstros
+    --Configuraï¿½ï¿½o dos monstros
     monster = {
-    	pos = {
-       		--Monstros do time azul
-        	a1 = {x=396, y=1138, z=6, stackpos=253}, -- Blue supreme tower
-        	a2 = {x=429, y=1107, z=6, stackpos=253}, -- Blue top tower
-        	a3 = {x=430, y=1135, z=6, stackpos=253}, -- Blue middle tower
-        	a4 = {x=429, y=1167, z=6, stackpos=253}, -- Blue bottom tower
-        	-- Monstros do time vermelho
-        	b1 = {x=477, y=1138, z=6, stackpos=253}, -- Red supreme tower
-        	b2 = {x=447, y=1107, z=6, stackpos=253}, -- Red top tower 
-        	b3 = {x=445, y=1139, z=6, stackpos=253}, -- Red middle tower 
-        	b4 = {x=447, y=1167, z=6, stackpos=253}, -- Red bottom tower
-        	-- Monstros buff na jungle
-       		mbuff1 = {x=440, y=1122, z=6, stackpos=253}, -- Buff sorecer and paladin 1 + 2
-        	mbuff2 = {x=434, y=1155, z=6, stackpos=253}, -- Buff druid and knight 2 + 2
-    	},
+        pos = {
+            --Monstros do time azul
+            a1 = {x=396, y=1138, z=6, stackpos=253}, -- Blue supreme tower
+            a2 = {x=429, y=1107, z=6, stackpos=253}, -- Blue top tower
+            a3 = {x=430, y=1135, z=6, stackpos=253}, -- Blue middle tower
+            a4 = {x=429, y=1167, z=6, stackpos=253}, -- Blue bottom tower
+            -- Monstros do time vermelho
+            b1 = {x=477, y=1138, z=6, stackpos=253}, -- Red supreme tower
+            b2 = {x=447, y=1107, z=6, stackpos=253}, -- Red top tower 
+            b3 = {x=445, y=1139, z=6, stackpos=253}, -- Red middle tower 
+            b4 = {x=447, y=1167, z=6, stackpos=253}, -- Red bottom tower
+            -- Monstros buff na jungle
+            mbuff1 = {x=440, y=1122, z=6, stackpos=253}, -- Buff sorecer and paladin 1 + 2
+            mbuff2 = {x=434, y=1155, z=6, stackpos=253}, -- Buff druid and knight 2 + 2
+        },
         ---------------------------------------------------
-        --NÃO MEXA DAQUI PRA BAIXO -----
+        --Nï¿½O MEXA DAQUI PRA BAIXO -----
         ------------------------------------------------
         name = {
-        	-- Azul
-       		a1 = "blue supreme tower", -- Base Tower
-        	a2 = "blue top tower", -- Top lane
-        	a3 = "blue middle tower", -- Middle lane
-        	a4 = "blue bottom tower", -- Bottom lane
-        	-- Vermelho
-        	b1 = "red supreme tower", -- Base Tower
-        	b2 = "red top tower", -- Top lane
-        	b3 = "red middle tower", -- Middle lane
-        	b4 = "red bottom tower", -- Bottom lane
+            -- Azul
+            a1 = "blue supreme tower", -- Base Tower
+            a2 = "blue top tower", -- Top lane
+            a3 = "blue middle tower", -- Middle lane
+            a4 = "blue bottom tower", -- Bottom lane
+            -- Vermelho
+            b1 = "red supreme tower", -- Base Tower
+            b2 = "red top tower", -- Top lane
+            b3 = "red middle tower", -- Middle lane
+            b4 = "red bottom tower", -- Bottom lane
 
-        	--Monstros Buff
-        	buff1 = "serpent of jungle",
-        	buff2 = "spider of jungle",
-    	},
+            --Monstros Buff
+            buff1 = "serpent of jungle",
+            buff2 = "spider of jungle",
+        },
     },
 
     --Storages alocadas
@@ -147,37 +147,37 @@ function dtt.setBonusExp(cid)
 end
 
 function dtt.setTeam()
-	local tmp = 1
-	local result = db.getResult("SELECT * FROM `dtt_players`;")
-	if result:getID() ~= -1 then
-		repeat
-			pid = tonumber(result:getDataInt("pid"))
-			if(tmp % 2 == 0) then
-				db.query("UPDATE `dtt_players` SET `team` = '0' WHERE `pid` = "..pid..";")
-				tmp = (tmp+1)
-			else
-				db.query("UPDATE `dtt_players` SET `team` = '1' WHERE `pid` = "..pid..";")
-				tmp = (tmp+1)
-			end
-		until(not result:next())
-	end
-	result:free()
+    local tmp = 1
+    local result = db.getResult("SELECT * FROM `dtt_players`;")
+    if result:getID() ~= -1 then
+        repeat
+            pid = tonumber(result:getDataInt("pid"))
+            if(tmp % 2 == 0) then
+                db.query("UPDATE `dtt_players` SET `team` = '0' WHERE `pid` = "..pid..";")
+                tmp = (tmp+1)
+            else
+                db.query("UPDATE `dtt_players` SET `team` = '1' WHERE `pid` = "..pid..";")
+                tmp = (tmp+1)
+            end
+        until(not result:next())
+    end
+    result:free()
 end
 
 --Metodos GET
 function dtt.getPlayersInEvent()
     local result = db.getResult("SELECT * FROM `dtt_players`;")
     CACHE_PLAYERS = {}
-	if result:getID() ~= -1 then
-		repeat
-			pid  = tonumber(result:getDataInt("pid"))
-			team  = tonumber(result:getDataInt("team")) -- 0 = blue, 1 = red
+    if result:getID() ~= -1 then
+        repeat
+            pid  = tonumber(result:getDataInt("pid"))
+            team  = tonumber(result:getDataInt("team")) -- 0 = blue, 1 = red
             ip  = tonumber(result:getDataInt("ip"))
-			table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip }) 
-		until(not result:next())
-		result:free()
-		return CACHE_PLAYERS
-	end
+            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip }) 
+        until(not result:next())
+        result:free()
+        return CACHE_PLAYERS
+    end
     return false 
 end
 
@@ -185,20 +185,20 @@ end
 function dtt.getDelay(cid)
     local statsDelay = getPlayerStorageValue(cid, dtt.storage.delay)
     if (statsDelay - os.time() > 0) then
-		local delay = 0
+        local delay = 0
         local times = dtt.delay_time
         doCreatureSetNoMove(cid, true)
         for i = times, 0, -1 do
-        	if isPlayer(cid) then
-            	addEvent(doPlayerSendCancel, delay, cid, "[Defend The Tower] Volte para a arena em "..i..".")
+            if isPlayer(cid) then
+                addEvent(doPlayerSendCancel, delay, cid, "[Defend The Tower] Volte para a arena em "..i..".")
             end
             delay = 2000 + delay                 
-			if (i == 0) and (isPlayer(cid)) then
-				addEvent(dtt.enableMove, (delay+1000), cid)
-			end
+            if (i == 0) and (isPlayer(cid)) then
+                addEvent(dtt.enableMove, (delay+1000), cid)
+            end
          end
     else
-    	return false
+        return false
     end
     return true
 end
@@ -208,11 +208,11 @@ function dtt.getBonusExp(cid)
     return statsBonus - os.time() > 0
 end
 
---Outros métodos
+--Outros mï¿½todos
 
 function dtt.enableMove(cid)
     doCreatureSetNoMove(cid, false)
-	doPlayerSendCancel(cid, "[Defend The Tower] GO GO GO! seu time o aguarda.")         
+    doPlayerSendCancel(cid, "[Defend The Tower] GO GO GO! seu time o aguarda.")         
     setPlayerStorageValue(cid, dtt.storage.delay, 0)
     return true
 end
@@ -228,28 +228,28 @@ function dtt.resetGlobalStorages()
 end
 
 function dtt.resetPlayerStorages()
-	if dtt.getPlayersInEvent() then
-		for _, index in ipairs(dtt.getPlayersInEvent()) do
-    		doPlayerSetStorageValue(index.pid, dtt.storage.team_blue, 0)
-    		doPlayerSetStorageValue(index.pid, dtt.storage.team_red, 0)
-			doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc1, 0)
-			doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc2, 0)
-			doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc3, 0)
-			doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc4, 0)
-		end
-		print("[Defend The Tower] Todos os players storages foram resetados...")  
-    	return true
+    if dtt.getPlayersInEvent() then
+        for _, index in ipairs(dtt.getPlayersInEvent()) do
+            doPlayerSetStorageValue(index.pid, dtt.storage.team_blue, 0)
+            doPlayerSetStorageValue(index.pid, dtt.storage.team_red, 0)
+            doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc1, 0)
+            doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc2, 0)
+            doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc3, 0)
+            doPlayerSetStorageValue(index.pid, dtt.storage.buffvoc4, 0)
+        end
+        print("[Defend The Tower] Todos os players storages foram resetados...")  
+        return true
     else
-    	print("[Defend The Tower] Tabela vazia...")  
+        print("[Defend The Tower] Tabela vazia...")  
     end
     return true
 end
 
 function dtt.createMonsters()
-	doSummonCreature(dtt.monster.name.a1, dtt.monster.pos.a1)
-	doSummonCreature(dtt.monster.name.a2, dtt.monster.pos.a2)
-	doSummonCreature(dtt.monster.name.a3, dtt.monster.pos.a3)
-	doSummonCreature(dtt.monster.name.a4, dtt.monster.pos.a4)
+    doSummonCreature(dtt.monster.name.a1, dtt.monster.pos.a1)
+    doSummonCreature(dtt.monster.name.a2, dtt.monster.pos.a2)
+    doSummonCreature(dtt.monster.name.a3, dtt.monster.pos.a3)
+    doSummonCreature(dtt.monster.name.a4, dtt.monster.pos.a4)
     doSummonCreature(dtt.monster.name.b1, dtt.monster.pos.b1)
     doSummonCreature(dtt.monster.name.b2, dtt.monster.pos.b2)
     doSummonCreature(dtt.monster.name.b3, dtt.monster.pos.b3)
@@ -257,64 +257,64 @@ function dtt.createMonsters()
     doSummonCreature(dtt.monster.name.buff1, dtt.monster.pos.mbuff1)
     doSummonCreature(dtt.monster.name.buff2, dtt.monster.pos.mbuff2)
     print("[Defend The Tower] Os monstros da arena battle foram sumonados...")  
-	return true
+    return true
 end
 
 function dtt.countPlayers()
-	local result = db.getResult("SELECT * FROM `dtt_players`;")
-	local qntPlayers = 0
-	if result:getID() ~= -1 then
-		repeat
-			qntPlayers = (qntPlayers+1)
-		until(not result:next())
-	end
-	return qntPlayers
+    local result = db.getResult("SELECT * FROM `dtt_players`;")
+    local qntPlayers = 0
+    if result:getID() ~= -1 then
+        repeat
+            qntPlayers = (qntPlayers+1)
+        until(not result:next())
+    end
+    return qntPlayers
 end
 
 function dtt.trucatePlayersInEvent()
-	local result = db.getResult("SELECT * FROM `dtt_players`;")
+    local result = db.getResult("SELECT * FROM `dtt_players`;")
     if result:getID() ~= -1 then
-    	db.query("TRUNCATE TABLE `dtt_players`;")  
-    	print("[Defend The Tower] Todos dados da tabela 'dtt_players' foram apagados...")
+        db.query("TRUNCATE TABLE `dtt_players`;")  
+        print("[Defend The Tower] Todos dados da tabela 'dtt_players' foram apagados...")
     end
     return true
 end
         
--- FUNÇÕES PRINCIPAIS
+-- FUNï¿½ï¿½ES PRINCIPAIS
 -- ABERTURA DO EVENTO
 function dtt.open()
-	local time = os.date("*t")
-	local timeopen1 = math.ceil(dtt.wait_time / 4)
-	local timeopen2 = math.ceil(dtt.wait_time / 2)
-	if (isInArray(dtt.days_open, time.wday)) then
-		local tp = doCreateItem(1387, dtt.pos.tp_create)
+    local time = os.date("*t")
+    local timeopen1 = math.ceil(dtt.wait_time / 4)
+    local timeopen2 = math.ceil(dtt.wait_time / 2)
+    if (isInArray(dtt.days_open, time.wday)) then
+        local tp = doCreateItem(1387, dtt.pos.tp_create)
         doRemoveCreature(getThingfromPos(dtt.pos.tp_create).uid)
         doItemSetAttribute(tp, "aid", 9801)
-		dtt.resetGlobalStorages()
-		dtt.trucatePlayersInEvent()
-		dtt.removeItemsTower()
-		doBroadcastMessage(dtt.msg.warning)
-		addEvent(doBroadcastMessage, timeopen1*1000*60, "[Defend The Tower] - Resta(m) ".. timeopen2 .." minuto(s) para iniciar o evento!")
-		if (timeopen2 ~= timeopen1) then
-			addEvent(doBroadcastMessage, timeopen2*1000*60, "[Defend The Tower] - Resta(m) ".. timeopen1 .." minuto(s) para iniciar o evento!")
-		end
-		addEvent(dtt.start, dtt.wait_time*1000*60,nil)
-	end
+        dtt.resetGlobalStorages()
+        dtt.trucatePlayersInEvent()
+        dtt.removeItemsTower()
+        doBroadcastMessage(dtt.msg.warning)
+        addEvent(doBroadcastMessage, timeopen1*1000*60, "[Defend The Tower] - Resta(m) ".. timeopen2 .." minuto(s) para iniciar o evento!")
+        if (timeopen2 ~= timeopen1) then
+            addEvent(doBroadcastMessage, timeopen2*1000*60, "[Defend The Tower] - Resta(m) ".. timeopen1 .." minuto(s) para iniciar o evento!")
+        end
+        addEvent(dtt.start, dtt.wait_time*1000*60,nil)
+    end
     return true
 end
 
--- COMEÇO DO EVENTO
+-- COMEï¿½O DO EVENTO
 function dtt.start()
-	local tp = getTileItemById(dtt.pos.tp_create, 1387).uid 
-	doRemoveItem(tp) 
-	if (dtt.min_players <= dtt.countPlayers()) then
-		dtt.createMonsters()
-		dtt.sendPlayersToEvent()
-		doBroadcastMessage(dtt.msg.start)
-	else
-		doBroadcastMessage(dtt.msg.cancel)
-	end
-	return true
+    local tp = getTileItemById(dtt.pos.tp_create, 1387).uid 
+    doRemoveItem(tp) 
+    if (dtt.min_players <= dtt.countPlayers()) then
+        dtt.createMonsters()
+        dtt.sendPlayersToEvent()
+        doBroadcastMessage(dtt.msg.start)
+    else
+        doBroadcastMessage(dtt.msg.cancel)
+    end
+    return true
 end
 
 -- FECHANDO O EVENTO
@@ -323,7 +323,7 @@ function dtt.close()
         doRemoveCondition(index.pid, CONDITION_OUTFIT)
         doRemoveCondition(index.pid, CONDITION_INFIGHT)
         doPlayerSetPzLocked(index.pid, false)
-    	if (getGlobalStorageValue(dtt.storage.win) == "blue") then
+        if (getGlobalStorageValue(dtt.storage.win) == "blue") then
             if (index.team == 0) then 
                 doPlayerSetTown(index.pid, dtt.townid.init)   
                 doTeleportThing(index.pid, getTownTemplePosition(dtt.townid.init))
@@ -353,27 +353,27 @@ end
 
 
 function dtt.sendPlayersToEvent()
-	dtt.setTeam()
-	dtt.resetPlayerStorages()
+    dtt.setTeam()
+    dtt.resetPlayerStorages()
     for _, index in ipairs(dtt.getPlayersInEvent()) do
         if (index.team == 0) then
             doAddCondition(index.pid, conditionBlue)
-			doPlayerSetTown(index.pid, dtt.townid.blue)
+            doPlayerSetTown(index.pid, dtt.townid.blue)
             doTeleportThing(index.pid, getTownTemplePosition(dtt.townid.blue))
-			doPlayerSetStorageValue(index.pid, dtt.storage.team_blue, 1)
-		end
-		if (index.team == 1) then
+            doPlayerSetStorageValue(index.pid, dtt.storage.team_blue, 1)
+        end
+        if (index.team == 1) then
             doAddCondition(index.pid, conditionRed)
-			doPlayerSetTown(index.pid, dtt.townid.red)
+            doPlayerSetTown(index.pid, dtt.townid.red)
             doTeleportThing(index.pid, getTownTemplePosition(dtt.townid.red))
-			doPlayerSetStorageValue(index.pid, dtt.storage.team_red, 1)
-		end
-	end	
-	return true
+            doPlayerSetStorageValue(index.pid, dtt.storage.team_red, 1)
+        end
+    end 
+    return true
 end
 
 function dtt.reward(pid)
-	local random_item = dtt.reward_items[math.random(1, #dtt.reward_items)]
+    local random_item = dtt.reward_items[math.random(1, #dtt.reward_items)]
     doPlayerAddItem(pid, 6527, 80)
     dtt.setBonusExp(pid)
     doPlayerSendTextMessage(pid, 25, dtt.msg.reward)   
@@ -392,12 +392,12 @@ function dtt.removeItemsTower()
     else
         print("[DEFEND THE TOWERS] Nenhum item torre na arena de batalha...")
     end
-	return true
+    return true
 end
 
 
 function dtt.resultBattle()
-	local frags_blue = getGlobalStorageValue(dtt.storage.kill_blue)
+    local frags_blue = getGlobalStorageValue(dtt.storage.kill_blue)
     local frags_red = getGlobalStorageValue(dtt.storage.kill_red)
     local towers_blue = getGlobalStorageValue(dtt.storage.tower_blue)
     local towers_red = getGlobalStorageValue(dtt.storage.tower_red)
@@ -410,25 +410,25 @@ end
 function dtt.warningAttack(cid, msg, storTeam)
     local lifePercent = 100 / (getCreatureMaxHealth(cid) / getCreatureHealth(cid))
     if (lifePercent <= 100) and (lifePercent >= 99.9) then
-    	for _, index in ipairs(dtt.getPlayersInEvent()) do
-    		if getPlayerStorageValue(index.pid, storTeam) == 1 then
-   			    doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
-   			end
-   		end
+        for _, index in ipairs(dtt.getPlayersInEvent()) do
+            if getPlayerStorageValue(index.pid, storTeam) == 1 then
+                doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
+            end
+        end
     end
     if (lifePercent <= 50) and (lifePercent >= 49.9) then
-    	for _, index in ipairs(dtt.getPlayersInEvent()) do
-    		if getPlayerStorageValue(index.pid, storTeam) == 1 then
-   			    doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
-   			end
-   		end
+        for _, index in ipairs(dtt.getPlayersInEvent()) do
+            if getPlayerStorageValue(index.pid, storTeam) == 1 then
+                doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
+            end
+        end
     end
     if (lifePercent <= 20) and (lifePercent >= 19.9) then
-    	for _, index in ipairs(dtt.getPlayersInEvent()) do
-    		if getPlayerStorageValue(index.pid, storTeam) == 1 then
-   			    doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
-   			end
-   		end
+        for _, index in ipairs(dtt.getPlayersInEvent()) do
+            if getPlayerStorageValue(index.pid, storTeam) == 1 then
+                doPlayerSendTextMessage(index.pid, 25, "[Defend The Tower] A torre "..msg.." esta sob ataque. Corra para defender!")  
+            end
+        end
     end
     return true
 end
@@ -456,7 +456,4 @@ function dtt.cleanPlayer(cid)
     doPlayerSetStorageValue(cid, dtt.storage.buffvoc4, 0)
     return true
 end
-
-
-
 
