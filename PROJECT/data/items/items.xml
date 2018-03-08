@@ -18013,7 +18013,7 @@
 		<attribute key="description" value="This is potion recovers your stamina." />		
 		<attribute key="weight" value="150" />
 	</item>
-	<item id="12289" article="a [Legacy] [NEW]" name="supreme stamina potion">
+	<item id="12723" article="a [Legacy] [NEW]" name="supreme stamina potion">
 		<attribute key="description" value="This is potion recovers your stamina." />		
 		<attribute key="weight" value="150" />
 	</item>
