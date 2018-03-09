@@ -425,7 +425,7 @@
 	<movevent type="AddItem" itemid="11095" event="function" value="onAddField"/>
 
 	<!-- Boots -->
-	<!-- <movevent type="Equip" itemid="2400" event="script" value="teste.lua"/>     <!-- ARRASTAR ITEM TEMPORARIO--> -->
+	<!-- <movevent type="Equip" itemid="2400" event="script" value="teste.lua"/>     <!-ARRASTAR ITEM TEMPORARIO-->
 	
 	<movevent type="Equip" itemid="2195" slot="feet" event="function" value="onEquipItem"/>
 	<movevent type="DeEquip" itemid="2195" slot="feet" event="function" value="onDeEquipItem"/>

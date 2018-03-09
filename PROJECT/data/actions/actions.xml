@@ -142,8 +142,8 @@
 
 
 <action itemid="11231" event="script" value="livrodemonio.lua" />
-<action itemid="7440" event="script" value="bronzeorb.lua"/>
-<action itemid="7440" event="script" value="diamondorb.lua"/>
+<action itemid="7633" event="script" value="bronzeorb.lua"/>
+<action itemid="7632" event="script" value="diamondorb.lua"/>
 <action itemid="12722" event="script" value="RemoveFrags.lua"/>
 
 
@@ -151,8 +151,8 @@
 	<action uniqueid="6000-6099" event="script" value="chestsys.lua"/> 
 	<action uniqueid="19000-19004" event="script" value="leveraid.lua"/>
 	<action itemid="12723" script="stamina_pre_donate.lua"/>
+	<action itemid="12289" script="stamina_donate.lua"/>
 	<action itemid="8981" script="Killua Cave Owners.lua"/>
-        <action itemid="12289" script="stamina_donate.lua"/>
 
 
 	<!-- PEGUEI ATE AQUI -->		
@@ -162,7 +162,7 @@
 	<action actionid="4538" event="script" value="castledoor1.lua"/>
      <action actionid="9987" event="script" value="castledoor2.lua"/>
      <action actionid="9999" event="script" value="castlewar1.lua"/>
-	 <action itemid="8300" script="pedradavida.lua" />
+	 <!--<action itemid="8300" script="pedradavida.lua" /> -->
 	 <action itemid="9971" script="goldingot.lua" />
 	 <action itemid="10026" script="criticalrock.lua"/>
 	 <action itemid="9911" event="script" value="evento.lua"/>

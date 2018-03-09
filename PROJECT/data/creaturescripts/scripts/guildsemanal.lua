@@ -10,8 +10,8 @@ end
 
 
 -- if getPlayerIp(target) ~= getPlayerIp(cid) then
-if getPlayerGuildId(target) ~= getPlayerGuildId(cid) then
 if isPlayer(target) and isPlayer(cid) then
+if getPlayerGuildId(target) ~= getPlayerGuildId(cid) then
 
 if getPlayerStorageValue(target,getPlayerGuildId(cid)) <= os.time() then
 
@@ -23,8 +23,8 @@ if (getPlayerGuildId(target) ~= 0) then
 
 
 
- db.executeQuery("UPDATE `guilds` SET `frags_semana` = `frags_semana` + 5 WHERE `id` = " .. getPlayerGuildId(cid) .. ";")
- doPlayerSendTextMessage(cid,19,"SOMOU 3 FRAG SEMANA")
+ db.executeQuery("UPDATE `guilds` SET `frags_semana` = `frags_semana` + 3 WHERE `id` = " .. getPlayerGuildId(cid) .. ";")
+ doPlayerSendTextMessage(cid,19,"SOMOU 3 FRAG SEMANAL")
  
  else
  --colocar um verificador para nao burlar..

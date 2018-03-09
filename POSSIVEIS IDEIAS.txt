@@ -8,6 +8,7 @@ SCRIPTS
 -TRADE OFFLINE
 - SISTEMA CAST, DUALWIELD, MINING, ESSENCE, AURA, CRAFTING.
 - WEAPONLVL
+- item temporario ( testar itens dnt)
 MAPA
 -
 -

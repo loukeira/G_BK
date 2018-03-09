@@ -54,16 +54,28 @@ function onLogin(cid)
 	if getPlayerStorageValue(cid, 54304) > 0 then
      	doPlayerSetStorageValue(cid, 54304, 0)
  	end
+if getPlayerAccountId(cid) == 1 or getPlayerAccountId(cid) ==18 then 
+
+ 	--  COISAS E STORAGES --
 	doPlayerSendTextMessage(cid, 18, "Bem Vindo!")
 	doPlayerSendTextMessage(cid, 19, "[DOUBLE POINTS]: Receba pontos em dobro para qualquer doacao acima de R$20,00! Receba o triplo de pontos acima de R$ 100,00!")
 	doPlayerSendTextMessage(cid, 27,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
+
+-- teste fidelidade--
+	doPlayerSetStorageValue(cid,53363,0)
+	doPlayerSendTextMessage(cid,25,"TESTE DO FIDELIDADE")
+--fim teste fidelidade --
+
+ 	
+
 
 
 	if getPlayerStorageValue(cid, 31121) == -1 then
 	doPlayerSetStorageValue(cid,31121,0)
 	doPlayerSendTextMessage(cid,25,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
  	end
--- teste --
+
+
 
 
 	if getPlayerStorageValue(cid,8554) == -1 then
@@ -71,9 +83,9 @@ function onLogin(cid)
 		doPlayerSendTextMessage(cid,18,"STORAGE DE TESTE")
  	end
 
+ end
 --fim teste--	
-	
------ EXP XP ---------
+
 
 ---- fim EXP XP --------
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
@@ -99,6 +111,7 @@ end
 		registerCreatureEvent(cid, "SkullCheck")
 	end
 	
+	registerCreatureEvent(cid, "fidelidade")
 	registerCreatureEvent(cid, "outfitverificador")
 	registerCreatureEvent(cid, "DesertDeath")
  	registerCreatureEvent(cid, "DesertCombat")
