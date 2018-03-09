@@ -15,10 +15,10 @@ local query = db.query or db.executeQuery
 		
 
 function onSay(cid, words, param)
-if(not checkExhausted(cid, 666, 40)) then
+	if(not checkExhausted(cid, 666, 40)) then
 		return false
 	end
-	if not getTilePzInfo(getThingPos(cid)) then
+		if not getTilePzInfo(getThingPos(cid)) then
 		doSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "{Sell Points System} Para gerar o documento, você precisa estar em ProtectZone.")
 		return true
 	end
@@ -36,7 +36,8 @@ if(not checkExhausted(cid, 666, 40)) then
 
  
 
-	if tonumber(param) and tonumber(param) > 0  then
+	if tonumber(param) > 0  then
+		param = math.floor(tonumber(param))
 		if getPlayerPoints(cid) >= tonumber(param) then
 			local papel = doCreateItemEx(12343)
 			doItemSetAttribute(papel, "pontos", tonumber(param))
