@@ -18029,6 +18029,10 @@
 		<attribute key="description" value="This orb increases you Experience Gain in 100%  for 1 hour." />			
 		<attribute key="weight" value="150" />
 	</item>
+	<item id="12724" article="a" name="bone player" >
+		<attribute key="description" value="This item can be exchanged for special boxes." />			
+		<attribute key="weight" value="150" />
+	</item>
 	<item id="20001" name="water" />
 	<item id="20002" name="blood" />
 	<item id="20003" name="beer" />
