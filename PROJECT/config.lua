@@ -13,7 +13,7 @@
 	sqlPort = 3306
 	sqlUser = "root"
 	sqlPass = "asdf0810"
-	sqlDatabase = "baiaknew"
+	sqlDatabase = "gbk"
 	sqlFile = ""
 	sqlKeepAlive = 0
 	mysqlReadTimeout = 1000

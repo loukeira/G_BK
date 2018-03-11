@@ -54,35 +54,33 @@ function onLogin(cid)
 	if getPlayerStorageValue(cid, 54304) > 0 then
      	doPlayerSetStorageValue(cid, 54304, 0)
  	end
-if getPlayerAccountId(cid) == 1 or getPlayerAccountId(cid) ==18 then 
 
+-- MENSAGEM PARA O ACC MANAGER --
+local getname = getPlayerName(cid)
+if tostring(getname) == "Account Manager"  then 
+
+	doPlayerSendTextMessage(cid, 19,"[Gran Baiak]: Bem vindo! Venha aproveitar no melhor servidor Baiak-RPG! Muitas Quests, Mapa bem elaborado, PVP balanceado, Sistemas Incriveis para voce e seus amigos se divertirem! ")
+	doPlayerSendTextMessage(cid, 27,"[Gran Baiak]: Crie logo sua Account e venha curtir conosco!")
+end
+
+--FIM MENSAGEM ACC MANAGER--
+
+ -- SEM SER ACC MANAGER --
+local getname = getPlayerName(cid)
+if not (tostring(getname) == "Account Manager" ) then  
  	--  COISAS E STORAGES --
+ 	if getPlayerStorageValue(cid,31121) == 0 then
 	doPlayerSendTextMessage(cid, 18, "Bem Vindo!")
 	doPlayerSendTextMessage(cid, 19, "[DOUBLE POINTS]: Receba pontos em dobro para qualquer doacao acima de R$20,00! Receba o triplo de pontos acima de R$ 100,00!")
 	doPlayerSendTextMessage(cid, 27,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
-
--- teste fidelidade--
-	doPlayerSetStorageValue(cid,53363,0)
-	doPlayerSendTextMessage(cid,25,"TESTE DO FIDELIDADE")
---fim teste fidelidade --
-
- 	
-
-
-
-	if getPlayerStorageValue(cid, 31121) == -1 then
+	end
+	
+ 	if getPlayerStorageValue(cid, 31121) == -1 then
 	doPlayerSetStorageValue(cid,31121,0)
-	doPlayerSendTextMessage(cid,25,"[Quest Log]: O Quest Log esta funcionando para as quests do Gran Baiak! ")
+	doPlayerSendTextMessage(cid, 19,"[Gran Baiak]: Bem vindo! Venha aproveitar no melhor servidor Baiak-RPG! Muitas Quests, Mapa bem elaborado, PVP balanceado, Sistemas Incriveis para voce e seus amigos se divertirem! ")
  	end
 
-
-
-
-	if getPlayerStorageValue(cid,8554) == -1 then
-		doPlayerSetStorageValue(cid,8554,100)
-		doPlayerSendTextMessage(cid,18,"STORAGE DE TESTE")
- 	end
-
+	
  end
 --fim teste--	
 
@@ -101,6 +99,10 @@ registerCreatureEvent(cid, "AdvanceTeleport")
 end
 
 	registerCreatureEvent(cid, "Idle")
+	registerCreatureEvent(cid, "fidelidade")
+	registerCreatureEvent(cid, "fidelidadelogin")
+
+
 	registerCreatureEvent(cid, "Mail")
 	if(getPlayerOperatingSystem(cid) >= CLIENTOS_OTCLIENT_LINUX) then
 		registerCreatureEvent(cid, "ExtendedOpcode")
@@ -174,6 +176,7 @@ registerCreatureEvent(cid, "VipReceive")
 registerCreatureEvent(cid, "redSkullAmulet")
 registerCreatureEvent(cid, "FullHpMana")
 registerCreatureEvent(cid, "killitem")
+registerCreatureEvent(cid, "killosso")
 registerCreatureEvent(cid, "guildsemanal")
 registerCreatureEvent(cid, "killitems")
 

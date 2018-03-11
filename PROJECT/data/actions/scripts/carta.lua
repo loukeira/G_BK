@@ -1,8 +1,8 @@
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-local level = 100
+local level = 120
 if getPlayerLevel(cid) > level then
 
-local tempo = 10  -- aqui você coloca o tempo, lembrando que é minutos * segundos
+local tempo = 10*60  -- aqui você coloca o tempo, lembrando que é minutos * segundos
 
 local stg = getPlayerStorageValue(cid, 123541)
 if (stg == -1) then

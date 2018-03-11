@@ -18,23 +18,30 @@ if coco < 2400 then
  pau = 1
  end
 
+-- PARTE DOS XP STAGES DEFINIDO PELO OTSERVER -- 
+
 	if getPlayerLevel(cid) <= 100 then exprate = 600 end
 	if getPlayerLevel(cid) > 101 and getPlayerLevel(cid)<= 500 then exprate = 400 end
 	if getPlayerLevel(cid) > 501 then exprate = 5 end
  
+ --FIM --
+
 local boidacarapreta = tonumber(monsterinfo['experience'])*pau*exprate
 
 	local experience = "Experience: "..monsterinfo['experience']*pau*exprate.."\n"
 
 		
-		doBroadcastMessage(""..coco.."")
+		-- doBroadcastMessage(""..coco.."")
 
 		
-		doBroadcastMessage(mname)
+		-- doBroadcastMessage(mname)
 				doBroadcastMessage(experience)
-				doBroadcastMessage(boidacarapreta)
+				-- doBroadcastMessage(boidacarapreta)
   
 								db.query("UPDATE players SET xprank = "..boidacarapreta+xp_rank(cid).." WHERE id = "..getPlayerGUID(cid).." ;")
+
+				
+				doBroadcastMessage("xp rank atual e "..xp_rank(cid).." !") 
 
 				
 				

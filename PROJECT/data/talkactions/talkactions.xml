@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+	<talkaction words="!osso" event="script" value="lootosso.lua"/>
+   <talkaction words="!fidelidade" event="script" value="fidelidade.lua"/>
+
    <talkaction words="!monsterinfo" event="script" value="monsterinfo.lua"/>
 
 

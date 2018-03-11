@@ -1,13 +1,17 @@
 function onLogin(cid)
+local getname = getPlayerName(cid)
+if tostring(getname) == "Account Manager" then return true end
+
 
 local rate = 1.20 -- 30%
 local config = {
 vip = "Você tem "..((rate - 1)*100).."% de exp a mais agora!",
-notvip = "Tornesse vip e ganhe "..((rate - 1)*100).."% a mais de experiencia!",
+notvip = "Torne-se vip e ganhe "..((rate - 1)*100).."% a mais de experiencia!",
 }
 
 if vip.hasVip(cid) == FALSE then
 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, config.notvip)
+
 else
 doPlayerSetExperienceRate(cid, rate)
 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, config.vip)
