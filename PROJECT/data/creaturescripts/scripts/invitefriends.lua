@@ -23,7 +23,7 @@ function onAdvance(cid, skill, oldLevel, newLevel)
 			local f_pid = getPlayerGUIDByName(f_name)
 			setPlayerStorageValue(cid, _invite_friends.storages[3] , ka.lvl)
 			addInvitePoints(f_name, points)
-			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Invite Friends] você  atingiu o level "..newLevel..", que é acima do level requerido "..ka.lvl.." e o seu amigou "..f_name.." recebeu "..points.." Friend Points. Obrigado!")
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Invite Friends] voce  atingiu o level "..newLevel..", que e acima do level requerido "..ka.lvl.." e o seu amigou "..f_name.." recebeu "..points.." Friend Points. Obrigado!")
 			if isPlayer(getPlayerByNameWildcard(f_name)) then
 				getRewardsFriend(f_name, f_pid)
 

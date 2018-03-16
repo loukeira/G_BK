@@ -9,7 +9,7 @@ t_table.seconds = time - (t_table.minutes * 60)
 return t_table
 end
 
-TEMPOSEMANAL = 1*1*60*60
+TEMPOSEMANAL = 7*24*60*60
 STORAGEGLOBAL = 67899
 
 function xp_rank(cid) -- xprank 
@@ -65,23 +65,79 @@ end
 function nomeprimeiro()
  local player = db.getResult("SELECT `name`, `id`  FROM `players` WHERE group_id < '2' ORDER BY `xprank` DESC LIMIT 1;")    
             if(player:getID() ~= -1) then
+
                 while (true) do
                     name = player:getDataString("name")
                     -- local level = player:getDataString("xprank")
 
-                      -- skilllist = skilllist.. "\n#"..string.format("%5s",number.."  "..name.."  -  "..level)
+	                      -- skilllist = skilllist.. "\n#"..string.format("%5s",number.."  "..name.."  -  "..level)
+                    if not(player:next()) then
+                        break
+                    end
+					
+                end
+            
+
+            end
+			 player:free()
+			 nami = tostring(name)
+			 return nami
+end
+
+
+
+function nometotal()
+ local player = db.getResult("SELECT `name`, `id`  FROM `players` WHERE group_id < '2' ORDER BY `xprank` DESC LIMIT 3;")    
+            if(player:getID() ~= -1) then
+            	local i = 0
+ 
+                while (true) do
+                      i = i + 1
+                       if i == 1 then
+                    primeiro = player:getDataString("name")
+                end
+                   if i == 2 then
+                    segundo = player:getDataString("name")
+                end
+                 if i == 3 then
+                    terceiro = player:getDataString("name")
+                end
 
                     if not(player:next()) then
                         break
                     end
 					
                 end
-               
+            
+            end
+			 player:free()
+            primeiroo = tostring(primeiro)
+             segundoo = tostring(segundo)
+            terceiroo = tostring(terceiro)
 
 
+			 return primeiroo, segundoo, terceiroo
+end 
+
+function nometerceiro()
+ local player = db.getResult("SELECT `name`, `id`  FROM `players` WHERE group_id < '2' ORDER BY `xprank` DESC LIMIT 3;")    
+            if(player:getID() ~= -1) then
+            	local i = 0
+                while (true) do
+                      i = i + 1
+                   if i == 3 then
+                    name = player:getDataString("name")
+                end
+ 
+                    if not(player:next()) then
+                        break
+                    end
+					
+                end
             end
 			 player:free()
 			 nami = tostring(name)
+
 			 return nami
 end
 -- function contador (cid) 

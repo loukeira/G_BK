@@ -12,6 +12,20 @@ end
 
 
 
+-- function effect(cid)
+--          if isPlayer(cid) then
+--             local pos = getCreaturePosition(cid)
+--             doSendMagicEffect(pos, 13)
+--          end
+-- end
+
+function getPlayerExtraExpRate(cid) -- By MatheusMkalo
+    return getPlayerRates(cid)[8]
+end
+
+
+
+
 function doSetItemActionId(uid, actionid)
    return doItemSetAttribute(uid, "aid", actionid)
 end
@@ -73,6 +87,66 @@ function isInArray(array, value, caseSensitive)
 	return false
 end
 
+
+------------------INICIO ARMY SISTEM --------------------------
+
+function retornar_army_max()
+ local player = db.getResult("SELECT `army_level` FROM `players` WHERE group_id < '2' ORDER BY `army_level` DESC LIMIT 1;")    
+            if(player:getID() ~= -1) then
+                local i = 0
+ 
+                while (true) do
+
+                    primeiro = player:getDataString("army_level")
+               
+                    if not(player:next()) then
+                        break
+                    end
+                    
+                end
+            
+            end
+             player:free()
+            challenger = tonumber(primeiro)
+
+
+
+             return challenger
+end 
+
+function semnome()
+ local player = db.getResult("SELECT `army_level`, `name` FROM `players` WHERE group_id < '2' AND `id`!= 6361 AND `id`!= 2 AND `id`!= 3 AND `id`!= 4 AND `id`!= 5 AND `id`!= 6  ORDER BY `army_level` DESC ;")    
+            if(player:getID() ~= -1) then
+                local i = 1
+ 				n = {
+ 				
+ 				}
+ 				a = {}
+ 				cont = 0
+                while (true) do
+
+                    army = player:getDataString("army_level")
+                    name = player:getDataString("name")
+          			 n[i] = tostring(name)
+          			 a[i] = tonumber(army)
+          			 cont = i
+            			i = i + 1
+                    if not(player:next()) then
+                        break
+                    end
+                
+				 
+                end
+            
+            end
+             player:free()
+
+
+
+
+             return  n,a,cont
+end 
+
 ARMY = {
 	[1] = {50, 1500, "Bronze V", 50000000}, -- [Número] = {Pontos Kill, Points para UP, "Nome",PLATINIUM COINS POR KILL},
 	[2] = {50, 3000, "Bronze IV", 70000000},
@@ -95,28 +169,32 @@ ARMY = {
 	[19] = {50, 30000, "Master II", 220000000},
 	[20] = {50, 32000, "Master I", 400000000},
 	[21] = {50, 100000, "Challenger", 1000000000},
-	
-	
-}                           
+		
+}   
+                       
 ARMY_LEVEL = 2014159
 ARMY_EXPERIENCE = 2014160
 
-function valor_da_patente(cid) --PEGAR O VALOR DO ARMY REINICIADO
-local res = db.getResult('select `reiniciar_patente` from players where name = \''..getPlayerName(cid)..'\'')
+function valor_do_army(cid) --PEGAR O VALOR DO ARMY REINICIADO
+local res = db.getResult('select `army_level` from `players` where `id` = \''..getPlayerGUID(cid)..'\'')
 
 if(res:getID() == -1) then
 return false
 end
 
-local ret = res:getDataString("reiniciar_patente")
+local ret = res:getDataString("army_level")
 res:free()
  
-pau = tonumber(ret) 
-return pau
+army = tonumber(ret) 
+return army
 end
 
-TEMPO_PATENTI = 1*1*1*60
-PATENTI = 44331
+TEMPO_PATENTI = 30*24*60*60
+PATENTI = 43331
+
+
+--- FIM ARMY SISYEM ------------------------------------
+
 
 function convertTime(time) --CONVERSOR DE TEMPO STORAGE PARA HORAS NORMAIS
 local t_table = {}

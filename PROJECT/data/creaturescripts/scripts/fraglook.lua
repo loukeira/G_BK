@@ -47,9 +47,9 @@ function onLook(cid, thing, position, lookDistance)
         if temporary_level >= 1 then
 		
 		if (getPlayerStorageValue(cid,6724) == 0) or (getPlayerStorageValue(cid,6724) > 1 ) then
-        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")
+        doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(thing.uid,6724).." A, "..getPlayerStorageValue(thing.uid,6723).." M, "..getPlayerStorageValue(thing.uid,6722).." D ].")
 			else
-		 doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(cid,6724).." A, "..getPlayerStorageValue(cid,6723).." M, "..getPlayerStorageValue(cid,6722).." D ].")
+		 doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."]. "..(getPlayerSex(thing.uid) == 0 and "She" or "He").." is "..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][3].." ("..getPlayerStorageValue(thing.uid, ARMY_EXPERIENCE).."/"..ARMY[getPlayerStorageValue(thing.uid, ARMY_LEVEL)][2].."). [Idade: "..getPlayerStorageValue(thing.uid,6724).." A, "..getPlayerStorageValue(thing.uid,6723).." M, "..getPlayerStorageValue(thing.uid,6722).." D ].")
 		end
 		else
         doPlayerSetSpecialDescription(thing.uid, "[Frags: "..getPlayerFrags(thing.uid).."] No have patente points.")

@@ -25,7 +25,7 @@ function onThink(cid,think,interval,topos)
 
 -- end
 
-		if valor_da_storage_inicial > 29 then
+		if valor_da_storage_inicial > 10 then
 	
 			setPlayerStorageValue(getPlayersOnline()[i],contadori,0)
 			setPlayerStorageValue(getPlayersOnline()[i],contador_dia,getPlayerStorageValue(getPlayersOnline()[i],contador_dia)+ 1 )
@@ -52,7 +52,8 @@ function onThink(cid,think,interval,topos)
 		end
 		   
 		doPlayerSetStorageValue(getPlayersOnline()[i],contadori,  getPlayerStorageValue(getPlayersOnline()[i], contadori) + 1)
-		
+		-- doPlayerSendTextMessage(getPlayersOnline()[i], 27, ""..getPlayerStorageValue(getPlayersOnline()[i], contadori).."")
+
 		--apenas para testes --
 	  -- doPlayerSendTextMessage(getPlayersOnline()[i], 27, "Voce ganhou 1 ponto por estar online!")
 	   	   -- doPlayerSendTextMessage(getPlayersOnline()[i], 27, "Voce tem "..getPlayerStorageValue(getPlayersOnline()[i],contadori).."Pontos!")

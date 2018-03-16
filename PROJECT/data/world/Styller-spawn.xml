@@ -7325,11 +7325,11 @@
 	<spawn centerx="1472" centery="1057" centerz="6" radius="5">
 		<monster name="Strong Demon" x="1" y="0" z="6" spawntime="2" />
 	</spawn>
-	<spawn centerx="1086" centery="1059" centerz="6" radius="1">
-		<npc name="Benjamin" x="0" y="1" z="6" spawntime="2" direction="2" />
-	</spawn>
 	<spawn centerx="1075" centery="1060" centerz="6" radius="1">
 		<npc name="Lector" x="0" y="0" z="6" spawntime="2" direction="2" />
+	</spawn>
+	<spawn centerx="1087" centery="1060" centerz="6" radius="2">
+		<npc name="Benjamin" x="-1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="1070" centery="1061" centerz="6" radius="1">
 		<npc name="Dark Rodo" x="-1" y="0" z="6" spawntime="2" direction="2" />
@@ -7347,8 +7347,8 @@
 	<spawn centerx="1468" centery="1068" centerz="6" radius="5">
 		<monster name="Strong Demon" x="2" y="-3" z="6" spawntime="2" />
 	</spawn>
-	<spawn centerx="1080" centery="1072" centerz="6" radius="1">
-		<npc name="A Fluffy Squirrel" x="0" y="0" z="6" spawntime="2" direction="2" />
+	<spawn centerx="1081" centery="1072" centerz="6" radius="2">
+		<npc name="A Fluffy Squirrel" x="-1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="1434" centery="1073" centerz="6" radius="5">
 		<monster name="Strong Demon" x="-4" y="-3" z="6" spawntime="2" />

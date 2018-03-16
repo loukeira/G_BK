@@ -37,7 +37,7 @@ function onSay(cid, words, param)
  
 
 	if tonumber(param) > 0  then
-		param = math.floor(tonumber(param))
+		param = math.ceil(tonumber(param))
 		if getPlayerPoints(cid) >= tonumber(param) then
 			local papel = doCreateItemEx(12343)
 			doItemSetAttribute(papel, "pontos", tonumber(param))

@@ -11,5 +11,5 @@ local desc = getItemInfo(12505).description
 
 	doSendMagicEffect(frompos, 1)	
 	
-return 1
+return true
 end

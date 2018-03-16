@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
+	<talkaction words="!cid" event="script" value="cid.lua"/>
+
+
+	<talkaction words="!extraexp" event="script" value="extra_exp.lua"/>
+	<talkaction words="!diamondorb" event="script" value="diamondorb.lua"/>
+	<talkaction words="!bronzeorb" event="script" value="bronzeorb.lua"/>
+
 
 	<talkaction words="!osso" event="script" value="lootosso.lua"/>
    <talkaction words="!fidelidade" event="script" value="fidelidade.lua"/>
@@ -10,7 +17,7 @@
    <talkaction words="!armytempo" event="script" value="army_tempo.lua"/>
 
 <!--xpranksemanal -->
-	<talkaction access="0-4" words="!xprank" script="xprank.lua"/>
+	<talkaction words="!xprank" script="xprank.lua"/>
 
 <!-- xpsemanal -->
    <talkaction words="!xpsemanal" event="script" value="xpsemanal.lua"/>
@@ -42,7 +49,7 @@
 
 	<!-- <talkaction words="!guild;/guild" event="script" value="guild.lua"/> -->
 	
-	<talkaction words="/myfriend;!myfriend" event="script" value="invitefriends.lua"/>
+	<talkaction words="/invitedby;!invitedby" event="script" value="invitefriends.lua"/>
 
 	<!-- Gods -->
 	<talkaction log="yes" access="3" words="/searchitem" event="script" value="searchitem.lua"/>

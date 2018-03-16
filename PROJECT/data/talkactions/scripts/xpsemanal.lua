@@ -1,5 +1,5 @@
 
-local stu,exhaust = 33589,3
+local stu,exhaust = 33589,5
 
 function onSay(cid, words, param, channel)
 if (getPlayerStorageValue(cid, stu) <= os.time()) then
@@ -7,7 +7,7 @@ if (getPlayerStorageValue(cid, stu) <= os.time()) then
 
   
 if getGlobalStorageValue(STORAGEGLOBAL) < os.time() then
-doPlayerSendTextMessage(cid,27, "o sistema vai reiniciar")
+doPlayerSendCancel(cid, "o sistema vai reiniciar")
 else
 local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
 local timeLeft = convertTime(getGlobalStorageValue(STORAGEGLOBAL) - os.time())

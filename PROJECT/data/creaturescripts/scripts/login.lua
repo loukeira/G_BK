@@ -86,6 +86,7 @@ if not (tostring(getname) == "Account Manager" ) then
 
 
 ---- fim EXP XP --------
+-- AGE STORAGES --
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
 	     	doPlayerSetStorageValue(cid, 6729, 0)
 			doPlayerSetStorageValue(cid, 6722, 0)
@@ -98,6 +99,10 @@ if not (tostring(getname) == "Account Manager" ) then
 registerCreatureEvent(cid, "AdvanceTeleport")
 end
 
+	registerCreatureEvent(cid, "untrade") 
+    registerCreatureEvent(cid, "diamondorb")
+    registerCreatureEvent(cid, "diamondorblogin")
+	registerCreatureEvent(cid, "agethink")
 	registerCreatureEvent(cid, "Idle")
 	registerCreatureEvent(cid, "fidelidade")
 	registerCreatureEvent(cid, "fidelidadelogin")
@@ -132,7 +137,8 @@ end
 	registerCreatureEvent(cid, "BountyHunter")
 	registerCreatureEvent(cid, "PlayerDeath")
 	registerCreatureEvent(cid, "rewardpoints")
-	registerCreatureEvent(cid, "ArmyKill")
+	registerCreatureEvent(cid, "armyk")
+	registerCreatureEvent(cid, "armyl")
 	registerCreatureEvent(cid, "autoloot")
 	registerCreatureEvent(cid, "Auto Loot")
 	registerCreatureEvent(cid, "RecordIp")
@@ -155,7 +161,7 @@ end
             setGlobalStorageValue(i+100, 0)
         end
     end
-		registerCreatureEvent(cid, "monsterinfo")
+		registerCreatureEvent(cid, "xprank")
 
 	registerCreatureEvent(cid, "GuildEvents")
 registerCreatureEvent(cid, "critical")

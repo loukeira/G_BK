@@ -1,59 +1,81 @@
 local keywordHandler = KeywordHandler:new() 
 local npcHandler = NpcHandler:new(keywordHandler) 
 NpcSystem.parseParameters(npcHandler) 
-local talkState = {}
+local talkState = {} 
 function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end 
 function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end 
 function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end 
 function onThink() npcHandler:onThink() end 
 function creatureSayCallback(cid, type, msg) 
-if(not npcHandler:isFocused(cid)) then 
-return false 
-end 
-local talkState = {}
-local talkUser = NPCHANDLER_CONVbehavior == CONVERSATION_DEFAULT and 0 or cid
-local shopWindow = {}
-local moeda= { 123, 456 } -- id da sua moeda vip
+  if(not npcHandler:isFocused(cid)) then 
+    return false 
+  end 
+  local talkUser,msg,str = NPCHANDLER_CONVbehavior == CONVERSATION_DEFAULT and 0 or cid,msg:lower(),""
+  local t = {
+    ["item vip um"] = {amount = 1, item = {12372,1}, itemdnt = {8901,1}},
+    ["item vip dois"] = {amount = 1,  item = {12372,2}, itemdnt = {8901,1}},
+    ["item vip tres"] = {amount = 1, item = {12372,3}, itemdnt = {8901,1}},
+    ["item vip quatro"] = {amount = 1, item = {12372,4}, itemdnt = {8901,1}}, 
+    ["item vip cinco"] = {amount = 1, item = {12372,5}, itemdnt = {8901,1}},
+    ["item vip seis"] = {amount = 1, item = {12372,6}, itemdnt = {8901,1}}
 
-local t = {
+  }
+  
+  if (msgcontains(msg, "trade") or msgcontains(msg, 'TRADE'))then
+    str = str .. "[+]    ITENS     /    O QUE PAGO POR ELES    [+] : \n\n"
+    for name, ret in pairs(t) do
+      str = str.."\n "..name.."  =  "..ret.item[2].." MOEDAS  DONATE \n"
+    end
 
-      [12396] = {price = 1},
-	  [12575] = {price = 1}
+    local str2 = "                             [+] BUY ITENS DONATE [+]\n\n\n [+] COMPRO ITENS DONATE PELA METADE DOS PONTOS! [+] \n\n Digite Corretamente o nome do item que voce quer, que eu lhe faco uma oferta!\n\n "..str.."\n\n                             [+] BUY ITENS DONATE [+]\n\n"
 
-      }
-	  
-local onSell = function(cid, item, subType, amount, ignoreCap, inBackpacks)
-    if  t[1] and not doPlayerRemoveItem(cid, moeda[1], t[1].price) then
-          selfSay("You don't have "..t[1].price.." "..getItemNameById(moeda[1]), cid)
-             else
-        doPlayerAddItem(cid, t[1] )
-        selfSay("Here are you.", cid)
-       end
-    return true
+    doPlayerPopupFYI(cid, str2)
+  
+    -- npcHandler:say(str, cid)
+ else if t[msg] then
+      
+    sharuara, qsharuara = t[msg].item[1], t[msg].item[2]
+    sharuaradnt, qsharuaradnt = t[msg].itemdnt[1], t[msg].itemdnt[2]
+
+local ctz = "voce tem ctz q quer fazer a troca de {"..qsharuaradnt.."}   {"..getItemNameById(sharuaradnt).."} por {"..qsharuara.."}   {"..getItemNameById(sharuara).."} ? se sim digite {confirmo}"
+        npcHandler:say(ctz, cid)
+          setPlayerStorageValue(cid, 134132 , 1)
+        
+  elseif (msgcontains(msg, "confirmo") or msgcontains(msg, 'CONFIRMO')) and (getPlayerStorageValue(cid,134132) == 1) then
+
+                          if doPlayerRemoveItem(cid,sharuaradnt, qsharuaradnt) then
+
+                            if isItemStackable(sharuara) or qsharuara == 1 then
+
+                              doPlayerAddItem(cid, sharuara, qsharuara)   
+    
+                            end
+
+                            npcHandler:say("Aqui esta "..qsharuara.." ".. getItemNameById(sharuara) .."!", cid)
+              setPlayerStorageValue(cid, 134132 , 0)
+
+                          else
+
+                            npcHandler:say("Voce precisa de "..qsharuaradnt.." ".. getItemNameById(sharuaradnt).." !" , cid)
+                                          setPlayerStorageValue(cid, 134132 , 0)
+
+
+                          end
+else if (msgcontains(msg, "confirmo") or msgcontains(msg, 'CONFIRMO')) and (getPlayerStorageValue(cid,134132) == 0) then
+                                npcHandler:say("Desculpe, nao entendi. Digite {trade} para ver as opcoes!", cid)
 end
 
-local onSell = function(cid, item, subType, amount, ignoreCap, inBackpacks)
-    if  t[2] and not doPlayerRemoveItem(cid, moeda[2], t[2].price) then
-          selfSay("You don't have "..t[2].price.." "..getItemNameById(moeda[2]), cid)
-             else
-        doPlayerAddItem(cid, t[2] )
-        selfSay("Here are you.", cid)
-       end
-    return true
+
+    end
+
+
 end
 
-
-
-
-if (msgcontains(msg, 'trade') or msgcontains(msg, 'TRADE'))then
-            for var, ret in pairs(t) do
-                    table.insert(shopWindow, {id = var, subType = 0, buy = 0, sell = ret.price, name = getItemNameById(var)})
-                end
-            openShopWindow(cid, shopWindow, onBuy, onSell)
-	        end
-return true
+  return true 
 end
-
-
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback) 
 npcHandler:addModule(FocusModule:new())
+
+
+
+    

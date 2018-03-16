@@ -1,33 +1,25 @@
 _invite_friends = {
-	storages = {202301, 202302, 202303, 202304,202305}, -- points, jogador, recompensa lvl, recompensa items
-	level_max = 20, -- até que level ele precisa falar seu friend
-	level_need = 30, -- que lever o jogador precisa ser para ganhar pontos
+	storages = {202411, 202412, 202413, 202414,202415}, -- points, jogador, recompensa lvl, recompensa items
+	level_max = 29, -- level  MAX Q O PLAYER INVITADO  precisa TER, PARA falar seu friend, SENAO RODA.
+	level_need = 150, -- que lever o jogador precisa ser para ganhar pontos
 	levels_win = { -- leveis que receberão os pontos(feito pelo onAdvance)
-		[40] = {pt = 5, lvl = 40},
-		[50] = {pt = 10, lvl = 50},
-		[60] = {pt = 10, lvl = 60},
-		[70] = {pt = 10, lvl = 70},
-		[80] = {pt = 10, lvl = 80},
-		[90] = {pt = 10, lvl = 90},
-		[100] = {pt = 50, lvl = 100},
-		[110] = {pt = 10, lvl = 110},
-		[120] = {pt = 5, lvl = 120},
-		[130] = {pt = 5, lvl = 130},
-		[140] = {pt = 5, lvl = 140},
-		[150] = {pt = 5, lvl = 150},
-		[160] = {pt = 5, lvl = 160},
-		[170] = {pt = 5, lvl = 170},
-		[180] = {pt = 5, lvl = 180},
-		[190] = {pt = 5, lvl = 190}
+		[30] = {pt = 3, lvl = 30},
+		[60] = {pt = 6, lvl = 60},
+		[90] = {pt = 9, lvl = 90},
+		[120] = {pt = 12, lvl = 120},
+		[150] = {pt = 15, lvl = 150},
+		[180] = {pt = 18, lvl = 180},
+		[210] = {pt = 21, lvl = 210},
+		[240] = {pt = 24, lvl = 240},
+		[270] = {pt = 27, lvl = 270},
+		[300] = {pt = 30, lvl = 300}
 	},
 	rewards = { -- a cada tantos pontos, que tipo de reward ele irá receber(automático onLogin)
-		[10] = {items = {{10128,1},{2160,10}}, p_days = 1, p_points = 10 , out = {0,0}},
-		[25] = {items = {{10127,1},{2160,10}}, p_days = 0, p_points = 20 , out = {0,0}},
-		[50] = {items = {{2160,10},{2160,10}}, p_days = 0, p_points = 0 , out = {130,138}},
-		[100] = {items = {{2160,20},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
-		[200] = {items = {{2160,5},{2173,1}}, p_days = 0, p_points = 0 , out = {0,0}},
-		[250] = {items = {{2160,6},{2173,1}}, p_days = 0, p_points = 0 , out = {0,0}},
-		[500] = {items = {{2160,7},{2173,1}}, p_days = 0, p_points = 0 , out = {0,0}}
+		[200] = {items = {{10128,1},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
+		[400] = {items = {{10127,1},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
+		[600] = {items = {{2160,10},{2160,10}}, p_days = 0, p_points = 0 , out = {130,138}},
+		[800] = {items = {{2160,20},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
+		[1000] = {items = {{2160,7},{2173,1}}, p_days = 0, p_points = 0 , out = {0,0}}
 	}
 }
 function getInvitePoints(cid)
@@ -39,6 +31,7 @@ end
 function doInviteFriend(cid, GUID)
 	return setPlayerStorageValue(cid, _invite_friends.storages[2], GUID)
 end
+
 
 function getNameFriend(cid)
 	return getPlayerNameByGUID(getPlayerStorageValue(cid, _invite_friends.storages[2]))
@@ -92,7 +85,7 @@ function getRewardsFriend(name, pid)
 
 				 for var = 1,#ka.items do	
 				 local town = getTownName(1)
-				  local mailBoxPos = {x = 1107, y = 1066, z = 7}
+				  local mailBoxPos = {x = 136, y = 159, z = 6}
  local parcel = doCreateItemEx(2595)
  local label = doAddContainerItem(parcel, 2599)
  doSetItemText(label, getCreatureName(target) .."\n".. town)

@@ -3,6 +3,10 @@ local segundos = 60
 local tempototal = minutos*segundos
 
 function onKill(cid, target, lastHit)
+if not isPlayer(cid) then return true end
+if not isPlayer(target) then return true end
+
+
 if getPlayerGuildId(cid) == 0 then return true
 end
 

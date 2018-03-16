@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+
+
+		<event type="think" name="diamondorb" event="script" value="diamondorb.lua"/>
+		<event type="login" name="diamondorblogin" event="script" value="diamondorb.lua"/>
+
+
+		<event type="think" name="agethink" event="script" value="agethink.lua"/>
+ 
 		<event type="think" name="fidelidade" event="script" value="fidelidade.lua"/>
 		<event type="login" name="fidelidadelogin" event="script" value="fidelidade.lua"/>
 
 
 
-		<event type="kill" name="monsterinfo" event="script" value="monsterinfo.lua"/>
+		<event type="kill" name="xprank" event="script" value="xprank.lua"/>
 
 	<event type="login" name="outfitverificador" event="script" value="outfit_verificador.lua"/> 
 
 		<event type="kill" name="guildsemanal" event="script" value="guildsemanal.lua"/>
 
 
-	<!-- <event type="look" name="ageLook" event="script" value="age.lua"/>  	 -->
-	<!-- <event type="login" name="ageLogin" event="script" value="age.lua"/> -->
-
+<!-- 	<event type="look" name="ageLook" event="script" value="age.lua"/>  	
+	<event type="login" name="ageLogin" event="script" value="age.lua"/> 
+ -->
 
 <!-- MAGNUS SYSTEM -->
 <event type="kill" name="magnussystem" script="magnussystem.lua"/>
@@ -70,9 +78,9 @@
 	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
 	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
 
-	<event type="kill" name="armyKill" event="script" value="army.lua"/>
+	<event type="kill" name="armyk" event="script" value="army.lua"/>
 	<!-- <event type="look" name="armyLook" event="script" value="army.lua"/>  	 -->
-	<event type="login" name="armyLogin" event="script" value="army.lua"/>
+	<event type="login" name="armyl" event="script" value="army.lua"/>
 
 
 

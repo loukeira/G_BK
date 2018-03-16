@@ -3031,9 +3031,11 @@
 		<attribute key="weight" value="4200" />
 		<attribute key="defense" value="53" />
 		<attribute key="attack" value="72" />
-				<attribute key="attackSpeed" value="2000" />
-
-		<attribute key="weaponType" value="sword" />
+		<attribute key="duration" value="100" />
+		<attribute key="showduration" value="1" />
+		<attribute key="decayTo" value="8901" />
+<!-- 		<attribute key="attackSpeed" value="2000" />
+ -->		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="3" />
 	</item>
 	<item id="2401" article="a" name="staff">
@@ -4096,11 +4098,11 @@
 	<item id="2595" article="a" name="parcel">
 		<attribute key="weight" value="1800" />
 		<attribute key="type" value="container" />
-		<attribute key="containerSize" value="10" />
+		<attribute key="containerSize" value="25" />
 	</item>
 	<item id="2596" article="a" name="stamped parcel">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="10" />
+		<attribute key="containerSize" value="25" />
 	</item>
 	<item id="2597" article="a" name="letter">
 		<attribute key="weight" value="50" />
