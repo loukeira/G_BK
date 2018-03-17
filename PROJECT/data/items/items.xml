@@ -18035,6 +18035,10 @@
 		<attribute key="description" value="This item can be exchanged for special boxes." />			
 		<attribute key="weight" value="150" />
 	</item>
+	<item id="12725" article="a" name="donate coin" >
+		<attribute key="description" value="This item can be exchanged for donate points." />			
+		<attribute key="weight" value="150" />
+	</item>
 	<item id="20001" name="water" />
 	<item id="20002" name="blood" />
 	<item id="20003" name="beer" />

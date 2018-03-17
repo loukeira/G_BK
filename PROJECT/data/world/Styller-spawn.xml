@@ -2535,8 +2535,8 @@
 		<monster name="Ultimate Diabolic Imp" x="23" y="29" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="1172" centery="1058" centerz="5" radius="1" />
-	<spawn centerx="1075" centery="1060" centerz="5" radius="1">
-		<npc name="Frodo" x="0" y="0" z="5" spawntime="2" direction="2" />
+	<spawn centerx="1074" centery="1060" centerz="5" radius="1">
+		<npc name="Riona" x="1" y="0" z="5" spawntime="10" direction="2" />
 	</spawn>
 	<spawn centerx="439" centery="1064" centerz="5" radius="30">
 		<monster name="Ultimate Diabolic Imp" x="-12" y="-24" z="5" spawntime="2" />
@@ -10476,6 +10476,7 @@
 	<spawn centerx="1129" centery="1057" centerz="8" radius="5">
 		<monster name="Giant Spider" x="1" y="0" z="8" spawntime="2" />
 		<monster name="spider" x="-1" y="3" z="8" spawntime="2" />
+		<monster name="spider" x="-4" y="5" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1429" centery="1057" centerz="8" radius="3">
 		<monster name="Demon" x="1" y="0" z="8" spawntime="2" />
@@ -10562,15 +10563,15 @@
 		<monster name="Demon" x="1" y="3" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1130" centery="1069" centerz="8" radius="10">
-		<monster name="Giant Spider" x="-7" y="-6" z="8" spawntime="2" />
 		<monster name="spider" x="0" y="-6" z="8" spawntime="2" />
 		<monster name="spider" x="-5" y="-4" z="8" spawntime="2" />
 		<monster name="spider" x="-8" y="-1" z="8" spawntime="2" />
 		<monster name="spider" x="6" y="1" z="8" spawntime="2" />
-		<monster name="Giant Spider" x="-10" y="5" z="8" spawntime="2" />
+		<monster name="spider" x="8" y="1" z="8" spawntime="2" />
 		<monster name="spider" x="7" y="6" z="8" spawntime="2" />
 		<monster name="spider" x="-6" y="7" z="8" spawntime="2" />
 		<monster name="spider" x="1" y="7" z="8" spawntime="2" />
+		<monster name="spider" x="5" y="7" z="8" spawntime="2" />
 		<monster name="Giant Spider" x="8" y="7" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="896" centery="1070" centerz="8" radius="1">
@@ -10617,9 +10618,12 @@
 	</spawn>
 	<spawn centerx="1114" centery="1074" centerz="8" radius="10">
 		<monster name="spider" x="1" y="-4" z="8" spawntime="2" />
+		<monster name="spider" x="-2" y="-1" z="8" spawntime="2" />
+		<monster name="spider" x="4" y="-1" z="8" spawntime="2" />
 		<monster name="spider" x="-5" y="3" z="8" spawntime="2" />
+		<monster name="spider" x="-4" y="4" z="8" spawntime="2" />
 		<monster name="spider" x="-3" y="7" z="8" spawntime="2" />
-		<monster name="Giant Spider" x="-3" y="10" z="8" spawntime="2" />
+		<monster name="spider" x="-3" y="10" z="8" spawntime="2" />
 	</spawn>
 	<spawn centerx="1373" centery="1074" centerz="8" radius="3">
 		<monster name="Demon" x="1" y="1" z="8" spawntime="2" />
@@ -10832,6 +10836,7 @@
 		<monster name="Giant Spider" x="4" y="-4" z="8" spawntime="2" />
 		<monster name="spider" x="6" y="-3" z="8" spawntime="2" />
 		<monster name="spider" x="4" y="5" z="8" spawntime="2" />
+		<monster name="spider" x="3" y="6" z="8" spawntime="2" />
 		<monster name="spider" x="3" y="7" z="8" spawntime="2" />
 		<monster name="Giant Spider" x="2" y="9" z="8" spawntime="2" />
 	</spawn>
