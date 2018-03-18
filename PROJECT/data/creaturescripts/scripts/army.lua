@@ -71,25 +71,36 @@ local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
 
 --     end
 
+ 
 
 
+                                
+                            
 
                     
-                              
+
+                       
 
 
- temporary_level = getPlayerStorageValue(target, ARMY_LEVEL) 
- temporary_exp = getPlayerStorageValue(target, ARMY_EXPERIENCE)
+                               
+
+
+ local temporary_level = getPlayerStorageValue(target, ARMY_LEVEL) 
+ local temporary_exp = getPlayerStorageValue(target, ARMY_EXPERIENCE)
+
 if valor_do_army(target) >= 16 then
-if valor_do_army(target) > valor_do_army(target) then
+if valor_do_army(target) > valor_do_army(cid) then
 
-    setPlayerStorageValue(target, ARMY_EXPERIENCE, (temporary_exp - ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][1]))
+ setPlayerStorageValue(target, ARMY_EXPERIENCE, (temporary_exp - (math.ceil((ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][2] *0.25)) ) ))
+  continha1 = (temporary_exp - (math.ceil((ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][2] *0.25))))
+            if continha1 < 0 then continha1 = continha1*(-1) end
 
     if getPlayerStorageValue(target,ARMY_EXPERIENCE) < 0 then
             setPlayerStorageValue(target, ARMY_LEVEL, temporary_level - 1)
             db.query("UPDATE `players` SET `army_level` = `army_level`-1  WHERE `id` = " .. getPlayerGUID(target) .. ";")
-            db.query("UPDATE `players` SET `army_experience` = 0  WHERE `id` = " .. getPlayerGUID(target) .. ";")
-            setPlayerStorageValue(target, ARMY_EXPERIENCE,  0)
+         local newexpelo = (ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][2] - continha1)
+-- db.query("UPDATE `players` SET `army_experience` = "..newexpelo.."  WHERE `id` = " .. getPlayerGUID(target) .. ";")    
+               setPlayerStorageValue(target, ARMY_EXPERIENCE,  newexpelo)
             doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][3]..".")
 
 if valor_do_army(target) == 21 then sturagearmy,down = 144451,144450 elseif valor_do_army(target) == 20 then sturagearmy,down = 144450,144449 elseif valor_do_army(target) == 19 then sturagearmy,down = 144449,144448 elseif valor_do_army(target) == 18 then sturagearmy,down = 144448,144447 elseif valor_do_army(target) == 17 then sturagearmy,down = 144447,144446 elseif valor_do_army(target) == 16 then sturagearmy = 144446 end
@@ -107,42 +118,43 @@ if valor_do_army(target) == 21 then sturagearmy,down = 144451,144450 elseif valo
 end
 end
 
+ local temporary_level = getPlayerStorageValue(cid, ARMY_LEVEL) 
+ local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
 
 
 
 
-
-    local tempo = 10
+    local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 
-if valor_do_army(cid) == 21 then                local tempo = 10
+if valor_do_army(cid) == 21 then                local tempo = 20
                 local storage_do_elo = 1234567
          setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 elseif valor_do_army(cid) == 20 then
-        local tempo = 10
+        local tempo = 20
                 local storage_do_elo = 1234567
          setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 elseif valor_do_army(cid) == 19 then
-     local tempo = 10
+     local tempo = 20
                 local storage_do_elo = 1234567
                          setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 elseif valor_do_army(cid) == 18 then
-     local tempo = 10
+     local tempo = 20
                local storage_do_elo = 1234567
                  setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 elseif valor_do_army(cid) == 17 then
-     local tempo = 10
+     local tempo = 20
                 local storage_do_elo = 1234567
                  setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
 elseif valor_do_army(cid) == 16 then
-     local tempo = 10
+     local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
@@ -150,17 +162,18 @@ end
           
 
 
-    if (temporary_level < #ARMY) then
+    if (temporary_level <= #ARMY) then
         local lvlboneco = getPlayerLevel(cid)
         local formula = math.ceil( (lvlboneco*0.75) )
-        if ( (getPlayerLevel(target) >= getPlayerLevel(cid)) or (getPlayerLevel(target) >= formula) ) and not getTileInfo(getCreaturePosition(cid)).hardcore then
+        -- 
+        if ( (getPlayerLevel(target) >= getPlayerLevel(cid)) or (getPlayerLevel(target) >= formula)  ) and not getTileInfo(getCreaturePosition(cid)).hardcore then
 
 
 
 
 
-
-local konstante_dia = 1522450
+local vezes_ao_dia = 253433
+local konstante_dia = 1347800
     local dia = 10*60
     if getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia) - os.time() <= 0 then
 
@@ -168,21 +181,49 @@ local konstante_dia = 1522450
 
     
             setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante_dia , os.time() + dia)
-      local vezes_ao_dia = 833423
 
     setPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia , 0)
 
     end
 
+local vezes_ao_dia = 253433
+
+ if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
+  local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
+-- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+                    
+                    doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
 
 
-
-local vezes_ao_dia = 833423
-            if getplayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) < 5 then 
-
+                 return true
+else
 
 
-    
+ local konstante = 322450
+ local minutos = 5
+
+    if getPlayerStorageValue(target, getPlayerGuildId(cid) + konstante) - os.time() >= 0 then
+  
+                    doPlayerSendTextMessage(cid,18," MAIOR QUE O TEMPO! ")
+                    return true
+        else
+           
+
+--             if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
+--   local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+-- local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
+-- -- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+                    
+--                     doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
+
+
+--                  return true
+-- else
+
+
 
 
                     setPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia , getPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia) +1 )
@@ -192,18 +233,10 @@ local vezes_ao_dia = 833423
                     else
                     doPlayerSendTextMessage(cid,18,"[Elo system]: Voce Nao ira ganhar mais xp elo caso mate o player "..getCreatureName(target).." hoje! Espere 24 hrs para ganhar xp Elo em cima dele novamente! ")
                     end
-                    local konstante = 322450
-
-local minutos = 15
-
-    if getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante) - os.time() <= 0 then
-            setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante , os.time() + minutos)
-
-        doPlayerSendTextMessage(cid,18,"[Elo system]:Voce tera q esperar "..minutos.." min pra ganhar xp 'Elo' em cima de "..getCreatureName(target).." novamente")
 
 
 
-            if ((tonumber(temporary_exp) + tonumber(ARMY[temporary_level][1])) >= tonumber(ARMY[temporary_level][2])) then
+            if (((tonumber(temporary_exp) + tonumber(ARMY[temporary_level][1])) >= tonumber(ARMY[temporary_level][2])) and  (valor_do_army(cid < 21)) ) then
             
                 local storageglobal21 = 144451
                  local storageglobal20 = 144450
@@ -215,14 +248,14 @@ local minutos = 15
 
 
 
-                                local challeng = 1
+                                -- local challeng = 1
                                 if (valor_do_army(cid) == 20) then
-                                    if (global_army(storageglobal21) < challeng ) then
+                                    -- if (global_army(storageglobal21) < challeng ) then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                                     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You receive the best elo, congratulations "..ARMY[#ARMY][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
@@ -233,15 +266,15 @@ local minutos = 15
 
 
         db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal21.. ";")
-                       local tempo = 10
+                       local tempo = 20
                 local storage_do_elo = 1234567
                          setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-                                        return true
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existe "..challeng.." Player Elo Challenger!")
-                                             return true 
-                                    end
+                                    -- else
+                                    --     doPlayerSendTextMessage(cid, 18, "ja existe "..challeng.." Player Elo Challenger!")
+                                    --          return true 
+                                    -- end
+                                    return true
                                 end
 
 
@@ -250,13 +283,13 @@ local minutos = 15
 
 
 
-                                local master1 = 2
+                                -- local master1 = 2
                                 if (valor_do_army(cid) == 19) then
-                                    if (global_army(storageglobal20) < master1) then
+                                    -- if (global_army(storageglobal20) < master1) then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                            db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                            db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
@@ -270,14 +303,15 @@ local minutos = 15
 
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal20.. ";")
-                                           local tempo = 10
+                                           local tempo = 20
                 local storage_do_elo = 1234567
                          setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existem "..master1.." players no nivel Master I")
-                                             return true 
-                                    end
+                                    -- else
+                                    --     doPlayerSendTextMessage(cid, 18, "ja existem "..master1.." players no nivel Master I")
+                                    --          return true 
+                                    -- end
+                                    return true
                                 end
 
 
@@ -286,13 +320,13 @@ local minutos = 15
 
 
 
-                                local master2 = 3
+                                -- local master2 = 3
                                 if (valor_do_army(cid) == 18) then
-                                    if global_army(storageglobal19) < master2 then
+                                    -- if global_army(storageglobal19) < master2 then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                            db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                            db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
@@ -306,25 +340,26 @@ local minutos = 15
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal19.. ";")
 
-                                           local tempo = 10
+                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existem "..master2.." players no nivel Master II")
-                                             return true 
-                                    end
+                                    -- else
+                                    --     doPlayerSendTextMessage(cid, 18, "ja existem "..master2.." players no nivel Master II")
+                                    --          return true 
+                                    -- end
+                                    return true
                                 end
 
 
 
-                                local diamond1 = 4
+                                -- local diamond1 = 4
                                 if (valor_do_army(cid) == 17) then
-                                    if global_army(storageglobal18) < diamond1 then
+                                    -- if global_army(storageglobal18) < diamond1 then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                            db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                            db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
@@ -338,26 +373,27 @@ local minutos = 15
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal18.. ";")
 
-                                           local tempo = 10
+                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existem "..diamond1.." players no nivel diamond I")
-                                             return true 
-                                    end
+                                    -- else
+                                    --     doPlayerSendTextMessage(cid, 18, "ja existem "..diamond1.." players no nivel diamond I")
+                                    --          return true 
+                                    -- end
+                                    return true
                                 end
 
 
 
 
-                                local diamond2 = 5
+                                -- local diamond2 = 5
                                 if (valor_do_army(cid) == 16) then
-                                    if global_army(storageglobal17) < diamond2 then
+                                    -- if global_army(storageglobal17) < diamond2 then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                            db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                            db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
@@ -367,24 +403,25 @@ local minutos = 15
 
                    db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal17.. ";")
 
-                                  local tempo = 10
+                                  local tempo = 20
                 local storage_do_elo = 1234567
                  setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existem "..diamond2.." players no nivel diamond II")
-                                             return true 
-                                    end
+                                    -- else
+                                    --     doPlayerSendTextMessage(cid, 18, "ja existem "..diamond2.." players no nivel diamond II")
+                                    --          return true 
+                                    -- end
+                                    return true
                                 end
 
 
-                                local diamond3 = 8
+                                -- local diamond3 = 8
                                 if (valor_do_army(cid) == 15) then
-                                    if global_army(storageglobal16) < diamond3 then
+                                    -- if global_army(storageglobal16) < diamond3 then
                                                 doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio   
                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                            db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                            db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
@@ -392,17 +429,22 @@ local minutos = 15
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal16.. ";")
 
-                                           local tempo = 10
+                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
                               
-                                    else
-                                        doPlayerSendTextMessage(cid, 18, "ja existem "..diamond3.." players no nivel diamond III")
-                                             return true 
-                                    end
+                                  --   else
+                                  -- doPlayerSendTextMessage(cid, 18, "ja existem "..diamond3.." players no nivel diamond III")
+                                  --            return true 
+                                  --   end
+                                    return true
                                 end
                                 
+
+
+
+
 
                         -- if (getPlayerStorageValue(cid, ARMY_LEVEL) >= #ARMY) then
 
@@ -424,47 +466,52 @@ local minutos = 15
                                         doPlayerAddMoney(cid, ARMY[temporary_level][4]) --lugar q arruma o premio
                                         setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level + 1)
                                         db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                                                    db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
-                                                                db.executeQuery("UPDATE `players` SET `army_experience` = o  WHERE `id` = "..getPlayerGUID(cid).." ;")
-
+                                                    db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                                         setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                                         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new patent: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                                         doSendMagicEffect(getCreaturePosition(cid), 27)
 
-                        end
+                         end
+
+                                 setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante , os.time() + minutos)
+                                         doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
+
+
     
             return true
            end
 
+    local temporary_level = getPlayerStorageValue(cid, ARMY_LEVEL) 
+    local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
+        setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante , os.time() + minutos)
 
+        if (valor_do_army(cid) == 21) and (temporary_exp >= ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] ) then
+                        doPlayerSendTextMessage(cid,18,"[Elo system]: Voce ja atingiu o limite de xp elo do challenger!")
+                        if temporary_exp == ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] then
+                            return true
+                        else
+                            setPlayerStorageValue(cid, ARMY_EXPERIENCE , ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] )
+                             db.executeQuery("UPDATE `players` SET `army_experience` = "..temporary_exp.."  WHERE `id` = "..getPlayerGUID(cid).." ;")
+                        end
+                        return true
+        end
+
+
+        doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
 
             setPlayerStorageValue(cid, ARMY_EXPERIENCE, (temporary_exp + ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1]))
-            db.executeQuery("UPDATE `players` SET `army_experience` = "..getPlayerStorageValue(cid,ARMY_EXPERIENCE).."  WHERE `id` = "..getPlayerGUID(cid).." ;")
+        db.executeQuery("UPDATE `players` SET `army_experience` = "..temporary_exp.."  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce matou  "..getCreatureName(target).." e ganhou "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." faltando entao "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points para avancar de nivel!")
             doSendMagicEffect(getCreaturePosition(cid), 13)
 
-            else
-                    doPlayerSendTextMessage(cid,18,"[elo system]: Voce deve esperar "..minutos.." min para ganhar xp elo no player "..getCreaturename(target).." ")
-                    return true
+          
 
                 end
 
 
-
-
-                else
-                    local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
-                    local vezes_ao_dia = 833423
-                    local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + vezes_ao_dia) - os.time())
-                    doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreaturename(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." Para ganhar xp Elo em cima dele novamente!")
-
-
-                 return true
-
                 end
-
 
             
         end
@@ -619,7 +666,7 @@ function onThink(cid, interval)
     if tostring(getPlayerName(cid)) == "Account Manager" then return true end
     if getPlayerAccountId(cid) == 1 or getPlayerAccountId(cid) ==18 then return true end
 if isPlayer(cid) then
-    local tempo_auxiliar_segundo = 152911 
+    local tempo_auxiliar_segundo = 1529113
 
         if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= os.time() then
         setPlayerStorageValue(cid, tempo_auxiliar_segundo , os.time() + 2)
@@ -644,20 +691,27 @@ else
            
                 local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
                 local timeLeft = convertTime(getPlayerStorageValue(cid, storage_do_elo ) - os.time())
+                if getPlayerStorageValue(cid,storage_do_elo) > 0 then
 
-                -- doPlayerSendTextMessage(cid, 18 , "se vc nao matar em : "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." vc ira perder 1 nivel de elo! ")
+            doPlayerSendTextMessage(cid, 18 , "Mate em : "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ! ")
+        else
+                doPlayerSendTextMessage(cid, 18 , "Menor que zero ")
+                 end
 
                 if (getPlayerStorageValue(cid,storage_do_elo) - os.time()) <= 0 then
+    local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
+    local temporary_level = getPlayerStorageValue(cid, ARMY_LEVEL) 
 
+ setPlayerStorageValue(cid, ARMY_EXPERIENCE, (temporary_exp - (math.ceil((ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] *0.25)) ) ))
 
-                setPlayerStorageValue(cid, ARMY_EXPERIENCE, (temporary_exp - (math.ceil((ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] *0.25) ) ) ) )
-
-
+ continha = (temporary_exp - (math.ceil((ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] *0.25))))
+            if continha < 0 then continha = continha*(-1) end
                     if getPlayerStorageValue(cid,ARMY_EXPERIENCE) < 0 then
                                 setPlayerStorageValue(cid, ARMY_LEVEL, temporary_level - 1)
                                 db.query("UPDATE `players` SET `army_level` = `army_level`-1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                                db.query("UPDATE `players` SET `army_experience` = 0  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
-                                setPlayerStorageValue(cid, ARMY_EXPERIENCE,  0)
+                      local newexpelo = (ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - continha)
+                                db.query("UPDATE `players` SET `army_experience` = "..newexpelo.."  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+                                setPlayerStorageValue(cid, ARMY_EXPERIENCE,  newexpelo)
                                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
 
                     if valor_do_army(cid) == 21 then sturagearmy,down = 144451,144450 elseif valor_do_army(cid) == 20 then sturagearmy,down = 144450,144449 elseif valor_do_army(cid) == 19 then sturagearmy,down = 144449,144448 elseif valor_do_army(cid) == 18 then sturagearmy,down = 144448,144447 elseif valor_do_army(cid) == 17 then sturagearmy,down = 144447,144446 elseif valor_do_army(cid) == 16 then sturagearmy = 144446 end
@@ -675,7 +729,7 @@ else
 
                         if valor_do_army(cid) >= 16 then 
                                             local storage_do_elo = 1234567
-                                            local tempo = 10
+                                            local tempo = 20
                                                      setPlayerStorageValue(cid, storage_do_elo , 0)
 
                          setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)

@@ -13,8 +13,8 @@ function onSay(cid, words, param, channel)
 	doPlayerSendTextMessage(cid,18, "Diamond III: "..global_army(storageglobal16).."")
 	local storage_do_elo = 1234567
 
--- 	local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
--- local timeLeft = convertTime(getPlayerStorageValue(cid,storage_do_elo) - os.time())
+	local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+local timeLeft = convertTime(getPlayerStorageValue(cid,storage_do_elo) - os.time())
 -- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
 
  doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 7, 0x4a)

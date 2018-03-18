@@ -211,6 +211,23 @@ army = tonumber(ret)
 return army
 end
 
+
+function exp_army(cid) --PEGAR O VALOR DO ARMY REINICIADO
+local res = db.getResult('select `army_experience` from `players` where `id` = \''..getPlayerGUID(cid)..'\'')
+
+if(res:getID() == -1) then
+return false
+end
+
+local ret = res:getDataString("army_experience")
+res:free()
+ 
+army = tonumber(ret) 
+return army
+end
+
+
+
 function global_army(key) --PEGAR O VALOR DO ARMY REINICIADO
 local res = db.getResult('select `value` from `global_storage` where `key` = \''..key..'\'')
 
