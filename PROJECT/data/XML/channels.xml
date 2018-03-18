@@ -11,7 +11,7 @@
 	<channel id="2" name="Tutor" access="1"/>
 	<channel id="3" name="Rule Violations" logged="yes"/>
 	<channel id="4" name="Game-Chat"/>
-	<channel id="5" name="Trade" level="8" muted="120" conditionId="3" conditionMessage="You may only place one offer in two minutes.">
+	<channel id="5" name="Comercio" level="8" muted="120" conditionId="3" conditionMessage="You may only place one offer in two minutes.">
 		<vocation id="1-8"/>
 	</channel>
 	<channel id="6" name="Rook Trade" level="2" muted="120" conditionId="3" conditionMessage="You may only place one offer in two minutes.">
@@ -19,7 +19,19 @@
 	</channel>
 	<channel id="7" name="RL-Chat"/>
 	<channel id="8" name="Party"/>
-	<channel id="9" name="Help" logged="yes"/>
+	<channel id="9" name="Help" muted="30" conditionId="4" logged="yes" conditionMessage="Voce pode solicitar ajuda a cada 30 segundos!">
+			<vocation id="1-8"/>
+	</channel>
+
+
 	<!-- <channel id="10" name="My Custom Channel"/> -->
+	<channel id="15" name="Death Channel" active="no" logged="yes"/>
+	<channel id="30" name="Quests/Hunts" muted="60" conditionId="5" active="yes" logged="yes" conditionMessage="Voce pode solicitar para quest ou hunt a cada 60 segundos!">
+<vocation id="1-8"/>
+	</channel>
+	<channel id="74" name="Sistemas" active="no" logged="yes"/>
+
+	
+
 	<channel id="65535" name="Private Chat Channel"/>
 </channels>

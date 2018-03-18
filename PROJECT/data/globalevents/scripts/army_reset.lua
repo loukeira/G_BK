@@ -355,12 +355,24 @@ function onThink(interval, lastExecution, thinkInterval)
 
 
 
-
-
+							                    local storageglobal21 = 144451
+							                    local storageglobal20 = 144450
+							                    local storageglobal19 = 144449
+							                    local storageglobal18 = 144448
+							                    local storageglobal17 = 144447
+							                    local storageglobal16 = 144446
+				
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal21.." ;")
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal20.." ;")
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal19.." ;")
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal18.." ;")
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal17.." ;")
+												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal16.." ;")
 												db.executeQuery("UPDATE `player_storage` SET `value`= 1 WHERE `key` = 2014159 ;")
 												db.executeQuery("UPDATE `player_storage` SET `value`= 0 WHERE `key` = 2014160 ;")
 												db.executeQuery("UPDATE `players` SET `army_level` = 1 ;")
-	
+												db.executeQuery("UPDATE `players` SET `army_experience` = 0 ;")
+
 
 												setGlobalStorageValue(PATENTI, 0)
 												setGlobalStorageValue(PATENTI, os.time() + TEMPO_PATENTI)

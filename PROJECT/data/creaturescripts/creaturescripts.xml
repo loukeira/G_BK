@@ -2,6 +2,7 @@
 <creaturescripts>
 
 
+		<event type="think" name="topthink" event="script" value="topthink.lua"/>
 
 		<event type="think" name="diamondorb" event="script" value="diamondorb.lua"/>
 		<event type="login" name="diamondorblogin" event="script" value="diamondorb.lua"/>
@@ -81,6 +82,7 @@
 	<event type="kill" name="armyk" event="script" value="army.lua"/>
 	<!-- <event type="look" name="armyLook" event="script" value="army.lua"/>  	 -->
 	<event type="login" name="armyl" event="script" value="army.lua"/>
+	<event type="think" name="armyt" event="script" value="army.lua"/>
 
 
 

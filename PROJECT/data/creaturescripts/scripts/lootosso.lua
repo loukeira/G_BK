@@ -2,8 +2,9 @@ local dez_minutos = 10*60
 local storage_do_osso = 421048
 
 function onKill(cid, target, lastHit)
+	if not isPlayer(target) then return true end
 if isPlayer(cid) and isPlayer(target) then 
-if getPlayerIp(target) ~= getPlayerIp(cid) then 
+if getPlayerIp(target) == getPlayerIp(cid) then  return true end
 -- if getPlayerStorageValue(cid,getPlayerGUID(target)) <= os.time() then
 -- setPlayerStorageValue(cid,getPlayerGUID(target), 0)
 -- setPlayerStorageValue(cid,getPlayerGUID(target), os.time() + 180)
@@ -29,25 +30,19 @@ else
 return true 
 end
 
-				 local config = {
-
-				Kname = getPlayerName(cid),
-				Tname = getPlayerName(target),
-				Tlevel = getPlayerLevel(target),
-				}
 
 				local quanti = math.random(1,10)
 				local bone = 12724
 				local heart = doPlayerAddItem(cid, bone, quanti)
 		
 			-- doItemSetAttribute(heart, "name", " " ..config.Tname.. " Bone's")
-			doItemSetAttribute(heart, "description", " Junte e troque por surprise's box para receber itens! " .. (getCreatureSkullType(cid) <= SKULL_GREEN and "(Justified)" or "(Unjustified)"))
+			-- doItemSetAttribute(heart, "description", " Junte e troque por surprise's box para receber itens! ")
 			doPlayerSendTextMessage(cid, 19, "Voce obteve "..quanti.." osso(s) do Player "..getPlayerName(target).."!")
 	
 	-- else
 	-- doPlayerSendTextMessage(cid, 19, "[OSSO PLAYER]: Voce so pode ganhar ossos, matando player de outro ip!")
 
-end
+
 	-- end		
 	end
 

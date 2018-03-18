@@ -8,7 +8,29 @@ function getGuildNameByID(gid) -- By Killua
     return name
 end
 
+		function topilvl()
+ local player = db.getResult("SELECT `name` FROM `players` WHERE group_id < '2' ORDER BY `level` DESC LIMIT 1;")    
+            if(player:getID() ~= -1) then
+ 
+                while (true) do
 
+                    top = player:getDataString("name")
+               
+
+                    if not(player:next()) then
+                        break
+                    end
+					
+                end
+            
+            end
+			 player:free()
+     
+ 
+
+
+			 return top
+end 
 
 
 
@@ -148,27 +170,27 @@ function semnome()
 end 
 
 ARMY = {
-	[1] = {50, 1500, "Bronze V", 50000000}, -- [Número] = {Pontos Kill, Points para UP, "Nome",PLATINIUM COINS POR KILL},
-	[2] = {50, 3000, "Bronze IV", 70000000},
-	[3] = {50, 5000, "Bronze III", 11000000},
-	[4] = {50, 6000, "Bronze II", 18000000},
-	[5] = {50, 7000, "Bronze I", 22000000},
-	[6] = {50, 8200, "Silver IV", 26000000},
-	[7] = {50, 9600, "Silver III", 30000000},
-	[8] = {50, 11000, "Silver II", 34000000},
-	[9] = {50, 12000, "Silver I", 38000000},
-	[10] = {50, 14000, "Gold III", 45000000},
-	[11] = {50, 16000, "Gold II", 60000000},
-	[12] = {50, 18000, "Gold I", 80000000},
-	[13] = {50, 20000, "Platinum III", 100000000},
-	[14] = {50, 21500, "Platinum II", 120000000},
-	[15] = {50, 23000, "Platinum I", 140000000},
-	[16] = {50, 24000, "Diamond III", 160000000},
-	[17] = {50, 26000, "Diamond II", 180000000},
-	[18] = {50, 28000, "Diamond I", 200000000},
-	[19] = {50, 30000, "Master II", 220000000},
-	[20] = {50, 32000, "Master I", 400000000},
-	[21] = {50, 100000, "Challenger", 1000000000},
+	[1] = {50, 100, "Bronze V", 50000000}, -- [Número] = {Pontos Kill, Points para UP, "Nome",PLATINIUM COINS POR KILL},
+	[2] = {50, 100, "Bronze IV", 70000000},
+	[3] = {50, 100, "Bronze III", 11000000},
+	[4] = {50, 100, "Bronze II", 18000000},
+	[5] = {50, 100, "Bronze I", 22000000},
+	[6] = {50, 100, "Silver IV", 26000000},
+	[7] = {50, 100, "Silver III", 30000000},
+	[8] = {50, 100, "Silver II", 34000000},
+	[9] = {50, 100, "Silver I", 38000000},
+	[10] = {50, 100, "Gold III", 45000000},
+	[11] = {50, 100, "Gold II", 60000000},
+	[12] = {50, 100, "Gold I", 80000000},
+	[13] = {50, 100, "Platinum III", 100000000},
+	[14] = {50, 100, "Platinum II", 120000000},
+	[15] = {50, 100, "Platinum I", 140000000},
+	[16] = {50, 100, "Diamond III", 160000000}, --11 PESSOAS E OQ VAI SER Q PODEM OCUPAR (21 VAGAS)   6
+	[17] = {50, 100, "Diamond II", 180000000}, --9 PRIMEIRAS Q PASSAR DE NVL VAI PRO DIAMOND II  (15 VAGAS) 5
+	[18] = {50, 100, "Diamond I", 200000000}, --7 PRIMEIRAS Q PASSAR DE NVL VAI PRO DIAMOND I (10 VAGAS)  4
+	[19] = {50, 100, "Master II", 220000000}, --5 PRIMEIRAS Q PASSR D NVL VAI PRO MASTER II (6 VAGAS)  3
+	[20] = {50, 100, "Master I", 400000000},  --3 PRIMEIRAS Q PASSAR DE NVL VAI PRO MASTER I (3 VAGAS) 2
+	[21] = {50, 100, "Challenger", 1000000000} --1 PRIMEIRA Q PASSAR VAI PRO CHALLENGER (1 VAGA) 1
 		
 }   
                        
@@ -187,6 +209,20 @@ res:free()
  
 army = tonumber(ret) 
 return army
+end
+
+function global_army(key) --PEGAR O VALOR DO ARMY REINICIADO
+local res = db.getResult('select `value` from `global_storage` where `key` = \''..key..'\'')
+
+if(res:getID() == -1) then
+return false
+end
+
+local ret = res:getDataString("value")
+res:free()
+ 
+global = tonumber(ret) 
+return global
 end
 
 TEMPO_PATENTI = 30*24*60*60

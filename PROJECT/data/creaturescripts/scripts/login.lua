@@ -30,6 +30,20 @@ function onLogin(cid)
 	local accountManager = getPlayerAccountManager(cid)
 	if(accountManager == MANAGER_NONE) then
 		local lastLogin, str = getPlayerLastLoginSaved(cid), config.loginMessage
+		doPlayerOpenChannel(cid, 74)
+	    doPlayerOpenChannel(cid, 15)
+	    doPlayerOpenChannel(cid, 9)
+	    doPlayerOpenChannel(cid, 30)
+	    doPlayerOpenChannel(cid, 5)
+
+
+addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "CHANNEL PARA INFORMACAO DOS SISTEMAS GRAN BAIAK!", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "CHANNEL PARA INFORMACAO DO PVP NO GRAN BAIAK!", 8, 15)
+addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "CHANNEL PARA SOLICITAR AJUDA", 13, 9)
+addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "CHANNEL PARA CHAMAR PARA QUESTS OU HUNTS!", TALKTYPE_CHANNEL_HIGHLIGHT, 30)
+addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "VENDA OU COMPRE ITENS POR AQUI!", 8, 5)
+
+
 		if(lastLogin > 0) then
 			doPlayerSendTextMessage(cid, MESSAGE_STATUS_DEFAULT, str)
 			str = "Your last visit was on " .. os.date("%a %b %d %X %Y", lastLogin) .. "."
@@ -139,6 +153,8 @@ end
 	registerCreatureEvent(cid, "rewardpoints")
 	registerCreatureEvent(cid, "armyk")
 	registerCreatureEvent(cid, "armyl")
+	registerCreatureEvent(cid, "armyt")
+
 	registerCreatureEvent(cid, "autoloot")
 	registerCreatureEvent(cid, "Auto Loot")
 	registerCreatureEvent(cid, "RecordIp")
@@ -197,7 +213,7 @@ registerCreatureEvent(cid, "AdvEffect")
  registerCreatureEvent(cid, "RushAttack")
  registerCreatureEvent(cid, "RushDead")
  registerCreatureEvent(cid, "RushOutfit")
- registerCreatureEvent(cid, "toplvl")
+ registerCreatureEvent(cid, "topthink")
  
  	registerCreatureEvent(cid, "TaskNormal")
 	 	registerCreatureEvent(cid, "tasksystem")
