@@ -19,7 +19,7 @@
 	mysqlReadTimeout = 1000
 	mysqlWriteTimeout = 1000
 	mysqlReconnectionAttempts = 5
-	encryptionType = "sha1"
+	encryptionType = "sha1"   --oi
 
 	worldId = 0
 	ip = "189.5.181.193"
