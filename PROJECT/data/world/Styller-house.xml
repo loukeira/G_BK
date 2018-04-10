@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <houses>
 	<house name="" houseid="18" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="198" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="1" />
 	<house name="" houseid="690" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="56" />
 	<house name="" houseid="692" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
 	<house name="" houseid="717" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28" />
@@ -8,6 +9,22 @@
 	<house name="" houseid="719" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" />
 	<house name="" houseid="720" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="18" />
 	<house name="" houseid="721" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1935" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="11" />
+	<house name="" houseid="1943" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
+	<house name="" houseid="1958" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="20" />
+	<house name="" houseid="1959" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1960" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1961" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" />
+	<house name="" houseid="1981" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="11" />
+	<house name="" houseid="1983" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="6" />
+	<house name="" houseid="1984" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="6" />
+	<house name="" houseid="1985" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1986" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1987" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1988" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1989" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" />
+	<house name="" houseid="1990" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="14" />
+	<house name="" houseid="1991" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="17" />
 	<house name="God House" houseid="2095" entryx="144" entryy="155" entryz="6" rent="0" townid="0" size="519" />
 	<house name="" houseid="2633" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
 	<house name="" houseid="268435676" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />

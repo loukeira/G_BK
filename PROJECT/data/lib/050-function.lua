@@ -137,21 +137,67 @@ function retornar_army_max()
 end 
 
 function semnome()
- local player = db.getResult("SELECT `army_level`, `name` FROM `players` WHERE group_id < '2' AND `id`!= 6361 AND `id`!= 2 AND `id`!= 3 AND `id`!= 4 AND `id`!= 5 AND `id`!= 6  ORDER BY `army_level` DESC ;")    
+ local player = db.getResult("SELECT `army_level`, `army_experience`, `name` FROM `players` WHERE group_id < '2' AND `id`!= 6361 AND `id`!= 2 AND `id`!= 3 AND `id`!= 4 AND `id`!= 5 AND `id`!= 6  ORDER BY `army_level` DESC ;")    
             if(player:getID() ~= -1) then
-                local i = 1
- 				n = {
+                local i,j,k,l,m,n,o,p,q= 1,1,1,1,1,1,1,1,1
+ 				n,a,x = {},{},{}
+
+ 				vinteum, vinteumlvl,vinteumxp={},{},{}
+ 				vinte, vintelvl,vintexp={},{},{}
+ 				dezenove, dezenovelvl,dezenovexp={},{},{}
+ 				dezoito, dezoitolvl,dexoitoxp={},{},{}
+ 			    dezessete, dezessetelvl, dezessetexp={},{},{}
+ 				dezesseis,dezesseislvl,dezesseisxp={},{},{}
  				
- 				}
- 				a = {}
- 				cont = 0
                 while (true) do
 
                     army = player:getDataString("army_level")
                     name = player:getDataString("name")
+                    xp = player:getDataString("army_experience")
           			 n[i] = tostring(name)
           			 a[i] = tonumber(army)
-          			 cont = i
+          			 x[i] = tonumber(xp)
+
+          			 if tonumber(army) == 21 then
+          			 vinteum[j] = tostring(name)
+          			 vinteumlvl[j] = tonumber(army)
+          			 vinteumxp[j] = tonumber(xp)
+          			 j = j +1
+          			end
+          			 if tonumber(army) == 20 then
+          			 vinte[k] = tostring(name)
+          			 vintelvl[k] = tonumber(army)
+          			 vintexp[k] = tonumber(xp)
+          			 k = k +1
+          			end
+          			 if tonumber(army) == 19 then
+          			 dezenove[l] = tostring(name)
+          			 dezenovelvl[l] = tonumber(army)
+          			 dezenovexp[l] = tonumber(xp)
+          			 l = l +1
+          			end
+          			 if tonumber(army) == 18 then
+          			 dezoito[m] = tostring(name)
+          			 dezoitolvl[m] = tonumber(army)
+          			 dezoitoxp[m] = tonumber(xp)
+          			 m = m +1
+          			end
+          			 if tonumber(army) == 17 then
+          			 dezessete[n] = tostring(name)
+          			 dezessetelvl[n] = tonumber(army)
+          			 dezessetexp[n] = tonumber(xp)
+          			 n = n +1
+          			end
+
+          			 if tonumber(army) == 16 then
+          			 dezesseis[o] = tostring(name)
+          			 dezesseislvl[o] = tonumber(army)
+          			 dezesseisxp[o] = tonumber(xp)
+          			 o = o +1
+          			end
+
+
+
             			i = i + 1
                     if not(player:next()) then
                         break
@@ -166,7 +212,7 @@ function semnome()
 
 
 
-             return  n,a,cont
+             return  n,a,x,vinteum,vinteumlvl,vinteumxp,vinte,vintelvl,vintexp,dezenove,dezenovelvl,dezenovexp,dezoito,dezoitolvl,dezoitoxp,dezessete,dezessetelvl,dezessetexp,dezesseis,dezesseislvl,dezesseisxp
 end 
 
 ARMY = {
@@ -197,7 +243,19 @@ ARMY = {
 ARMY_LEVEL = 2014159
 ARMY_EXPERIENCE = 2014160
 
-function valor_do_army(cid) --PEGAR O VALOR DO ARMY REINICIADO
+vezes_ao_dia = 1534345
+konstante_dia = 1347400
+konstante = 1322750
+tempo_army = 2*60
+storageglobal21 = 145451
+storageglobal20 = 145450
+storageglobal19 = 145449
+storageglobal18 = 145448
+storageglobal17 = 145447
+storageglobal16 = 145446
+
+
+function valor_do_army(cid) --PEGAR O VALOR DO ARMY 
 local res = db.getResult('select `army_level` from `players` where `id` = \''..getPlayerGUID(cid)..'\'')
 
 if(res:getID() == -1) then
@@ -212,7 +270,9 @@ return army
 end
 
 
-function exp_army(cid) --PEGAR O VALOR DO ARMY REINICIADO
+
+
+function valor_do_exp_army(cid) --PEGAR O VALOR DO EXPERIENCE ARMY
 local res = db.getResult('select `army_experience` from `players` where `id` = \''..getPlayerGUID(cid)..'\'')
 
 if(res:getID() == -1) then
@@ -228,7 +288,7 @@ end
 
 
 
-function global_army(key) --PEGAR O VALOR DO ARMY REINICIADO
+function global_army(key) --
 local res = db.getResult('select `value` from `global_storage` where `key` = \''..key..'\'')
 
 if(res:getID() == -1) then

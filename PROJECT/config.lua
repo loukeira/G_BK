@@ -22,7 +22,7 @@
 	encryptionType = "sha1"   --oi
 
 	worldId = 0
-	ip = "189.5.181.193"
+	ip = "189.63.124.32"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171
