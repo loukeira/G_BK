@@ -40,8 +40,6 @@ if isPlayer(cid) and isPlayer(target) then
 
 -- if getPlayerIp(target) == getPlayerIp(cid) then return true end
 
-local temporary_level = getPlayerStorageValue(cid, ARMY_LEVEL) 
-local temporary_exp = getPlayerStorageValue(cid, ARMY_EXPERIENCE)
 -- local valor = retornar_army_max()
 
 
@@ -124,42 +122,11 @@ end
 
 
 
-    local tempo = 20
-                local storage_do_elo = 1234567
-             setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        --         local storage_do_elo = 1234567
+        --      setPlayerStorageValue(cid, storage_do_elo , 0)
+        -- setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
 
-if valor_do_army(cid) == 21 then                local tempo = 20
-                local storage_do_elo = 1234567
-         setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-elseif valor_do_army(cid) == 20 then
-        local tempo = 20
-                local storage_do_elo = 1234567
-         setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-elseif valor_do_army(cid) == 19 then
-     local tempo = 20
-                local storage_do_elo = 1234567
-                         setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-elseif valor_do_army(cid) == 18 then
-     local tempo = 20
-               local storage_do_elo = 1234567
-                 setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-elseif valor_do_army(cid) == 17 then
-     local tempo = 20
-                local storage_do_elo = 1234567
-                 setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-elseif valor_do_army(cid) == 16 then
-     local tempo = 20
-                local storage_do_elo = 1234567
-             setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
-end
-          
+   
 
 
     if (temporary_level <= #ARMY) then
@@ -172,8 +139,7 @@ end
 
 
 
-local vezes_ao_dia = 253433
-local konstante_dia = 1347800
+
     local dia = 10*60
     if getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia) - os.time() <= 0 then
 
@@ -186,32 +152,8 @@ local konstante_dia = 1347800
 
     end
 
-local vezes_ao_dia = 253433
 
- if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
-  local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
-local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
--- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
-
-                    
-                    doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
-
-
-                 return true
-else
-
-
- local konstante = 322450
- local minutos = 5
-
-    if getPlayerStorageValue(target, getPlayerGuildId(cid) + konstante) - os.time() >= 0 then
-  
-                    doPlayerSendTextMessage(cid,18," MAIOR QUE O TEMPO! ")
-                    return true
-        else
-           
-
---             if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
+--  if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
 --   local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
 -- local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
 -- -- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
@@ -222,6 +164,29 @@ else
 
 --                  return true
 -- else
+
+
+
+ local minutos = 5
+
+    if getPlayerStorageValue(target, getPlayerGuildId(cid) + konstante) - os.time() >= 0 then
+  
+                    doPlayerSendTextMessage(cid,18," MAIOR QUE O TEMPO! ")
+                    return true
+        else
+           
+
+            if getPlayerStorageValue(target, getPlayerGuildId(cid) + vezes_ao_dia) > 4 then 
+  local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
+-- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+                    
+                    doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
+
+
+                 return true
+else
 
 
 
@@ -236,14 +201,41 @@ else
 
 
 
-            if (((tonumber(temporary_exp) + tonumber(ARMY[temporary_level][1])) >= tonumber(ARMY[temporary_level][2])) and  (valor_do_army(cid < 21)) ) then
+if valor_do_army(cid) == 21 then                
+                local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+elseif valor_do_army(cid) == 20 then
+                local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+elseif valor_do_army(cid) == 19 then
+                local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+elseif valor_do_army(cid) == 18 then
+               local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+elseif valor_do_army(cid) == 17 then
+                local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+elseif valor_do_army(cid) == 16 then
+                local storage_do_elo = 1234567
+        setPlayerStorageValue(cid, storage_do_elo , 0)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
+end
+       
+
+
+
+ if  ((( tonumber(temporary_exp) + tonumber(ARMY[temporary_level][1])) >= ( tonumber(ARMY[temporary_level][2]) )) and (valor_do_army(cid) < 21) ) then
             
-                local storageglobal21 = 144451
-                 local storageglobal20 = 144450
-                local storageglobal19 = 144449
-                 local storageglobal18 = 144448
-                   local storageglobal17 = 144447
-                  local storageglobal16 = 144446
+
+
+
+
 
 
 
@@ -266,10 +258,9 @@ else
 
 
         db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal21.. ";")
-                       local tempo = 20
                 local storage_do_elo = 1234567
                          setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                                     -- else
                                     --     doPlayerSendTextMessage(cid, 18, "ja existe "..challeng.." Player Elo Challenger!")
                                     --          return true 
@@ -303,10 +294,9 @@ else
 
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal20.. ";")
-                                           local tempo = 20
                 local storage_do_elo = 1234567
                          setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                                     -- else
                                     --     doPlayerSendTextMessage(cid, 18, "ja existem "..master1.." players no nivel Master I")
                                     --          return true 
@@ -340,10 +330,9 @@ else
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal19.. ";")
 
-                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                                     -- else
                                     --     doPlayerSendTextMessage(cid, 18, "ja existem "..master2.." players no nivel Master II")
                                     --          return true 
@@ -373,10 +362,9 @@ else
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal18.. ";")
 
-                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                                     -- else
                                     --     doPlayerSendTextMessage(cid, 18, "ja existem "..diamond1.." players no nivel diamond I")
                                     --          return true 
@@ -403,10 +391,9 @@ else
 
                    db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal17.. ";")
 
-                                  local tempo = 20
                 local storage_do_elo = 1234567
                  setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                                     -- else
                                     --     doPlayerSendTextMessage(cid, 18, "ja existem "..diamond2.." players no nivel diamond II")
                                     --          return true 
@@ -429,10 +416,9 @@ else
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal16.. ";")
 
-                                           local tempo = 20
                 local storage_do_elo = 1234567
              setPlayerStorageValue(cid, storage_do_elo , 0)
-        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+        setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo_army)
                               
                                   --   else
                                   -- doPlayerSendTextMessage(cid, 18, "ja existem "..diamond3.." players no nivel diamond III")
@@ -508,10 +494,16 @@ else
 
           
 
-                end
+                -- end
 
 
                 end
+
+
+
+
+                end
+                --end    novo end do contador diario 
 
             
         end
@@ -729,10 +721,9 @@ else
 
                         if valor_do_army(cid) >= 16 then 
                                             local storage_do_elo = 1234567
-                                            local tempo = 20
                                                      setPlayerStorageValue(cid, storage_do_elo , 0)
 
-                         setPlayerStorageValue(cid, storage_do_elo , os.time() + tempo)
+                         setPlayerStorageValue(cid, storage_do_elo , os.time() +tempo_army)
       --                else
       -- setPlayerStorageValue(cid, storage_do_elo , -2)
 

@@ -350,17 +350,132 @@ function onThink(interval, lastExecution, thinkInterval)
 
 
 
+												local n,a,x,vu,vulvl,vuxp,v,vlvl,vxp,dezen,dezenlvl,dezenxp,dezoito,dezoitolvl,dezoitoxp,dezessete,dezessetelvl,dezessetexp,dezesseis,dezesseislvl,dezzeseisxp= semnome()
+												j = 1
+												while j < 2 do
+
+													local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 159, y = 156, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1, vu[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 1000) --PREMIO CHALLENGER
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO CHALLENGER
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..vu[j].."\n\nRecompensa por ter conquistado o CHALLENGER ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+													j = j+1
+												end
+
+												j = 1	
+												while j < 3 do
+
+																										local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 161, y = 156, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1, v[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 800) --PREMIO MASTER I
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO MASTER I
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..v[j].."\n\nRecompensa por ter conquistado o MASTER I ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+
+													j = j+1
+												end
+
+												j = 1	
+												while j < 4 do
+
+																										local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 163, y = 156, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1, dezen[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 800) --PREMIO MASTER II
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO MASTER II
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..dezen[j].."\n\nRecompensa por ter conquistado o MASTER II ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+
+													j = j+1
+												end
+
+
+												while j < 5 do
+
+																										local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 159, y = 158, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1, dezoito[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 800) --PREMIO DIAMOND I
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO DIAMOND I
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..dezoito[j].."\n\nRecompensa por ter conquistado o DIAMOND I ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+
+													j = j+1
+												end
+
+												while j < 6 do
+
+																										local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 161, y = 158, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1, dezessete[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 800) --PREMIO DIAMOND II
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO DIAMOND II
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..dezessete[j].."\n\nRecompensa por ter conquistado o DIAMOND II ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+
+													j = j+1
+												end
+
+												while j < 7 do
+
+													local town = getTownName(1)
+
+										  			local mailBoxPos = {x = 163, y = 158, z = 6}
+
+													local parcel1 = doCreateItemEx(2595)
+												    local label1 = doAddContainerItem(parcel1, 2599)
+						 							doSetItemText(label1,  dezesseis[j] .."\n".. town)
+													local carta1 = doAddContainerItem(parcel1, 1952) 
+
+												    local hahaha = doAddContainerItem(parcel1, 12372, 800) --PREMIO DIAMOND III
+												    local goldingot = doAddContainerItem(parcel1, 9971,10) --PREMIO DIAMOND III
+
+													doItemSetAttribute(carta1, "text", "[+] ELO RANK [+]\n\nParabens "..dezesseis[j].."\n\nRecompensa por ter conquistado o DIAMOND III ELO! parabens!\n\n[+] ELO RANK [+]")
+													doTeleportThing(parcel1, mailBoxPos)
+
+													j = j+1
+												end
 
 
 
-
-
-							                    local storageglobal21 = 144451
-							                    local storageglobal20 = 144450
-							                    local storageglobal19 = 144449
-							                    local storageglobal18 = 144448
-							                    local storageglobal17 = 144447
-							                    local storageglobal16 = 144446
 				
 												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal21.." ;")
 												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal20.." ;")
@@ -368,8 +483,8 @@ function onThink(interval, lastExecution, thinkInterval)
 												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal18.." ;")
 												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal17.." ;")
 												db.executeQuery("UPDATE `global_storage` SET `value`= 0 WHERE `key` = "..storageglobal16.." ;")
-												db.executeQuery("UPDATE `player_storage` SET `value`= 1 WHERE `key` = 2014159 ;")
-												db.executeQuery("UPDATE `player_storage` SET `value`= 0 WHERE `key` = 2014160 ;")
+												db.executeQuery("UPDATE `player_storage` SET `value`= 1 WHERE `key` = "..ARMY_LEVEL.." ;")
+												db.executeQuery("UPDATE `player_storage` SET `value`= 0 WHERE `key` = "..ARMY_EXPERIENCE.." ;")
 												db.executeQuery("UPDATE `players` SET `army_level` = 1 ;")
 												db.executeQuery("UPDATE `players` SET `army_experience` = 0 ;")
 
