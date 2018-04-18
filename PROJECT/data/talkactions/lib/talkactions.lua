@@ -10,3 +10,4 @@ function checkExhausted(cid, storage, seconds)
 
 	return true
 end
+

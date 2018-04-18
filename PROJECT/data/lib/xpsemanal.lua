@@ -84,23 +84,43 @@ function nomeprimeiro()
 			 return nami
 end
 
+function premiacaoxpsemanal(pos1,pos2,pos3,a,item1,quant1,item2,quant2)
+                            local town = getTownName(1)
+                            local mailBoxPos = {x = pos1, y = pos2, z = pos3}
+                            local parcel1 = doCreateItemEx(2595)
+                            local label1 = doAddContainerItem(parcel1, 2599)
+                            doSetItemText(label1, a[1] .."\n".. town)
+                            local carta1 = doAddContainerItem(parcel1, 1952) 
+
+                            local hahaha = doAddContainerItem(parcel1, item1, quant1)
+                            local goldingot = doAddContainerItem(parcel1, item2,quant2)
+
+                            doItemSetAttribute(carta1, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..a[1].."\n\nRecompensa do "..a[2].." lugar no rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
+                           coco =  doTeleportThing(parcel1, mailBoxPos)
+return coco
+
+end
 
 
 function nometotal()
  local player = db.getResult("SELECT `name`, `id`  FROM `players` WHERE group_id < '2' ORDER BY `xprank` DESC LIMIT 3;")    
             if(player:getID() ~= -1) then
             	local i = 0
- 
+                primeiro,segundo,terceiro={},{},{}
                 while (true) do
                       i = i + 1
-                       if i == 1 then
-                    primeiro = player:getDataString("name")
+                if i == 1 then
+                    primeiro[1] = player:getDataString("name")
+                    primeiro[2] = "primeiro"
                 end
-                   if i == 2 then
-                    segundo = player:getDataString("name")
-                end
-                 if i == 3 then
-                    terceiro = player:getDataString("name")
+                if i == 2 then
+                    segundo[1] = player:getDataString("name")
+                    segundo[2] = "segundo"
+                 end
+
+                if i == 3 then
+                    terceiro[1] = player:getDataString("name")
+                    terceiro[2] = "terceiro"
                 end
 
                     if not(player:next()) then
@@ -111,12 +131,12 @@ function nometotal()
             
             end
 			 player:free()
-            primeiroo = tostring(primeiro)
-             segundoo = tostring(segundo)
-            terceiroo = tostring(terceiro)
+            -- primeiroo = tostring(primeiro)
+            -- segundoo = tostring(segundo)
+            --  terceiroo = tostring(terceiro)
 
 
-			 return primeiroo, segundoo, terceiroo
+			 return primeiro, segundo, terceiro
 end 
 
 function nometerceiro()

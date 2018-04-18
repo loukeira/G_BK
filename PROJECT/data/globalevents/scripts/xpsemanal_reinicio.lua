@@ -101,50 +101,20 @@ function onThink(interval, lastExecution, thinkInterval)
 
 							last_execsutes[k] = day_number
 
-							local a,b,c = nometotal()
-							local town = getTownName(1)
-							local town2 = getTownName(1)
+						 a,b,c = nometotal()
 
-				  			local mailBoxPos = {x = 136, y = 159, z = 6}
 
-							local parcel1 = doCreateItemEx(2595)
-						    local label1 = doAddContainerItem(parcel1, 2599)
- 							doSetItemText(label1, a .."\n".. town)
-							local carta1 = doAddContainerItem(parcel1, 1952) 
+premiacaoxpsemanal(136,159,6,a,12372,1000,9971,10) --primeiro colocado
 
-						    local hahaha = doAddContainerItem(parcel1, 12372, 1000)
-						    local goldingot = doAddContainerItem(parcel1, 9971,10)
-
-							doItemSetAttribute(carta1, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..a.."\n\nRecompensa por ter conquistado o primeiro lugar no rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
-							doTeleportThing(parcel1, mailBoxPos)
+premiacaoxpsemanal(137,159,6,b,12372,700,9971,7) -- segundo colocado
+	
+premiacaoxpsemanal(138,159,6,c,12372,500,9971,5) -- terceiro colocado
 
 
 
+				
 
-							local parcel2 = doCreateItemEx(2595)
-						    local label2 = doAddContainerItem(parcel2, 2599)
- 							doSetItemText(label2, b .."\n".. town)
-							local carta2 = doAddContainerItem(parcel2, 1952) 
-
-							local item_segundo_um = doAddContainerItem(parcel2, 9971, 7) 
-							local item_segundo_dois = doAddContainerItem(parcel2, 12372,700) 
-
-							doItemSetAttribute(carta2, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..b.."\n\nRecompensa por ter conquistado o primeiro lugar no rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
-							doTeleportThing(parcel2, mailBoxPos)
-
-
-							local parcel3 = doCreateItemEx(2595)
-						    local label3 = doAddContainerItem(parcel3, 2599)
- 							doSetItemText(label3, c .."\n".. town)
-							local carta3 = doAddContainerItem(parcel3, 1952) 
-
-							local item_terceiro_um = doAddContainerItem(parcel3, 9971, 5) 
-							local item_terceiro_dois = doAddContainerItem(parcel3, 12372,500) 
-							doItemSetAttribute(carta3, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..c.."\n\nRecompensa por ter conquistado o primeiro lugar no rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
-							doTeleportThing(parcel3, mailBoxPos)
-
-
-							doBroadcastMessage("[XPRANK]: CLASSIFICACAO FINAL DESSA SEMANA:\n1 - "..a.."\n2 - "..b.."\n3 - "..c.."\nForam os 3 melhores ganhadores de xp! parabens! A recompensa de voces esta no DP da Baiak City!")
+							doBroadcastMessage("[XPRANK]: CLASSIFICACAO FINAL DESSA SEMANA:\n1 - "..a[1].."\n2 - "..b[1].."\n3 - "..c[1].."\nForam os 3 melhores ganhadores de xp! parabens! A recompensa de voces esta no DP da Baiak City!")
 
 							db.executeQuery("UPDATE players SET xprank = 0 ;")
 							setGlobalStorageValue(STORAGEGLOBAL, 0)

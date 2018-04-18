@@ -2261,7 +2261,6 @@
 	</spawn>
 	<spawn centerx="1073" centery="480" centerz="5" radius="1" />
 	<spawn centerx="196" centery="576" centerz="5" radius="1" />
-	<spawn centerx="409" centery="606" centerz="5" radius="1" />
 	<spawn centerx="986" centery="770" centerz="5" radius="3">
 		<npc name="captain jack" x="-1" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>

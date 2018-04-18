@@ -504,7 +504,7 @@
 		storage = 3005 -- storage value used to save exhaustion
 	]]></config>
 
-	<talkaction words="!go;/go" event="script"><![CDATA[
+<!-- 	<talkaction words="!go;/go" event="script"><![CDATA[
 		domodlib('guild-outfit-config')
 
 		local config = {
@@ -553,7 +553,7 @@
 			doPlayerSendCancel(cid, "Guild members outfit has been changed. (Total: " .. members .. ")")
 			return true
 		end
-	]]></talkaction>
+	]]></talkaction> -->
 
 	<!-- Buy Command -->
 	<config name="command-buy-config"><![CDATA[

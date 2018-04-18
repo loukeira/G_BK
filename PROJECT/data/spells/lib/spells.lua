@@ -1,3 +1,10 @@
+function isSpellBlocked(cid, tipos)
+	if isInArray(tipos, getPlayerWarType(cid)) then
+		return true
+	end
+	return false
+end
+
 -- Waves
 AREA_WAVE4 = {
 	{1, 1, 1, 1, 1},

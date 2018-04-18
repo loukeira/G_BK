@@ -3,9 +3,9 @@
 	url = "baiaknew.top"
 	location = "Brazil"
 
-	motd = "INAUGURADO 27.08"
-	serverName = "New Baiak"
-	loginMessage = "Seja bem vindo ao Baiak New!"
+	motd = "test serv"
+	serverName = "GBK"
+	loginMessage = "Seja bem vindo ao Gran Baiak!"
 	displayGamemastersWithOnlineCommand = false
 
 	sqlType = "mysql"
@@ -19,7 +19,7 @@
 	mysqlReadTimeout = 1000
 	mysqlWriteTimeout = 1000
 	mysqlReconnectionAttempts = 5
-	encryptionType = "sha1"   --oi
+	encryptionType = "sha1"  
 
 	worldId = 0
 	ip = "189.63.124.32"

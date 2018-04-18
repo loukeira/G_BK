@@ -1,21 +1,43 @@
 function onSay(cid, words, param, channel)
+local a,b,c = nometotal()
+-- premiacaoxpsemanal(136,159,6,a,12372,10,9971,11) --primeiro colocado
+
+-- premiacaoxpsemanal(137,159,6,b,12372,700,9971,7) -- segundo colocado
+	
+-- premiacaoxpsemanal(138,159,6,c,12372,500,9971,5) -- terceiro colocado
+-- pos1,pos2,pos3,item1,quant1,item2,quant2=136,159,6,12372,1000,9971,10 --primeiro colocado
+
+--                             local town = getTownName(1)
+--                             local mailBoxPos = {x = pos1, y = pos2, z = pos3}
+--                             local parcel1 = doCreateItemEx(2595)
+--                             local label1 = doAddContainerItem(parcel1, 2599)
+--                             doSetItemText(label1, a .."\n".. town)
+--                             local carta1 = doAddContainerItem(parcel1, 1952) 
+
+--                             local hahaha = doAddContainerItem(parcel1, item1, quant1)
+--                             local goldingot = doAddContainerItem(parcel1, item2,quant2)
+
+--                             doItemSetAttribute(carta1, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..a.."\n\nRecompensa do rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
+--                             doTeleportThing(parcel1, mailBoxPos)
+
+doPlayerSendTextMessage(cid,18," "..a[1]..","..b[1]..","..c[1].."  ")
 
 
 
-local n,a,x,vu,vulvl,vuxp,qu,qulvl,quexp= semnome()
-j = 1
+-- local n,a,x,vu,vulvl,vuxp,qu,qulvl,quexp= semnome()
+-- j = 1
 
-while j < 2 do
-	doPlayerSendTextMessage(cid,18," "..vu[j].." e "..vulvl[j].." com "..vuxp[j].." ")
-	j = j+1
-end
+-- while j < 2 do
+-- 	doPlayerSendTextMessage(cid,18," "..vu[j].." e "..vulvl[j].." com "..vuxp[j].." ")
+-- 	j = j+1
+-- end
 
-j = 1
+-- j = 1
 
-while j < 5 do
-	doPlayerSendTextMessage(cid,18," "..qu[j].." e "..qulvl[j].." com "..quexp[j].." ")
-	j = j+1
-end
+-- while j < 5 do
+-- 	doPlayerSendTextMessage(cid,18," "..qu[j].." e "..qulvl[j].." com "..quexp[j].." ")
+-- 	j = j+1
+-- end
 
 -- j = 1
 

@@ -32,6 +32,9 @@ end
 			 return top
 end 
 
+--inicio citywar
+
+--fim city war
 
 
 -- function effect(cid)
@@ -108,6 +111,13 @@ function isInArray(array, value, caseSensitive)
 
 	return false
 end
+
+---XP RANK FUNÇAO PREMIAÇAO---
+
+
+
+
+--FIM XP RANK FUNÇAO PREMIAÇAO --
 
 
 ------------------INICIO ARMY SISTEM --------------------------

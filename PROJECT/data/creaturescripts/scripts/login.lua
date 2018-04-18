@@ -100,6 +100,10 @@ if not (tostring(getname) == "Account Manager" ) then
 
 
 ---- fim EXP XP --------
+
+
+
+
 -- AGE STORAGES --
 		if (getPlayerStorageValue(cid, 6729) == -1) and (getPlayerStorageValue(cid, 6722) == -1) and (getPlayerStorageValue(cid, 6723) == -1) and (getPlayerStorageValue(cid, 6724) == -1) then
 	     	doPlayerSetStorageValue(cid, 6729, 0)
