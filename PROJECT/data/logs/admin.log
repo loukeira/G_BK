@@ -286,3 +286,7 @@
 [15/4/2018 22:4:23] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
 [17/4/2018 22:11:36] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
 [17/4/2018 22:15:5] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
+[18/4/2018 20:22:19] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
+[18/4/2018 21:55:48] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
+[19/4/2018 18:31:44] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto
+[19/4/2018 21:9:30] (Error - ?open@ServicePort@@QEAAXV?$vector@Vaddress@ip@asio@boost@@V?$allocator@Vaddress@ip@asio@boost@@@std@@@std@@G@Z) NETWORK: bind: O endereço solicitado não é válido no contexto

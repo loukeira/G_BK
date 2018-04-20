@@ -11,3 +11,5 @@ function checkExhausted(cid, storage, seconds)
 	return true
 end
 
+dofile('data/talkactions/lib/instance.lua')
+dofile('data/talkactions/lib/war.lua')

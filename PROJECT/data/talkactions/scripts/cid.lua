@@ -1,5 +1,6 @@
 function onSay(cid, words, param, channel)
 local a,b,c = nometotal()
+
 -- premiacaoxpsemanal(136,159,6,a,12372,10,9971,11) --primeiro colocado
 
 -- premiacaoxpsemanal(137,159,6,b,12372,700,9971,7) -- segundo colocado
@@ -20,7 +21,7 @@ local a,b,c = nometotal()
 --                             doItemSetAttribute(carta1, "text", "[+] XP RANK SEMANAL [+]\n\nParabens "..a.."\n\nRecompensa do rank xp semanal! parabens!\n\n[+] XP RANK SEMANAL [+]")
 --                             doTeleportThing(parcel1, mailBoxPos)
 
-doPlayerSendTextMessage(cid,18," "..a[1]..","..b[1]..","..c[1].."  ")
+-- doPlayerSendTextMessage(cid,18," "..a[1]..","..b[1]..","..c[1].."  ")
 
 
 
@@ -70,10 +71,17 @@ doPlayerSendTextMessage(cid,18," "..a[1]..","..b[1]..","..c[1].."  ")
 -- 	doPlayerSendTextMessage(cid,18, "Diamond II: "..global_army(storageglobal17).."")
 -- 	doPlayerSendTextMessage(cid,18, "Diamond III: "..global_army(storageglobal16).."")
 -- 	local storage_do_elo = 1234567
+local arena_storage = 454523
+	local salt = 4123456
 
--- 	local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
--- local timeLeft = convertTime(getPlayerStorageValue(cid,storage_do_elo) - os.time())
--- -- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+
+	local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+local timeLeft = convertTime(getGlobalStorageValue(arena_storage) - os.time())
+						 db.query("UPDATE accounts SET salt = '' WHERE `id` = "..getPlayerAccountId(cid).." ;")
+
+doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+doPlayerSendTextMessage(cid, 27, 'salt ' ..getPlayerStorageValue(cid,salt))
 
 --  doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 7, 0x4a)
 --   doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 8, 0x4a)

@@ -1,4 +1,4 @@
-    <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
     <mod name="Rent System" version="1.0" author="Kimoszin" contact="tibiaking.com" enabled="yes">
             <config name="rent_config"><![CDATA[
                     messages = {
@@ -37,7 +37,7 @@
                             for name, iten in pairs(items) do
                                     str = str..string.sub(name, 0, 1):upper()..string.sub(name, 2):lower().."  -  "..iten.price.."gps \n"
                             end
-                            str = str .."\n [Tienes que estar  registrado y conectado para ver este vínculo]
+                            str = str .."\n [Tienes que estar  registrado y conectado para ver este vínculo]" 
                             return doPlayerPopupFYI(cid, str)
                     end
      
@@ -78,4 +78,4 @@
                     domodlib('rent_config')
                     doWarningItemWasRemoved(cid)
             ]]></creatureevent>
-    </mod>
+</mod>

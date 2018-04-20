@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 	
- 
+       	<event type="login" name="entrosaLogin" event="script" value="warEntrosaLogout.lua"/>
+
 
 		<event type="think" name="topthink" event="script" value="topthink.lua"/>
 
@@ -73,8 +74,7 @@
 	<event type="combat" name="dttCombat" event="script" value="events/DTT.lua"/>	
 	
 	<!-- Battlefield Event -->
-	
-    	<event type="logout" name="entrosaLogout" event="script" value="warEntrosaLogout.lua"/>
+
 	<event type="death" name="SkullAmulet" event="script" value="preparedeath.lua"/>
         <event type="death" name="Teleportquest" event="script" value="tpquest.lua"/>
 	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>

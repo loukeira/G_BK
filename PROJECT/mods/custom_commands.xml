@@ -536,7 +536,7 @@
 					local newOutfit = outfit
 					if(not canPlayerWearOutfit(tid, outfit.lookType, outfit.lookAddons)) then
 						local tmpOutfit = getCreatureOutfit(tid)
-						newOutfit.lookAddons = 0--tmpOutfit.lookAddons
+						newOutfit.lookAddons = 0 tmpOutfit.lookAddons
 						if(not canPlayerWearOutfit(tid, outfit.lookType, 0)) then
 							newOutfit.lookType = tmpOutfit.lookType
 						end

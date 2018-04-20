@@ -99,9 +99,18 @@ if valor_do_army(target) > valor_do_army(cid) then
          local newexpelo = (ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][2] - continha1)
 -- db.query("UPDATE `players` SET `army_experience` = "..newexpelo.."  WHERE `id` = " .. getPlayerGUID(target) .. ";")    
                setPlayerStorageValue(target, ARMY_EXPERIENCE,  newexpelo)
-            doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][3]..".")
+                         addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(target, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+               
+         
 
-if valor_do_army(target) == 21 then sturagearmy,down = 144451,144450 elseif valor_do_army(target) == 20 then sturagearmy,down = 144450,144449 elseif valor_do_army(target) == 19 then sturagearmy,down = 144449,144448 elseif valor_do_army(target) == 18 then sturagearmy,down = 144448,144447 elseif valor_do_army(target) == 17 then sturagearmy,down = 144447,144446 elseif valor_do_army(target) == 16 then sturagearmy = 144446 end
+aa=storageglobal21 
+bb=storageglobal20 
+cc=storageglobal19 
+dd=storageglobal18 
+ee=storageglobal17 
+ff=storageglobal16 
+
+if valor_do_army(target) == 21 then sturagearmy,down = aa,bb elseif valor_do_army(target) == 20 then sturagearmy,down = bb,cc elseif valor_do_army(target) == 19 then sturagearmy,down = cc,dd elseif valor_do_army(target) == 18 then sturagearmy,down = dd,ee elseif valor_do_army(target) == 17 then sturagearmy,down = ee,ff elseif valor_do_army(target) == 16 then sturagearmy = ff end
 
              db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..sturagearmy.. ";")
                if valor_do_army(target) > 15 then
@@ -170,8 +179,9 @@ end
  local minutos = 5
 
     if getPlayerStorageValue(target, getPlayerGuildId(cid) + konstante) - os.time() >= 0 then
+            addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "MAIOR QUE O TEMPO! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
   
-                    doPlayerSendTextMessage(cid,18," MAIOR QUE O TEMPO! ")
+                    --doPlayerSendTextMessage(cid,18," MAIOR QUE O TEMPO! ")
                     return true
         else
            
@@ -181,8 +191,9 @@ end
 local timeLeft = convertTime(getPlayerStorageValue(target,getPlayerGuildId(cid) + konstante_dia)- os.time())
 -- doPlayerSendTextMessage(cid, 27, 'sto elo: ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
 
+                              addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).."  ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
                     
-                    doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
+                    --doPlayerSendTextMessage(cid, 27, "[Elo system]: Voce ja matou o player "..getCreatureName(target).." 5 vezes hoje! Espere "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ")
 
 
                  return true
@@ -194,9 +205,13 @@ else
                     setPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia , getPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia) +1 )
                     local subtracao = ( 5 - getPlayerStorageValue(target,  getPlayerGuildId(cid) + vezes_ao_dia) )
                     if subtracao > 0 then
-                    doPlayerSendTextMessage(cid,18,"[Elo system]: Voce pode matar o player "..getCreatureName(target).."  por mais "..subtracao.." vezes hoje! Para ganhar xp elo!")
+  addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: Voce so pode matar o player "..getCreatureName(target).."  por mais "..subtracao.." vezes hoje! Para ganhar xp elo!", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+
                     else
-                    doPlayerSendTextMessage(cid,18,"[Elo system]: Voce Nao ira ganhar mais xp elo caso mate o player "..getCreatureName(target).." hoje! Espere 24 hrs para ganhar xp Elo em cima dele novamente! ")
+
+          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: Voce Nao ira ganhar mais xp elo caso mate o player "..getCreatureName(target).." hoje! Espere 24 hrs para ganhar xp Elo em cima dele novamente!  ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+
+             
                     end
 
 
@@ -248,8 +263,9 @@ end
                 db.query("UPDATE `players` SET `army_level` = `army_level`+1  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
                 db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
+          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You receive the best elo, congratulations "..ARMY[#ARMY][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
 
-                                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You receive the best elo, congratulations "..ARMY[#ARMY][3]..".")
+                                    --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You receive the best elo, congratulations "..ARMY[#ARMY][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
          db.query("UPDATE `global_storage` SET `value` = `value`-1  WHERE `key` = " ..storageglobal20.. ";")
@@ -283,7 +299,9 @@ end
                             db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                
+               -- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
 
@@ -319,7 +337,9 @@ end
                             db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+
+               -- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
 
@@ -351,7 +371,9 @@ end
                             db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                
+                --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
 
@@ -384,7 +406,9 @@ end
                             db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                
+                --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
          db.query("UPDATE `global_storage` SET `value` = `value`-1  WHERE `key` = " ..storageglobal16.. ";")
@@ -411,7 +435,8 @@ end
                             db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                 setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                         addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                 --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                 doSendMagicEffect(getCreaturePosition(cid), 27)
 
                             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal16.. ";")
@@ -455,13 +480,16 @@ end
                                                     db.executeQuery("UPDATE `players` SET `army_experience` = 0  WHERE `id` = "..getPlayerGUID(cid).." ;")
 
                                         setPlayerStorageValue(cid, ARMY_EXPERIENCE, temporary_exp - tonumber(ARMY[temporary_level][2]) > 0 or 0)
-                                        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new patent: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                                                addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been gained a new patent: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                                       
+                                        --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been gained a new patent: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
                                         doSendMagicEffect(getCreaturePosition(cid), 27)
 
                          end
 
                                  setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante , os.time() + minutos)
-                                         doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
+                                                 addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: comecou a contar o tempo! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                                           --doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
 
 
     
@@ -473,7 +501,8 @@ end
         setPlayerStorageValue(target, getPlayerGuildId(cid) + konstante , os.time() + minutos)
 
         if (valor_do_army(cid) == 21) and (temporary_exp >= ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] ) then
-                        doPlayerSendTextMessage(cid,18,"[Elo system]: Voce ja atingiu o limite de xp elo do challenger!")
+                                 addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: Voce ja atingiu o limite de xp elo do challenger! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                         --doPlayerSendTextMessage(cid,18,"[Elo system]: Voce ja atingiu o limite de xp elo do challenger!")
                         if temporary_exp == ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] then
                             return true
                         else
@@ -484,12 +513,14 @@ end
         end
 
 
-        doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
+                 addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "[Elo system]: comecou a contar o tempo! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+         --doPlayerSendTextMessage(cid,18,"[Elo system]: comecou a contar o tempo!")
 
             setPlayerStorageValue(cid, ARMY_EXPERIENCE, (temporary_exp + ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1]))
         db.executeQuery("UPDATE `players` SET `army_experience` = "..temporary_exp.."  WHERE `id` = "..getPlayerGUID(cid).." ;")
+          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "Voce matou  "..getCreatureName(target).." e ganhou "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." faltando entao "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points para avancar de nivel! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
 
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce matou  "..getCreatureName(target).." e ganhou "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." faltando entao "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points para avancar de nivel!")
+            --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce matou  "..getCreatureName(target).." e ganhou "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][1].." faltando entao "..(ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - getPlayerStorageValue(cid, ARMY_EXPERIENCE)).." army points para avancar de nivel!")
             doSendMagicEffect(getCreaturePosition(cid), 13)
 
           
@@ -685,9 +716,14 @@ else
                 local timeLeft = convertTime(getPlayerStorageValue(cid, storage_do_elo ) - os.time())
                 if getPlayerStorageValue(cid,storage_do_elo) > 0 then
 
-            doPlayerSendTextMessage(cid, 18 , "Mate em : "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ! ")
+                
+          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "Mate em : "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ! ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+
+            --doPlayerSendTextMessage(cid, 18 , "Mate em : "..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds).." ! ")
         else
-                doPlayerSendTextMessage(cid, 18 , "Menor que zero ")
+                      addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "Menor que zero ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+            
+                --doPlayerSendTextMessage(cid, 18 , "Menor que zero ")
                  end
 
                 if (getPlayerStorageValue(cid,storage_do_elo) - os.time()) <= 0 then
@@ -704,7 +740,8 @@ else
                       local newexpelo = (ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][2] - continha)
                                 db.query("UPDATE `players` SET `army_experience` = "..newexpelo.."  WHERE `id` = " .. getPlayerGUID(cid) .. ";")
                                 setPlayerStorageValue(cid, ARMY_EXPERIENCE,  newexpelo)
-                                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
+                                         addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
+                                 --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
 
                     if valor_do_army(cid) == 21 then sturagearmy,down = 144451,144450 elseif valor_do_army(cid) == 20 then sturagearmy,down = 144450,144449 elseif valor_do_army(cid) == 19 then sturagearmy,down = 144449,144448 elseif valor_do_army(cid) == 18 then sturagearmy,down = 144448,144447 elseif valor_do_army(cid) == 17 then sturagearmy,down = 144447,144446 elseif valor_do_army(cid) == 16 then sturagearmy = 144446 end
 

@@ -11,9 +11,9 @@ local storage_accept = 151230
 local storage_check = 153201
 local guild_invite = 542351
 local guild_accept = 456121
-local time_1_pos = {x = 1170, y = 280, z = 7}
-local time_2_pos = {x = 1188, y = 280, z = 7}
-local city = "city"
+local time_1_pos = {x = 376, y = 573, z = 6}
+local time_2_pos = {x = 387, y = 573, z = 6}
+local city = "carlin"
 
 local function getOnlineGuildMembersByRank(guildId, rank, selectLowerRanks) -- Funcao feita pelo Omega
     if not rank then
