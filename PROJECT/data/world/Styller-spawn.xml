@@ -8791,9 +8791,6 @@
 	<spawn centerx="894" centery="1088" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
-	<spawn centerx="1146" centery="1088" centerz="7" radius="1">
-		<npc name="Varkhal" x="1" y="0" z="7" spawntime="60" direction="2" />
-	</spawn>
 	<spawn centerx="1251" centery="1088" centerz="7" radius="3">
 		<monster name="Dragon" x="2" y="0" z="7" spawntime="2" />
 	</spawn>
