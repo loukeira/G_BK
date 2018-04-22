@@ -71,17 +71,21 @@ local a,b,c = nometotal()
 -- 	doPlayerSendTextMessage(cid,18, "Diamond II: "..global_army(storageglobal17).."")
 -- 	doPlayerSendTextMessage(cid,18, "Diamond III: "..global_army(storageglobal16).."")
 -- 	local storage_do_elo = 1234567
+
 local arena_storage = 454523
-	local salt = 4123456
 
-
-
-	local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+	local time_model = " %d hora(s), %d minuto(s) e %d segundo(s)."
 local timeLeft = convertTime(getGlobalStorageValue(arena_storage) - os.time())
-						 db.query("UPDATE accounts SET salt = '' WHERE `id` = "..getPlayerAccountId(cid).." ;")
 
-doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
-doPlayerSendTextMessage(cid, 27, 'salt ' ..getPlayerStorageValue(cid,salt))
+--doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+doPlayerSendTextMessage(cid, 27, 'war log ' ..getPlayerStorageValue(cid,war_log))
+doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+
+
+
+
+
 
 --  doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 7, 0x4a)
 --   doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 8, 0x4a)

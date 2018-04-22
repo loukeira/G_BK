@@ -12,8 +12,11 @@ function onLogin(cid)
 		registerCreatureEvent(cid, "entrosaLogin") 
 
 		if getPlayerStorageValue(cid,war_log) > 0 then
-				setPlayerStorageValue(cid, war_log , 0)
+		setPlayerStorageValue(cid, war_log , 0)
+
+            remove_player_arena(cid) --soma -1 na area e divulga
 			
+
 		end 
     
 

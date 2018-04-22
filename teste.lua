@@ -36,29 +36,29 @@ to6 = {x = 460, y = 650, z = 6}
 
 
 
--- local function getOnlineGuildMembersByRank(guildId, rank, selectLowerRanks)
---     if not rank then
---         rank = 3
---         selectLowerRanks = true
---     end
---     local list = {}
---     for _, pid in pairs(getPlayersOnline()) do
---         if getPlayerGuildId(pid) == guildId then
---             local playerRank = getPlayerGuildLevel(pid)
---             if playerRank == rank or (selectLowerRanks and playerRank <= rank) then
---                 table.insert(list, pid)
---             end
---         end
---     end
---     return list
--- end
+local function getOnlineGuildMembersByRank(guildId, rank, selectLowerRanks)
+    if not rank then
+        rank = 3
+        selectLowerRanks = true
+    end
+    local list = {}
+    for _, pid in pairs(getPlayersOnline()) do
+        if getPlayerGuildId(pid) == guildId then
+            local playerRank = getPlayerGuildLevel(pid)
+            if playerRank == rank or (selectLowerRanks and playerRank <= rank) then
+                table.insert(list, pid)
+            end
+        end
+    end
+    return list
+end
 
 function onSay(cid, words, param, channel)
     if param == "" then
         doPlayerSendCancel(cid, "Use os parametros corretos.{ex: /warcarlin invite, NameGuild, Time}")
         return true
     end
-	if getPlayerLevel(cid) <= levelmin then
+    if getPlayerLevel(cid) <= levelmin then
         doPlayerSendCancel(cid, "Voce nao tem level suficiente. Tenha level maior que "..levelmin.." !")
         return true
     end
@@ -171,7 +171,36 @@ function onSay(cid, words, param, channel)
                             end
                 
 
-            add_player_arena(cid) --soma + 1 na area e divulga
+                if getGlobalStorageValue(guild_invite) == getPlayerGuildId(cid) then
+                setGlobalStorageValue(carlinwar[1],getGlobalStorageValue(carlinwar[1]) +1 )
+
+                                    if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true) > 0 then
+                                                            for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true)) do
+                                     doPlayerSendTextMessage(gid, 20, "[CARLIN WAR]: Existem "..getGlobalStorageValue(carlinwar[1]).." players da guild "..getGuildNameById(getGlobalStorageValue(guild_invite)).." ")
+                                                            end
+                                                        end
+                                                        if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true) > 0 then
+                                                            for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true)) do
+                                         doPlayerSendTextMessage(pid, 20, "[CARLIN WAR]: Existem "..getGlobalStorageValue(carlinwar[1]).." players da guild "..getGuildNameById(getGlobalStorageValue(guild_invite)).." ")
+                                                            end
+                                                        end
+
+                else
+
+                setGlobalStorageValue(carlinwar[2],getGlobalStorageValue(carlinwar[2]) +1 )
+
+                                    if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true) > 0 then
+                                                            for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true)) do
+                                     doPlayerSendTextMessage(gid, 20, "[CARLIN WAR]: Existe(m) "..getGlobalStorageValue(carlinwar[2]).." player(s) da guild "..getGuildNameById(getGlobalStorageValue(guild_accept)).." ")
+                                                            end
+                                                        end
+                                                        if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true) > 0 then
+                                                            for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true)) do
+                                         doPlayerSendTextMessage(pid, 20, "[CARLIN WAR]: Existe(m) "..getGlobalStorageValue(carlinwar[2]).." player(s) da guild "..getGuildNameById(getGlobalStorageValue(guild_accept)).." ")
+                                                            end
+                                                        end
+
+                end
 
             doPlayerSetStorageValue(cid, war_log, 1)
                     
@@ -186,37 +215,37 @@ function onSay(cid, words, param, channel)
             doPlayerSendCancel(cid, "Sua guild nao esta em war")
         end
 
-elseif t[1] == "exit" then
-   if getGlobalStorageValue(guild_invite) == getPlayerGuildId(cid) or getGlobalStorageValue(guild_accept) == getPlayerGuildId(cid) then
-                    if getTilePzInfo(getThingPos(cid)) == false then
-            doPlayerSendCancel(cid, "Voce precisa estar em uma area protect zone")
-            return true
-        end
 
- if isInArea(getThingPos(cid), area.from1, area.to1) or  isInArea(getThingPos(cid), area.from2, area.to2) or isInArea(getThingPos(cid), area.from3, area.to3) or isInArea(getThingPos(cid), area.from4, area.to4) or isInArea(getThingPos(cid), area.from5, area.to5) or isInArea(getThingPos(cid), area.from6, area.to6) then  
-
-                              
-
-            remove_player_arena(cid) --soma - 1 na area e divulga
-
-
-            doPlayerSetStorageValue(cid, war_log, 0)
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce saiu da war!")
-                doTeleportThing(cid, getTownTemplePosition(1))
-
-
-else
-                  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao esta na Arena de CARLIN!")
-
-                                return true
-     end
-           
-        else
-            doPlayerSendCancel(cid, "Sua guild nao esta em war")
-        end
-
+        
     end
 
     return true
 end
 
+
+-- if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true) > 0 then
+--                         for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_invite), 3, true)) do
+--  doPlayerSendTextMessage(gid, MESSAGE_STATUS_CONSOLE_BLUE, "[CARLIN WAR]: Existem "..getGlobalStorageValue(carlinwar[1]).." players da guild "..getGuildNameById(getGlobalStorageValue(guild_invite)).." ")
+--                         end
+--                     end
+--                     if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true) > 0 then
+--                         for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_accept), 3, true)) do
+--      doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "[CARLIN WAR]: Existem "..getGlobalStorageValue(carlinwar[1]).." players da guild "..getGuildNameById(getGlobalStorageValue(guild_invite)).." ")
+--                         end
+--                     end
+
+
+    --    elseif t[1] == "exit" then
+    --     if getGlobalStorageValue(guild_invite) == getPlayerGuildId(cid) or getGlobalStorageValue(guild_accept) == getPlayerGuildId(cid) then
+    --                 if getTilePzInfo(getThingPos(cid)) == false then
+    --         doPlayerSendCancel(cid, "Voce precisa estar em uma area protect zone")
+    --         return true
+    --     end
+    --         doPlayerSetStorageValue(cid, war_log, 0)
+    --         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce saiu da war!")
+    --             doTeleportThing(cid, getTownTemplePosition(1))
+           
+    --     else
+    --         doPlayerSendCancel(cid, "Sua guild nao esta em war")
+    --     end
+    -- end
