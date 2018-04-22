@@ -27,9 +27,9 @@ function onPrepareDeath(cid, deathList, lastHitKiller, mostDamageKiller)
 			setGlobalStorageValue(4, getGlobalStorageValue(4)-1)
 			doRemoveCondition(cid, CONDITION_OUTFIT)
 			doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[DESERT WAR] Você foi o último sobrevivente do time perdedor e também ganhou recompensa!")
-			doPlayerAddItem(cid,9971,10)
-			doPlayerAddItem(cid,6527,80)
-			doBroadcastMessage("".. getGlobalStorageValue(5) .." Players do Black Assassins team sobreviveram ao evento e obteram a recompensa de 80 Event Coins e 10 Gold Ingots!")
+			           
+			desert_recompensa(cid)
+	        doBroadcastMessage("".. getGlobalStorageValue(5) .." Players do Black Assassins team sobreviveram ao evento e obteram a recompensa de "..quant_desert_coin.." Event Coins e "..quant_desert_ingot.." Gold Ingots!")
 			setGlobalStorageValue(5, getGlobalStorageValue(5)-1)
 		doPlayerSave(cid)
 			for _, cid in ipairs(getPlayersOnline()) do
@@ -61,17 +61,17 @@ function onPrepareDeath(cid, deathList, lastHitKiller, mostDamageKiller)
 			setGlobalStorageValue(5, getGlobalStorageValue(5)-1)
 			doRemoveCondition(cid, CONDITION_OUTFIT)
 			doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[DESERT WAR] Você foi o último sobrevivente do time perdedor e também ganhou recompensa!")
-			doPlayerAddItem(cid,9971,10)
-			doPlayerAddItem(cid,6527,80)
-			doBroadcastMessage("".. getGlobalStorageValue(4).." Players do Red Barbarians team sobreviveram ao evento e obteram a recompensa de 80 Event Coins e 10 Gold Ingots!")
+			
+			desert_recompensa(cid)
+
+			doBroadcastMessage("".. getGlobalStorageValue(4).." Players do Red Barbarians team sobreviveram ao evento e obteram a recompensa de "..quant_desert_coin.." Event Coins e "..quant_desert_ingot.." Gold Ingots!")
 			setGlobalStorageValue(4, getGlobalStorageValue(4)-1)
 		doPlayerSave(cid)
 			for _, cid in ipairs(getPlayersOnline()) do
 				if getPlayerStorageValue(cid, 51) > 0 then
 					setPlayerStorageValue(cid, 51, 0)
 					doTeleportThing(cid, getTownTemplePosition(getPlayerTown(cid)))
-					doPlayerAddItem(cid,9971,10)
-					doPlayerAddItem(cid,6527,80)
+desert_recompensa(cid)
 					doRemoveCondition(cid, CONDITION_OUTFIT)
 		doPlayerSave(cid)
 				end

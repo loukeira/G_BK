@@ -1,5 +1,5 @@
 function onTime ()
-	doItemSetAttribute(doCreateItem(1387, 1, {x = 165, y = 44, z = 7, stackpos = 1}), "aid", 1432)
+create_tp_ctf( )
 	doBroadcastMessage("CTF Event starting in 4 minutes! The teleport will be closed when the event start!", MESSAGE_STATUS_WARNING)
 	setGlobalStorageValue(6, 0)
 	setGlobalStorageValue(7, 0)
@@ -13,7 +13,7 @@ function onTime ()
 end
 
 function startCtf()
-	doRemoveItem(getTileItemById({x = 165, y = 44, z = 7}, 1387).uid, 1)
+	remove_tp_ctf( )
 	if getGlobalStorageValue(6) > 4 and getGlobalStorageValue(7) > 0 then
 		doBroadcastMessage("Good luck in the CTF Event people! The teleport has closed!", MESSAGE_STATUS_WARNING)		
 		addEvent(endCtf, 30 * 60 * 1000)
@@ -44,27 +44,24 @@ function endCtf()
 	end
 	
 	if getGlobalStorageValue(9) > getGlobalStorageValue(8) then
-		doBroadcastMessage("CTF Event encerrado! Time vermelho foi o vencedor! "..getGlobalStorageValue(9).." X "..getGlobalStorageValue(8)..". Recompensa: 35kk de ExP e 80 Event Coins.")
+		doBroadcastMessage("CTF Event encerrado! Time vermelho foi o vencedor! "..getGlobalStorageValue(9).." X "..getGlobalStorageValue(8)..". Recompensa: "..exp_ctf.."kk de ExP e "..coin_ctf.." Event Coins.")
 		for _, cid in ipairs(getPlayersOnline()) do
 			if getPlayerStorageValue(cid, 72) == 1 then
-				doPlayerAddExperience(cid, 35000000)
-				doPlayerAddItem(cid,6527,80)
+			recompensa_ctf( cid )
 			end
 		end
 	elseif getGlobalStorageValue(8) > getGlobalStorageValue(9) then
-		doBroadcastMessage("CTF Event encerrado! Time verde foi o vencedor! "..getGlobalStorageValue(8).." X "..getGlobalStorageValue(9)..". Recompensa: 35kk de ExP e 80 Event Coins.")
+		doBroadcastMessage("CTF Event encerrado! Time verde foi o vencedor! "..getGlobalStorageValue(8).." X "..getGlobalStorageValue(9)..". Recompensa: "..exp_ctf.."kk de ExP e "..coin_ctf.." Event Coins.")
 		for _, cid in ipairs(getPlayersOnline()) do
 			if getPlayerStorageValue(cid, 71) == 1 then
-				doPlayerAddExperience(cid, 35000000)
-				doPlayerAddItem(cid,6527,80)
+				recompensa_ctf(cid)
 			end
 		end
 	elseif getGlobalStorageValue(8) == getGlobalStorageValue(9) then
-		doBroadcastMessage("CTF Event encerrado! Empate de "..getGlobalStorageValue(8).." X "..getGlobalStorageValue(9).."! Todos participantes irão ganhar uma parte da recompensa: 20kk de ExP e 40 Event Coins.")
+		doBroadcastMessage("CTF Event encerrado! Empate de "..getGlobalStorageValue(8).." X "..getGlobalStorageValue(9).."! Todos participantes irão ganhar uma parte da recompensa: "..empate_ctf.."kk de ExP e "..coinempate_ctf.." Event Coins.")
 		for _, cid in ipairs(getPlayersOnline()) do
 			if getPlayerStorageValue(cid, 71) == 1 or getPlayerStorageValue(cid, 72) == 1 then
-				doPlayerAddExperience(cid, 20000000)
-				doPlayerAddItem(cid,6527,40)
+			empatado_ctf( cid )
 			end
 		end
 	end
@@ -81,11 +78,13 @@ function endCtf()
 		end
 		if getPlayerStorageValue(cid, 82) >= os.time() then
 		setPlayerStorageValue(cid, 82, 0)
-	doItemSetAttribute(doCreateItem(1437, 1, {x = 1180, y = 444, z = 6, stackpos = 1}), "uid", 2499)
+
+esquerda_verde()
 	end
 	if getPlayerStorageValue(cid, 83) >= os.time() then
 	setPlayerStorageValue(cid, 83, 0)
-	doItemSetAttribute(doCreateItem(1435, 1, {x = 1234, y = 444, z = 6}), "uid", 2500)	
+direita_red()
+
 	end
 	end
 	return true

@@ -2,6 +2,8 @@
 <movements>
 
 
+	<movevent type="StepIn" actionid="13331" event="script" value="warEntrosa.lua"/>
+	<movevent type="StepIn" actionid="13341" event="script" value="warEntrosa.lua"/>
 
   <movement type="AddItem" tileitem="1" uniqueid="44442" event="script" value="moveall.lua"/>
 

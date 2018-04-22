@@ -16,8 +16,8 @@
 
 dtt = {
     pos = {
-        temple_wait = {x=438, y=1138, z=7}, -- sala de espera
-        tp_create = {x=166, y=53, z=7}, -- onde teleport de entrada sera criado
+        temple_wait = {x=686, y=168, z=6}, -- sala de espera
+        tp_create = {x=1124, y=1067, z=7}, -- onde teleport de entrada sera criado
     },
 
     --Configura��es de abertura

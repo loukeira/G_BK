@@ -1,6 +1,6 @@
 local config = {
-	fromPosition = {x = 1667, y = 1654, z = 7}, -- top left cornor of the playground
-	toPosition = {x = 1737, y = 1721, z = 7}, -- bottom right cornor of the playground
+	fromPosition = {x = 615, y = 39, z = 6}, -- top left cornor of the playground
+	toPosition = {x = 700, y = 115, z = 6}, -- bottom right cornor of the playground
 }
 
 function onStatsChange(cid, attacker, type, combat, value)
@@ -24,9 +24,7 @@ function onStatsChange(cid, attacker, type, combat, value)
 				doTeleportThing(cid, getTownTemplePosition(getPlayerTown(cid)))
 				doSendMagicEffect(getPlayerPosition(cid), 36)
 				doPlayerSendTextMessage(cid, 22, 'You Win!')
-				doPlayerAddItem(cid,6527,150)				
-				doPlayerAddItem(cid,9971,30)
-				doPlayerAddItem(cid,6570,1)
+				recompensa_zombie(cid)
 				setGlobalStorageValue(3, getGlobalStorageValue(3)-1)
 		doPlayerSave(cid)
 				for x = config.fromPosition.x, config.toPosition.x do

@@ -72,21 +72,38 @@ local a,b,c = nometotal()
 -- 	doPlayerSendTextMessage(cid,18, "Diamond III: "..global_army(storageglobal16).."")
 -- 	local storage_do_elo = 1234567
 
-local arena_storage = 454523
 
 	local time_model = " %d hora(s), %d minuto(s) e %d segundo(s)."
-local timeLeft = convertTime(getGlobalStorageValue(arena_storage) - os.time())
+local timeLeft = convertTime(getGlobalStorageValue(arena_carlin_storage) - os.time())
 
 --doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
-doPlayerSendTextMessage(cid, 27, 'war log ' ..getPlayerStorageValue(cid,war_log))
+doPlayerSendTextMessage(cid, 27, 'war log ' ..getPlayerStorageValue(cid,war_carlin_log))
 doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(storage_carlin_t4).."")
+ 
+
+doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(carlin_power).."")
+
+doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(arena_carlin_storage).."")
 
 
+				     -- setGlobalStorageValue( arena_carlin_storage,-1000)
+         --             setGlobalStorageValue(  guild_carlin_accept, -1)
+         --             setGlobalStorageValue(  guild_carlin_invite, -1)
+         --             setGlobalStorageValue(  carlinwar[1], 0)
+         --             setGlobalStorageValue(  carlinwar[2], 0)
+         --             setGlobalStorageValue(  kill_carlin[1], 0)
+         --             setGlobalStorageValue(  kill_carlin[2], 0)
+         --             setGlobalStorageValue(  storage_carlin_t4, -1)
+         --             setGlobalStorageValue(  storage_carlin_time, 0)
+         --             setGlobalStorageValue(carlin_power, 0)
+
+         --             setGlobalStorageValue(restante_carlin[1], 0)
+         --             setGlobalStorageValue(restante_carlin[2], 0)
+         --             setGlobalStorageValue(restante_carlin[3], 0) 
 
 
-
-
-
+-- db.query("INSERT INTO `entrosa_war` (`frags_guild1`, `frags_guild2`, `guild1`, `guild2`, `tempo`) VALUES (' "..getGlobalStorageValue(kill_carlin[1]).." ', ' "..getGlobalStorageValue(kill_carlin[2]).." ', ' "..getGuildNameById(getGlobalStorageValue(guild_invite)).." ', ' "..getGuildNameById(getGlobalStorageValue(guild_accept)).." ', '10');")
 --  doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 7, 0x4a)
 --   doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 8, 0x4a)
 --  doPlayerSendChannelMessage(cid, '', global_army(storageglobal16), 13, 0x4a)
