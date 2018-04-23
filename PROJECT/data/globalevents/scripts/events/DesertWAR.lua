@@ -1,5 +1,6 @@
 function onTime ()
-	doItemSetAttribute(doCreateItem(1387, 1, {x = 170, y = 53, z = 7, stackpos = 1}), "aid", 2137)
+
+	create_tp_desert()
 	doBroadcastMessage("Desert WAR starting in 3 minutes! The teleport will be closed when the event start!", MESSAGE_STATUS_WARNING)
 	setGlobalStorageValue(4, 0)
 	setGlobalStorageValue(5, 0)
@@ -8,7 +9,8 @@ function onTime ()
 end
 
 function startDesert()
-	doRemoveItem(getTileItemById({x = 170, y = 53, z = 7}, 1387).uid, 1)
+
+remove_tp_desert()
 	if getGlobalStorageValue(4) > 0 and getGlobalStorageValue(5) > 0 then
 		doBroadcastMessage("Good luck in the desert war event people! The teleport has closed!", MESSAGE_STATUS_WARNING)		
 		for _, cid in ipairs(getPlayersOnline()) do

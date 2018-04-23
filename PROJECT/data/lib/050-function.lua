@@ -1,11 +1,26 @@
-function getGuildNameByID(gid) -- By Killua
-    local query = db.getResult("SELECT `name` FROM `guilds` WHERE `id` = '"..gid.."'")
-    if query:getID() == -1 then
-        return false
-    end
-    local name = query:getDataString("name")
-    query:free()
-    return name
+-- function getGuildNameByID(gid) -- By Killua
+--     local query = db.getResult("SELECT `name` FROM `guilds` WHERE `id` = '"..gid.."'")
+--     if query:getID() == -1 then
+--         return false
+--     end
+--     local name = query:getDataString("name")
+--     query:free()
+--     return name
+-- end
+
+function getGuildNameById(id) -- xprank 
+local ult = db.getResult('select `name` from `guilds` where id = \''..id..'\' ')
+
+if (ult:getID() == -1) then
+return false
+end
+
+local mamae = ult:getDataString("name")
+ult:free()
+
+caguei = tostring(mamae)
+return caguei
+
 end
 
 		function topilvl()

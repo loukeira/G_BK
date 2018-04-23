@@ -1974,6 +1974,50 @@
 		<monster name="Trainer Slayer" x="0" y="-1" z="5" spawntime="10" />
 		<monster name="Trainer Slayer" x="0" y="1" z="5" spawntime="10" />
 	</spawn>
+	<spawn centerx="680" centery="143" centerz="5" radius="1">
+		<monster name="Toad" x="0" y="0" z="5" spawntime="60" />
+		<monster name="Azure Frog" x="-1" y="1" z="5" spawntime="60" />
+		<monster name="Azure Frog" x="1" y="1" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="691" centery="146" centerz="5" radius="1">
+		<monster name="Slime" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="671" centery="152" centerz="5" radius="1">
+		<monster name="Red Butterfly" x="1" y="-1" z="5" spawntime="60" />
+		<monster name="Butterfly" x="-1" y="1" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="701" centery="155" centerz="5" radius="1">
+		<monster name="Wisp" x="-1" y="1" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="675" centery="159" centerz="5" radius="1">
+		<monster name="Carniphila" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="697" centery="161" centerz="5" radius="1">
+		<monster name="Spit Nettle" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="674" centery="173" centerz="5" radius="1">
+		<monster name="Spit Nettle" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="697" centery="175" centerz="5" radius="1">
+		<monster name="Carniphila" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="669" centery="178" centerz="5" radius="1">
+		<monster name="Wisp" x="-1" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="701" centery="182" centerz="5" radius="1">
+		<monster name="Red Butterfly" x="-1" y="0" z="5" spawntime="60" />
+		<monster name="Red Butterfly" x="0" y="0" z="5" spawntime="32512" />
+		<monster name="Red Butterfly" x="1" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="679" centery="189" centerz="5" radius="1">
+		<monster name="Slime" x="-1" y="-1" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="691" centery="190" centerz="5" radius="1">
+		<monster name="Azure Frog" x="-1" y="0" z="5" spawntime="60" />
+		<monster name="Azure Frog" x="1" y="0" z="5" spawntime="60" />
+		<monster name="Toad" x="0" y="1" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="629" centery="214" centerz="5" radius="1" />
 	<spawn centerx="104" centery="219" centerz="5" radius="1">
 		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
 		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
@@ -3369,6 +3413,10 @@
 		<monster name="Undead Darkshadow" x="0" y="-1" z="6" spawntime="3" />
 		<monster name="Undead Darkshadow" x="0" y="0" z="6" spawntime="3" />
 	</spawn>
+	<spawn centerx="589" centery="130" centerz="6" radius="1">
+		<npc name="Dark Rodo" x="0" y="0" z="6" spawntime="100" direction="2" />
+	</spawn>
+	<spawn centerx="590" centery="130" centerz="6" radius="1" />
 	<spawn centerx="121" centery="132" centerz="6" radius="1">
 		<monster name="Mini Serpent Ice" x="0" y="-1" z="6" spawntime="10" />
 		<monster name="Mini Serpent Ice" x="0" y="0" z="6" spawntime="10" />
@@ -3527,6 +3575,10 @@
 	<spawn centerx="436" centery="162" centerz="6" radius="1">
 		<monster name="Protect Castle" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="532" centery="162" centerz="6" radius="1">
+		<npc name="Dark Rodo" x="0" y="0" z="6" spawntime="100" direction="2" />
+	</spawn>
+	<spawn centerx="533" centery="162" centerz="6" radius="1" />
 	<spawn centerx="468" centery="164" centerz="6" radius="1">
 		<monster name="Protect King" x="0" y="0" z="6" spawntime="5" />
 		<monster name="Protect King" x="1" y="0" z="6" spawntime="5" />
@@ -3597,7 +3649,6 @@
 	<spawn centerx="1189" centery="203" centerz="6" radius="20" />
 	<spawn centerx="1032" centery="211" centerz="6" radius="5" />
 	<spawn centerx="595" centery="213" centerz="6" radius="10" />
-	<spawn centerx="628" centery="214" centerz="6" radius="1" />
 	<spawn centerx="1093" centery="214" centerz="6" radius="5" />
 	<spawn centerx="1143" centery="216" centerz="6" radius="5" />
 	<spawn centerx="576" centery="217" centerz="6" radius="1" />

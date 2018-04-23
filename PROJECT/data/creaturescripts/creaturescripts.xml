@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-	
-       	<event type="login" name="entrosaLogin" event="script" value="warEntrosaLogout.lua"/>
+
+	    <event type="login" name="entrosaLogin" event="script" value="warEntrosaLogout.lua"/>
+	    <event type="kill" name="kill_carlin" event="script" value="warEntrosaLogout.lua"/>
+       	<event type="logout" name="entrosaLogout_carlin" event="script" value="warEntrosaLogout.lua"/>
+		<event type="think" name="verificador_carlin" event="script" value="warEntrosaLogout.lua"/>
 
 
 		<event type="think" name="topthink" event="script" value="topthink.lua"/>

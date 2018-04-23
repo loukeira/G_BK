@@ -1,8 +1,8 @@
 local c = {
-	teleportPosition = {x = 172, y = 50, z = 7, stackpos = 1}, -- Where the teleport will be created
-	teleportToPosition = {x = 1699, y = 1683, z = 7}, -- Where the teleport will take you 
-	fromPosition = {x = 1667, y = 1654, z = 7}, -- top left cornor of the playground
-	toPosition = {x = 1737, y = 1721, z = 7}, -- bottom right cornor of the playground
+	teleportPosition = {x = 1131, y = 1064, z = 7, stackpos = 1}, -- Where the teleport will be created
+	teleportToPosition = {x = 651, y = 72, z = 6}, -- Where the teleport will take you 
+	fromPosition = {x = 615, y = 40, z = 6}, -- top left cornor of the playground
+	toPosition = {x = 698, y = 113, z = 6}, -- bottom right cornor of the playground
 	availablePos = {},
 }
 

@@ -10,14 +10,14 @@ function onPrepareDeath(cid, deathList, lastHitKiller, mostDamageKiller)
 		setPlayerStorageValue(cid, 82, 0)	
 		doAddCondition(cid, conditionRedx)
 		setGlobalStorageValue(11, 0)		
-		doItemSetAttribute(doCreateItem(1437, 1, {x = 1180, y = 444, z = 6, stackpos = 1}), "uid", 2499)	
+		base_verde_ctf()
 		for _, pid in ipairs(getPlayersOnline()) do
 			if getPlayerStorageValue(pid, 71) == 1 or getPlayerStorageValue(pid, 72) == 1 then
 				doPlayerSendTextMessage(pid, MESSAGE_STATUS_WARNING, "[CTF] O " .. getCreatureName(cid) .. " morreu com a bandeira verde e ela foi devolvida para sua base.")
 			end
 		end
 	elseif getPlayerStorageValue(cid, 83) >= os.time() then
-		doItemSetAttribute(doCreateItem(1435, 1, {x = 1234, y = 444, z = 6, stackpos = 1}), "uid", 2500)
+		base_red_ctf()
 		setPlayerStorageValue(cid, 83, 0)
 		setGlobalStorageValue(12, 0)		
 		doAddCondition(cid, conditionGreen)

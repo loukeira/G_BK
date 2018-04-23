@@ -1,12 +1,13 @@
 local cf = {
-	teleportPosition = {x = 172, y = 48, z = 7, stackpos = 1}, -- Where the teleport will be created
-	teleportToPosition = {x = 2194, y = 2049, z = 7}, -- Where the teleport will take you 
-	from = {x=2172,y=2042,z=7}, -- left top corner of event room
-	to = {x=2217,y=2062,z=7} -- right bottom corner of event room
+	teleportPosition = {x = 1131, y = 1062, z = 7, stackpos = 1}, -- Where the teleport will be created
+	teleportToPosition = {x = 571, y = 79, z = 6}, -- Where the teleport will take you 
+	from = {x=540,y=59,z=6}, -- left top corner of event room
+	to = {x=603,y=108,z=6} -- right bottom corner of event room
 }
 
 function onTime ()
-	doItemSetAttribute(doCreateTeleport(1387, cf.teleportToPosition, cf.teleportPosition), "aid", 1747)
+
+	create_tp_fire()
 	doBroadcastMessage("FireStorm event starting in 3 minutes! The teleport will be closed when the event start!", MESSAGE_STATUS_WARNING)
 	setGlobalStorageValue(17, 0)
 	addEvent(startEventF, 3 * 60 * 1000)
@@ -56,8 +57,10 @@ function doRepeatCheckFireStorm ()
 			doCreatureAddMana(playerTable[1], getCreatureMaxMana(playerTable[1]) - getCreatureMana(playerTable[1]))
 			doTeleportThing(playerTable[1], getTownTemplePosition(getPlayerTown(playerTable[1])), true)
 			doItemSetAttribute(doPlayerAddItem(playerTable[1], 7371), "name", "trophy " .. getCreatureName(playerTable[1]) .. "! Congratulations! Winner a fire event")
-			doPlayerAddItem(playerTable[1],9971,50)
+			
+			doPlayerAddItem(playerTable[1],9971,50)  --RECOMPENSA FIRE EVENT
 			doPlayerAddItem(playerTable[1],6527,200)
+
 			doBroadcastMessage('FireStorm Event has finished. The winner is ' .. getCreatureName(playerTable[1]) .. '. Congratulations.')
 			setGlobalStorageValue(17, 0)
 			

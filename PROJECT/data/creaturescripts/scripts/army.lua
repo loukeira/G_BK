@@ -110,14 +110,30 @@ dd=storageglobal18
 ee=storageglobal17 
 ff=storageglobal16 
 
-if valor_do_army(target) == 21 then sturagearmy,down = aa,bb elseif valor_do_army(target) == 20 then sturagearmy,down = bb,cc elseif valor_do_army(target) == 19 then sturagearmy,down = cc,dd elseif valor_do_army(target) == 18 then sturagearmy,down = dd,ee elseif valor_do_army(target) == 17 then sturagearmy,down = ee,ff elseif valor_do_army(target) == 16 then sturagearmy = ff end
+if valor_do_army(target) == 21 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal21.. ";")
+             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal20.. ";")
+end
+if valor_do_army(target) == 20 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal20.. ";")
+             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal19.. ";")
+end
+if valor_do_army(target) == 19 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal19.. ";")
+             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal18.. ";")
+end 
+if valor_do_army(target) == 18 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal18.. ";")
+             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal17.. ";")end
+if valor_do_army(target) == 17 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal17.. ";")
+             db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..storageglobal16.. ";")end
+if valor_do_army(target) == 16 then 
+             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..storageglobal16.. ";")
+end
 
-             db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..sturagearmy.. ";")
-               if valor_do_army(target) > 15 then
-                db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..down.. ";")
-                 end
 
-
+                
 
     end
   db.executeQuery("UPDATE `players` SET `army_experience` = "..getPlayerStorageValue(target,ARMY_EXPERIENCE).."  WHERE `id` = "..getPlayerGUID(target).." ;")
@@ -743,13 +759,31 @@ else
                                          addEvent(valid(doPlayerSendChannelMessage), 150, cid, "", "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..". ", TALKTYPE_CHANNEL_HIGHLIGHT, 74)
                                  --doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You has been downgrade to elo: "..ARMY[getPlayerStorageValue(cid, ARMY_LEVEL)][3]..".")
 
-                    if valor_do_army(cid) == 21 then sturagearmy,down = 144451,144450 elseif valor_do_army(cid) == 20 then sturagearmy,down = 144450,144449 elseif valor_do_army(cid) == 19 then sturagearmy,down = 144449,144448 elseif valor_do_army(cid) == 18 then sturagearmy,down = 144448,144447 elseif valor_do_army(cid) == 17 then sturagearmy,down = 144447,144446 elseif valor_do_army(cid) == 16 then sturagearmy = 144446 end
+                    if valor_do_army(cid) == 21 then 
+                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal21..";")
+                                 db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = "..storageglobal20..";")
 
-                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = " ..sturagearmy.. ";")
-                                   if valor_do_army(cid) > 15 then
-                                    db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = " ..down.. ";")
-                                     end
+                    end 
+                    if valor_do_army(cid) == 20 then 
+                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal20..";")
+                                 db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = "..storageglobal19..";")
+                    end
+                    if valor_do_army(cid) == 19 then 
+                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal19..";")
+                                 db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = "..storageglobal18..";")
+                    end
+                    if valor_do_army(cid) == 18 then
+                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal18..";")
+                                 db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = "..storageglobal17..";")
+                    end
+                    if valor_do_army(cid) == 17 then
+                                 db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal17..";")
+                                 db.query("UPDATE `global_storage` SET `value` = `value`+ 1  WHERE `key` = "..storageglobal16..";")
+                     end
+                    if valor_do_army(cid) == 16 then 
+                                db.query("UPDATE `global_storage` SET `value` = `value`- 1  WHERE `key` = "..storageglobal16..";")
 
+                     end
 
 
                         end

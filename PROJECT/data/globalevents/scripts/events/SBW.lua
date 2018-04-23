@@ -60,6 +60,7 @@ for _, pid in ipairs(getPlayersOnline()) do
 				isPossibleToTeleportPlayer = TRUE
 			end
 		end
+		
 		doTeleportThing(pid, posti)
 		doPlayerSetStorageValue(pid, SBW_INEVENT, 1)
 		doPlayerSetStorageValue(pid, SBW_AMMO, SBW_MINAMMO)

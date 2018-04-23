@@ -123,6 +123,8 @@ if not (tostring(getname) == "Account Manager" ) then
 registerCreatureEvent(cid, "AdvanceTeleport")
 end
 
+		registerCreatureEvent(cid, "entrosaLogin") 
+
 	registerCreatureEvent(cid, "untrade") 
     registerCreatureEvent(cid, "diamondorb")
     registerCreatureEvent(cid, "diamondorblogin")
