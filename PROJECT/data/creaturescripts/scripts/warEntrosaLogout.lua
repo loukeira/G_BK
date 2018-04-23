@@ -61,6 +61,7 @@ local tempo_auxiliar_1 = 529032
 
 
 
+
 terminou_carlin(cid)
 
 

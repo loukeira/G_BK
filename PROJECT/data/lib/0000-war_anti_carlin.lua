@@ -13,9 +13,9 @@ storage_carlin_time = 597977
 restante_carlin = {432411,432412,432413}
 pronto_carlin = 583432
 
-quant_carlin_kill = {0,10,20,30,40,50,100}
+quant_carlin_kill = {0,1,2,3,40,50,100}
 
-tempo_carlin = {15,30,45,60} -- 600 == 10 minutos
+tempo_carlin = {2,3,4,5} -- 600 == 10 minutos
 
 
  carlin_1_pos = { 
@@ -334,4 +334,17 @@ local timeLeft = convertTime(getGlobalStorageValue(arena_carlin_storage) - os.ti
 end, (getGlobalStorageValue(storage_carlin_time)-a)*60*1000)
 
 return true
+end
+
+
+
+
+function war_go( ... )
+    
+
+
+
+
+
+    return true
 end

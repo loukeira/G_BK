@@ -226,16 +226,16 @@ else
                 local ii = math.random(1,7)
                 doTeleportThing(cid, carlin_1_pos[ii])
                 pos_spell_random(cid)
-                local wolf = {278,114}
+                --local wolf = {278,114}
 
-                doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
+                --doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
 
             else
                 local oo = math.random(1,7)
                 doTeleportThing(cid, carlin_2_pos[oo])
                 pos_spell_random(cid)
-                local wolf = {152,94}
-                doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
+                --local wolf = {152,94}
+                --doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
 
 
             end
@@ -281,6 +281,72 @@ else
         else
             doPlayerSendCancel(cid, "Sua guild nao esta em war")
         end
+elseif t[1] == "outfit" then
+    if getPlayerGuildLevel(cid) < 3 then
+            doPlayerSendCancel(cid, "Somente liders de guild podem usar esse comando.")
+            return true
+        end
+   if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) or getGlobalStorageValue(guild_carlin_accept) == getPlayerGuildId(cid) then
+                   
+
+
+    local liderlooktype = getCreatureOutfit(cid).lookType
+    local liderlookhead = getCreatureOutfit(cid).lookHead 
+    local liderlookbody = getCreatureOutfit(cid).lookBody
+    local liderlooklegs = getCreatureOutfit(cid).lookLegs
+    local liderlookfeet = getCreatureOutfit(cid).lookFeet
+           
+
+             if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) then
+
+
+if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true) > 0 then
+ for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true)) do
+  doPlayerSendTextMessage(gid, 18, "[CARLIN WAR]: [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] "..getGlobalStorageValue(kill_carlin[1]).." x "..getGlobalStorageValue(kill_carlin[2]).." [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
+    if isInArea(getThingPos(gid), area.from1, area.to1) or  isInArea(getThingPos(gid), area.from2, area.to2) or isInArea(getThingPos(gid), area.from3, area.to3) or isInArea(getThingPos(gid), area.from4, area.to4) or isInArea(getThingPos(gid), area.from5, area.to5) or isInArea(getThingPos(gid), area.from6, area.to6) then  
+
+
+     doSetCreatureOutfit(gid, {lookType = liderlooktype, lookHead = liderlookhead , lookBody = liderlookbody, lookLegs = liderlooklegs, lookFeet = liderlookfeet, lookAddons = 3},-1)
+
+
+                 doPlayerSendTextMessage(gid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu Lider trocou de outfit!")
+                 doSendMagicEffect(getCreaturePosition(gid), 26)
+                else
+                return true
+     
+    end
+    end
+  end
+
+else
+
+  if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true) > 0 then
+  for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true)) do
+   doPlayerSendTextMessage(pid, 18, "[CARLIN WAR]: [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] "..getGlobalStorageValue(kill_carlin[1]).." x "..getGlobalStorageValue(kill_carlin[2]).." [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
+   if isInArea(getThingPos(pid), area.from1, area.to1) or  isInArea(getThingPos(pid), area.from2, area.to2) or isInArea(getThingPos(pid), area.from3, area.to3) or isInArea(getThingPos(pid), area.from4, area.to4) or isInArea(getThingPos(pid), area.from5, area.to5) or isInArea(getThingPos(pid), area.from6, area.to6) then  
+
+
+     doSetCreatureOutfit(pid, {lookType = liderlooktype, lookHead = liderlookhead , lookBody = liderlookbody, lookLegs = liderlooklegs, lookFeet = liderlookfeet, lookAddons = 3},-1)
+
+                 doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu Lider trocou de outfit!")
+                 doSendMagicEffect(getCreaturePosition(pid), 26)
+                else
+                return true
+     
+   end
+   end
+   end
+    
+
+end
+
+
+           
+        else
+            doPlayerSendCancel(cid, "Sua guild nao esta em war")
+        end
+
+
 
     end
 
