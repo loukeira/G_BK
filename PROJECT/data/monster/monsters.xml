@@ -44,7 +44,6 @@
 	<monster name="Parrot" file="Animals/parrot.xml"/>
 	<monster name="Penguin" file="Animals/penguin.xml"/>
 	<monster name="Pig" file="Animals/pig.xml"/>
-	<monster name="Bacon" file="Animals/bacon.xml"/>
 	<monster name="Polar Bear" file="Animals/polar bear.xml"/>
 	<monster name="Rabbit" file="Animals/rabbit.xml"/>
 	<monster name="Rat" file="Animals/rat.xml"/>

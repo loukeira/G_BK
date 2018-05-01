@@ -23,6 +23,25 @@ return caguei
 
 end
 
+function get_all_balance()
+ local player = db.getResult("SELECT `balance` FROM `players` WHERE group_id < '2';")    
+            if(player:getID() ~= -1) then
+ 			soma = 0
+                while (true) do
+
+                    balance = player:getDataString("balance")
+               
+                    soma = soma + tonumber(balance)
+                    if not(player:next()) then
+                        break
+                    end
+					
+                end
+            
+            end
+			 return soma
+end 
+
 		function topilvl()
  local player = db.getResult("SELECT `name` FROM `players` WHERE group_id < '2' ORDER BY `level` DESC LIMIT 1;")    
             if(player:getID() ~= -1) then

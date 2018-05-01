@@ -1,7 +1,55 @@
 function onSay(cid, words, param, channel)
 local a,b,c = nometotal()
 
--- premiacaoxpsemanal(136,159,6,a,12372,10,9971,11) --primeiro colocado
+local soma = get_all_balance()
+
+-- doPlayerSendTextMessage(cid,18,""..soma.."")
+
+quant = "abc"
+
+        if type(quant) == "number" then
+        	doPlayerSendTextMessage(cid, 18 , "NUMERO")
+        end
+        if type(quant) == "string" then
+        	doPlayerSendTextMessage(cid, 18 , "STRING")
+        end
+local token = 12372
+playyer = getCreatureName(cid)
+local itemcount = getAccountIdByName(tostring(playyer))
+
+
+-- db.query("UPDATE `players` SET `tokens` = "..get_transfer(playyer)+transfer.." WHERE account_id = "..getAccountIdByName(tostring(playyer)).." ;") 
+doPlayerSendTextMessage(cid, 18 , ""..getCreatureByName(playyer).."")
+
+function get_transfer(coco) -- xprank 
+local ult = db.getResult("select `tokens` from players where account_id = "..getAccountIdByName(tostring(coco)).." ")
+
+if (ult:getID() == -1) then
+return false
+end
+
+local mamae = ult:getDataString("tokens")
+ult:free()
+
+caguei = tonumber(mamae)
+return caguei
+
+end
+
+function get_tokens(cid) -- xprank 
+local ult = db.getResult('select `tokens` from players where id = \''..getPlayerGUID(cid)..'\' ')
+
+if (ult:getID() == -1) then
+return false
+end
+
+local mamae = ult:getDataString("tokens")
+ult:free()
+
+caguei = tonumber(mamae)
+return caguei
+
+end
 
 -- premiacaoxpsemanal(137,159,6,b,12372,700,9971,7) -- segundo colocado
 	
@@ -73,18 +121,18 @@ local a,b,c = nometotal()
 -- 	local storage_do_elo = 1234567
 
 
-	local time_model = " %d hora(s), %d minuto(s) e %d segundo(s)."
-local timeLeft = convertTime(getGlobalStorageValue(arena_carlin_storage) - os.time())
+-- 	local time_model = " %d hora(s), %d minuto(s) e %d segundo(s)."
+-- local timeLeft = convertTime(getGlobalStorageValue(arena_carlin_storage) - os.time())
 
---doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
-doPlayerSendTextMessage(cid, 27, 'war log ' ..getPlayerStorageValue(cid,war_carlin_log))
-doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
-doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(storage_carlin_t4).."")
+-- --doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+-- doPlayerSendTextMessage(cid, 27, 'war log ' ..getPlayerStorageValue(cid,war_carlin_log))
+-- doPlayerSendTextMessage(cid, 27, 'falta ' ..time_model:format(timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+-- doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(storage_carlin_t4).."")
  
 
-doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(carlin_power).."")
+-- doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(carlin_power).."")
 
-doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(arena_carlin_storage).."")
+-- doPlayerSendTextMessage(cid,27,""..getGlobalStorageValue(arena_carlin_storage).."")
 
 
 				     -- setGlobalStorageValue( arena_carlin_storage,-1000)

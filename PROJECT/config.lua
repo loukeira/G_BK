@@ -22,7 +22,7 @@
 	encryptionType = "sha1"  
 
 	worldId = 0
-	ip = "189.63.124.32"
+	ip = "127.0.0.1"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171
