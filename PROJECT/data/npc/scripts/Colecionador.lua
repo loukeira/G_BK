@@ -16,7 +16,7 @@ function creatureSayCallback(cid, type, msg)
 	local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid	
 
 	if(msgcontains(msg, 'ossos') or msgcontains(msg, 'bones') or msgcontains(msg, 'bone')) then
-		selfSay('Você realmente deseja trocar seus preciosos bones por um item aleatório? Diga {yes}.', cid)
+		selfSay('Do you really want to trade your precious bones for a random item? Say it {yes}.', cid)
 		talkState[talkUser] = 1
 	elseif(msgcontains(msg, 'yes') and talkState[talkUser] == 1) then
 		if(getPlayerItemCount(cid, 5925) >= 30) then
@@ -24,10 +24,10 @@ function creatureSayCallback(cid, type, msg)
 				doPlayerAddItem(cid, 6571)
 				selfSay('Here you are.', cid)
 			else
-				selfSay('Desculpe, mas você não tem 30 bones.', cid)
+				selfSay('Sorry, but you do not have 30 bones.', cid)
 			end
 		else
-			selfSay('Desculpe, mas você não tem 30 bones.', cid)
+			selfSay('Sorry, but you do not have 30 bones.', cid)
 		end
 		talkState[talkUser] = 0
 	elseif(msgcontains(msg, 'no') and isInArray({1}, talkState[talkUser]) == TRUE) then

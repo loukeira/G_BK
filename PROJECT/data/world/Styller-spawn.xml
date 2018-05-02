@@ -2306,7 +2306,7 @@
 	<spawn centerx="1073" centery="480" centerz="5" radius="1" />
 	<spawn centerx="196" centery="576" centerz="5" radius="1" />
 	<spawn centerx="986" centery="770" centerz="5" radius="3">
-		<npc name="captain jack" x="-1" y="0" z="5" spawntime="60" direction="2" />
+		<npc name="Captain Jack" x="-1" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="928" centery="824" centerz="5" radius="2">
 		<monster name="Wasp" x="0" y="-2" z="5" spawntime="60" />
@@ -2781,7 +2781,10 @@
 	</spawn>
 	<spawn centerx="1172" centery="1058" centerz="5" radius="1" />
 	<spawn centerx="1074" centery="1060" centerz="5" radius="1">
-		<npc name="Riona" x="1" y="0" z="5" spawntime="10" direction="2" />
+		<npc name="Riona [Tools]" x="1" y="0" z="5" spawntime="2" direction="2" />
+	</spawn>
+	<spawn centerx="1087" centery="1060" centerz="5" radius="1">
+		<npc name="Artham [Banker]" x="-1" y="0" z="5" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="439" centery="1064" centerz="5" radius="30">
 		<monster name="Ultimate Diabolic Imp" x="-12" y="-24" z="5" spawntime="2" />
@@ -2811,9 +2814,16 @@
 		<monster name="Nightmare" x="0" y="0" z="5" spawntime="2" />
 		<monster name="Nightstalker" x="2" y="0" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="1075" centery="1066" centerz="5" radius="1">
-		<npc name="A Fluffy Squirrel" x="0" y="0" z="5" spawntime="2" direction="2" />
+	<spawn centerx="1074" centery="1066" centerz="5" radius="1">
+		<npc name="Tyoric [Distance]" x="0" y="0" z="5" spawntime="2" direction="2" />
 	</spawn>
+	<spawn centerx="1087" centery="1066" centerz="5" radius="1">
+		<npc name="Herion [Event token banker]" x="-1" y="0" z="5" spawntime="2" direction="2" />
+	</spawn>
+	<spawn centerx="1080" centery="1072" centerz="5" radius="1">
+		<npc name="Mad [Loot]" x="0" y="0" z="5" spawntime="2" direction="2" />
+	</spawn>
+	<spawn centerx="1082" centery="1072" centerz="5" radius="1" />
 	<spawn centerx="520" centery="1078" centerz="5" radius="30">
 		<monster name="Ultimate Demon" x="-13" y="-17" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-13" y="-16" z="5" spawntime="2" />
@@ -7695,14 +7705,14 @@
 	<spawn centerx="1472" centery="1057" centerz="6" radius="5">
 		<monster name="Strong Demon" x="1" y="0" z="6" spawntime="2" />
 	</spawn>
-	<spawn centerx="1075" centery="1060" centerz="6" radius="1">
-		<npc name="Lector" x="0" y="0" z="6" spawntime="2" direction="2" />
+	<spawn centerx="1074" centery="1060" centerz="6" radius="1">
+		<npc name="Lector [Food]" x="1" y="0" z="6" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="1087" centery="1060" centerz="6" radius="2">
-		<npc name="Benjamin" x="-1" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Benjamin [Ring and mail]" x="-1" y="0" z="6" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="1070" centery="1061" centerz="6" radius="1">
-		<npc name="Dark Rodo" x="-1" y="0" z="6" spawntime="2" direction="2" />
+		<npc name="Dark Rodo [Potions]" x="-1" y="0" z="6" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="1429" centery="1062" centerz="6" radius="5">
 		<monster name="Strong Demon" x="-1" y="-3" z="6" spawntime="2" />
@@ -7718,7 +7728,7 @@
 		<monster name="Strong Demon" x="2" y="-3" z="6" spawntime="2" />
 	</spawn>
 	<spawn centerx="1081" centery="1072" centerz="6" radius="2">
-		<npc name="A Fluffy Squirrel" x="-1" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Rashid [Loot]" x="-1" y="0" z="6" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="1434" centery="1073" centerz="6" radius="5">
 		<monster name="Strong Demon" x="-4" y="-3" z="6" spawntime="2" />
@@ -8716,13 +8726,10 @@
 	<spawn centerx="906" centery="1060" centerz="7" radius="1">
 		<monster name="Wasp" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
-	<spawn centerx="1079" centery="1060" centerz="7" radius="1">
-		<npc name="Banker" x="0" y="0" z="7" spawntime="2" direction="2" />
+	<spawn centerx="1118" centery="1060" centerz="7" radius="1">
+		<npc name="Mitton [Event token seller]" x="1" y="0" z="7" spawntime="2" direction="2" />
 	</spawn>
-	<spawn centerx="1119" centery="1060" centerz="7" radius="1">
-		<npc name="Event Seller" x="0" y="0" z="7" spawntime="1024" direction="2" />
-	</spawn>
-	<spawn centerx="1120" centery="1060" centerz="7" radius="1" />
+	<spawn centerx="1121" centery="1060" centerz="7" radius="1" />
 	<spawn centerx="880" centery="1061" centerz="7" radius="1">
 		<monster name="Valkyrie" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
@@ -8766,8 +8773,8 @@
 	<spawn centerx="887" centery="1072" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
-	<spawn centerx="1072" centery="1072" centerz="7" radius="1">
-		<npc name="Colecionador de ossos" x="0" y="0" z="7" spawntime="2" direction="2" />
+	<spawn centerx="1073" centery="1072" centerz="7" radius="1">
+		<npc name="Skull Man [Event]" x="-1" y="0" z="7" spawntime="2" direction="2" />
 	</spawn>
 	<spawn centerx="893" centery="1075" centerz="7" radius="1">
 		<monster name="Valkyrie" x="0" y="0" z="7" spawntime="2" />
