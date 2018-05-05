@@ -31,7 +31,7 @@ end
 
 function onKill(cid,target)
 
-if isInArea(getThingPos(cid), area.from1, area.to1) or  isInArea(getThingPos(cid), area.from2, area.to2) or isInArea(getThingPos(cid), area.from3, area.to3) or isInArea(getThingPos(cid), area.from4, area.to4) or isInArea(getThingPos(cid), area.from5, area.to5) or isInArea(getThingPos(cid), area.from6, area.to6) and isInArea(getThingPos(target), area.from1, area.to1) or  isInArea(getThingPos(target), area.from2, area.to2) or isInArea(getThingPos(target), area.from3, area.to3) or isInArea(getThingPos(target), area.from4, area.to4) or isInArea(getThingPos(target), area.from5, area.to5) or isInArea(getThingPos(target), area.from6, area.to6) then  
+if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) and isInArea(getThingPos(target), carlin.from1, carlin.to1) or  isInArea(getThingPos(target), carlin.from2, carlin.to2) or isInArea(getThingPos(target), carlin.from3, carlin.to3) or isInArea(getThingPos(target), carlin.from4, carlin.to4) or isInArea(getThingPos(target), carlin.from5, carlin.to5) or isInArea(getThingPos(target), carlin.from6, carlin.to6) then  
 
 	contador_carlin_kill(cid)
    
@@ -60,9 +60,12 @@ local tempo_auxiliar_1 = 529032
 
 
 
+--teste verificador de posicao 
 
 
-terminou_carlin(cid)
+
+
+terminou_carlin(cid) 
 
 
 
@@ -77,3 +80,16 @@ end
 
 	return true
 end
+
+
+-- local carlinMark1 = {
+-- 	[{x = 1083, y = 1055, z = 7}] = {MAPMARK_DOLLAR, 'Bank'}
+-- }
+
+
+ 
+
+-- 		for pos, v in pairs(carlinMark1) do
+-- 			doPlayerAddMapMark(cid, pos, v[1], v[2] or '')
+-- 		end
+		

@@ -3,7 +3,8 @@
 
 
 
-	
+	<talkaction log="yes" words="/warcarlin" event="script" value="warEntrosa.lua"/>
+
 	<talkaction words="!cid" event="script" value="cid.lua"/>
 
 

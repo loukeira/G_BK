@@ -3,24 +3,24 @@
 
 
 
-local area = {
-from1 = {x = 300, y = 525, z = 1},
-to1 = {x = 460, y = 650, z = 1},
-from2 = {x = 300, y = 525, z = 2},
-to2 = {x = 460, y = 650, z = 2},
-from3 = {x = 300, y = 525, z = 3},
-to3 = {x = 460, y = 650, z = 3},
-from4 = {x = 300, y = 525, z = 4},
-to4 = {x = 460, y = 650, z = 4},
-from5 = {x = 300, y = 525, z = 5},
-to5 = {x = 460, y = 650, z = 5},
-from6 = {x = 300, y = 525, z = 6},
-to6 = {x = 460, y = 650, z = 6}
+-- local area = {
+-- from1 = {x = 300, y = 525, z = 1},
+-- to1 = {x = 460, y = 650, z = 1},
+-- from2 = {x = 300, y = 525, z = 2},
+-- to2 = {x = 460, y = 650, z = 2},
+-- from3 = {x = 300, y = 525, z = 3},
+-- to3 = {x = 460, y = 650, z = 3},
+-- from4 = {x = 300, y = 525, z = 4},
+-- to4 = {x = 460, y = 650, z = 4},
+-- from5 = {x = 300, y = 525, z = 5},
+-- to5 = {x = 460, y = 650, z = 5},
+-- from6 = {x = 300, y = 525, z = 6},
+-- to6 = {x = 460, y = 650, z = 6}
 
 
 
 
-}
+-- }
   --  db.executeQuery("INSERT INTO `city_war` (`frags_guild1`, `frags_guild2`, `guild1`, `guild2`, `tempo`) VALUES ('" .. self.frags[self.name[1][1]] .. "', '" .. self.frags[self.name[2][1]] .. "', '" .. self.name[1][2] .. "', '" .. self.name[2][2] .. "', '" .. self.tempo .. "');")
 
 
@@ -159,7 +159,7 @@ else
 --                     if matt == tonumber(0) then
 -- if (getGlobalStorageValue(arena_carlin_storage) - os.time() < 0 ) or (getGlobalStorageValue(kill_carlin[1]) == matt) or (getGlobalStorageValue(kill_carlin[2]) == matt) then
 --                         for _, pid in pairs(getPlayersOnline()) do
---                             if isInArea(getThingPos(pid), area.from1, area.to1) or  isInArea(getThingPos(pid), area.from2, area.to2) or isInArea(getThingPos(pid), area.from3, area.to3) or isInArea(getThingPos(pid), area.from4, area.to4) or isInArea(getThingPos(pid), area.from5, area.to5) or isInArea(getThingPos(pid), area.from6, area.to6) then 
+--                             if isInArea(getThingPos(pid), carlin.from1, carlin.to1) or  isInArea(getThingPos(pid), carlin.from2, carlin.to2) or isInArea(getThingPos(pid), carlin.from3, carlin.to3) or isInArea(getThingPos(pid), carlin.from4, carlin.to4) or isInArea(getThingPos(pid), carlin.from5, carlin.to5) or isInArea(getThingPos(pid), carlin.from6, carlin.to6) then 
                                                
                                     
 --                                 doTeleportThing(pid, getTownTemplePosition(getPlayerTown(pid)))
@@ -208,7 +208,7 @@ else
 
         if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) or getGlobalStorageValue(guild_carlin_accept) == getPlayerGuildId(cid) then
 
-                            if isInArea(getThingPos(cid), area.from1, area.to1) or  isInArea(getThingPos(cid), area.from2, area.to2) or isInArea(getThingPos(cid), area.from3, area.to3) or isInArea(getThingPos(cid), area.from4, area.to4) or isInArea(getThingPos(cid), area.from5, area.to5) or isInArea(getThingPos(cid), area.from6, area.to6) then  
+                            if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) then  
 
                                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce ja esta na WAR!")
 
@@ -226,14 +226,17 @@ else
                 local ii = math.random(1,7)
                 doTeleportThing(cid, carlin_1_pos[ii])
                 pos_spell_random(cid)
-                --local wolf = {278,114}
 
+
+                --local wolf = {278,114}
                 --doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
 
             else
                 local oo = math.random(1,7)
                 doTeleportThing(cid, carlin_2_pos[oo])
                 pos_spell_random(cid)
+
+                
                 --local wolf = {152,94}
                 --doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
 
@@ -250,7 +253,7 @@ elseif t[1] == "exit" then
             return true
         end
 
- if isInArea(getThingPos(cid), area.from1, area.to1) or  isInArea(getThingPos(cid), area.from2, area.to2) or isInArea(getThingPos(cid), area.from3, area.to3) or isInArea(getThingPos(cid), area.from4, area.to4) or isInArea(getThingPos(cid), area.from5, area.to5) or isInArea(getThingPos(cid), area.from6, area.to6) then  
+ if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) then  
 
            
 
@@ -303,7 +306,7 @@ elseif t[1] == "outfit" then
 if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true) > 0 then
  for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true)) do
   doPlayerSendTextMessage(gid, 18, "[CARLIN WAR]: [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] "..getGlobalStorageValue(kill_carlin[1]).." x "..getGlobalStorageValue(kill_carlin[2]).." [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
-    if isInArea(getThingPos(gid), area.from1, area.to1) or  isInArea(getThingPos(gid), area.from2, area.to2) or isInArea(getThingPos(gid), area.from3, area.to3) or isInArea(getThingPos(gid), area.from4, area.to4) or isInArea(getThingPos(gid), area.from5, area.to5) or isInArea(getThingPos(gid), area.from6, area.to6) then  
+    if isInArea(getThingPos(gid), carlin.from1, carlin.to1) or  isInArea(getThingPos(gid), carlin.from2, carlin.to2) or isInArea(getThingPos(gid), carlin.from3, carlin.to3) or isInArea(getThingPos(gid), carlin.from4, carlin.to4) or isInArea(getThingPos(gid), carlin.from5, carlin.to5) or isInArea(getThingPos(gid), carlin.from6, carlin.to6) then  
 
 
      doSetCreatureOutfit(gid, {lookType = liderlooktype, lookHead = liderlookhead , lookBody = liderlookbody, lookLegs = liderlooklegs, lookFeet = liderlookfeet, lookAddons = 3},-1)
@@ -323,7 +326,7 @@ else
   if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true) > 0 then
   for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true)) do
    doPlayerSendTextMessage(pid, 18, "[CARLIN WAR]: [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] "..getGlobalStorageValue(kill_carlin[1]).." x "..getGlobalStorageValue(kill_carlin[2]).." [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
-   if isInArea(getThingPos(pid), area.from1, area.to1) or  isInArea(getThingPos(pid), area.from2, area.to2) or isInArea(getThingPos(pid), area.from3, area.to3) or isInArea(getThingPos(pid), area.from4, area.to4) or isInArea(getThingPos(pid), area.from5, area.to5) or isInArea(getThingPos(pid), area.from6, area.to6) then  
+   if isInArea(getThingPos(pid), carlin.from1, carlin.to1) or  isInArea(getThingPos(pid), carlin.from2, carlin.to2) or isInArea(getThingPos(pid), carlin.from3, carlin.to3) or isInArea(getThingPos(pid), carlin.from4, carlin.to4) or isInArea(getThingPos(pid), carlin.from5, carlin.to5) or isInArea(getThingPos(pid), carlin.from6, carlin.to6) then  
 
 
      doSetCreatureOutfit(pid, {lookType = liderlooktype, lookHead = liderlookhead , lookBody = liderlookbody, lookLegs = liderlooklegs, lookFeet = liderlookfeet, lookAddons = 3},-1)

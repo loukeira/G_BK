@@ -47,7 +47,7 @@ tempo_carlin = {2,3,4,5} -- 600 == 10 minutos
 city = "carlin" 
 
 
-area = {
+carlin = {
 from1 = {x = 300, y = 525, z = 1},
 to1 = {x = 460, y = 650, z = 1},
 from2 = {x = 300, y = 525, z = 2},
@@ -89,12 +89,16 @@ function add_player_arena(cid)
                 setGlobalStorageValue(carlinwar[1],getGlobalStorageValue(carlinwar[1]) +1 )
                                     if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true) > 0 then
                                for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true)) do
+                                --marcador
+
                                         doPlayerSendTextMessage(gid, 20, "[CARLIN WAR]: Tem "..getGlobalStorageValue(carlinwar[1]).." player(s) da [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] ")
                                                             end
                                                         end
 
                                  if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true) > 0 then
                                 for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true)) do
+                               --marcador
+
             doPlayerSendTextMessage(pid, 20, "[CARLIN WAR]: Tem "..getGlobalStorageValue(carlinwar[1]).." player(s) da [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_invite)).." ] ")
                                                             end
                                                         end
@@ -107,11 +111,18 @@ function add_player_arena(cid)
 
                  if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true) > 0 then
                         for _, gid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_invite), 3, true)) do
+                          --marcador
+
+
          doPlayerSendTextMessage(gid, 20, "[CARLIN WAR]: Tem "..getGlobalStorageValue(carlinwar[2]).." player(s) da [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
                                                             end
                                                         end
                       if #getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true) > 0 then
                      for _, pid in pairs(getOnlineGuildMembersByRank(getGlobalStorageValue(guild_carlin_accept), 3, true)) do
+                       --marcador
+
+
+
                 doPlayerSendTextMessage(pid, 20, "[CARLIN WAR]: Tem "..getGlobalStorageValue(carlinwar[2]).." player(s) da [ "..getGuildNameById(getGlobalStorageValue(guild_carlin_accept)).." ] ")
                                                             end
                                                         end
@@ -230,7 +241,7 @@ matt = getGlobalStorageValue(storage_carlin_t4)
         if (matt == 0) and (getGlobalStorageValue(arena_carlin_storage) <= os.time() )  then  
 	
                         for _, pid in pairs(getPlayersOnline()) do
-                            if isInArea(getThingPos(pid), area.from1, area.to1) or  isInArea(getThingPos(pid), area.from2, area.to2) or isInArea(getThingPos(pid), area.from3, area.to3) or isInArea(getThingPos(pid), area.from4, area.to4) or isInArea(getThingPos(pid), area.from5, area.to5) or isInArea(getThingPos(pid), area.from6, area.to6) then 
+                            if isInArea(getThingPos(pid), carlin.from1, carlin.to1) or  isInArea(getThingPos(pid), carlin.from2, carlin.to2) or isInArea(getThingPos(pid), carlin.from3, carlin.to3) or isInArea(getThingPos(pid), carlin.from4, carlin.to4) or isInArea(getThingPos(pid), carlin.from5, carlin.to5) or isInArea(getThingPos(pid), carlin.from6, carlin.to6) then 
                                                    
                                 doTeleportThing(pid, getTownTemplePosition(getPlayerTown(pid)))
                                 doPlayerSetStorageValue(pid, war_carlin_log, 0)
@@ -272,7 +283,7 @@ if ((matt == quant_carlin_kill[2] )  or (matt == quant_carlin_kill[3] )  or (mat
 
 
 for _, pid in pairs(getPlayersOnline()) do
-                            if isInArea(getThingPos(pid), area.from1, area.to1) or  isInArea(getThingPos(pid), area.from2, area.to2) or isInArea(getThingPos(pid), area.from3, area.to3) or isInArea(getThingPos(pid), area.from4, area.to4) or isInArea(getThingPos(pid), area.from5, area.to5) or isInArea(getThingPos(pid), area.from6, area.to6) then 
+                            if isInArea(getThingPos(pid), carlin.from1, carlin.to1) or  isInArea(getThingPos(pid), carlin.from2, carlin.to2) or isInArea(getThingPos(pid), carlin.from3, carlin.to3) or isInArea(getThingPos(pid), carlin.from4, carlin.to4) or isInArea(getThingPos(pid), carlin.from5, carlin.to5) or isInArea(getThingPos(pid), carlin.from6, carlin.to6) then 
                                                
                                     
                                 doTeleportThing(pid, getTownTemplePosition(getPlayerTown(pid)))

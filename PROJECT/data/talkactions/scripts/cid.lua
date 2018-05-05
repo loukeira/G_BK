@@ -1,55 +1,79 @@
 function onSay(cid, words, param, channel)
-local a,b,c = nometotal()
+-- local a,b,c = nometotal()
 
-local soma = get_all_balance()
+-- local soma = get_all_balance()
 
 -- doPlayerSendTextMessage(cid,18,""..soma.."")
 
-quant = "abc"
+-- quant = "abc"
 
-        if type(quant) == "number" then
-        	doPlayerSendTextMessage(cid, 18 , "NUMERO")
-        end
-        if type(quant) == "string" then
-        	doPlayerSendTextMessage(cid, 18 , "STRING")
-        end
-local token = 12372
-playyer = getCreatureName(cid)
-local itemcount = getAccountIdByName(tostring(playyer))
-
+--         if type(quant) == "number" then
+--         	doPlayerSendTextMessage(cid, 18 , "NUMERO")
+--         end
+--         if type(quant) == "string" then
+--         	doPlayerSendTextMessage(cid, 18 , "STRING")
+--         end
+-- local token = 12372
+-- playyer = getCreatureName(cid)
+-- local itemcount = getAccountIdByName(tostring(playyer))
 
 -- db.query("UPDATE `players` SET `tokens` = "..get_transfer(playyer)+transfer.." WHERE account_id = "..getAccountIdByName(tostring(playyer)).." ;") 
-doPlayerSendTextMessage(cid, 18 , ""..getCreatureByName(playyer).."")
+local oi= getCreaturePosition(cid)
+local i=1
 
-function get_transfer(coco) -- xprank 
-local ult = db.getResult("select `tokens` from players where account_id = "..getAccountIdByName(tostring(coco)).." ")
-
-if (ult:getID() == -1) then
-return false
+for pos, v in pairs(oi) do
+-- doPlayerSendTextMessage(cid, 18 , " "..v.." ")
+if i ==1 then
+ yyy = v 
+elseif i==2 then
+	xxx = v
+elseif i==3 then
+	stack = v
+elseif i == 4 then
+	zzz = v
+end
+i=i+1
+end
+local carlinMark1 = {
+	[{x = xxx, y = yyy, z = zzz}] = {20, ""..getCreatureName(cid)..""}
+}
+	for pos,v in pairs(carlinMark1) do
+	doPlayerAddMapMark(cid, pos, v[1], v[2] or '')
 end
 
-local mamae = ult:getDataString("tokens")
-ult:free()
 
-caguei = tonumber(mamae)
-return caguei
+	doPlayerSendTextMessage(cid, 18 , " "..xxx..", "..yyy..", "..zzz.." ")
+	
 
-end
+-- function get_transfer(coco) -- xprank 
+-- local ult = db.getResult("select `tokens` from players where account_id = "..getAccountIdByName(tostring(coco)).." ")
 
-function get_tokens(cid) -- xprank 
-local ult = db.getResult('select `tokens` from players where id = \''..getPlayerGUID(cid)..'\' ')
+-- if (ult:getID() == -1) then
+-- return false
+-- end
 
-if (ult:getID() == -1) then
-return false
-end
+-- local mamae = ult:getDataString("tokens")
+-- ult:free()
 
-local mamae = ult:getDataString("tokens")
-ult:free()
+-- caguei = tonumber(mamae)
+-- return caguei
 
-caguei = tonumber(mamae)
-return caguei
+-- end
 
-end
+-- function get_tokens(cid) -- xprank 
+-- local ult = db.getResult('select `tokens` from players where id = \''..getPlayerGUID(cid)..'\' ')
+
+-- if (ult:getID() == -1) then
+-- return false
+-- end
+
+-- local mamae = ult:getDataString("tokens")
+-- ult:free()
+
+-- caguei = tonumber(mamae)
+-- return caguei
+
+-- end
 
 -- premiacaoxpsemanal(137,159,6,b,12372,700,9971,7) -- segundo colocado
 	
