@@ -23,10 +23,10 @@ function onLogin(cid)
 		db.query("UPDATE players SET loss_skills = "..valor2.." WHERE id = "..getPlayerGUID(cid).." ;")
 		db.query("UPDATE players SET loss_items = "..valor2.." WHERE id = "..getPlayerGUID(cid).." ;")
 
-					//$char_to_copy->setloss_experience(80);
-					//$char_to_copy->setloss_mana(100);
-					//$char_to_copy->setloss_skills(100);
-					//$char_to_copy->setloss_items(100);
+					--$char_to_copy->setloss_experience(80);
+					--$char_to_copy->setloss_mana(100);
+					--$char_to_copy->setloss_skills(100);
+					--$char_to_copy->setloss_items(100);
 		
 	end
 

@@ -21,3 +21,21 @@ Container.h 226: index out of range (original i: 386, i: 385, min: 1, d: 367)
 Tue May 01 16:44:46 2018
 Debug Assertion 8.60 Container.h 226
 
+----- 6/5/2018 17:8:10 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 103 109 131 106 180 030 162 180 162 101
+Last Packet: 109 017 004 014 004 007 003 017 004 015 004 007 103 176 029 187
+Player Position: [1041,1039,7]
+Player Name: Matheus (GBK)
+Player Action: 049 056 057 046 054 051 046 049 050 052 046 051 050 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Sun May 06 16:56:24 2018
+Debug Assertion 8.60 Network.cpp 921
+

@@ -35,7 +35,7 @@ end
 i=i+1
 end
 local carlinMark1 = {
-	[{x = xxx, y = yyy, z = zzz}] = {20, ""..getCreatureName(cid)..""}
+	[{x = xxx, y = yyy, z = zzz}] = {12, ""..getCreatureName(cid)..""}
 }
 	for pos,v in pairs(carlinMark1) do
 	doPlayerAddMapMark(cid, pos, v[1], v[2] or '')
