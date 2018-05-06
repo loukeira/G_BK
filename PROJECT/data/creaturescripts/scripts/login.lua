@@ -13,7 +13,22 @@ function onLogin(cid)
 
 
 	--salta
+	local storages_loss = 492493
+	if getPlayerStorageValue(cid,storages_loss) == -1 then
+		setPlayerStorageValue(cid,storages_loss,1)
 
+		local valor1 ,valor2 = 80,100 
+		db.query("UPDATE players SET loss_experience = "..valor1.." WHERE id = "..getPlayerGUID(cid).." ;")
+		db.query("UPDATE players SET loss_mana = "..valor2.." WHERE id = "..getPlayerGUID(cid).." ;")
+		db.query("UPDATE players SET loss_skills = "..valor2.." WHERE id = "..getPlayerGUID(cid).." ;")
+		db.query("UPDATE players SET loss_items = "..valor2.." WHERE id = "..getPlayerGUID(cid).." ;")
+
+					//$char_to_copy->setloss_experience(80);
+					//$char_to_copy->setloss_mana(100);
+					//$char_to_copy->setloss_skills(100);
+					//$char_to_copy->setloss_items(100);
+		
+	end
 
 	--salt
 
