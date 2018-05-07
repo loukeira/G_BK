@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <items>
+					  		<!--<attribute key="dualwield" value="1" />-->
 	<item id="100" name="void" />
 	<item id="101" name="earth" />
 	<item id="103" name="dirt" />
@@ -2112,6 +2113,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />
+
 	</item>
 	<item id="2187" article="a" name="wand of inferno">
 		<attribute key="description" value="It unleashes the very fires of hell." />
@@ -2126,6 +2128,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="3" />
+
 	</item>
 	<item id="2189" article="a" name="wand of cosmic energy">
 		<attribute key="description" value="The energy of a radiant star is trapped inside its globe." />
@@ -2140,6 +2143,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
+
 	</item>
 	<item id="2191" article="a" name="wand of dragonbreath">
 		<attribute key="description" value="Legends say that this wand holds the soul of a young dragon." />
@@ -2943,6 +2947,8 @@
 		<attribute key="range" value="5" />
 		<attribute key="breakChance" value="0" />
 		<attribute key="ammoAction" value="moveback" />
+									  	<attribute key="dualwield" value="1" />
+
 	</item>
 	<item id="2390" article="a" name="magic longsword">
 		<attribute key="description" value="It is the magic Cyclopmania Sword." />
@@ -3031,11 +3037,15 @@
 		<attribute key="weight" value="4200" />
 		<attribute key="defense" value="53" />
 		<attribute key="attack" value="72" />
+
+<!--
 		<attribute key="duration" value="100" />
 		<attribute key="showduration" value="1" />
-		<attribute key="decayTo" value="8901" />
-<!-- 		<attribute key="attackSpeed" value="2000" />
- -->		<attribute key="weaponType" value="sword" />
+	    <attribute key="decayTo" value="8901" />
+		<attribute key="attackSpeed" value="2000" /> -->	
+
+        <attribute key="weaponType" value="sword" />
+
 		<attribute key="extradef" value="3" />
 	</item>
 	<item id="2401" article="a" name="staff">
@@ -3414,6 +3424,7 @@
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="5" />
+
 	</item>
 	<item id="2456" article="a" name="bow">
 		<attribute key="weight" value="3100" />
@@ -3421,6 +3432,7 @@
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
+
 	</item>
 	<item id="2457" article="a" name="steel helmet">
 		<attribute key="weight" value="4600" />
@@ -3768,6 +3780,7 @@
 		<attribute key="weight" value="4700" />
 		<attribute key="defense" value="28" />
 		<attribute key="weaponType" value="shield" />
+
 	</item>
 		<item id="12710" article="a [Magic]" name="bonelord shield">
 		<attribute key="weight" value="4700" />
@@ -11898,6 +11911,8 @@
 		<attribute key="shootType" value="redstar" />
 		<attribute key="range" value="5" />
 		  <attribute key="hitChance" value="100"/>
+
+
 	</item>
 	<item id="7369" article="a" name="golden trophy">
 		<attribute key="weight" value="3500" />
@@ -15232,6 +15247,9 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="2" />
 		<attribute key="skillAxe" value="4" />
+
+
+
 	</item>
 	<item id="8925" article="a" name="solar axe">
 		<attribute key="weight" value="11000" />
