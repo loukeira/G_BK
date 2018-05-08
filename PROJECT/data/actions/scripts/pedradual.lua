@@ -15,6 +15,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     if item.uid == 0 or item.itemid == 0 then return false end
     if isCreature(itemEx.uid) == TRUE then return false end
 
+
     if isWeapon(itemEx.uid) then
         if math.random(1,100) < 100 then
             doItemSetAttribute(itemEx.uid, 'dualwield', true)
@@ -28,6 +29,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     else
         doPlayerSendCancel(cid, "Use a pedra em alguma arma")
     end
+
     
 	return true
 end
