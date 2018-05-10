@@ -1,7 +1,7 @@
 local function isWeapon(uid)
     uid = uid or 0
     local f = getItemWeaponType(uid)
-    if f == 1 or f==2 or f==3 or f==4 or f==5 or f==6 or f== 7 then
+    if f == 1 or f==2 or f==3 or f==4 or f==5 then
         return true
    -- else -- a mais
       --  return true -- a mais

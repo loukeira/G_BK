@@ -34,6 +34,13 @@ function onKill(cid,target)
 if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) and isInArea(getThingPos(target), carlin.from1, carlin.to1) or  isInArea(getThingPos(target), carlin.from2, carlin.to2) or isInArea(getThingPos(target), carlin.from3, carlin.to3) or isInArea(getThingPos(target), carlin.from4, carlin.to4) or isInArea(getThingPos(target), carlin.from5, carlin.to5) or isInArea(getThingPos(target), carlin.from6, carlin.to6) then  
 
 	contador_carlin_kill(cid)
+
+            if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(target) then
+	db.query("UPDATE players SET guild1 = 0 WHERE id = "..getPlayerGUID(target).." ;")
+else
+	db.query("UPDATE players SET guild2 = 0 WHERE id = "..getPlayerGUID(target).." ;")
+end
+	
    
 end
                 

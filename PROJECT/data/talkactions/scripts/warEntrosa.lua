@@ -199,7 +199,8 @@ else
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Essa guild nao existe.")
         end
     elseif t[1] == "go" then
-         
+                   
+
 
         if getTilePzInfo(getThingPos(cid)) == false then
             doPlayerSendCancel(cid, "Voce precisa estar em uma area protect zone")
@@ -222,17 +223,19 @@ else
                     
 
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce entrou na war!")
+
             if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) then
-                local ii = math.random(1,7)
+                local ii = math.random(1,1) --vai de 1 a 7
+db.query("UPDATE players SET guild1 = 1 WHERE id = "..getPlayerGUID(cid).." ;")
                 doTeleportThing(cid, carlin_1_pos[ii])
                 pos_spell_random(cid)
-
 
                 --local wolf = {278,114}
                 --doSetCreatureOutfit(cid, {lookType = wolf[1], lookHead = wolf[2] , lookBody = wolf[2], lookLegs = wolf[2], lookFeet = wolf[2], lookAddons = 3},-1)
 
             else
-                local oo = math.random(1,7)
+                local oo = math.random(1,1)
+db.query("UPDATE players SET guild2 = 1 WHERE id = "..getPlayerGUID(cid).." ;")
                 doTeleportThing(cid, carlin_2_pos[oo])
                 pos_spell_random(cid)
 
@@ -255,7 +258,13 @@ elseif t[1] == "exit" then
 
  if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) then  
 
-           
+                       if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) then
+
+db.query("UPDATE players SET guild1 = 0 WHERE id = "..getPlayerGUID(cid).." ;")
+            else
+db.query("UPDATE players SET guild2 = 0 WHERE id = "..getPlayerGUID(cid).." ;")
+            end
+
 
             remove_player_arena(cid) --subtrai - 1 na area e divulga
 
@@ -284,6 +293,149 @@ else
         else
             doPlayerSendCancel(cid, "Sua guild nao esta em war")
         end
+
+--- inicio list
+elseif t[1] == "list" then
+	   if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) or getGlobalStorageValue(guild_carlin_accept) == getPlayerGuildId(cid) then
+
+ if isInArea(getThingPos(cid), carlin.from1, carlin.to1) or  isInArea(getThingPos(cid), carlin.from2, carlin.to2) or isInArea(getThingPos(cid), carlin.from3, carlin.to3) or isInArea(getThingPos(cid), carlin.from4, carlin.to4) or isInArea(getThingPos(cid), carlin.from5, carlin.to5) or isInArea(getThingPos(cid), carlin.from6, carlin.to6) then  
+
+
+function exivaa(name)
+
+local playerPos, npcPos = getCreaturePosition(cid), getCreaturePosition(getCreatureByName(name))
+local px, py = 0, 0
+local pS = ""
+local text = ""
+
+if(playerPos.x == npcPos.x) and (playerPos.y < npcPos.y) then
+px = 1
+py = npcPos.y - playerPos.y
+pS = "south \/"
+elseif(playerPos.x == npcPos.x) and (playerPos.y > npcPos.y) then
+px = 1
+py = playerPos.y - npcPos.y
+pS = "north /\ "
+elseif(playerPos.x < npcPos.x) and (playerPos.y == npcPos.y) then
+px = npcPos.x - playerPos.x
+py = 1
+pS = "east >"
+elseif(playerPos.x > npcPos.x) and (playerPos.y == npcPos.y) then
+px = playerPos.x - npcPos.x
+py = 1
+pS = "west <"
+elseif(playerPos.x > npcPos.x) and (playerPos.y > npcPos.y) then
+px = playerPos.x - npcPos.x
+py = playerPos.y - npcPos.y
+pS = "north-west < /\ "
+elseif(playerPos.x > npcPos.x) and (playerPos.y < npcPos.y) then
+px = playerPos.x - npcPos.x
+py = npcPos.y - playerPos.y
+pS = "south-west < \/"
+elseif(playerPos.x < npcPos.x) and (playerPos.y < npcPos.y) then
+px = npcPos.x - playerPos.x
+py = npcPos.y - playerPos.y
+pS = "south-east \/ >"
+elseif(playerPos.x < npcPos.x) and (playerPos.y > npcPos.y) then
+px = npcPos.x - playerPos.x
+ps = playerPos.y - npcPos.y
+pS = "north-east /\ >"
+end
+
+if(px <= 4 and py <= 4) then
+text = "next you"
+elseif((px > 4 and px <= 100) and (py > 4 and py <= 100)) or ((px > 4 and px <= 100) and (py <= 4)) or ((px <= 4) and (py > 4 and py <= 100)) then
+text = "" .. pS .. ""
+elseif((px > 100 and px <= 274) and (py > 100 and py <= 274)) or ((px > 100 and px <= 274) and (py <= 100)) or ((px <= 100) and (py > 100 and py <= 274)) then
+text = "far to " .. pS .. ""
+elseif((px > 274 and px <= 280) and (py > 274 and py <= 280)) or ((px > 274 and px <= 280) and (py < 274)) or ((px < 274) and (py > 274 and py <= 280)) then
+text = "very far to " .. pS .. ""
+elseif(px > 280 and py > 280) or (px > 280 and py < 280) or (px < 280 and py > 280) then
+text = "" .. pS .. ""
+end
+return text
+end
+
+local displayoutput = {"Carlin War"}
+    number = 1
+    param = string.lower(param)
+    skilllist = ""
+    command = TRUE
+     display = 1
+     number2 = 1
+    skilllist2 = ""
+
+
+
+
+                     --db.query("UPDATE players SET guild1 = 1 ;")
+                     --db.query("UPDATE players SET guild2 = 1 ;")
+local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild1` = 1 ORDER BY `level` DESC;")    
+            if(player:getID() ~= -1) then
+                while (true) do
+                     local name = player:getDataString("name")
+                     local level = player:getDataString("level")
+
+                     
+                     local text = exivaa(name)
+                      skilllist = skilllist.. "\n#"..string.format("%5s",number.."  "..name.." -- LVL ["..level.."] - "..text.." ")
+                    number = number + 1
+                  	
+               
+                     
+                   			
+
+                    if not(player:next()) then
+                        break
+                    end
+                end
+                player:free()
+            end
+
+local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild2` = 1 ORDER BY `level` DESC;")    
+            if(player:getID() ~= -1) then
+                while (true) do
+                     local namee = player:getDataString("name")
+                     local level = player:getDataString("level")
+
+                     local text = exivaa(namee)
+					skilllist2 = skilllist2.. "\n#"..string.format("%5s",number2.."  "..namee.." -- LVL ["..level.."] - "..text.." ")
+                    number2 = number2 + 1
+                  	
+               
+                     
+                   			
+
+                    if not(player:next()) then
+                        break
+                    end
+                end
+                player:free()
+            end
+          local dialog1  = "[+] Lista de INIMIGOS na Carlin War [+]\n "..skilllist.."\n--------------------------\n "
+          local dialog2  = "[+] Lista de INIMIGOS na Carlin War [+]\n "..skilllist2.."\n--------------------------\n "
+
+		  local itemtype = 9969
+		  if getGlobalStorageValue(guild_carlin_invite) == getPlayerGuildId(cid) then
+
+    	  doShowTextDialog(cid, itemtype, dialog2)
+    	else
+    	  doShowTextDialog(cid, itemtype, dialog1)
+
+    	end
+
+
+else
+                  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao esta na Arena de CARLIN!")
+
+                                return true
+     end
+ else
+            doPlayerSendCancel(cid, "Sua guild nao esta em war")
+            return true
+        end
+
+-----fim do list
 elseif t[1] == "outfit" then
     if getPlayerGuildLevel(cid) < 3 then
             doPlayerSendCancel(cid, "Somente liders de guild podem usar esse comando.")

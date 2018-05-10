@@ -12,6 +12,10 @@ storage_carlin_t4 = 596867
 storage_carlin_time = 597977
 restante_carlin = {432411,432412,432413}
 pronto_carlin = 583432
+guild11 = 630631
+guild22 = 630632
+
+
 
 quant_carlin_kill = {0,1,2,3,40,50,100}
 
@@ -268,6 +272,9 @@ matt = getGlobalStorageValue(storage_carlin_t4)
                      setGlobalStorageValue(restante_carlin[1], 0)
                      setGlobalStorageValue(restante_carlin[2], 0)
                      setGlobalStorageValue(restante_carlin[3], 0)
+                     db.query("UPDATE players SET guild1 = 0 ;")
+                     db.query("UPDATE players SET guild2 = 0 ;")
+
 
                                          setGlobalStorageValue(pronto_carlin,0)
 
@@ -358,4 +365,59 @@ function war_go( ... )
 
 
     return true
+end
+
+function exivaa(name)
+
+local playerPos, npcPos = getCreaturePosition(cid), getCreaturePosition(getCreatureByName(name))
+local px, py = 0, 0
+local pS = ""
+local text = ""
+
+if(playerPos.x == npcPos.x) and (playerPos.y < npcPos.y) then
+px = 1
+py = npcPos.y - playerPos.y
+pS = "south \/"
+elseif(playerPos.x == npcPos.x) and (playerPos.y > npcPos.y) then
+px = 1
+py = playerPos.y - npcPos.y
+pS = "north /\ "
+elseif(playerPos.x < npcPos.x) and (playerPos.y == npcPos.y) then
+px = npcPos.x - playerPos.x
+py = 1
+pS = "east >"
+elseif(playerPos.x > npcPos.x) and (playerPos.y == npcPos.y) then
+px = playerPos.x - npcPos.x
+py = 1
+pS = "west <"
+elseif(playerPos.x > npcPos.x) and (playerPos.y > npcPos.y) then
+px = playerPos.x - npcPos.x
+py = playerPos.y - npcPos.y
+pS = "north-west < /\ "
+elseif(playerPos.x > npcPos.x) and (playerPos.y < npcPos.y) then
+px = playerPos.x - npcPos.x
+py = npcPos.y - playerPos.y
+pS = "south-west < \/"
+elseif(playerPos.x < npcPos.x) and (playerPos.y < npcPos.y) then
+px = npcPos.x - playerPos.x
+py = npcPos.y - playerPos.y
+pS = "south-east \/ >"
+elseif(playerPos.x < npcPos.x) and (playerPos.y > npcPos.y) then
+px = npcPos.x - playerPos.x
+ps = playerPos.y - npcPos.y
+pS = "north-east /\ >"
+end
+
+if(px <= 4 and py <= 4) then
+text = "next you"
+elseif((px > 4 and px <= 100) and (py > 4 and py <= 100)) or ((px > 4 and px <= 100) and (py <= 4)) or ((px <= 4) and (py > 4 and py <= 100)) then
+text = "" .. pS .. ""
+elseif((px > 100 and px <= 274) and (py > 100 and py <= 274)) or ((px > 100 and px <= 274) and (py <= 100)) or ((px <= 100) and (py > 100 and py <= 274)) then
+text = "far to " .. pS .. ""
+elseif((px > 274 and px <= 280) and (py > 274 and py <= 280)) or ((px > 274 and px <= 280) and (py < 274)) or ((px < 274) and (py > 274 and py <= 280)) then
+text = "very far to " .. pS .. ""
+elseif(px > 280 and py > 280) or (px > 280 and py < 280) or (px < 280 and py > 280) then
+text = "" .. pS .. ""
+end
+return text
 end

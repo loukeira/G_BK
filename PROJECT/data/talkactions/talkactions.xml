@@ -159,7 +159,7 @@
 	<talkaction words="/balance" channel="0" event="script" value="balance.lua" desc="(Guild channel command) Balance management."/>
 	<talkaction words="!repair;/repair;!reparar;/reparar;!;/" script="repair.lua"/>
 	<talkaction words="!fly" event="script" value="fly.lua"/>
-	<talkaction log="yes" words="/warcarlin" event="script" value="warEntrosa.lua"/>
+	<talkaction log="yes" words="!warcarlin" event="script" value="warEntrosa.lua"/>
 	 <talkaction words="!eject" event="script" value="eject.lua"/>
 	<talkaction access="0-4" words="!rank" script="ranks.lua"/>
 	<talkaction words="!wand" sensitive="false" event="script" value="elemental_wand.lua"/>
