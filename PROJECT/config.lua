@@ -88,7 +88,7 @@
 	useFragHandler = true
 	noDamageToSameLookfeet = false
 	showHealthChange = true
-	showManaChange = false
+	showManaChange = true
 	showHealthChangeForMonsters = false
 	showManaChangeForMonsters = false
 	fieldOwnershipDuration = 3 * 1000

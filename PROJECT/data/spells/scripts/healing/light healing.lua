@@ -6,5 +6,10 @@ setCombatParam(combat, COMBAT_PARAM_DISPEL, CONDITION_PARALYZE)
 setHealingFormula(combat, COMBAT_FORMULA_LEVELMAGIC, 5, 5, 1.5, 2)
 
 function onCastSpell(cid, var)
+	local mana_add = 300
+	--doCreatureAddMana(cid, mana_add)
+	--doSendAnimatedText(getPlayerPosition(cid),""..mana_add.."", TEXTCOLOR_LIGHTBLUE)
+
+
 	return doCombat(cid, combat, var)
 end

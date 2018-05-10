@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
 
+	<movevent type="StepIn" actionid="13245" event="script" value="mine.lua"/>
 
 	<movevent type="StepIn" actionid="13351-13354" event="script" value="trade_global.lua"/>
 

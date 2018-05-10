@@ -7,6 +7,5 @@ local area = createCombatArea(AREA_CROSS5X5)
 setCombatArea(combat, area)
 
 function onCastSpell(cid, var)
-	if isSpellBlocked(cid, {2,3}) then return false end
 	return doCombat(cid, combat, var)
 end

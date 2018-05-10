@@ -1,133 +1,144 @@
 function onSay(cid, words, param, channel)
-
-
-
-function exivaa(name)
-
-local playerPos, npcPos = getCreaturePosition(cid), getCreaturePosition(getCreatureByName(name))
-local px, py = 0, 0
-local pS = ""
-local text = ""
-
-if(playerPos.x == npcPos.x) and (playerPos.y < npcPos.y) then
-px = 1
-py = npcPos.y - playerPos.y
-pS = "south \/"
-elseif(playerPos.x == npcPos.x) and (playerPos.y > npcPos.y) then
-px = 1
-py = playerPos.y - npcPos.y
-pS = "north /\ "
-elseif(playerPos.x < npcPos.x) and (playerPos.y == npcPos.y) then
-px = npcPos.x - playerPos.x
-py = 1
-pS = "east >"
-elseif(playerPos.x > npcPos.x) and (playerPos.y == npcPos.y) then
-px = playerPos.x - npcPos.x
-py = 1
-pS = "west <"
-elseif(playerPos.x > npcPos.x) and (playerPos.y > npcPos.y) then
-px = playerPos.x - npcPos.x
-py = playerPos.y - npcPos.y
-pS = "north-west < /\ "
-elseif(playerPos.x > npcPos.x) and (playerPos.y < npcPos.y) then
-px = playerPos.x - npcPos.x
-py = npcPos.y - playerPos.y
-pS = "south-west < \/"
-elseif(playerPos.x < npcPos.x) and (playerPos.y < npcPos.y) then
-px = npcPos.x - playerPos.x
-py = npcPos.y - playerPos.y
-pS = "south-east \/ >"
-elseif(playerPos.x < npcPos.x) and (playerPos.y > npcPos.y) then
-px = npcPos.x - playerPos.x
-ps = playerPos.y - npcPos.y
-pS = "north-east /\ >"
+tempo_auxiliar_segundo = 11455
+i = {5,10,18,24,30,35,65,66,144,171,180,185,221,241,246,252,255}
+if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= #i then
+if getPlayerStorageValue(cid,tempo_auxiliar_segundo) == -1 then setPlayerStorageValue(cid,tempo_auxiliar_segundo,1) 
 end
 
-if(px <= 4 and py <= 4) then
-text = "next you"
-elseif((px > 4 and px <= 100) and (py > 4 and py <= 100)) or ((px > 4 and px <= 100) and (py <= 4)) or ((px <= 4) and (py > 4 and py <= 100)) then
-text = "" .. pS .. ""
-elseif((px > 100 and px <= 274) and (py > 100 and py <= 274)) or ((px > 100 and px <= 274) and (py <= 100)) or ((px <= 100) and (py > 100 and py <= 274)) then
-text = "far to " .. pS .. ""
-elseif((px > 274 and px <= 280) and (py > 274 and py <= 280)) or ((px > 274 and px <= 280) and (py < 274)) or ((px < 274) and (py > 274 and py <= 280)) then
-text = "very far to " .. pS .. ""
-elseif(px > 280 and py > 280) or (px > 280 and py < 280) or (px < 280 and py > 280) then
-text = "" .. pS .. ""
+
+        doSendAnimatedText(getCreaturePosition(cid), ""..i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)].."", i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)])
+        setPlayerStorageValue(cid,tempo_auxiliar_segundo,getPlayerStorageValue(cid,  tempo_auxiliar_segundo) +1)
+else
+
+doPlayerSendTextMessage(cid,18,"chegou ao limite!")
+setPlayerStorageValue(cid,tempo_auxiliar_segundo,-1)
 end
-return text
-end
--- local a,b,c = nometotal()
+-- function exivaa(name)
 
-local displayoutput = {"Carlin War"}
-    number = 1
-    param = string.lower(param)
-    skilllist = ""
-    command = TRUE
-     display = 1
-     number2 = 1
-    skilllist2 = ""
+-- local playerPos, npcPos = getCreaturePosition(cid), getCreaturePosition(getCreatureByName(name))
+-- local px, py = 0, 0
+-- local pS = ""
+-- local text = ""
+
+-- if(playerPos.x == npcPos.x) and (playerPos.y < npcPos.y) then
+-- px = 1
+-- py = npcPos.y - playerPos.y
+-- pS = "south \/"
+-- elseif(playerPos.x == npcPos.x) and (playerPos.y > npcPos.y) then
+-- px = 1
+-- py = playerPos.y - npcPos.y
+-- pS = "north /\ "
+-- elseif(playerPos.x < npcPos.x) and (playerPos.y == npcPos.y) then
+-- px = npcPos.x - playerPos.x
+-- py = 1
+-- pS = "east >"
+-- elseif(playerPos.x > npcPos.x) and (playerPos.y == npcPos.y) then
+-- px = playerPos.x - npcPos.x
+-- py = 1
+-- pS = "west <"
+-- elseif(playerPos.x > npcPos.x) and (playerPos.y > npcPos.y) then
+-- px = playerPos.x - npcPos.x
+-- py = playerPos.y - npcPos.y
+-- pS = "north-west < /\ "
+-- elseif(playerPos.x > npcPos.x) and (playerPos.y < npcPos.y) then
+-- px = playerPos.x - npcPos.x
+-- py = npcPos.y - playerPos.y
+-- pS = "south-west < \/"
+-- elseif(playerPos.x < npcPos.x) and (playerPos.y < npcPos.y) then
+-- px = npcPos.x - playerPos.x
+-- py = npcPos.y - playerPos.y
+-- pS = "south-east \/ >"
+-- elseif(playerPos.x < npcPos.x) and (playerPos.y > npcPos.y) then
+-- px = npcPos.x - playerPos.x
+-- ps = playerPos.y - npcPos.y
+-- pS = "north-east /\ >"
+-- end
+
+-- if(px <= 4 and py <= 4) then
+-- text = "next you"
+-- elseif((px > 4 and px <= 100) and (py > 4 and py <= 100)) or ((px > 4 and px <= 100) and (py <= 4)) or ((px <= 4) and (py > 4 and py <= 100)) then
+-- text = "" .. pS .. ""
+-- elseif((px > 100 and px <= 274) and (py > 100 and py <= 274)) or ((px > 100 and px <= 274) and (py <= 100)) or ((px <= 100) and (py > 100 and py <= 274)) then
+-- text = "far to " .. pS .. ""
+-- elseif((px > 274 and px <= 280) and (py > 274 and py <= 280)) or ((px > 274 and px <= 280) and (py < 274)) or ((px < 274) and (py > 274 and py <= 280)) then
+-- text = "very far to " .. pS .. ""
+-- elseif(px > 280 and py > 280) or (px > 280 and py < 280) or (px < 280 and py > 280) then
+-- text = "" .. pS .. ""
+-- end
+-- return text
+-- end
+-- -- local a,b,c = nometotal()
+
+-- local displayoutput = {"Carlin War"}
+--     number = 1
+--     param = string.lower(param)
+--     skilllist = ""
+--     command = TRUE
+--      display = 1
+--      number2 = 1
+--     skilllist2 = ""
 
 
 
 
-                     --db.query("UPDATE players SET guild1 = 1 ;")
-                     --db.query("UPDATE players SET guild2 = 1 ;")
-local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild1` = 1 ORDER BY `level` DESC;")    
-            if(player:getID() ~= -1) then
-                while (true) do
-                     local name = player:getDataString("name")
-                     local level = player:getDataString("level")
+--                      --db.query("UPDATE players SET guild1 = 1 ;")
+--                      --db.query("UPDATE players SET guild2 = 1 ;")
+-- local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild1` = 1 ORDER BY `level` DESC;")    
+--             if(player:getID() ~= -1) then
+--                 while (true) do
+--                      local name = player:getDataString("name")
+--                      local level = player:getDataString("level")
 
                      
-                     local text = exivaa(name)
-                      skilllist = skilllist.. "\n#"..string.format("%5s",number.."  "..name.." -- LVL ["..level.."] - "..text.." ")
-                    number = number + 1
+--                      local text = exivaa(name)
+--                       skilllist = skilllist.. "\n#"..string.format("%5s",number.."  "..name.." -- LVL ["..level.."] - "..text.." ")
+--                     number = number + 1
                   	
                
                      
                    			
 
-                    if not(player:next()) then
-                        break
-                    end
-                end
-                player:free()
-            end
+--                     if not(player:next()) then
+--                         break
+--                     end
+--                 end
+--                 player:free()
+--             end
 
-local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild2` = 1 ORDER BY `level` DESC;")    
-            if(player:getID() ~= -1) then
-                while (true) do
-                     local name = player:getDataString("name")
-                     local level = player:getDataString("level")
+-- local player = db.getResult("SELECT `name`, `level` FROM `players` WHERE `guild2` = 1 ORDER BY `level` DESC;")    
+--             if(player:getID() ~= -1) then
+--                 while (true) do
+--                      local name = player:getDataString("name")
+--                      local level = player:getDataString("level")
 
-                     local text = exivaa(name)
-					skilllist2 = skilllist2.. "\n#"..string.format("%5s",number2.."  "..name.." -- LVL ["..level.."] - "..text.." ")
-                    number2 = number2 + 1
+--                      local text = exivaa(name)
+-- 					skilllist2 = skilllist2.. "\n#"..string.format("%5s",number2.."  "..name.." -- LVL ["..level.."] - "..text.." ")
+--                     number2 = number2 + 1
                   	
                
                      
                    			
 
-                    if not(player:next()) then
-                        break
-                    end
-                end
-                player:free()
-            end
-          local dialog  = "[+] Lista de INIMIGOS na Carlin War [+]\n "..skilllist.."\n--------------------------\n [ GUILD 2 ] "..skilllist2..""
+--                     if not(player:next()) then
+--                         break
+--                     end
+--                 end
+--                 player:free()
+--             end
+--           local dialog  = "[+] Lista de INIMIGOS na Carlin War [+]\n "..skilllist.."\n--------------------------\n [ GUILD 2 ] "..skilllist2..""
 
-local itemtype = 9969
-    doShowTextDialog(cid, itemtype, dialog)
-
-
+-- local itemtype = 9969
+--     doShowTextDialog(cid, itemtype, dialog)
 
 
 
 
 
--- local soma = get_all_balance()
 
-doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,guild11)..", "..getPlayerStorageValue(cid,guild22).."")
+
+-- -- local soma = get_all_balance()
+
+-- doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,guild11)..", "..getPlayerStorageValue(cid,guild22).."")
 
 
 -- quant = "abc"
@@ -419,7 +430,11 @@ end
    -- doPlayerSendTextMessage(cid,18, "TOMA: "..valor_do_army(cid).."")
 
 
-doSendMagicEffect(getCreaturePosition(cid), math.random(28,30))
+
+
+
+
+--doSendMagicEffect(getCreaturePosition(cid), math.random(28,30))
 
 
 
