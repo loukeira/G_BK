@@ -42,7 +42,7 @@
 	<globalevent name="lottery" interval="60000" event="script" value="lotery.lua"/>
 
 
-    <globalevent name="shop" interval="30000" script="shop.lua"/>
+    <globalevent name="shop" interval="10000" script="shop.lua"/>
     <globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
    	<globalevent name="save" interval="1200000" event="script" value="save.lua"/>
 	<globalevent name="clean" interval="1000000" event="script" value="clean.lua"/>

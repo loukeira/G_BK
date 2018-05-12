@@ -2,6 +2,11 @@
 <creaturescripts>
 
 <!--marcos -->
+
+		<event type="preparedeath" name="Spider" script="spider.lua"/>
+
+		<event type="login" name="AuraLogin" script="aura.lua"/>
+
 	    <event type="login" name="entrosaLogin" event="script" value="warEntrosaLogout.lua"/>
 	    <event type="kill" name="kill_carlin" event="script" value="warEntrosaLogout.lua"/>
        	<event type="logout" name="entrosaLogout_carlin" event="script" value="warEntrosaLogout.lua"/>

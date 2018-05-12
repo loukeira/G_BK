@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions> 
+<action itemid="2263" script="bomba.lua"/>
 
 	<action itemid="8305" event="script" value="pedradual.lua"/>
 

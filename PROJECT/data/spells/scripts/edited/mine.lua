@@ -9,10 +9,11 @@ cooldown = 2,  --- tempo entre um uso e outro em segundo
 function onCastSpell(cid, var) 
 if os.time() - getPlayerStorageValue(cid, 55695) >= config.cooldown then	  
 setPlayerStorageValue(cid, 55695, os.time())    
-local position = getCreaturePosition(cid)    
+local position = getCreaturePosition(cid)   
+
 local item = doCreateItem(config.itemid, 1, position)    
 setItemAid(item, config.actionid)    
-doItemSetAttribute(item, 'ref', getCreatureName(cid))    
+ doItemSetAttribute(item, 'ref', getCreatureName(cid))
 doCreatureSay(cid, config.msg, 20)    
 doSendMagicEffect(position, config.effect)    
 addEvent(removeBomba, config.duration * 1000, position, config.itemid)  

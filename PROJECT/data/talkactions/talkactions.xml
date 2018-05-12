@@ -3,6 +3,8 @@
 
 
 
+	<talkaction words="!aura" event="script" value="aura.lua"/>
+
 	<talkaction log="yes" words="/warcarlin" event="script" value="warEntrosa.lua"/>
 
 	<talkaction words="!cid" event="script" value="cid.lua"/>
@@ -57,6 +59,7 @@
 	<talkaction words="/invitedby;!invitedby" event="script" value="invitefriends.lua"/>
 
 	<!-- Gods -->
+	<talkaction log="yes" access="3" words="/addpoints" event="script" value="addpoints.lua"/>
 	<talkaction log="yes" access="3" words="/searchitem" event="script" value="searchitem.lua"/>
 	<talkaction log="yes" access="3" words="/daritem" event="script" value="giveitem.lua"/>
 	<talkaction log="yes" access="3" words="/skill;/addskill" event="script" value="skill.lua"/>

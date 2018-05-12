@@ -141,6 +141,8 @@ end
 		registerCreatureEvent(cid, "entrosaLogin") 
 
 	registerCreatureEvent(cid, "untrade") 
+		registerCreatureEvent(cid, "Spider") 
+
     registerCreatureEvent(cid, "diamondorb")
     registerCreatureEvent(cid, "diamondorblogin")
 	registerCreatureEvent(cid, "agethink")

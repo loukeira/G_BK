@@ -5589,3 +5589,83 @@
 [10/5/2018 20:22:0] /reload spells
 [10/5/2018 20:25:17] /reload spells
 [10/5/2018 20:25:31] /clean
+[10/5/2018 23:53:21] /reload spells
+[10/5/2018 23:53:27] /t
+[10/5/2018 23:56:18] /reload spell
+[10/5/2018 23:57:1] /reload spell
+[10/5/2018 23:59:5] /reload spell
+[10/5/2018 23:59:58] /reload spell
+[11/5/2018 0:0:45] /reload spell
+[11/5/2018 0:7:13] /reload actions
+[11/5/2018 0:7:33] /i 2263
+[11/5/2018 0:8:1] /m cyclops
+[11/5/2018 0:15:36] /reload spells
+[11/5/2018 0:17:39] /reload spells
+[11/5/2018 0:18:19] /reload spells
+[11/5/2018 0:19:44] /reload spells
+[11/5/2018 0:33:48] /reload creaturescripts
+[11/5/2018 0:34:8] /reload spells
+[11/5/2018 0:37:40] /reload creaturescripts
+[11/5/2018 0:37:56] /m cyclops
+[11/5/2018 0:39:46] /reload spells
+[11/5/2018 0:39:50] /m cyclops
+[11/5/2018 0:40:37] /reload creaturescripts
+[11/5/2018 0:40:46] /m cyclops
+[11/5/2018 0:41:12] /reload creaturescripts
+[11/5/2018 0:41:17] /m cyclops
+[11/5/2018 0:41:22] /m cyclops
+[11/5/2018 0:41:44] /reload creaturescripts
+[11/5/2018 0:42:20] /r
+[11/5/2018 0:42:21] /r
+[11/5/2018 0:44:59] /reload talkactions
+[11/5/2018 1:4:48] /t
+[11/5/2018 14:5:17] /reload globalevents
+[11/5/2018 15:7:30] /reload talkactions
+[11/5/2018 15:7:35] /reload talkactions
+[11/5/2018 15:7:58] /reload talkactions
+[11/5/2018 15:8:40] /reload talkactions
+[11/5/2018 15:9:58] /reload talkactions
+[11/5/2018 15:10:2] /addpoints
+[11/5/2018 15:10:11] /addpoints BaiakScripts,10
+[11/5/2018 15:10:18] /addpoints Baiak Scripts,10
+[11/5/2018 15:11:55] /reload talkactions
+[11/5/2018 15:12:1] /reload talkactions
+[11/5/2018 15:12:6] /addpoints Baiak Scripts,10
+[11/5/2018 15:12:59] /reload talkactions
+[11/5/2018 15:13:7] /addpoints Baiak Scripts,10
+[11/5/2018 15:14:8] /reload talkactions
+[11/5/2018 15:21:56] /reload talkactions
+[11/5/2018 15:28:9] /addpoints Matheus,10
+[11/5/2018 15:28:27] /addpoints Matheus,1
+[11/5/2018 15:30:5] /addpoints matheus, 3
+[11/5/2018 15:30:44] /addpoints Matcholas
+[11/5/2018 15:32:13] /reload talkactions
+[11/5/2018 15:32:38] /addpoints matheus,1
+[11/5/2018 15:32:40] /addpoints matheus,1
+[11/5/2018 15:33:42] /reload talkactions
+[11/5/2018 15:34:33] /addpoints boizao,1
+[11/5/2018 15:54:8] /i 2854
+[11/5/2018 15:54:24] /i backpack of holding
+[11/5/2018 16:19:31] /addpoints matheus,20
+[11/5/2018 16:20:30] /addpoints matheus,1
+[11/5/2018 16:20:33] /addpoints matheus,1
+[11/5/2018 16:20:35] /r
+[11/5/2018 16:20:37] /addpoints matheus,1
+[11/5/2018 16:20:39] /addpoints matheus,1
+[11/5/2018 16:20:45] /addpoints matheus,1
+[11/5/2018 16:20:46] /addpoints matheus,1
+[11/5/2018 16:20:47] /addpoints matheus,1
+[11/5/2018 16:44:18] /addpoints Baiak Scripts, 100
+[11/5/2018 16:45:30] /addpoints Baiak Scripts, 100
+[11/5/2018 16:45:37] /addpoints Baiak Scripts, 100
+[11/5/2018 16:45:49] /reload talkactions
+[11/5/2018 16:45:56] /addpoints Baiak Scripts, 100
+[11/5/2018 16:49:30] /addpoints Baiak Scripts, 100
+[11/5/2018 16:49:36] /reload talkactions
+[11/5/2018 16:49:43] /addpoints Baiak Scripts, 100
+[12/5/2018 1:8:5] /addpoints matheus,200
+[12/5/2018 1:8:22] /addpoints Vacona 201
+[12/5/2018 1:8:26] /addpoints Vacona,201
+[12/5/2018 1:9:4] /addpoints teste,20
+[12/5/2018 1:9:33] /addpoints vacona,20
+[12/5/2018 1:11:55] /addpoints male,100
