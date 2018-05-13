@@ -21,8 +21,9 @@
 	mysqlReconnectionAttempts = 5
 	encryptionType = "sha1"  
 
+
 	worldId = 0
-	ip = "179.221.112.170"
+	ip = "127.0.0.1"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171
