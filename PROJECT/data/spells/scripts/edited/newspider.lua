@@ -1,10 +1,11 @@
 local poisonpowder = createConditionObject(CONDITION_POISON)
-setConditionParam(poisonpowder, CONDITION_PARAM_DELAYED, 1)
+setConditionParam(poisonpowder, CONDITION_PARAM_DELAYED, 1) 
 local d﻿amageTable = {
     {4, -3},
     {9, -2},
     {20, -1}
 }
+
 for i = 1, #damageTable do
     local t = damageTable[i]
 addDamageCondition(poisonpowder, t[1], 4000, t[2])

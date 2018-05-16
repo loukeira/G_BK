@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions> 
+
+	<!-- Arena Pvp -->
+	<action actionid="2170" event="script" value="arenapvp.lua"/>
 <action itemid="2263" script="bomba.lua"/>
 
 	<action itemid="8305" event="script" value="pedradual.lua"/>

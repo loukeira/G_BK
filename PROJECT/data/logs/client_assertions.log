@@ -39,3 +39,24 @@ BufferSize>0
 Sun May 06 16:56:24 2018
 Debug Assertion 8.60 Network.cpp 921
 
+----- 15/5/2018 20:48:58 - Aviao (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 172 172 172 172 172 172 172 162 141 130
+Last Packet: 172 005 000 008 000 067 111 109 101 114 099 105 111 000 000 000
+Player Position: [1098,1057,5]
+Player Name: Aviao (GBK)
+Player Action: 049 056 057 046 053 046 049 056 052 046 049 055 055 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 50 MaW: 473B168 MoW: 0), reason:
+Control.cpp 1693: exception occurred (Type = 50), reason:
+ConsoleWindow.cpp 2124: exception occurred (RecvMode = 7) (SendMode = 7), reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at 0000002C)
+Tue May 15 20:45:05 2018
+Debug Assertion 8.60 NWin32Exception.cpp 50
+

@@ -23,7 +23,7 @@
 
 
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "189.5.184.177"
 	worldType = "open"
 	bindOnlyGlobalAddress = false
 	loginPort = 7171
@@ -75,7 +75,7 @@
 	
         
 
-	protectionLevel = 100
+	protectionLevel = 80
 	pvpTileIgnoreLevelAndVocationProtection = true
 	pzLocked = 1 * 30 * 1000
 	huntingDuration = 1 * 60 * 1000

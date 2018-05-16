@@ -1,6 +1,6 @@
 local config = {
 itemid = 2180, -- id da bomba 
-duration = 1, -- duration antes de ser removida
+duration = 2, -- duration antes de ser removida
 effect1 = 3, -- efeito que sai ao colocar a bomba
 msg1 = "Bomba ativada!", -- mensagem que sai ao ser colocado a bomba
 effect2 = 5 -- efeito ao explodir

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+<!-- ARENA PVP -->
+	<!--<event type="think" name="thinkPVP" event="script" value="arenapvp.lua"/> -->
+	<event type="statschange" name="ArenaPVP" event="script" value="arenapvp.lua"/>
+	<event type="login" name="verf_PVP" event="script" value="arenapvp.lua"/>
 <!--marcos -->
 
 		<event type="preparedeath" name="Spider" script="spider.lua"/>
