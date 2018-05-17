@@ -36,7 +36,7 @@ end
 
 function onThink(cid, interval)
 
-if getGlobalStorageValue(arena.gstorage) ~= 1 then
+if getGlobalStorageValue(arena.gstorage) < 1 then
     return true 
 
 else
@@ -49,16 +49,17 @@ local arenapvp = { from1 = {x= 1096, y=1061, z= 5}, to1 = {x= 1103, y=1066, z= 5
 local exitPos = {x= 1099, y=1058, z= 5}
 
    if isInArea(getThingPos(cid), arenapvp.from1, arenapvp.to1) then
+                                    if getQuantidadeCreature(cid) > 0 then
+                                                doRemoveCreature(cid, arena.exitPos, arena.pstorage)
+                                                setGlobalStorageValue(arena.gstorage, -1)
+                                        end
 
-        if getQuantidadeCreature(arenapvp.from1, arenapvp.to1) > 0 then
-          doRemoveCreature(arena.toPos, arenapvp.from1, arenapvp.to1, arena.pstorage)
-                setGlobalStorageValue(arena.gstorage, -1)
-          end
 
-
-end
+      end
+      else return true
 end
 end
 
     return true     
 end
+

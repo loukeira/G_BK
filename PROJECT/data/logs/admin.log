@@ -508,3 +508,9 @@
 [15/5/2018 23:4:7] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
 [15/5/2018 23:8:31] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
 [15/5/2018 23:8:31] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[15/5/2018 23:46:8] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[15/5/2018 23:46:8] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/5/2018 0:5:32] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[16/5/2018 0:5:32] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/5/2018 0:7:15] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[16/5/2018 0:7:15] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use

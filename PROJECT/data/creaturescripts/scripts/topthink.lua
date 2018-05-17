@@ -8,9 +8,9 @@ if tostring(getPlayerName(cid)) == "Account Manager" then return true end
 if getPlayerAccountId(cid) == 1 or getPlayerAccountId(cid) ==18 then return true end
 if isPlayer(cid) then
 
-local tempo_auxiliar_segundoo = 4536783
+local tempo_auxiliar_segundoo = 4633790
 
-		if getPlayerStorageValue(cid,tempo_auxiliar_segundoo) <= os.time() then
+		if getPlayerStorageValue(cid,tempo_auxiliar_segundoo) < os.time() then
 		setPlayerStorageValue(cid, tempo_auxiliar_segundoo , os.time() + 3)
 
 	-- doPlayerSendTextMessage(cid,18, "oi")
@@ -20,9 +20,12 @@ local tempo_auxiliar_segundoo = 4536783
 
 	-- doPlayerSendTextMessage(cid,18, "online: "..getCreatureName(getPlayersOnline()[i]).."")
 	if tostring(topilvl()) == getCreatureName(getPlayersOnline()[i]) then
+
 			doSendAnimatedText(getCreaturePosition(getPlayersOnline()[i]), "[TOP]", TEXTCOLOR_LIGHTBLUE)
 		doSendMagicEffect(getCreaturePosition(getPlayersOnline()[i]), 30)
+		break
 	end
+
 end
 
 
@@ -30,7 +33,8 @@ end
 
 
 
-else return false
+		else 
+	return true
 	end
 
 
