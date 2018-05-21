@@ -1,5 +1,5 @@
 function onLogin(cid)
-    aurastr = 25950 -- storage da aura
-﻿   setPlayerStorageValue(cid, aurastr, -1)
-    ﻿return true
-end﻿
+	aurastr = 29591
+	setPlayerStorageValue(cid,aurastr,-1)
+	return true
+end

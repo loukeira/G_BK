@@ -2,7 +2,7 @@
 <creaturescripts>
 
 <!-- ARENA PVP -->
-	<!--<event type="think" name="thinkPVP" event="script" value="arenapvp.lua"/> -->
+	<event type="think" name="thinkPVP" event="script" value="arenapvp.lua"/> 
 	<event type="statschange" name="ArenaPVP" event="script" value="arenapvp.lua"/>
 	<event type="login" name="verf_PVP" event="script" value="arenapvp.lua"/>
 <!--marcos -->

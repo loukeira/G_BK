@@ -42,15 +42,15 @@ if getGlobalStorageValue(arena.gstorage) < 1 then
 else
 
 local aux = 523623
-if getGlobalStorageValue(aux) <= os.time() then 
+if getGlobalStorageValue(aux) - os.time() <= 0 then 
     setGlobalStorageValue(aux,os.time() + 2)
 
 local arenapvp = { from1 = {x= 1096, y=1061, z= 5}, to1 = {x= 1103, y=1066, z= 5} }
-local exitPos = {x= 1099, y=1058, z= 5}
+local exitiPos = {x= 1099, y=1058, z= 5}
 
    if isInArea(getThingPos(cid), arenapvp.from1, arenapvp.to1) then
                                     if getQuantidadeCreature(cid) > 0 then
-                                                doRemoveCreature(cid, arena.exitPos, arena.pstorage)
+                                                doRemoveCreature(cid, exitiPos, arena.pstorage)
                                                 setGlobalStorageValue(arena.gstorage, -1)
                                         end
 
@@ -63,3 +63,65 @@ end
     return true     
 end
 
+
+
+function onThink(cid, interval)
+    if(not isCreature(cid)) then
+        return true
+    end
+
+    if tostring(getPlayerName(cid)) == "Account Manager" then return true end
+    if getPlayerAccountId(cid) == 1 or getPlayerAccountId(cid) ==18 then return true end
+
+if isPlayer(cid) then
+
+    	local tempo_auxiliar_segundo = 1329123
+
+        if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= os.time() then
+        setPlayerStorageValue(cid, tempo_auxiliar_segundo , os.time() + 2)    
+
+
+--if getGlobalStorageValue(arena.gstorage) < 1 then
+  --  return true 
+
+--else
+
+
+
+   if isInArea(getThingPos(cid), arenapvp.from1, arenapvp.to1) then
+                                    if getQuantidadeCreature(cid) > 0 then
+
+                                        end
+
+
+      end
+--end
+
+
+
+		end
+
+end
+
+
+    return true
+end
+
+
+
+
+function onThink(interval, lastExecution)
+	local q1, r1 = {x= 1096, y=1061, z= 5}, {x= 1103, y=1066, z= 5}
+	local first = getPlayersInArea(q1, r1)
+	local exitiPos = {x= 1099, y=1058, z= 5}
+
+	if first then
+		for _, pid in pairs(first) do
+			if getPlayerAccountId(pid) ~= tonumber(filtrateString(getGlobalStorageValue(822081))[1]) or getPlayerAccountId(pid) == tonumber(filtrateString(getGlobalStorageValue(822081))[1]) and tonumber(filtrateString(getGlobalStorageValue(822081))[2]) <= os.time() then
+				doTeleportThing(pid, getTownTemplePosition(getPlayerTown(pid)))
+				                                        doRemoveCreature(pid, exitiPos, arena.pstorage)
+                                                setGlobalStorageValue(arena.gstorage, -1)
+				doPlayerPopupFYI(pid, "Seu tempo como dono da Cave 1 expirou. Você foi levado até seu templo.")
+			end
+		end
+	end

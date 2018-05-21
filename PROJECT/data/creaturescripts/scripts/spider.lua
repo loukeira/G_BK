@@ -5,6 +5,8 @@ local damageTable = {
     {18, -2},
     {40, -1}
 
+}
+
 for i = 1, #damageTable do
     local t = damageTable[i]
 addDamageCondition(poisonpowder, t[1], 4000, t[2])
