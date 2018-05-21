@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+
+
+<!--arena 2 pvp -->
+	<event type="think" name="thinkPVP2" event="script" value="arenapvp2.lua"/> 
+	<event type="statschange" name="ArenaPVP2" event="script" value="arenapvp2.lua"/>
+	<event type="login" name="verf_PVP2" event="script" value="arenapvp2.lua"/>
 <!-- ARENA PVP -->
 	<event type="think" name="thinkPVP" event="script" value="arenapvp.lua"/> 
 	<event type="statschange" name="ArenaPVP" event="script" value="arenapvp.lua"/>

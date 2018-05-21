@@ -5730,3 +5730,13 @@
 [16/5/2018 0:1:34] /reload creaturescripts
 [16/5/2018 0:3:38] /c vacona
 [16/5/2018 0:3:39] /c elou
+[21/5/2018 19:53:3] /c pqj
+[21/5/2018 20:2:2] /reload actions
+[21/5/2018 20:2:19] /reload creaturescripts
+[21/5/2018 20:4:50] /i wand of vortex
+[21/5/2018 20:9:54] /reload creaturescripts
+[21/5/2018 20:17:21] /reload creaturescripts
+[21/5/2018 20:36:58] /b espera 3 min
+[21/5/2018 20:38:54] /goto elou
+[21/5/2018 20:38:59] /t
+[21/5/2018 20:39:12] /c elou

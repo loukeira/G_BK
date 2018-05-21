@@ -3,6 +3,8 @@
 
 	<!-- Arena Pvp -->
 	<action actionid="2170" event="script" value="arenapvp.lua"/>
+	<action actionid="2171" event="script" value="arenapvp2.lua"/>
+
 <action itemid="2263" script="bomba.lua"/>
 
 	<action itemid="8305" event="script" value="pedradual.lua"/>

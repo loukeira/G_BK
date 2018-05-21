@@ -2,7 +2,7 @@ dofile('data/lib/arenapvp.lua')
 
 function onStatsChange(cid, attacker, _type, combat, value)
     
-    if isPlayer(cid) and getPlayerStorageValue(cid, arena.pstorage) == 1 and _type == STATSCHANGE_HEALTHLOSS then
+    if isPlayer(cid) and getPlayerStorageValue(cid, arena2.pstorage) == 1 and _type == STATSCHANGE_HEALTHLOSS then
         if value >= getCreatureHealth(cid) then
             local killer = attacker
             doCreatureAddHealth(cid, getCreatureMaxHealth(cid))
@@ -11,13 +11,13 @@ function onStatsChange(cid, attacker, _type, combat, value)
             doCreatureAddMana(killer, getCreatureMaxMana(killer))
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "[Arena]: you lost the duel!")
             doPlayerSendTextMessage(killer, MESSAGE_STATUS_WARNING, "[Arena]: you win the duel!")
-            doTeleportThing(cid, arena.exitPos)
-            doTeleportThing(killer, arena.exitPos)
+            doTeleportThing(cid, arena2.exitPos)
+            doTeleportThing(killer, arena2.exitPos)
            -- doSendMagicEffect(getThingPos(cid), CONST_ME_POFF)
             --doSendMagicEffect(getThingPos(killer), CONST_ME_POFF)
-            setPlayerStorageValue(cid, arena.pstorage, -1)
-            setPlayerStorageValue(killer, arena.pstorage, -1)
-            setGlobalStorageValue(arena.gstorage, -1)
+            setPlayerStorageValue(cid, arena2.pstorage, -1)
+            setPlayerStorageValue(killer, arena2.pstorage, -1)
+            setGlobalStorageValue(arena2.gstorage, -1)
             return false
         
     end
@@ -27,8 +27,8 @@ end
 
 function onLogin(cid)
 
-    registerCreatureEvent(cid, "ArenaPVP")
-    registerCreatureEvent(cid, "thinkPVP")
+    registerCreatureEvent(cid, "ArenaPVP2")
+    registerCreatureEvent(cid, "thinkPVP2")
 
     return true     
 end
@@ -117,32 +117,31 @@ function onThink(interval, lastExecution)
          --if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= os.time() then
 	     --   setPlayerStorageValue(cid, tempo_auxiliar_segundo , os.time() + 2)  
 
-	if getGlobalStorageValue(arena.gstorage) < 1 then 
+	if getGlobalStorageValue(arena2.gstorage) < 1 then 
 		return true
 	
 	else
 
 
-if getGlobalStorageValue(arena.hstorage) <= os.time() then
+if getGlobalStorageValue(arena2.hstorage) <= os.time() then
 
 
 
 
-	local q1, r1 = {x= 1096, y=1061, z= 5}, {x= 1103, y=1066, z= 5}
+	local q1, r1 = {x= 1107, y=1061, z= 5}, {x= 1114, y=1066, z= 5}
 	local first = getPlayersInArea(q1, r1)
-	local exitiPos = {x= 1099, y=1058, z= 5}
-
+	local exitiPos = {x= 1112, y=1058, z= 5}
 
 
 	if first then
 		for _, pid in pairs(first) do
 				doTeleportThing(pid, exitiPos)
-				--doRemoveCreature(pid, exitiPos, arena.pstorage)
+				--doRemoveCreature(pid, exitiPos, arena2.pstorage)
 				setPlayerStorageValue(pid, storage, -1)
 				doPlayerSendTextMessage(pid,18,"Voce foi retirado da Arena!")
                 doSendMagicEffect(getCreaturePosition(pid), 2)
 
-                setGlobalStorageValue(arena.gstorage, -1)
+                setGlobalStorageValue(arena2.gstorage, -1)
 				--oPlayerPopupFYI(pid, "Seu tempo como dono da Cave 1 expirou. Você foi levado até seu templo.")
 			
 			
