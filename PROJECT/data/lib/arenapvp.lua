@@ -18,40 +18,43 @@ arena = {
 
 
 	-- NÃO EDITAR SE NÃO POSSUIR CONHECIMENTO --
-
+	hstorage = 123094,
 	gstorage = 147841, -- //GLOBAL STORAGE
 	pstorage = 147852, -- //PLAYER STORAGES
 
 }
 
-function getQuantidadeCreature(toPos, fromPos)
+function getQuantidadeCreature(cid)
 
 	arenaPlayers = 0
 
-	for x = toPos.x, fromPos.x do
-		for y = toPos.y, fromPos.y do
-			player = getTopCreature({x= x, y= y, z= fromPos.z}).uid
-			if isPlayer(player) then
+local arenapvp = { from1 = {x= 1096, y=1061, z= 5}, to1 = {x= 1103, y=1066, z= 5} }
+local exitPos = {x= 1099, y=1058, z= 5}
+
+   if isInArea(getThingPos(cid), arenapvp.from1, arenapvp.to1) then
+
+			if isPlayer(cid) then
 				arenaPlayers = arenaPlayers + 1
 			end
 		end
-	end
+	
 	
 	return arenaPlayers
 end
 
-function doRemoveCreature(toPos, fromPos, teleportTo, storage)
+function doRemoveCreature(cid,teleportTo, storage)
 
-	for x = toPos.x, fromPos.x do
-		for y = toPos.y, fromPos.y do
-			player = getTopCreature({x= x, y= y, z= fromPos.z}).uid
-			if isPlayer(player) then
+
+local arenapvp = { from1 = {x= 1096, y=1061, z= 5}, to1 = {x= 1103, y=1066, z= 5} }
+local exitPos = {x= 1099, y=1058, z= 5}
+
+   if isInArea(getThingPos(cid), arenapvp.from1, arenapvp.to1) then
+			if isPlayer(cid) then
 				doTeleportThing(player, teleportTo)
 				setPlayerStorageValue(player, storage, -1)
 				doPlayerSendTextMessage(player,18,"Voce foi retirado da Arena!")
                  doSendMagicEffect(getCreaturePosition(player), 2)
 			end
-		end
 	end
 
 	return true

@@ -18,12 +18,9 @@ function onUse(cid, item, toPosition, itemEx, fromPosition)
                                 doTeleportThing(player1, arena.nplayer1pos)
                                 doTeleportThing(player2, arena.nplayer2pos)
                                 setGlobalStorageValue(arena.gstorage, 1)
-                                addEvent(function ()
-                                        if getQuantidadeCreature(arena.toPos, arena.fromPos) > 0 then
-                                                doRemoveCreature(arena.toPos, arena.fromPos, arena.exitPos, arena.pstorage)
-                                                setGlobalStorageValue(arena.gstorage, -1)
-                                        end
-                                end, 1000*60*arena.time)
+                                setGlobalStorageValue(arena.hstorage, os.time() + (arena.time*60) )
+
+                                
                         else
                                 doCreatureSay(cid, "need two players to start", TALKTYPE_ORANGE_1)
                         end

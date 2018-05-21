@@ -17,7 +17,7 @@
 		<event type="think" name="verificador_carlin" event="script" value="warEntrosaLogout.lua"/>
 
 
-		<event type="think" name="topthink" event="script" value="topthink.lua"/>
+		<event type="think" name="topthink" event="script" value="topthink.lua"/> 
 
 		<event type="think" name="diamondorb" event="script" value="diamondorb.lua"/>
 		<event type="login" name="diamondorblogin" event="script" value="diamondorb.lua"/>

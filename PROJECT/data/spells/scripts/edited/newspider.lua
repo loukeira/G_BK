@@ -34,3 +34,5 @@ doRemoveCreature(cid)
           end, 2000)
 return true
 end﻿
+
+
