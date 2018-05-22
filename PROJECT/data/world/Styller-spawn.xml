@@ -885,9 +885,6 @@
 		<monster name="Dragon Lord" x="-1" y="-2" z="4" spawntime="60" />
 		<monster name="dragon lord hatchling" x="1" y="1" z="4" spawntime="60" />
 	</spawn>
-	<spawn centerx="1104" centery="1056" centerz="4" radius="1">
-		<npc name="Gran Arena Manager [Event]" x="0" y="0" z="4" spawntime="2" direction="2" />
-	</spawn>
 	<spawn centerx="1385" centery="1063" centerz="4" radius="3">
 		<monster name="Nightmare" x="2" y="-1" z="4" spawntime="2" />
 		<monster name="Nightmare" x="-1" y="0" z="4" spawntime="2" />
