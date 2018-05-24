@@ -1,18 +1,21 @@
 function onSay(cid, words, param, channel)
-tempo_auxiliar_segundo = 11455
-i = {5,10,18,24,30,35,65,66,144,171,180,185,221,241,246,252,255}
-if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= #i then
-if getPlayerStorageValue(cid,tempo_auxiliar_segundo) == -1 then setPlayerStorageValue(cid,tempo_auxiliar_segundo,1) 
-end
 
 
-        doSendAnimatedText(getCreaturePosition(cid), ""..i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)].."", i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)])
-        setPlayerStorageValue(cid,tempo_auxiliar_segundo,getPlayerStorageValue(cid,  tempo_auxiliar_segundo) +1)
-else
+  doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,yok).."")
+-- tempo_auxiliar_segundo = 11455
+-- i = {5,10,18,24,30,35,65,66,144,171,180,185,221,241,246,252,255}
+-- if getPlayerStorageValue(cid,tempo_auxiliar_segundo) <= #i then
+-- if getPlayerStorageValue(cid,tempo_auxiliar_segundo) == -1 then setPlayerStorageValue(cid,tempo_auxiliar_segundo,1) 
+-- end
 
-doPlayerSendTextMessage(cid,18,"chegou ao limite!")
-setPlayerStorageValue(cid,tempo_auxiliar_segundo,-1)
-end
+
+--         doSendAnimatedText(getCreaturePosition(cid), ""..i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)].."", i[getPlayerStorageValue(cid,tempo_auxiliar_segundo)])
+--         setPlayerStorageValue(cid,tempo_auxiliar_segundo,getPlayerStorageValue(cid,  tempo_auxiliar_segundo) +1)
+-- else
+
+-- doPlayerSendTextMessage(cid,18,"chegou ao limite!")
+-- setPlayerStorageValue(cid,tempo_auxiliar_segundo,-1)
+-- end
 -- function exivaa(name)
 
 -- local playerPos, npcPos = getCreaturePosition(cid), getCreaturePosition(getCreatureByName(name))

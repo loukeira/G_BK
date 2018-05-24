@@ -43,3 +43,4 @@ function getArenaMonsterIdByName(name)
     end
     return 0
 end  
+

@@ -3,6 +3,8 @@
 
 
 
+	<talkaction words="!arenalivre" event="script" value="arenalivre.lua"/>
+
 	<talkaction words="!aura" event="script" value="aura.lua"/>
 
 	<talkaction log="yes" words="/warcarlin" event="script" value="warEntrosa.lua"/>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
 
+
 	<globalevent name="guildsemanal_reiniciar" interval="1000" event="script" value="guildsemanal_reiniciar.lua"/>
 
+
+	<globalevent name="arenalivre" time="01:00" event="script" value="arenacima.lua"/>
 
 	<globalevent name="armyreset" interval="1000" event="script" value="army_reset.lua"/>
 

@@ -30,6 +30,7 @@ function onLogin(cid)
     registerCreatureEvent(cid, "ArenaPVP")
     registerCreatureEvent(cid, "thinkPVP")
 
+
     return true     
 end
 
@@ -138,7 +139,7 @@ if getGlobalStorageValue(arena.hstorage) <= os.time() then
 		for _, pid in pairs(first) do
 				doTeleportThing(pid, exitiPos)
 				--doRemoveCreature(pid, exitiPos, arena.pstorage)
-				setPlayerStorageValue(pid, storage, -1)
+				setPlayerStorageValue(pid, arena.pstorage, -1)
 				doPlayerSendTextMessage(pid,18,"Voce foi retirado da Arena!")
                 doSendMagicEffect(getCreaturePosition(pid), 2)
 

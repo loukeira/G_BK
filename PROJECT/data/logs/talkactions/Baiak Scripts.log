@@ -5740,3 +5740,39 @@
 [21/5/2018 20:38:54] /goto elou
 [21/5/2018 20:38:59] /t
 [21/5/2018 20:39:12] /c elou
+[21/5/2018 23:4:1] /reload globalevents
+[21/5/2018 23:7:15] /reload movements
+[23/5/2018 22:9:59] /reload creaturescripts
+[23/5/2018 22:10:5] /reload movements
+[23/5/2018 22:10:14] /reload talkactions
+[23/5/2018 22:14:42] /reload creaturescripts
+[23/5/2018 22:16:17] /reload creaturescripts
+[23/5/2018 22:16:22] /reload movements
+[23/5/2018 22:16:30] /reload talkactions
+[23/5/2018 22:17:14] /reload talkactions
+[23/5/2018 22:24:25] /r
+[23/5/2018 22:24:28] /r
+[23/5/2018 22:24:29] /r
+[23/5/2018 22:24:31] /a 2
+[23/5/2018 22:24:33] /a 2
+[23/5/2018 22:24:36] /c haha
+[23/5/2018 22:26:6] /c haha
+[23/5/2018 22:26:8] /c haha
+[23/5/2018 22:27:49] /reload creaturescripts
+[23/5/2018 22:31:41] /reload creaturescripts
+[23/5/2018 22:31:46] /reload globalevents
+[23/5/2018 22:31:51] /reload movements
+[23/5/2018 22:32:0] /reload talkactions
+[23/5/2018 22:34:43] /reload talkactions
+[23/5/2018 22:35:13] /reload talkactions
+[23/5/2018 22:37:21] /c haha
+[23/5/2018 22:37:24] /r
+[23/5/2018 22:37:25] /r
+[23/5/2018 22:45:51] /reload creaturescripts
+[23/5/2018 22:45:56] /reload movements
+[23/5/2018 22:46:7] /reload talkactions
+[23/5/2018 22:46:16] /reload globalevents
+[23/5/2018 22:49:7] /reload talkactions
+[23/5/2018 22:51:31] /reload creaturescript
+[23/5/2018 22:54:26] /reload creaturescripts
+[23/5/2018 22:55:18] /reload creaturescripts

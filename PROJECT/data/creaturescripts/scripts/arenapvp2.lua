@@ -128,16 +128,16 @@ if getGlobalStorageValue(arena2.hstorage) <= os.time() then
 
 
 
-	local q1, r1 = {x= 1107, y=1061, z= 5}, {x= 1114, y=1066, z= 5}
-	local first = getPlayersInArea(q1, r1)
-	local exitiPos = {x= 1112, y=1058, z= 5}
+	local a1, b1 = {x= 1107, y=1061, z= 5}, {x= 1114, y=1066, z= 5}
+	local firsti = getPlayersInArea(a1, b1)
+	local exitePos = {x= 1112, y=1058, z= 5}
 
 
-	if first then
-		for _, pid in pairs(first) do
-				doTeleportThing(pid, exitiPos)
+	if firsti then
+		for _, pid in pairs(firsti) do
+				doTeleportThing(pid, exitePos)
 				--doRemoveCreature(pid, exitiPos, arena2.pstorage)
-				setPlayerStorageValue(pid, storage, -1)
+				setPlayerStorageValue(pid, arena2.pstorage, -1)
 				doPlayerSendTextMessage(pid,18,"Voce foi retirado da Arena!")
                 doSendMagicEffect(getCreaturePosition(pid), 2)
 

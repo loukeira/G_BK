@@ -2,6 +2,9 @@
 <creaturescripts>
 
 
+<!--arena de cima -->
+	<event type="statschange" name="ArenaCima" event="script" value="arenacima.lua"/>
+	<event type="login" name="verifilogin" event="script" value="arenacima.lua"/>
 
 <!--arena 2 pvp -->
 	<event type="think" name="thinkPVP2" event="script" value="arenapvp2.lua"/> 

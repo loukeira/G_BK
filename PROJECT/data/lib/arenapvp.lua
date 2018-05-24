@@ -1,4 +1,7 @@
 -- CONFIGURAÇÕES AQUI
+--ARENA DE CIMA
+yok = 8320423
+ arenalivre = 328573
 
 arena = {
 
@@ -18,9 +21,9 @@ arena = {
 
 
 	-- NÃO EDITAR SE NÃO POSSUIR CONHECIMENTO --
-	hstorage = 123094,
-	gstorage = 147841, -- //GLOBAL STORAGE
-	pstorage = 147852, -- //PLAYER STORAGES
+	hstorage = 123994,
+	gstorage = 147941, -- //GLOBAL STORAGE
+	pstorage = 147952, -- //PLAYER STORAGES
 
 }
 
@@ -42,9 +45,9 @@ arena2 = {
 
 
 	-- NÃO EDITAR SE NÃO POSSUIR CONHECIMENTO --
-	hstorage = 323094,
-	gstorage = 347841, -- //GLOBAL STORAGE
-	pstorage = 347852, -- //PLAYER STORAGES
+	hstorage = 323994,
+	gstorage = 347941, -- //GLOBAL STORAGE
+	pstorage = 347952, -- //PLAYER STORAGES
 
 }
 
