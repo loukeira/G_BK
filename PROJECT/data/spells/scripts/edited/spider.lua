@@ -7,6 +7,8 @@ local summons = getCreatureSummons(cid)
 
 
 local possible = {
+
+
 {x = pos.x, y = pos.y - 2, z = pos.z, stackpos = 0},
 {x = pos.x, y = pos.y + 2, z = pos.z, stackpos = 0},
 {x = pos.x - 2, y = pos.y, z = pos.z, stackpos = 0},
@@ -29,6 +31,8 @@ local possible = {
 {x = pos.x + 1, y = pos.y + 1, z = pos.z, stackpos = 0},
 ------
 {x = pos.x - 1, y = pos.y + 2, z = pos.z, stackpos = 0}
+
+
 } 
 
 

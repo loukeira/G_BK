@@ -103,7 +103,7 @@
         <!-- Events -->
 	<action actionid="7900" event="script" value="events/SBW.lua" />
 
-	<action actionid="7004" event="script" value="alavanca addon.lua"/>
+	<!--<action actionid="7004" event="script" value="alavanca addon.lua"/>-->
      <action actionid="7006" event="script" value="alavanca dodge.lua"/>
        <action actionid="8005" event="script" value="alavanca items.lua"/> 
        <action actionid="8002" event="script" value="alavanca items2.lua"/>
@@ -337,7 +337,7 @@
 	<action itemid="2148" script="other/changegold.lua"/>
 	<action itemid="2152" script="other/changegold.lua"/>
 	<action itemid="2160" script="other/changegold.lua"/>
-        <action itemid="9971" script="goldnuggets.lua" />
+        <!--<action itemid="9971" script="goldnuggets.lua" /> -->
 	<action fromid="3901" toid="3938" script="other/constructionkits.lua"/>
 	<action fromid="2070" toid="2078" script="other/music.lua"/>
 	<action fromid="2080" toid="2085" script="other/music.lua"/>

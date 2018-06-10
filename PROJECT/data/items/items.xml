@@ -12676,7 +12676,6 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item fromid="7632" toid="7633" />
 	<item id="7634" article="an" name="empty potion flask">
 		<attribute key="weight" value="200" />
 		<attribute key="description" value="Return it to a magic store for deposit." />
@@ -15580,7 +15579,6 @@
 		<attribute key="description" value="Your name is carved on this mighty sword." />
 		<attribute key="weight" value="1200" />
 	</item>
-	<item id="8981" />
 	<item id="8982" article="a" name="norseman doll">
 		<attribute key="description" value="It is given to the winners of Tibia Nordic competitions." />
 		<attribute key="weight" value="1000" />

@@ -322,7 +322,7 @@ return true
 
 end]]></event>
 
-<talkaction words="/task;!task" event="buffer"><![CDATA[
+<talkaction words="!task" event="buffer"><![CDATA[
 
 domodlib('task_func1')
 

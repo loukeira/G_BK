@@ -144,7 +144,7 @@ function onLogin(cid)
 	registerCreatureEvent(cid, "TaskLook")
 	return true
 end]]></event>
-<talkaction words="/task;!task" event="buffer"><![CDATA[
+<talkaction words="/task" event="buffer"><![CDATA[
 domodlib('task_func')
 param,task,daily = param:lower(), getTaskMission(cid), getDailyTaskMission(cid)
 if isInArray({"counter","contador"},param) then

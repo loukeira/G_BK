@@ -526,12 +526,13 @@
 		
 	</movevent>
 	
+	<!--
 	<movevent type="DeEquip" itemid="12640" slot="shield" event="function" value="onDeEquipItem"/>
 	<movevent type="Equip" itemid="12640" slot="shield" event="function" value="onEquipItem">
 		<vocation id="3"/>
 		<vocation id="7" showInDescription="0"/>
 		
-	</movevent>
+	</movevent> -->
 	
 	
 
