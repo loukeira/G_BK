@@ -4,16 +4,16 @@
 
 	<globalevent name="guildsemanal_reiniciar" interval="1000" event="script" value="guildsemanal_reiniciar.lua"/>
 
+	<!--<globalevent name="fila" time="06:00" event="script" value="fila.lua"/> -->
 
-	<globalevent name="arenalivre" time="01:00" event="script" value="arenacima.lua"/>
+	<globalevent name="arenacima" time="01:00" event="script" value="arenacima.lua"/>
 
 	<globalevent name="armyreset" interval="1000" event="script" value="army_reset.lua"/>
 
 	<globalevent name="xpsemanal_reinicio" interval="1000" event="script" value="xpsemanal_reinicio.lua"/>
 
 
-<!-- 	<globalevent name="age" interval="60000" event="script" value="age.lua"/>
- --> 
+<!-- 	<globalevent name="age" interval="60000" event="script" value="age.lua"/> --> 
 	<globalevent name="start" type="startup" event="script" value="start.lua"/>
 	<globalevent name="MensagensProgramadas" interval="30000" event="script" value="MensagensProgramadas.lua"/>
 	

@@ -29,9 +29,7 @@
 	</spawn>
 	<spawn centerx="1818" centery="365" centerz="1" radius="19" />
 	<spawn centerx="1888" centery="365" centerz="1" radius="30" />
-	<spawn centerx="1078" centery="875" centerz="1" radius="1">
-		<npc name="Gabel" x="-1" y="0" z="1" spawntime="60" direction="2" />
-	</spawn>
+
 	<spawn centerx="1072" centery="882" centerz="1" radius="2">
 		<monster name="Blue Djinn" x="1" y="-1" z="1" spawntime="59" />
 		<monster name="Marid" x="-2" y="1" z="1" spawntime="59" />
@@ -101,9 +99,7 @@
 	<spawn centerx="1155" centery="329" centerz="2" radius="1" />
 	<spawn centerx="325" centery="331" centerz="2" radius="1" />
 	<spawn centerx="1142" centery="331" centerz="2" radius="1" />
-	<spawn centerx="314" centery="332" centerz="2" radius="1">
-		<monster name="warlock vip" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="1157" centery="332" centerz="2" radius="1" />
 	<spawn centerx="335" centery="333" centerz="2" radius="7" />
 	<spawn centerx="335" centery="334" centerz="2" radius="1" />
@@ -114,9 +110,7 @@
 	<spawn centerx="403" centery="335" centerz="2" radius="1" />
 	<spawn centerx="341" centery="336" centerz="2" radius="1" />
 	<spawn centerx="860" centery="336" centerz="2" radius="5" />
-	<spawn centerx="1130" centery="336" centerz="2" radius="1">
-		<monster name="Castle Demon" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+	
 	<spawn centerx="116" centery="337" centerz="2" radius="5" />
 	<spawn centerx="136" centery="337" centerz="2" radius="5" />
 	<spawn centerx="294" centery="337" centerz="2" radius="1" />
@@ -167,9 +161,7 @@
 	<spawn centerx="757" centery="348" centerz="2" radius="5" />
 	<spawn centerx="855" centery="348" centerz="2" radius="5" />
 	<spawn centerx="1162" centery="348" centerz="2" radius="1" />
-	<spawn centerx="320" centery="349" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="835" centery="349" centerz="2" radius="5" />
 	<spawn centerx="1045" centery="349" centerz="2" radius="5" />
 	<spawn centerx="1142" centery="349" centerz="2" radius="1" />
@@ -189,9 +181,7 @@
 	<spawn centerx="1035" centery="351" centerz="2" radius="5" />
 	<spawn centerx="1056" centery="351" centerz="2" radius="5" />
 	<spawn centerx="1157" centery="351" centerz="2" radius="1" />
-	<spawn centerx="290" centery="352" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="329" centery="352" centerz="2" radius="1" />
 	<spawn centerx="415" centery="352" centerz="2" radius="1" />
 	<spawn centerx="776" centery="352" centerz="2" radius="5" />
@@ -205,9 +195,7 @@
 	<spawn centerx="184" centery="354" centerz="2" radius="30" />
 	<spawn centerx="278" centery="354" centerz="2" radius="1" />
 	<spawn centerx="325" centery="354" centerz="2" radius="1" />
-	<spawn centerx="408" centery="354" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="100" centery="355" centerz="2" radius="5" />
 	<spawn centerx="312" centery="355" centerz="2" radius="1" />
 	<spawn centerx="392" centery="355" centerz="2" radius="1" />
@@ -240,9 +228,6 @@
 	<spawn centerx="813" centery="359" centerz="2" radius="5" />
 	<spawn centerx="1135" centery="359" centerz="2" radius="1" />
 	<spawn centerx="1338" centery="359" centerz="2" radius="30" />
-	<spawn centerx="290" centery="360" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
 	<spawn centerx="331" centery="360" centerz="2" radius="1" />
 	<spawn centerx="379" centery="360" centerz="2" radius="1" />
 	<spawn centerx="767" centery="360" centerz="2" radius="5" />
@@ -272,9 +257,7 @@
 	<spawn centerx="1817" centery="364" centerz="2" radius="19" />
 	<spawn centerx="1887" centery="364" centerz="2" radius="30" />
 	<spawn centerx="311" centery="365" centerz="2" radius="1" />
-	<spawn centerx="344" centery="365" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="419" centery="365" centerz="2" radius="1" />
 	<spawn centerx="826" centery="365" centerz="2" radius="5" />
 	<spawn centerx="1035" centery="365" centerz="2" radius="5" />
@@ -323,9 +306,7 @@
 	<spawn centerx="319" centery="373" centerz="2" radius="1" />
 	<spawn centerx="855" centery="373" centerz="2" radius="5" />
 	<spawn centerx="209" centery="374" centerz="2" radius="30" />
-	<spawn centerx="342" centery="374" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="437" centery="374" centerz="2" radius="1" />
 	<spawn centerx="511" centery="374" centerz="2" radius="5" />
 	<spawn centerx="1177" centery="375" centerz="2" radius="1" />
@@ -342,9 +323,7 @@
 	<spawn centerx="725" centery="377" centerz="2" radius="5" />
 	<spawn centerx="834" centery="377" centerz="2" radius="5" />
 	<spawn centerx="870" centery="377" centerz="2" radius="5" />
-	<spawn centerx="1162" centery="377" centerz="2" radius="1">
-		<monster name="Castle Demon" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="133" centery="378" centerz="2" radius="5" />
 	<spawn centerx="336" centery="378" centerz="2" radius="7" />
 	<spawn centerx="353" centery="378" centerz="2" radius="1" />
@@ -409,16 +388,12 @@
 	<spawn centerx="1151" centery="389" centerz="2" radius="5" />
 	<spawn centerx="479" centery="390" centerz="2" radius="5" />
 	<spawn centerx="509" centery="390" centerz="2" radius="5" />
-	<spawn centerx="722" centery="390" centerz="2" radius="5">
-		<monster name="Grim Reaper Vip" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="758" centery="390" centerz="2" radius="5" />
 	<spawn centerx="1137" centery="390" centerz="2" radius="1" />
 	<spawn centerx="1170" centery="390" centerz="2" radius="1" />
 	<spawn centerx="314" centery="391" centerz="2" radius="7" />
-	<spawn centerx="329" centery="391" centerz="2" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="414" centery="391" centerz="2" radius="1" />
 	<spawn centerx="493" centery="391" centerz="2" radius="5" />
 	<spawn centerx="749" centery="391" centerz="2" radius="5" />
@@ -456,12 +431,8 @@
 	<spawn centerx="838" centery="400" centerz="2" radius="5" />
 	<spawn centerx="518" centery="401" centerz="2" radius="5" />
 	<spawn centerx="1482" centery="404" centerz="2" radius="5" />
-	<spawn centerx="1473" centery="406" centerz="2" radius="5">
-		<monster name="Baylor" x="0" y="0" z="2" spawntime="10" />
-	</spawn>
-	<spawn centerx="1080" centery="875" centerz="2" radius="1">
-		<npc name="Nah'Bob" x="-1" y="0" z="2" spawntime="60" direction="2" />
-	</spawn>
+	
+
 	<spawn centerx="1072" centery="883" centerz="2" radius="4">
 		<monster name="Blue Djinn" x="3" y="-3" z="2" spawntime="59" />
 		<monster name="Blue Djinn" x="-2" y="1" z="2" spawntime="59" />
@@ -550,9 +521,7 @@
 	</spawn>
 	<spawn centerx="40" centery="344" centerz="3" radius="1" />
 	<spawn centerx="41" centery="346" centerz="3" radius="7" />
-	<spawn centerx="33" centery="348" centerz="3" radius="1">
-		<monster name="Castle Hydra" x="0" y="0" z="3" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="46" centery="348" centerz="3" radius="1" />
 	<spawn centerx="1225" centery="349" centerz="3" radius="30" />
 	<spawn centerx="615" centery="350" centerz="3" radius="1" />
@@ -560,9 +529,7 @@
 	<spawn centerx="628" centery="352" centerz="3" radius="1" />
 	<spawn centerx="1272" centery="352" centerz="3" radius="30" />
 	<spawn centerx="26" centery="356" centerz="3" radius="1" />
-	<spawn centerx="610" centery="357" centerz="3" radius="1">
-		<monster name="Castle Grim Reaper" x="0" y="0" z="3" spawntime="10" />
-	</spawn>
+	
 	<spawn centerx="55" centery="358" centerz="3" radius="7" />
 	<spawn centerx="56" centery="358" centerz="3" radius="1" />
 	<spawn centerx="25" centery="361" centerz="3" radius="1" />
@@ -617,9 +584,7 @@
 	<spawn centerx="1990" centery="472" centerz="3" radius="5" />
 	<spawn centerx="2001" centery="472" centerz="3" radius="5" />
 	<spawn centerx="2013" centery="472" centerz="3" radius="3" />
-	<spawn centerx="1075" centery="876" centerz="3" radius="2">
-		<npc name="Djema" x="-1" y="0" z="3" spawntime="60" direction="2" />
-	</spawn>
+
 	<spawn centerx="1070" centery="885" centerz="3" radius="4">
 		<monster name="Blue Djinn" x="0" y="-3" z="3" spawntime="59" />
 		<monster name="Scarab" x="3" y="-3" z="3" spawntime="59" />
@@ -746,15 +711,11 @@
 		<monster name="Plaguesmith" x="-15" y="14" z="3" spawntime="2" />
 		<monster name="Plaguesmith" x="-16" y="18" z="3" spawntime="2" />
 	</spawn>
-	<spawn centerx="1486" centery="227" centerz="4" radius="1">
-		<monster name="Hacker" x="0" y="0" z="4" spawntime="25" />
-	</spawn>
+	
 	<spawn centerx="1485" centery="229" centerz="4" radius="5" />
 	<spawn centerx="1479" centery="231" centerz="4" radius="1" />
 	<spawn centerx="1492" centery="231" centerz="4" radius="1" />
-	<spawn centerx="1472" centery="239" centerz="4" radius="1">
-		<monster name="Hacker" x="0" y="0" z="4" spawntime="25" />
-	</spawn>
+
 	<spawn centerx="1474" centery="241" centerz="4" radius="5" />
 	<spawn centerx="1502" centery="241" centerz="4" radius="1" />
 	<spawn centerx="1501" centery="242" centerz="4" radius="5" />
@@ -763,9 +724,7 @@
 	<spawn centerx="1504" centery="251" centerz="4" radius="5" />
 	<spawn centerx="1506" centery="251" centerz="4" radius="1" />
 	<spawn centerx="1505" centery="255" centerz="4" radius="1" />
-	<spawn centerx="27" centery="350" centerz="4" radius="1">
-		<monster name="Hacker" x="0" y="0" z="4" spawntime="10" />
-	</spawn>
+	
 	<spawn centerx="51" centery="353" centerz="4" radius="1" />
 	<spawn centerx="37" centery="354" centerz="4" radius="6" />
 	<spawn centerx="20" centery="359" centerz="4" radius="1" />
@@ -856,9 +815,7 @@
 		<monster name="Ultimate Warlock" x="-4" y="0" z="4" spawntime="2" />
 		<monster name="Ultimate Warlock" x="3" y="1" z="4" spawntime="2" />
 	</spawn>
-	<spawn centerx="1083" centery="879" centerz="4" radius="1">
-		<npc name="Haroun" x="1" y="0" z="4" spawntime="60" direction="2" />
-	</spawn>
+
 	<spawn centerx="530" centery="883" centerz="4" radius="5">
 		<monster name="Ultimate Warlock" x="-1" y="1" z="4" spawntime="2" />
 		<monster name="Ultimate Warlock" x="4" y="2" z="4" spawntime="2" />
@@ -1576,7 +1533,6 @@
 		<monster name="Ultimate Dragon Lord" x="-6" y="-2" z="4" spawntime="2" />
 		<monster name="Ultimate Hellhound" x="7" y="-1" z="4" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="0" y="1" z="4" spawntime="2" />
-		<monster name="champion Blightwalker" x="-2" y="5" z="4" spawntime="10" />
 	</spawn>
 	<spawn centerx="588" centery="1807" centerz="4" radius="6">
 		<monster name="Ultimate Hellhound" x="1" y="-2" z="4" spawntime="2" />
@@ -1850,17 +1806,14 @@
 		<monster name="Ultimate Grim Reaper" x="-1" y="-6" z="4" spawntime="2" />
 		<monster name="Ultimate Undead Dragon" x="-20" y="-5" z="4" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="9" y="-5" z="4" spawntime="2" />
-		<monster name="Champion Tower" x="-26" y="-2" z="4" spawntime="10" />
 		<monster name="Ultimate Grim Reaper" x="5" y="-2" z="4" spawntime="2" />
 		<monster name="Ultimate Grim Reaper" x="11" y="-2" z="4" spawntime="2" />
 		<monster name="Ultimate Grim Reaper" x="-8" y="-1" z="4" spawntime="2" />
 		<monster name="Ultimate Undead Dragon" x="-16" y="1" z="4" spawntime="2" />
-		<monster name="Champion Tower" x="-29" y="9" z="4" spawntime="10" />
 		<monster name="Ultimate Hand of Cursed Fate" x="-17" y="10" z="4" spawntime="2" />
 		<monster name="Ultimate Hand of Cursed Fate" x="-16" y="10" z="4" spawntime="2" />
 		<monster name="Ultimate Nightmare" x="-23" y="15" z="4" spawntime="2" />
 		<monster name="Ultimate Nightmare" x="-13" y="18" z="4" spawntime="2" />
-		<monster name="Champion Tower" x="-29" y="19" z="4" spawntime="10" />
 		<monster name="Ultimate Grim Reaper" x="9" y="21" z="4" spawntime="2" />
 		<monster name="Ultimate Nightmare" x="-23" y="22" z="4" spawntime="2" />
 		<monster name="Ultimate Nightmare" x="-16" y="22" z="4" spawntime="2" />
@@ -1915,65 +1868,21 @@
 		<monster name="Ultimate Undead Dragon" x="-1" y="-3" z="4" spawntime="2" />
 		<monster name="Ultimate Grim Reaper" x="-1" y="-2" z="4" spawntime="2" />
 	</spawn>
-	<spawn centerx="189" centery="113" centerz="5" radius="1">
-		<monster name="Castle Frost Dragon" x="0" y="0" z="5" spawntime="2" />
-	</spawn>
-	<spawn centerx="192" centery="113" centerz="5" radius="1">
-		<monster name="Castle Dragon Lord" x="0" y="0" z="5" spawntime="4" />
-	</spawn>
-	<spawn centerx="194" centery="113" centerz="5" radius="1">
-		<monster name="Castle Dragon Lord" x="0" y="0" z="5" spawntime="4" />
-	</spawn>
-	<spawn centerx="196" centery="113" centerz="5" radius="1">
-		<monster name="Castle Dragon Lord" x="0" y="0" z="5" spawntime="4" />
-	</spawn>
-	<spawn centerx="65" centery="114" centerz="5" radius="5">
-		<monster name="King Of Baiak" x="-1" y="-1" z="5" spawntime="3600" />
-	</spawn>
-	<spawn centerx="177" centery="114" centerz="5" radius="1">
-		<monster name="Trainer Slayer" x="-1" y="-1" z="5" spawntime="10" />
-		<monster name="Trainer Slayer" x="-1" y="1" z="5" spawntime="10" />
-	</spawn>
-	<spawn centerx="184" centery="114" centerz="5" radius="5">
-		<monster name="Castle Warlock" x="5" y="1" z="5" spawntime="2" />
-		<monster name="Castle Demon" x="5" y="3" z="5" spawntime="2" />
-		<monster name="Castle Grim Reaper" x="5" y="5" z="5" spawntime="10" />
-	</spawn>
-	<spawn centerx="198" centery="114" centerz="5" radius="1">
-		<monster name="Castle Grim Reaper" x="0" y="0" z="5" spawntime="2" />
-	</spawn>
+
+
+	
 	<spawn centerx="189" centery="115" centerz="5" radius="1" />
-	<spawn centerx="198" centery="116" centerz="5" radius="1">
-		<monster name="Castle Demon" x="0" y="0" z="5" spawntime="2" />
-	</spawn>
+	
 	<spawn centerx="189" centery="117" centerz="5" radius="1" />
-	<spawn centerx="177" centery="118" centerz="5" radius="1">
-		<monster name="Trainer Slayer" x="-1" y="-1" z="5" spawntime="10" />
-		<monster name="Trainer Slayer" x="-1" y="1" z="5" spawntime="10" />
-	</spawn>
-	<spawn centerx="198" centery="118" centerz="5" radius="1">
-		<monster name="Castle Warlock" x="0" y="0" z="5" spawntime="2" />
-	</spawn>
+	
+	
 	<spawn centerx="189" centery="119" centerz="5" radius="1" />
-	<spawn centerx="198" centery="120" centerz="5" radius="1">
-		<monster name="Castle Frost Dragon" x="0" y="0" z="5" spawntime="2" />
-	</spawn>
-	<spawn centerx="189" centery="121" centerz="5" radius="1">
-		<monster name="Mago Negro" x="0" y="0" z="5" spawntime="4" />
-	</spawn>
-	<spawn centerx="177" centery="122" centerz="5" radius="1">
-		<monster name="Trainer Slayer" x="-1" y="-1" z="5" spawntime="10" />
-		<monster name="Trainer Slayer" x="-1" y="1" z="5" spawntime="10" />
-	</spawn>
-	<spawn centerx="198" centery="122" centerz="5" radius="5">
-		<monster name="Mago Negro" x="0" y="0" z="5" spawntime="10" />
-		<monster name="Hacker" x="0" y="2" z="5" spawntime="10" />
-	</spawn>
+	
+
+	
+	
 	<spawn centerx="198" centery="124" centerz="5" radius="5" />
-	<spawn centerx="176" centery="126" centerz="5" radius="1">
-		<monster name="Trainer Slayer" x="0" y="-1" z="5" spawntime="10" />
-		<monster name="Trainer Slayer" x="0" y="1" z="5" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="680" centery="143" centerz="5" radius="1">
 		<monster name="Toad" x="0" y="0" z="5" spawntime="60" />
 		<monster name="Azure Frog" x="-1" y="1" z="5" spawntime="60" />
@@ -2018,214 +1927,13 @@
 		<monster name="Toad" x="0" y="1" z="5" spawntime="60" />
 	</spawn>
 	<spawn centerx="629" centery="214" centerz="5" radius="1" />
-	<spawn centerx="104" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="124" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="128" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="219" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="104" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="230" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="1473" centery="233" centerz="5" radius="1">
-		<monster name="Hacker" x="0" y="0" z="5" spawntime="25" />
-	</spawn>
-	<spawn centerx="104" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="234" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="5" spawntime="60" />
-	</spawn>
+	
 	<spawn centerx="1497" centery="236" centerz="5" radius="1" />
 	<spawn centerx="1483" centery="237" centerz="5" radius="6" />
 	<spawn centerx="1496" centery="237" centerz="5" radius="5" />
 	<spawn centerx="1466" centery="242" centerz="5" radius="1" />
 	<spawn centerx="1485" centery="244" centerz="5" radius="5" />
-	<spawn centerx="104" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="245" centerz="5" radius="1">
-		<monster name="Target" x="-1" y="-1" z="5" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="5" spawntime="60" />
-	</spawn>
+	
 	<spawn centerx="1503" centery="245" centerz="5" radius="5" />
 	<spawn centerx="1467" centery="246" centerz="5" radius="5" />
 	<spawn centerx="1495" centery="246" centerz="5" radius="6" />
@@ -2332,9 +2040,7 @@
 		<monster name="Wasp" x="-1" y="0" z="5" spawntime="60" />
 		<monster name="Wasp" x="0" y="1" z="5" spawntime="60" />
 	</spawn>
-	<spawn centerx="1076" centery="873" centerz="5" radius="2">
-		<npc name="Bo'Ques" x="0" y="1" z="5" spawntime="60" direction="2" />
-	</spawn>
+
 	<spawn centerx="743" centery="875" centerz="5" radius="5">
 		<monster name="Ultimate Banshee" x="2" y="-1" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-2" y="0" z="5" spawntime="2" />
@@ -2347,15 +2053,7 @@
 		<monster name="Ultimate Betrayed Wraith" x="1" y="0" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="0" y="5" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="566" centery="880" centerz="5" radius="10">
-		<monster name="Champion Undead Dragon" x="-4" y="-9" z="5" spawntime="25" />
-		<monster name="Champion Undead Dragon" x="4" y="-9" z="5" spawntime="25" />
-		<monster name="Ultimate Warlock" x="-4" y="-5" z="5" spawntime="2" />
-		<monster name="Ultimate Warlock" x="3" y="-5" z="5" spawntime="2" />
-		<monster name="Ultimate Warlock" x="-1" y="-3" z="5" spawntime="2" />
-		<monster name="Ultimate Warlock" x="-4" y="4" z="5" spawntime="2" />
-		<monster name="Ultimate Warlock" x="4" y="5" z="5" spawntime="2" />
-	</spawn>
+
 	<spawn centerx="921" centery="882" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="2" />
 	</spawn>
@@ -2385,7 +2083,6 @@
 		<monster name="Ultimate Banshee" x="-8" y="-7" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="-26" y="0" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="-21" y="0" z="5" spawntime="2" />
-		<monster name="Champion Massive Elemental" x="-1" y="0" z="5" spawntime="25" />
 		<monster name="Ultimate Betrayed Wraith" x="0" y="0" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-17" y="1" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="-13" y="1" z="5" spawntime="2" />
@@ -2393,7 +2090,6 @@
 		<monster name="Ultimate Betrayed Wraith" x="-9" y="2" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-1" y="2" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="-20" y="3" z="5" spawntime="2" />
-		<monster name="Champion Massive Elemental" x="-28" y="4" z="5" spawntime="25" />
 		<monster name="Ultimate Banshee" x="-2" y="4" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="-26" y="5" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-9" y="7" z="5" spawntime="2" />
@@ -2453,7 +2149,6 @@
 		<monster name="Ultimate Betrayed Wraith" x="0" y="4" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="5" y="4" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-21" y="11" z="5" spawntime="2" />
-		<monster name="Champion Phantasm" x="7" y="11" z="5" spawntime="25" />
 		<monster name="Ultimate Banshee" x="-29" y="12" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="-28" y="12" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="7" y="12" z="5" spawntime="2" />
@@ -2523,10 +2218,8 @@
 		<monster name="Ultimate Warlock" x="-9" y="5" z="5" spawntime="2" />
 		<monster name="Ultimate Warlock" x="6" y="5" z="5" spawntime="2" />
 		<monster name="Ultimate Son of Verminor" x="5" y="28" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="21" y="28" z="5" spawntime="2" />
 		<monster name="Ultimate Son of Verminor" x="-12" y="29" z="5" spawntime="2" />
 		<monster name="Ultimate Son of Verminor" x="24" y="29" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="9" y="30" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="697" centery="933" centerz="5" radius="30">
 		<monster name="Ultimate Banshee" x="-21" y="-13" z="5" spawntime="2" />
@@ -2577,8 +2270,6 @@
 		<monster name="Ultimate Betrayed Wraith" x="-6" y="1" z="5" spawntime="2" />
 		<monster name="Ultimate Banshee" x="1" y="1" z="5" spawntime="2" />
 		<monster name="Ultimate Betrayed Wraith" x="5" y="1" z="5" spawntime="2" />
-		<monster name="Champion Massive Elemental" x="-13" y="2" z="5" spawntime="25" />
-		<monster name="Champion Phantasm" x="-21" y="3" z="5" spawntime="25" />
 		<monster name="Ultimate Banshee" x="-4" y="3" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="937" centery="944" centerz="5" radius="1">
@@ -2594,64 +2285,11 @@
 	<spawn centerx="992" centery="951" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="543" centery="954" centerz="5" radius="30">
-		<monster name="Ultimate Hydra" x="-15" y="-7" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-1" y="-7" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="28" y="-7" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-18" y="-6" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="-7" y="-6" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="18" y="-6" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-14" y="-5" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="1" y="-4" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="6" y="-4" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="3" y="-3" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="23" y="-3" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="18" y="3" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="5" y="4" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="26" y="5" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="12" y="7" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="0" y="8" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="0" y="9" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="21" y="10" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="6" y="11" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="5" y="15" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="21" y="18" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-11" y="19" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-6" y="19" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="-2" y="19" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="7" y="19" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-16" y="22" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="3" y="22" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="24" y="22" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="19" y="23" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="8" y="24" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="-12" y="25" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="4" y="28" z="5" spawntime="2" />
-	</spawn>
+
 	<spawn centerx="989" centery="954" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="559" centery="957" centerz="5" radius="30">
-		<monster name="Ultimate Hydra" x="22" y="-11" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="19" y="-9" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="20" y="-9" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="22" y="-4" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="28" y="-4" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="28" y="-2" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="20" y="0" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="17" y="1" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="26" y="1" z="5" spawntime="2" />
-		<monster name="Champion Plaguesmith" x="22" y="7" z="5" spawntime="25" />
-		<monster name="Ultimate Son of Verminor" x="23" y="13" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="22" y="14" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="26" y="15" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="22" y="18" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="24" y="19" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="24" y="25" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-12" y="28" z="5" spawntime="2" />
-		<monster name="Ultimate Son of Verminor" x="6" y="29" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-15" y="30" z="5" spawntime="2" />
-	</spawn>
+	
 	<spawn centerx="1001" centery="962" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="2" />
 	</spawn>
@@ -2671,7 +2309,6 @@
 		<monster name="Ultimate Dragon Lord" x="-14" y="4" z="5" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="-3" y="4" z="5" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="10" y="5" z="5" spawntime="2" />
-		<monster name="Champion Defiler" x="12" y="5" z="5" spawntime="25" />
 		<monster name="Ultimate Dragon Lord" x="15" y="5" z="5" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="-9" y="6" z="5" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="-5" y="7" z="5" spawntime="2" />
@@ -2689,7 +2326,6 @@
 		<monster name="Ultimate Dragon Lord" x="-11" y="18" z="5" spawntime="2" />
 		<monster name="Ultimate Demodras" x="5" y="18" z="5" spawntime="2" />
 		<monster name="Ultimate Dragon Lord" x="8" y="19" z="5" spawntime="2" />
-		<monster name="Champion Defiler" x="-11" y="21" z="5" spawntime="25" />
 		<monster name="Ultimate Dragon Lord" x="-18" y="24" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="642" centery="985" centerz="5" radius="30" />
@@ -2713,17 +2349,12 @@
 		<monster name="Great Demon" x="1" y="8" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="556" centery="989" centerz="5" radius="5">
-		<monster name="Ultimate Hydra" x="-3" y="-1" z="5" spawntime="2" />
 		<monster name="Ultimate Son of Verminor" x="2" y="-1" z="5" spawntime="2" />
 	</spawn>
 	<spawn centerx="569" centery="990" centerz="5" radius="5">
 		<monster name="Ultimate Son of Verminor" x="5" y="-2" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="-3" y="1" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="582" centery="990" centerz="5" radius="5">
-		<monster name="Ultimate Hydra" x="3" y="-1" z="5" spawntime="2" />
-		<monster name="Ultimate Hydra" x="1" y="2" z="5" spawntime="2" />
-	</spawn>
+
 	<spawn centerx="1229" centery="1014" centerz="5" radius="5">
 		<monster name="Dragon Lord" x="1" y="0" z="5" spawntime="60" />
 	</spawn>
@@ -2745,7 +2376,6 @@
 		<monster name="Ultimate Demon" x="-25" y="-10" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-24" y="-8" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-2" y="-7" z="5" spawntime="2" />
-		<monster name="Champion Bog Raider" x="-25" y="-5" z="5" spawntime="25" />
 		<monster name="Ultimate Demon" x="0" y="-3" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-23" y="1" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-16" y="1" z="5" spawntime="2" />
@@ -2793,7 +2423,6 @@
 		<monster name="Ultimate Demon" x="-23" y="-16" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-22" y="-14" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-18" y="-11" z="5" spawntime="2" />
-		<monster name="Champion Bog Raider" x="-20" y="-7" z="5" spawntime="25" />
 		<monster name="Ultimate Diabolic Imp" x="-27" y="18" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-25" y="19" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-26" y="22" z="5" spawntime="2" />
@@ -2877,7 +2506,6 @@
 		<monster name="Ultimate Demon" x="-7" y="20" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-22" y="21" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-18" y="21" z="5" spawntime="2" />
-		<monster name="Champion Fury" x="-12" y="21" z="5" spawntime="25" />
 		<monster name="Ultimate Diabolic Imp" x="-8" y="21" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-24" y="24" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="9" y="24" z="5" spawntime="2" />
@@ -2925,7 +2553,7 @@
 		<monster name="Ultimate Diabolic Imp" x="-1" y="5" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-4" y="6" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-13" y="8" z="5" spawntime="2" />
-		<monster name="Champion Fury" x="4" y="8" z="5" spawntime="25" />
+
 		<monster name="Ultimate Demon" x="-10" y="9" z="5" spawntime="2" />
 		<monster name="Ultimate Demon" x="-21" y="11" z="5" spawntime="2" />
 		<monster name="Ultimate Diabolic Imp" x="-30" y="16" z="5" spawntime="2" />
@@ -3151,11 +2779,7 @@
 		<monster name="Warlock" x="3" y="2" z="5" spawntime="2" />
 		<monster name="Warlock" x="0" y="3" z="5" spawntime="2" />
 	</spawn>
-	<spawn centerx="475" centery="1214" centerz="5" radius="1">
-		<monster name="Champion Hellfire Fighter" x="-1" y="0" z="5" spawntime="10" />
-		<monster name="Champion Hellfire Fighter" x="0" y="0" z="5" spawntime="10" />
-		<monster name="Champion Hellfire Fighter" x="1" y="0" z="5" spawntime="10" />
-	</spawn>
+
 	<spawn centerx="404" centery="1230" centerz="5" radius="15">
 		<monster name="Ultimate Hellfire Fighter" x="-14" y="-13" z="5" spawntime="2" />
 		<monster name="Ultimate Fire Elemental" x="-14" y="-12" z="5" spawntime="2" />
@@ -3463,70 +3087,7 @@
 		<monster name="Triple Medusa" x="0" y="-1" z="6" spawntime="60" />
 		<monster name="Triple Medusa" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
-	<spawn centerx="385" centery="135" centerz="6" radius="15">
-		<monster name="Trainer Slayer" x="-15" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-13" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-11" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-9" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-7" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-5" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-3" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-1" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="1" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="3" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="5" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="7" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="9" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="11" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="13" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-14" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="-9" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-9" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="-7" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-7" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="-5" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-5" z="6" spawntime="5" />
-		<monster name="Castle Dragon Lord" x="-7" y="-4" z="6" spawntime="5" />
-		<monster name="Castle Demon" x="-5" y="-4" z="6" spawntime="5" />
-		<monster name="Castle Grim Reaper" x="-3" y="-4" z="6" spawntime="5" />
-		<monster name="Castle Warlock" x="-1" y="-4" z="6" spawntime="5" />
-		<monster name="Castle Hydra" x="1" y="-4" z="6" spawntime="3" />
-		<monster name="Castle Warlock" x="3" y="-4" z="6" spawntime="3" />
-		<monster name="Castle Grim Reaper" x="5" y="-4" z="6" spawntime="4" />
-		<monster name="Castle Dragon Lord" x="7" y="-4" z="6" spawntime="4" />
-		<monster name="Trainer Slayer" x="-15" y="-3" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-3" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="-1" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="-1" z="6" spawntime="5" />
-		<monster name="Castle Warlock" x="-7" y="0" z="6" spawntime="10" />
-		<monster name="Castle Demon" x="-5" y="0" z="6" spawntime="5" />
-		<monster name="Castle Grim Reaper" x="-3" y="0" z="6" spawntime="10" />
-		<monster name="Castle Frost Dragon" x="-1" y="0" z="6" spawntime="10" />
-		<monster name="Castle Dragon Lord" x="1" y="0" z="6" spawntime="10" />
-		<monster name="Mago Negro" x="3" y="0" z="6" spawntime="10" />
-		<monster name="Castle Dragon Lord" x="5" y="0" z="6" spawntime="60" />
-		<monster name="Castle Demon" x="7" y="0" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="1" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="1" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="3" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="3" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="5" z="6" spawntime="5" />
-		<monster name="Castle Grim Reaper" x="-7" y="5" z="6" spawntime="5" />
-		<monster name="Castle Warlock" x="6" y="5" z="6" spawntime="10" />
-		<monster name="Trainer Slayer" x="15" y="5" z="6" spawntime="5" />
-		<monster name="Castle Hydra" x="-7" y="6" z="6" spawntime="10" />
-		<monster name="Mago Negro" x="6" y="6" z="6" spawntime="10" />
-		<monster name="Trainer Slayer" x="-15" y="7" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="7" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="9" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="9" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="-15" y="11" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="11" z="6" spawntime="5" />
-		<npc name="Rashid" x="-7" y="12" z="6" spawntime="5" direction="2" />
-		<npc name="Mad" x="6" y="12" z="6" spawntime="5" direction="2" />
-		<monster name="Trainer Slayer" x="-15" y="13" z="6" spawntime="5" />
-		<monster name="Trainer Slayer" x="15" y="13" z="6" spawntime="5" />
-	</spawn>
+	
 	<spawn centerx="243" centery="140" centerz="6" radius="1">
 		<monster name="Crystal Protect" x="-1" y="0" z="6" spawntime="4" />
 	</spawn>
@@ -3602,51 +3163,10 @@
 	<spawn centerx="268" centery="172" centerz="6" radius="1" />
 	<spawn centerx="261" centery="177" centerz="6" radius="1" />
 	<spawn centerx="141" centery="179" centerz="6" radius="5" />
-	<spawn centerx="118" centery="182" centerz="6" radius="5">
-		<monster name="Bacon" x="-5" y="-5" z="6" spawntime="60" />
-		<monster name="Bacon" x="-4" y="-5" z="6" spawntime="60" />
-		<monster name="Bacon" x="-3" y="-5" z="6" spawntime="60" />
-		<monster name="Bacon" x="1" y="-5" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="-5" z="6" spawntime="60" />
-		<monster name="Bacon" x="-5" y="-4" z="6" spawntime="60" />
-		<monster name="Bacon" x="-2" y="-4" z="6" spawntime="60" />
-		<monster name="Bacon" x="0" y="-4" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="-4" z="6" spawntime="60" />
-		<monster name="Bacon" x="-5" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="-4" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="-3" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="0" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="1" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="-3" z="6" spawntime="60" />
-		<monster name="Bacon" x="-5" y="-2" z="6" spawntime="60" />
-		<monster name="Bacon" x="-2" y="-2" z="6" spawntime="60" />
-		<monster name="Bacon" x="0" y="-2" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="-2" z="6" spawntime="60" />
-		<monster name="Bacon" x="-5" y="-1" z="6" spawntime="60" />
-		<monster name="Bacon" x="-4" y="-1" z="6" spawntime="60" />
-		<monster name="Bacon" x="-3" y="-1" z="6" spawntime="60" />
-		<monster name="Bacon" x="0" y="-1" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="-1" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="2" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="2" z="6" spawntime="60" />
-		<monster name="Bacon" x="4" y="2" z="6" spawntime="60" />
-		<monster name="Bacon" x="5" y="2" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="3" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="4" z="6" spawntime="60" />
-		<monster name="Bacon" x="4" y="4" z="6" spawntime="60" />
-		<monster name="Bacon" x="5" y="4" z="6" spawntime="60" />
-		<monster name="Bacon" x="2" y="5" z="6" spawntime="60" />
-		<monster name="Bacon" x="5" y="5" z="6" spawntime="60" />
-	</spawn>
+	
 	<spawn centerx="127" centery="182" centerz="6" radius="5" />
 	<spawn centerx="135" centery="182" centerz="6" radius="5" />
-	<spawn centerx="118" centery="183" centerz="6" radius="5">
-		<monster name="Bacon" x="2" y="5" z="6" spawntime="60" />
-		<monster name="Bacon" x="3" y="5" z="6" spawntime="60" />
-		<monster name="Bacon" x="4" y="5" z="6" spawntime="60" />
-		<monster name="Bacon" x="5" y="5" z="6" spawntime="60" />
-	</spawn>
+	
 	<spawn centerx="127" centery="183" centerz="6" radius="5" />
 	<spawn centerx="135" centery="183" centerz="6" radius="5" />
 	<spawn centerx="110" centery="191" centerz="6" radius="1">
@@ -3655,119 +3175,7 @@
 	<spawn centerx="64" centery="201" centerz="6" radius="1">
 		<npc name="Dicer3" x="0" y="0" z="6" spawntime="10" direction="2" />
 	</spawn>
-	<spawn centerx="104" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="124" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="128" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="234" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="193" centery="239" centerz="6" radius="5" />
-	<spawn centerx="104" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="108" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="112" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="116" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="120" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="124" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="128" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="132" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="136" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="140" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="144" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="148" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="152" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="156" centery="245" centerz="6" radius="1">
-		<monster name="Target" x="-1" y="-1" z="6" spawntime="60" />
-		<monster name="Target" x="1" y="-1" z="6" spawntime="60" />
-	</spawn>
+	
 	<spawn centerx="1161" centery="310" centerz="6" radius="5">
 		<monster name="Mini Serpent Ice" x="-2" y="-2" z="6" spawntime="4" />
 		<monster name="Mini Serpent Ice" x="-1" y="-1" z="6" spawntime="4" />
@@ -7977,7 +7385,6 @@
 	<spawn centerx="943" centery="891" centerz="7" radius="5">
 		<monster name="Dragon Lord" x="4" y="-4" z="7" spawntime="2" />
 		<monster name="Dragon Lord" x="-3" y="-2" z="7" spawntime="2" />
-		<monster name="Lord of Demon" x="-4" y="2" z="7" spawntime="768" />
 		<monster name="Dragon Lord" x="4" y="3" z="7" spawntime="2" />
 	</spawn>
 	<spawn centerx="968" centery="891" centerz="7" radius="1">
@@ -8383,9 +7790,7 @@
 	<spawn centerx="880" centery="1061" centerz="7" radius="1">
 		<monster name="Valkyrie" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
-	<spawn centerx="1175" centery="1062" centerz="7" radius="2">
-		<npc name="Dude" x="-2" y="-1" z="7" spawntime="20" direction="2" />
-	</spawn>
+
 	<spawn centerx="896" centery="1063" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="2" />
 	</spawn>
@@ -9643,7 +9048,6 @@
 		<monster name="Demon" x="-8" y="-2" z="8" spawntime="2" />
 		<monster name="Orshabaal" x="2" y="1" z="8" spawntime="2" />
 		<monster name="Demon" x="3" y="4" z="8" spawntime="2" />
-		<monster name="Pazuzu" x="2" y="9" z="8" spawntime="3600" />
 	</spawn>
 	<spawn centerx="1020" centery="812" centerz="8" radius="5">
 		<monster name="Grim Reaper" x="2" y="-2" z="8" spawntime="2" />
@@ -11722,7 +11126,6 @@
 		<monster name="Great Ice Golem" x="11" y="21" z="8" spawntime="2" />
 		<monster name="Great Ice Golem" x="-17" y="22" z="8" spawntime="2" />
 		<monster name="Great Massive Water Elemental" x="4" y="22" z="8" spawntime="2" />
-		<monster name="Donate Frost Dragon" x="14" y="22" z="8" spawntime="5" />
 		<monster name="Great Massive Water Elemental" x="-24" y="23" z="8" spawntime="2" />
 		<monster name="Great Frost Dragon" x="-13" y="23" z="8" spawntime="2" />
 		<monster name="Great Ice Golem" x="-8" y="23" z="8" spawntime="2" />
@@ -12901,9 +12304,7 @@
 		<monster name="Dragon Lord" x="-1" y="-1" z="9" spawntime="2" />
 		<monster name="Dragon Lord" x="3" y="1" z="9" spawntime="2" />
 	</spawn>
-	<spawn centerx="1266" centery="809" centerz="9" radius="1">
-		<monster name="Donate Gang Member" x="0" y="0" z="9" spawntime="30" />
-	</spawn>
+
 	<spawn centerx="1266" centery="812" centerz="9" radius="1">
 		<monster name="Warlock" x="0" y="0" z="9" spawntime="2" />
 	</spawn>
@@ -14371,7 +13772,6 @@
 	</spawn>
 	<spawn centerx="1279" centery="822" centerz="10" radius="1">
 		<monster name="Warlock" x="1" y="-1" z="10" spawntime="2" />
-		<monster name="Donate Gang Member" x="0" y="0" z="10" spawntime="30" />
 	</spawn>
 	<spawn centerx="1279" centery="824" centerz="10" radius="1">
 		<monster name="Warlock" x="0" y="0" z="10" spawntime="2" />
@@ -14929,9 +14329,7 @@
 		<monster name="Demon" x="3" y="-3" z="10" spawntime="2" />
 		<monster name="Demon" x="-6" y="2" z="10" spawntime="2" />
 	</spawn>
-	<spawn centerx="1321" centery="1183" centerz="10" radius="1">
-		<npc name="A Ghostly Sage" x="-1" y="0" z="10" spawntime="60" direction="2" />
-	</spawn>
+	
 	<spawn centerx="880" centery="1186" centerz="10" radius="10">
 		<monster name="Demon" x="2" y="-5" z="10" spawntime="2" />
 		<monster name="Demon" x="-1" y="2" z="10" spawntime="2" />

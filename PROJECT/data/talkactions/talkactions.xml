@@ -2,6 +2,7 @@
 <talkactions>
 
 
+	<talkaction words="!support;/support" event="script" value="fila.lua"/>
 
 	<talkaction words="!arenalivre" event="script" value="arenalivre.lua"/>
 

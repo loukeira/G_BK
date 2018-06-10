@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+	<event type="think" name="gamemaster" event="script" value="gm.lua"/> 
+	<event type="login" name="gamemasterLogin" event="script" value="gm.lua"/>
+
+<!-- logouts genericos -->
+<!--fila-->
+	<event type="login" name="filogin" event="script" value="onlogout.lua"/>
+    <event type="logout" name="filogout" event="script" value="onlogout.lua"/>
 
 <!--arena de cima -->
 	<event type="statschange" name="ArenaCima" event="script" value="arenacima.lua"/>

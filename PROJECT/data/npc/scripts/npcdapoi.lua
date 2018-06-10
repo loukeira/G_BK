@@ -40,7 +40,7 @@ function Morrer(cid, message, keywords, parameters, node)
              
      end
  
-  end
+  
 end
 
  

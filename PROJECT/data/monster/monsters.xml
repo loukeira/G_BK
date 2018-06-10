@@ -2,6 +2,24 @@
 <monsters>
 <monster name="Clone Spider" file="novos/newspider.xml"/>
 
+	<!-- CASTLE -->
+	<!-- Castle 24H -->
+
+	<monster name="Crystal Protect" file="Castle24Hrs/Crystal Protect.xml"/>
+	<monster name="Castle Protect" file="Castle24Hrs/Castle Protect.xml"/>
+	
+	<!-- New Castle -->
+	<monster name="Protect Castle" file="NewCastle/Protect Castle.xml"/>
+	<monster name="Protect King" file="NewCastle/Protect King.xml"/>
+	
+	<!-- Castle War -->
+	<monster name="Castle Guardian I" file="CastleWar/Castle Guardian I.xml"/>
+	<monster name="Castle Guardian II" file="CastleWar/Castle Guardian II.xml"/>
+	<monster name="Castle Guardian III" file="CastleWar/Castle Guardian III.xml"/>
+	<monster name="Castle Guardian IV" file="CastleWar/Castle Guardian IV.xml"/>
+	<monster name="Castle Generator" file="CastleWar/Castle Generator.xml"/>
+	<monster name="Ice Crystal" file="CastleWar/Ice Crystal.xml"/>
+	<!-- FIM CASTLE -->
 
 	<monster name="Alvo" file="Traps/Alvo.xml"/>
 	<monster name="Lizard Gate Guardian" file="lizard gate guardian.xml"/>
@@ -103,10 +121,10 @@
 	<monster name="Barbarian Skullhunter" file="Barbarians/barbarian skullhunter.xml"/>
 	
 	<!-- Beholders -->
-	<monster name="Beholder" file="Beholders/beholder.xml"/>
-	<monster name="Braindeath" file="Beholders/braindeath.xml"/>
-	<monster name="Elder Beholder" file="Beholders/elder beholder.xml"/>
-	<monster name="Gazer" file="Beholders/gazer.xml"/>
+	<monster name="Beholder" file="beholders/beholder.xml"/>
+	<monster name="Braindeath" file="beholders/braindeath.xml"/>
+	<monster name="Elder Beholder" file="beholders/elder beholder.xml"/>
+	<monster name="Gazer" file="beholders/gazer.xml"/>
 
 	<!-- Bosses -->
 	<monster name="Annihilon" file="Bosses/annihilon.xml"/>
@@ -215,10 +233,10 @@
 	<monster name="Chakoya Windcaller" file="Chakoyas/chakoya windcaller.xml"/>
 
 	<!-- Cultists -->
-	<monster name="Acolyte of the Cult" file="Cultists/acolyte of the cult.xml"/>
-	<monster name="Adept of the Cult" file="Cultists/adept of the cult.xml"/>
-	<monster name="Enlightened of the Cult" file="Cultists/enlightened of the cult.xml"/>
-	<monster name="Novice of the Cult" file="Cultists/novice of the cult.xml"/>
+	<monster name="Acolyte of the Cult" file="cultists/acolyte of the cult.xml"/>
+	<monster name="Adept of the Cult" file="cultists/adept of the cult.xml"/>
+	<monster name="Enlightened of the Cult" file="cultists/enlightened of the cult.xml"/>
+	<monster name="Novice of the Cult" file="cultists/novice of the cult.xml"/>
 
 	<!-- Cyclopes and Giants -->
 	<monster name="Behemoth" file="Cyclopes and Giants/behemoth.xml"/>
@@ -535,33 +553,34 @@
 	<monster name="strong son of verminor" file="strongsmonsters/strong son of verminor.xml"/>
 	<monster name="strong spectre" file="strongsmonsters/strong spectre.xml"/>
 	<monster name="strong juggernaut" file="strongsmonsters/strong juggernaut.xml"/>
-	<monster name="Strong The plasmother" file="strongsmonsters/Strong The plasmother.xml"/>	
-	<monster name="Strong Dracola" file="strongsmonsters/Strong dracola.xml"/>
-	<monster name="Strong The Handmaiden" file="strongsmonsters/Strong the handmaiden.xml"/>
-	<monster name="Strong Mr. Punish" file="strongsmonsters/Strong Mr. Punish.xml"/>
-	<monster name="Strong The Countess Sorrow" file="strongsmonsters/Strong Countess Sorrow.xml"/>
-	<monster name="Strong The Imperor" file="strongsmonsters/Strong The Imperor.xml"/>
-	<monster name="Strong Massacre" file="strongsmonsters/Strong Massacre.xml"/>
-	<monster name="strong Orshabaal" file="strongsmonsters/strong Orshabaal.xml"/>
-	<monster name="strong Morgaroth" file="strongsmonsters/strong Morgaroth.xml"/>
+	<monster name="Strong The plasmother" file="strongsmonsters/strong the plasmother.xml"/>	
+	<monster name="Strong Dracola" file="strongsmonsters/strong dracola.xml"/>
+	<monster name="Strong The Handmaiden" file="strongsmonsters/strong the handmaiden.xml"/>
+	<monster name="Strong Mr. Punish" file="strongsmonsters/strong mr punish.xml"/>
+	<monster name="Strong The Countess Sorrow" file="strongsmonsters/strong countess sorrow.xml"/>
+	<monster name="Strong The Imperor" file="strongsmonsters/strong the imperor.xml"/>
+	<monster name="Strong Massacre" file="strongsmonsters/strong massacre.xml"/>
+	<monster name="strong Orshabaal" file="strongsmonsters/strong orshabaal.xml"/>
+	<monster name="strong Morgaroth" file="strongsmonsters/strong morgaroth.xml"/>
 	<monster name="strong ghazbaran" file="strongsmonsters/strong ghazbaran.xml"/>
 
 	
 	<!-- Great Monsters -->
+	<monster name="great apocalypse" file="greatmonsters/great apocalypse.xml"/>
+	<monster name="great infernatil" file="greatmonsters/great infernatil.xml"/>
+	<monster name="great bazir" file="greatmonsters/great bazir.xml"/>
 	<monster name="great phantasm" file="greatmonsters/great phantasm.xml"/>
 	<monster name="great tower" file="greatmonsters/great tower.xml"/>
 	<monster name="paralyze tower" file="greatmonsters/paralyze tower.xml"/>
 	<monster name="great frost dragon" file="greatmonsters/great frost dragon.xml"/>
 	<monster name="great ice golem" file="greatmonsters/great ice golem.xml"/>
-	<monster name="great hellhound" file="greatmonsters/great hellhound .xml"/>
+	<monster name="great hellhound" file="greatmonsters/great hellhound.xml"/>
 	<monster name="great gargoyle" file="greatmonsters/great gargoyle.xml"/>
-	<monster name="great undead dragon" file="greatmonsters/great undead dragon.xml"/>
 	<monster name="great spectre" file="greatmonsters/great spectre.xml"/>
 	<monster name="great stone golem" file="greatmonsters/great stone golem.xml"/>
 	<monster name="great betrayed wraith" file="greatmonsters/great betrayed wraith.xml"/>
 	<monster name="great beholder" file="greatmonsters/great beholder.xml"/>
 	<monster name="great massive fire elemental" file="greatmonsters/great massive fire elemental.xml"/>
-	<monster name="great crystal spider" file="greatmonsters/great crystal spider.xml"/>
 	<monster name="great lich" file="greatmonsters/great lich.xml"/>
 	<monster name="great plaguesmith" file="greatmonsters/great plaguesmith.xml"/>
 	<monster name="great diabolic imp" file="greatmonsters/great diabolic imp.xml"/>
@@ -574,7 +593,6 @@
 	<monster name="great blightwalker" file="greatmonsters/great blightwalker.xml"/>
 	<monster name="great braindeath" file="greatmonsters/great braindeath.xml"/>
 	<monster name="great crystal spider" file="greatmonsters/great crystal spider.xml"/>
-	<monster name="great dark torturer" file="greatmonsters/great dark torturer.xml"/>
 	<monster name="great defiler" file="greatmonsters/great defiler.xml"/>
 	<monster name="great demon" file="greatmonsters/great demon.xml"/>
 	<monster name="great destroyer" file="greatmonsters/great destroyer.xml"/>
@@ -593,36 +611,35 @@
 	<monster name="great hand of cursed fate" file="greatmonsters/great hand of cursed fate.xml"/>
 	<monster name="great hellfire fighter" file="greatmonsters/great hellfire fighter.xml"/>
 	<monster name="great undead dragon" file="greatmonsters/great undead dragon.xml"/>
-	<monster name="great tower" file="greatmonsters/great tower.xml"/>
-	<monster name="Great Annihilon" file="greatmonsters/Great Annihilon.xml"/>
-	<monster name="Great Hellgorak" file="greatmonsters/Great Hellgorak.xml"/>
-	<monster name="Great Latrivan" file="greatmonsters/Great Latrivan.xml"/>
-	<monster name="Great Madareth" file="greatmonsters/Great Madareth.xml"/>
-	<monster name="Great Zugurosh" file="greatmonsters/Great Zugurosh.xml"/>
-	<monster name="Great Ushuriel" file="greatmonsters/Great Ushuriel.xml"/>
-	<monster name="Great Golgordan" file="greatmonsters/Great Golgordan.xml"/>
-	<monster name="Great Orshabaal" file="strongsmonsters/great orshabaal.xml"/>
+	<monster name="Great Annihilon" file="greatmonsters/great annihilon.xml"/>
+	<monster name="Great Hellgorak" file="greatmonsters/great hellgorak.xml"/>
+	<monster name="Great Latrivan" file="greatmonsters/great latrivan.xml"/>
+	<monster name="Great Madareth" file="greatmonsters/great madareth.xml"/>
+	<monster name="Great Zugurosh" file="greatmonsters/great zugurosh.xml"/>
+	<monster name="Great Ushuriel" file="greatmonsters/great ushuriel.xml"/>
+	<monster name="Great Golgordan" file="greatmonsters/great golgordan.xml"/>
+	<monster name="Great Orshabaal" file="greatmonsters/great orshabaal.xml"/>
 	
 	<!-- Ultimate Monsters -->	
-	<monster name="Abomination Giant" file="ultimatemonsters/Abomination Giant.xml"/>
-	<monster name="Titanium Behemoth" file="ultimatemonsters/Titanium Behemoth.xml"/>
-	<monster name="Titanium Ferumbras" file="ultimatemonsters/Titanium Ferumbras.xml"/>
-	<monster name="Titanium Morgaroth" file="ultimatemonsters/Titanium Morgaroth.xml"/>
-	<monster name="Titanium Zarabustor" file="ultimatemonsters/Titanium Zarabustor.xml"/>
-	<monster name="Titanium Ashmunrah" file="ultimatemonsters/Titanium Ashmunrah.xml"/>
-	<monster name="Titanium Arkhothep" file="ultimatemonsters/Titanium Arkhothep.xml"/>
-	<monster name="Titanium Dipthrah" file="ultimatemonsters/Titanium Dipthrah.xml"/>
-	<monster name="Titanium Mahrdis" file="ultimatemonsters/Titanium Mahrdis.xml"/>
-	<monster name="Titanium Morguthis" file="ultimatemonsters/Titanium Morguthis.xml"/>
-	<monster name="Titanium Omruc" file="ultimatemonsters/Titanium Omruc.xml"/>
-	<monster name="Titanium Rahemos" file="ultimatemonsters/Titanium Rahemos.xml"/>
-	<monster name="Titanium Thalas" file="ultimatemonsters/Titanium Thalas.xml"/>
-	<monster name="Titanium Vashresamun" file="ultimatemonsters/Titanium Vashresamun.xml"/>
-	<monster name="Ice Bruttus" file="ultimatemonsters/Ice Brutus.xml"/>
-	<monster name="Fire Bruttus" file="ultimatemonsters/Fire Brutus.xml"/>
-	<monster name="Dark Bruttus" file="ultimatemonsters/Dark Brutus.xml"/>
-	<monster name="Poison Bruttus" file="ultimatemonsters/Poison Brutus.xml"/>
-	<monster name="Elemental Bruttus" file="ultimatemonsters/Elemental Brutus.xml"/>
+	<monster name="Abomination Giant" file="ultimatemonsters/abomination giant.xml"/>
+	<monster name="Titanium Behemoth" file="ultimatemonsters/titanium behemoth.xml"/>
+	<monster name="Titanium Ferumbras" file="ultimatemonsters/titanium ferumbras.xml"/>
+	<monster name="Titanium Morgaroth" file="ultimatemonsters/titanium morgaroth.xml"/>
+	<monster name="Titanium Zarabustor" file="ultimatemonsters/titanium zarabustor.xml"/>
+	<monster name="Titanium Ashmunrah" file="ultimatemonsters/titanium ashmunrah.xml"/>
+	<monster name="Titanium Arkhothep" file="ultimatemonsters/titanium arkhothep.xml"/>
+	<monster name="Titanium Dipthrah" file="ultimatemonsters/titanium dipthrah.xml"/>
+	<monster name="Titanium Mahrdis" file="ultimatemonsters/titanium mahrdis.xml"/>
+	<monster name="Titanium Morguthis" file="ultimatemonsters/titanium morguthis.xml"/>
+	<monster name="Titanium Omruc" file="ultimatemonsters/titanium omruc.xml"/>
+	<monster name="Titanium Rahemos" file="ultimatemonsters/titanium rahemos.xml"/>
+	<monster name="Titanium Thalas" file="ultimatemonsters/titanium thalas.xml"/>
+	<monster name="Titanium Vashresamun" file="ultimatemonsters/titanium vashresamun.xml"/>
+	<monster name="Ice Bruttus" file="ultimatemonsters/ice brutus.xml"/>
+	<monster name="Fire Bruttus" file="ultimatemonsters/fire brutus.xml"/>
+	<monster name="Dark Bruttus" file="ultimatemonsters/dark brutus.xml"/>
+	<monster name="Poison Bruttus" file="ultimatemonsters/poison brutus.xml"/>
+	<monster name="Elemental Bruttus" file="ultimatemonsters/elemental brutus.xml"/>
 	<monster name="ultimate banshee" file="ultimatemonsters/ultimate banshee.xml"/>
 	<monster name="ultimate betrayed wraith" file="ultimatemonsters/ultimate betrayed wraith.xml"/>
 	<monster name="ultimate blightwalker" file="ultimatemonsters/ultimate blightwalker.xml"/>
